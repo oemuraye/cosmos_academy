@@ -4,18 +4,25 @@
 }
 
 :root {
-  --basic-color: #E6FE5F; 
-  --primary-color: #006A63; 
   --gray_dark-color: #101010; 
-  --light-bg_color: #FCFFEC;
+  --active_link-color: #AAC1E4;
+  --dark-color: #000;
   --white-color: #fff;
 
-  /* --font-poppins: 'Poppins'; */
+  --basic-color: #E6FE5F; 
+
   --font-neueMontreal: 'NeueMontreal';
+}
+body {
+  /* background-color: #3d3939; */
 }
 
 ul {
   list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--gray_dark-color);
 }
 .padding_y-spacing {
   padding-top: 75px;
@@ -26,18 +33,18 @@ ul {
 /* Custom Buttons/Links */
 .customBtn {
   display: flex;
-  padding: 15px 30px;
+  padding: 5px 5px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   border-radius: 30px;
   border: 2px solid transparent;
   background: var(--gray_dark-color);
 
   color: #FFF;
   font-family: var(--font-neueMontreal);
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
 
   transition: gap 0.5s ease-in-out;
   animation-timing-function: ease-in-out;
@@ -45,7 +52,7 @@ ul {
 }
 
 .customBtn:hover {
-  gap: 15px;
+  gap: 30px;
 }
 
 

@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import Header from './components/Header/Header';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         {/* <meta property="og:image" content="https://cosmosconference.org/" />
         <link rel="canonical" href="https://cosmosconference.org/" /> */}
       </Helmet>
+
+      <Header />
 
       
     </div>
