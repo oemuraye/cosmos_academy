@@ -2,6 +2,14 @@
   font-family: 'NeueMontreal'; 
   src: url('./assets/fonts/neueMontreal/NeueMontreal-Medium.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Cosmos';
+  src: url('./assets/fonts/cosmos/Cosmos-Light.ttf') format('woff');
+}
+@font-face {
+  font-family: 'Cosmos_medium';
+  src: url('./assets/fonts/cosmos/Cosmos-Medium.ttf') format('woff');
+}
 
 :root {
   --gray_dark-color: #101010; 
@@ -9,9 +17,11 @@
   --dark-color: #000;
   --white-color: #fff;
 
-  --basic-color: #E6FE5F; 
+  --basic-color: #BDD7FE; 
 
   --font-neueMontreal: 'NeueMontreal';
+  --font-cosmos: 'Cosmos';
+  --font-cosmos_medium: 'Cosmos_medium';
 }
 body {
   /* background-color: #3d3939; */
@@ -29,11 +39,29 @@ a {
   padding-bottom: 75px;
 }
 
+h1 {
+  font-family: var(--font-cosmos);
+  font-weight: 700;
+  font-size: 90px;
+  letter-spacing: 0;
+  line-height: 90px;
+  color: var(--gray_dark-color);
+}
+p {
+  font-family: var(--font-neueMontreal);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 24px;
+  color: var(--gray_dark-color);
+}
+
 
 /* Custom Buttons/Links */
 .customBtn {
   display: flex;
   padding: 5px 5px;
+  padding-left: 15px;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -140,5 +168,20 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    /* font-size: 60px; */
+  }
+  .customBtn {
+    /* padding: 10px 20px; */
+    font-size: 14px;
   }
 }

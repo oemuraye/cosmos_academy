@@ -1,27 +1,32 @@
   
 .navbar-default-color {
+    /* background-color: var(--basic-color); */
     background-color: #eaeaea00;
  }
   
 .navbar-default-color .navbar-expand-md {
+    /* background-color: var(--basic-color); */
     background-color: #eaeaea00;
  }
   
 .navbar-color-onscroll {
-    background-color: var(--dark-color);
+    background-color: #00000099;
+    /* background-color: var(--dark-color); */
  }
   
 .navbar-color-onscroll .navbar-expand-md {
-    background-color: var(--dark-color);
+    background-color: #00000000;
+    /* background-color: var(--dark-color); */
  }
   
 .navbar {
     transition: background-color 1s ease;
     z-index: 1000;
+    gap: 10px;
  }
   
 .navbar nav {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
  }
   
