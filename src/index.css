@@ -20,6 +20,8 @@
   --white_gray-color: #EDEDED; 
   --gray_white-color: #FDFCFD; 
   --border_gray-color: #E2E2E2;
+  --card_text-color: #3C3C3C;
+  --card_text-color2: #B0B0B0;
 
   --active_link-color: #AAC1E4;
   --dark-color: #000;
@@ -33,7 +35,7 @@
   --font-cosmos_medium: 'Cosmos_medium';
 }
 body {
-  /* background-color: #3d3939; */
+  background-color: var(--gray_white-color);
 }
 
 ul {
@@ -70,6 +72,13 @@ h4 {
   font-size: 24px;
   letter-spacing: 0;
   line-height: 28.8px;
+  color: var(--gray_dark-color);
+}
+h6 {
+  font-family: var(--font-neueMontreal);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
   color: var(--gray_dark-color);
 }
 p {

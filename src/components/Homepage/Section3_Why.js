@@ -1,6 +1,11 @@
 
 import exploreIcon from '../../assets/icons/go-icon.png';
 import userIcon from '../../assets/icons/user-icon.png';
+import bookIcon from '../../assets/icons/book-icon.png';
+import usersIcon from '../../assets/icons/users_icon.png';
+import cpuIcon from '../../assets/icons/cpu-icon.png';
+import brandIcon from '../../assets/icons/medal_star-icon.png';
+
 import cardImg from '../../assets/images/cardImg.png';
 
 
@@ -18,20 +23,70 @@ const WhySection = () => {
                 </div>
             </section>
 
-            <section className="why-cards">
-                <div className="row">
-                    <div className="col-md-4 why-card">
-                        <div>
-                            <img src={cardImg} alt="img" width='341px' height='185px' className='img-fluid' />
-                        </div>
-                        <div className="card-content px-2">
-                            <div className="icon-circle">
-                                <img src={userIcon} alt="" className="img-fluid" />
+            <section className="why-cards my-5">
+                <div className="row py-4">
+                    <div className="col-md-4 col-sm-12 my-4">
+                        <div className="why-card">
+                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <div className="card-content">
+                                <div className="icon-circle">
+                                    <img src={userIcon} alt="" className="img-fluid" />
+                                </div>
+                                <h4 className='mb-0'>Mentorship & Expert Guidance</h4>
+                                <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow.</p>
                             </div>
-                            <h4 className='mb-0'>Mentorship & Expert Guidance</h4>
-                            <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow.</p>
                         </div>
                     </div>
+                    <div className="col-md-4 col-sm-12 my-4">
+                        <div className="why-card">
+                            <div className="card-content">
+                                <div className="icon-circle">
+                                    <img src={bookIcon} alt="" className="img-fluid" />
+                                </div>
+                                <h4 className='mb-0'>Hands-On, Impact-Driven Learning.</h4>
+                                <p>Every course is designed with practical applications, real-world projects, and mentor-guidance.</p>
+                            </div>
+                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                        </div>
+                    </div>
+                    <div className="col-md-4 col-sm-12 my-4">
+                        <div className="why-card">
+                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <div className="card-content">
+                                <div className="icon-circle">
+                                    <img src={usersIcon} alt="" className="img-fluid" />
+                                </div>
+                                <h4 className='mb-0'>A Thriving Community of Innovators</h4>
+                                <p>Our collaborative learning environment connects you with like-minded peers, professionals who share your vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 my-4">
+                        <div className="why-card">
+                            <div className="card-content">
+                                <div className="icon-circle">
+                                    <img src={cpuIcon} alt="" className="img-fluid" />
+                                </div>
+                                <h4 className='mb-0'>Future-Focused Curriculum.</h4>
+                                <p>Stay ahead of the curve with training in AI, Blockchain, Quantum Computing, and other emerging technologies as we prepare you to but build and innovate.</p>
+                            </div>
+                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                        </div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 my-4">
+                        <div className="why-card">
+                            <div className="card-content">
+                                <div className="icon-circle">
+                                    <img src={brandIcon} alt="" className="img-fluid" />
+                                </div>
+                                <h4 className='mb-0'>Flexible & Accessible Learning.</h4>
+                                <p>With weekly subscription plans, live training, and on-demand content that fits into your schedule—so you can learn at your own pace, without limitations.</p>
+                            </div>
+                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
         </div>
@@ -39,4 +94,4 @@ const WhySection = () => {
   )
 }
 
-export default WhySection
+export default WhySection;

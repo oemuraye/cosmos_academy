@@ -5,6 +5,7 @@ import './home.css';
 import HeroSection from '../../components/Homepage/HeroSection';
 import InfoSection from '../../components/Homepage/Section2_InfoSection';
 import WhySection from '../../components/Homepage/Section3_Why';
+import TrainersSeection from '../../components/Homepage/Section4_Trainers';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
             <HeroSection />
             <InfoSection />
             <WhySection />
+            <TrainersSeection />
         </div>
         
     </>

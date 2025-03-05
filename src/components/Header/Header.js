@@ -78,7 +78,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`navbar sticky-top px-3 py-md-4 py-sm-0 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
+    <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
           <img src={logo} alt="logo" height="57.489px" width="129px" />
