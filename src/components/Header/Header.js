@@ -55,7 +55,7 @@ const Header = () => {
   }, []);
 
   const externalLinkClick = () => {
-    window.open('https://lu.ma/6pj6tk23', '_blank');
+    window.open('', '_blank');
   };
 
   const handleScheduleScroll = (e, targetId) => {
@@ -123,7 +123,7 @@ const Header = () => {
 
         </div>
 
-        <a href='https://lu.ma/6pj6tk23' rel="noopener noreferrer"  target='_blank' className='customBtn d-none d-md-flex'> <span>Get Started</span> <img src={exploreIcon} alt="" /></a>
+        <a href='' rel="noopener noreferrer"  target='_blank' className='customBtn d-none d-md-flex'> <span>Get Started</span> <img src={exploreIcon} alt="" /></a>
       </nav>
     </header>
   )

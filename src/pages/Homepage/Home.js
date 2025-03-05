@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet-async';
 
 import './home.css';
 import HeroSection from '../../components/Homepage/HeroSection';
+import InfoSection from '../../components/Homepage/Section2_InfoSection';
+import WhySection from '../../components/Homepage/Section3_Why';
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
 
         <div className="homepage-page">
             <HeroSection />
+            <InfoSection />
+            <WhySection />
         </div>
         
     </>

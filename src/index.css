@@ -3,6 +3,10 @@
   src: url('./assets/fonts/neueMontreal/NeueMontreal-Medium.otf') format('opentype');
 }
 @font-face {
+  font-family: 'NeueMontreal_regular'; 
+  src: url('./assets/fonts/neueMontreal/NeueMontreal-Regular.otf') format('opentype');
+}
+@font-face {
   font-family: 'Cosmos';
   src: url('./assets/fonts/cosmos/Cosmos-Light.ttf') format('woff');
 }
@@ -13,6 +17,10 @@
 
 :root {
   --gray_dark-color: #101010; 
+  --white_gray-color: #EDEDED; 
+  --gray_white-color: #FDFCFD; 
+  --border_gray-color: #E2E2E2;
+
   --active_link-color: #AAC1E4;
   --dark-color: #000;
   --white-color: #fff;
@@ -20,6 +28,7 @@
   --basic-color: #BDD7FE; 
 
   --font-neueMontreal: 'NeueMontreal';
+  --font-neueMontrealRg: 'NeueMontreal_regular';
   --font-cosmos: 'Cosmos';
   --font-cosmos_medium: 'Cosmos_medium';
 }
@@ -47,8 +56,24 @@ h1 {
   line-height: 90px;
   color: var(--gray_dark-color);
 }
-p {
+h2 {
+  font-family: var(--font-cosmos);
+  font-weight: 700;
+  font-size: 70px;
+  letter-spacing: 0;
+  line-height: 61px;
+  color: var(--gray_dark-color);
+}
+h4 {
   font-family: var(--font-neueMontreal);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  color: var(--gray_dark-color);
+}
+p {
+  font-family: var(--font-neueMontrealRg);
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0;
@@ -58,6 +83,10 @@ p {
 
 
 /* Custom Buttons/Links */
+.btn-action_div {
+  display: flex;
+  justify-content: center;
+}
 .customBtn {
   display: flex;
   padding: 5px 5px;
@@ -175,10 +204,16 @@ p {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
   p {
-    /* font-size: 60px; */
+    font-size: 16px;
+    line-height: 19.2px;
   }
   .customBtn {
     /* padding: 10px 20px; */
