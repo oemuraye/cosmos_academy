@@ -7,6 +7,8 @@ import InfoSection from '../../components/Homepage/Section2_InfoSection';
 import WhySection from '../../components/Homepage/Section3_Why';
 import TrainersSeection from '../../components/Homepage/Section4_Trainers';
 import TestimonySection from '../../components/Homepage/Section5_Testimonial';
+import BrandLogos from '../../components/Homepage/Section6_BrandLogos';
+import CourseSection from '../../components/Homepage/Section6_Courses';
 
 const Home = () => {
   return (
@@ -27,6 +29,8 @@ const Home = () => {
             <WhySection />
             <TrainersSeection />
             <TestimonySection />
+            <BrandLogos />
+            <CourseSection />
         </div>
         
     </>

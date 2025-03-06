@@ -4,6 +4,7 @@ import blessingImage from "../../assets/images/blessingImage.png";
 import menaImage from "../../assets/images/menaImage.png";
 import piusImage from "../../assets/images/piusImage.png";
 
+
 const trainers = [
   {
     name: "Trust Oghale",
@@ -44,10 +45,10 @@ const TrainersSection = () => {
             real-world experience, knowledge, and a passion for guiding the next
             generation of tech leaders.
           </p>
-      </div>
+        </div>
       </div>
 
-      <div className="trainers-cards position-relative container">
+      <div className="trainers-cards container">
         {/* <div className="gradient-overlay left"></div> */}
 
         <div className="cards-display overflow-auto">

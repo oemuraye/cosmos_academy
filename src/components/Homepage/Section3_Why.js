@@ -13,7 +13,7 @@ const WhySection = () => {
   return (
     <section className='why-section padding_y-spacing container'>
         <div className="why-content">
-            <section className="why-details">
+            <section className="section_headingWithBtn why-details">
                 <h2>Why innovators choose to learn with us</h2>
                 <p className='my-3'>We equip you with the skills, knowledge, and mindset to turn your expertise into real-world impact. Our programs are designed for individuals who want to innovate, create, and drive change using technology.</p>
                 <div className="btn-action_div my-4">
