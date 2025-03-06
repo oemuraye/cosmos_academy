@@ -122,17 +122,19 @@ img.xb-border-radius {
     padding: 10px;
     /* white-space: nowrap; */
 }
-.trainers-section .section-heading {
+.section-heading {
     max-width: 837px;
 }
 
 
+.courses-display-section::-webkit-scrollbar,
 .brand-logos::-webkit-scrollbar,
 .trainers-cards::-webkit-scrollbar {
     background-color: transparent;
     border-radius: 10px;
     height: 5px;
 }
+.courses-display-section::-webkit-scrollbar-thumb,
 .brand-logos::-webkit-scrollbar-thumb,
 .trainers-cards::-webkit-scrollbar-thumb {
     background-color: transparent;
@@ -195,36 +197,69 @@ img.xb-border-radius {
 
 
 
-.courses-display {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
+.courses-display-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
   
-.course-card {
+  .courses-display {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  .course-card {
     background: #000;
     color: white;
-    border-radius: 15px;
-    overflow: hidden;
+    border-radius: 13.27px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+    width: 400px;
+    flex: 0 0 auto;
+  }
+  
+  
+  /* Pagination Indicators */
+  .pagination-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: black;
+  }
+  
   
 .course-card-image {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 283px;
 }
   
 .course-card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 13.27px;
+    border-top-right-radius: 13.27px;
 }
   
 .badge {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     background-color: var(--pink-color);
     color: var(--dark-color);
     padding: 7px 20px;
@@ -236,16 +271,20 @@ img.xb-border-radius {
   
 .course-card-body {
     padding: 20px;
+    padding-right: 30px;
 }
   
-.course-card-body h3 {
-    font-size: 18px;
-    font-weight: bold;
+.course-card-body h4 {
+    font-weight: 500;
+    color: var(--gray_white-color);
 }
   
 .course-meta {
-    font-size: 14px;
-    color: #aaa;
+    font-size: 16px;
+    color: var(--gray_white-color);
+}
+.course-meta span {
+    font-size: 13px;
 }
   
 .training-date {
@@ -265,15 +304,15 @@ img.xb-border-radius {
 .course-description {
     font-size: 16px;
     color: var(--border_gray-color);
-    font-family: var(--font-neueMontreal);
-    line-height: 100%;
+    /* font-family: var(--font-neueMontreal); */
+    /* line-height: 100%; */
 }
   
 .course-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
   
 .enrolled {
@@ -326,6 +365,45 @@ img.xb-border-radius {
   
 
 
+.pricing-section .plans-display .plan-card {
+    border-radius: 13.27px;
+    max-width: 394px;
+    margin: 0 auto;
+    width: 100%;
+}
+.pricing-section .plans-display h5 {
+    font-family: var(--font-neueMontreal);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    color: var(--gray_dark-color);
+}
+.pricing-section .plans-display li,
+.pricing-section .plans-display p {
+    font-family: var(--font-neueMontrealRg);
+    font-size: 14px;
+    color: var(--gray_dark-color);
+}
+.pricing-section .plans-display button {
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: var(--font-neueMontreal);
+    font-weight: 500;
+}
+.pricing-section .plans-display hr {
+    color: var(--gray_dark-color);
+}
+.pricing-section .plans-display .plan_long-card {
+    border-radius: 13.27px;
+    max-width: 566px;
+    margin: 0 auto;
+    width: 100%;
+    /* height: 402px; */
+}
+.pricing-section .plans-display .plan_long-card img {
+    border-bottom-left-radius: 13.27px;
+    border-bottom-right-radius: 13.27px;
+}
 
 
 
@@ -359,5 +437,8 @@ img.xb-border-radius {
     .info-section .info-tabs,
     .info-tabs .info-active {
         font-size: 12px;
+    }
+    .course-card-image {
+        height: 222px;
     }
 }

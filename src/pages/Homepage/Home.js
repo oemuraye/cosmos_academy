@@ -9,6 +9,7 @@ import TrainersSeection from '../../components/Homepage/Section4_Trainers';
 import TestimonySection from '../../components/Homepage/Section5_Testimonial';
 import BrandLogos from '../../components/Homepage/Section6_BrandLogos';
 import CourseSection from '../../components/Homepage/Section6_Courses';
+import PricingPlansSection from '../../components/Homepage/Section7_PricingPlans';
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
             <TestimonySection />
             <BrandLogos />
             <CourseSection />
+            <PricingPlansSection />
         </div>
         
     </>

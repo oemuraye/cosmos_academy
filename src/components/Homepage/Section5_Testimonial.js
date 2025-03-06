@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import ibmLogo from "../../assets/images/ibm-logo.png";
-
 import { IoMdArrowForward } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
 import { PiQuotesFill } from "react-icons/pi";
