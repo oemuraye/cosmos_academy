@@ -34,19 +34,23 @@ const trainers = [
 
 const TrainersSection = () => {
   return (
-    <section className="trainers-section padding_y-spacing container-fluid">
-      <div className="section-heading my-5">
-        <h2>Meet your trainers and start your journey</h2>
-        <p>
-          Our trainers are industry experts, innovators, and mentors dedicated
-          to helping you unlock your full potential. We bring a wealth of
-          real-world experience, knowledge, and a passion for guiding the next
-          generation of tech leaders.
-        </p>
+    <section className="trainers-section padding_y-spacing">
+      <div className="container">
+        <div className="section-heading my-5">
+          <h2>Meet your trainers and start your journey</h2>
+          <p>
+            Our trainers are industry experts, innovators, and mentors dedicated
+            to helping you unlock your full potential. We bring a wealth of
+            real-world experience, knowledge, and a passion for guiding the next
+            generation of tech leaders.
+          </p>
+      </div>
       </div>
 
-      <div className="trainers-cards">
-        <div className="cards-display">
+      <div className="trainers-cards position-relative container">
+        {/* <div className="gradient-overlay left"></div> */}
+
+        <div className="cards-display overflow-auto">
           {trainers.map((trainer, index) => (
             <div className="trainer-card my-4" key={index}>
               <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
@@ -57,7 +61,10 @@ const TrainersSection = () => {
             </div>
           ))}
         </div>
+
+        {/* <div className="gradient-overlay right"></div> */}
       </div>
+
     </section>
   );
 };

@@ -6,6 +6,7 @@ import HeroSection from '../../components/Homepage/HeroSection';
 import InfoSection from '../../components/Homepage/Section2_InfoSection';
 import WhySection from '../../components/Homepage/Section3_Why';
 import TrainersSeection from '../../components/Homepage/Section4_Trainers';
+import TestimonySection from '../../components/Homepage/Section5_Testimonial';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
             <InfoSection />
             <WhySection />
             <TrainersSeection />
+            <TestimonySection />
         </div>
         
     </>

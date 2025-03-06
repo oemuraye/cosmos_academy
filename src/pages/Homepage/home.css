@@ -116,22 +116,39 @@ img.xb-border-radius {
 }
 
 
+.trainers-cards {
+    position: relative;
+    overflow-x: auto;
+    padding: 10px;
+    /* white-space: nowrap; */
+}
 .trainers-section .section-heading {
     max-width: 837px;
 }
+.trainers-cards::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 10px;
+    height: 5px;
+}
+.trainers-cards::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+}
 .trainers-section .trainers-cards .cards-display {
     display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
     gap: 10px;
-    /* max-width: 1440px;
-    margin: 0 auto; */
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: inset 30px 0 30px -20px rgba(255, 255, 255, 1),  /* Left fade */
+                inset -30px 0 30px -20px rgba(255, 255, 255, 1); /* Right fade */
 }
-.trainers-cards .cards-display {
-    
-}
+
+
+
+
+
 .trainers-section .trainers-cards .trainer-card {
-    /* max-width: 236px; */
     width: 236px;
     background-color: var(--white-color);
     border-radius: 10px;
@@ -146,6 +163,23 @@ img.xb-border-radius {
     line-height: 19.2px;
     color: var(--card_text-color2);
     margin-bottom: 0;
+}
+
+.testimony-section {
+    max-width: 757px;
+    margin: 0 auto;
+}
+.testimony-section h5 {
+    font-family: var(--font-neueMontreal);
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 100%;
+    color: var(--gray_dark-color);
+}
+.testimony-section .author-title {
+    color: var(--card_text-color2);
+    font-size: 16px;
 }
 
 
