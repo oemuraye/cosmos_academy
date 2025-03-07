@@ -1,6 +1,8 @@
 
 import heroImage1 from '../../assets/images/hero_img1.png';
 import heroImage2 from '../../assets/images/hero_img2.png';
+import heroVideo1 from '../../assets/videos/heroVideo1.mp4';
+import heroVideo2 from '../../assets/videos/heroVideo2.mp4';
 import exploreIcon from '../../assets/icons/go-icon.png';
 
 const HeroSection = () => {
@@ -9,9 +11,13 @@ const HeroSection = () => {
         <div className="container-fluid animated-background ">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-3 col-sm-12 order-md-1 order-2 my-3">
+                    <div className="col-md-3 col-sm-12 order-md-1 order-2 my-3 pt-5">
                         <div className="position-relative d-flex justify-content-center pt-0 pt-md-5">
-                            <img src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" />
+                            {/* <img src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" /> */}
+                            <video className="img-fluid " style={{ height: "320px", objectFit: "cover", borderRadius: '15px' }} autoPlay loop muted playsInline>
+                                <source src={heroVideo1} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     

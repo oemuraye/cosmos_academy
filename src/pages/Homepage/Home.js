@@ -5,11 +5,13 @@ import './home.css';
 import HeroSection from '../../components/Homepage/HeroSection';
 import InfoSection from '../../components/Homepage/Section2_InfoSection';
 import WhySection from '../../components/Homepage/Section3_Why';
-import TrainersSeection from '../../components/Homepage/Section4_Trainers';
+import TrainersSection from '../../components/Homepage/Section4_Trainers';
 import TestimonySection from '../../components/Homepage/Section5_Testimonial';
 import BrandLogos from '../../components/Homepage/Section6_BrandLogos';
 import CourseSection from '../../components/Homepage/Section6_Courses';
 import PricingPlansSection from '../../components/Homepage/Section7_PricingPlans';
+import BlogSection from '../../components/Homepage/Section8_Blog';
+import FaqSection from '../../components/Homepage/Section9_Faq';
 
 const Home = () => {
   return (
@@ -28,11 +30,13 @@ const Home = () => {
             <HeroSection />
             <InfoSection />
             <WhySection />
-            <TrainersSeection />
+            <TrainersSection />
             <TestimonySection />
             <BrandLogos />
             <CourseSection />
             <PricingPlansSection />
+            <BlogSection />
+            <FaqSection />
         </div>
         
     </>

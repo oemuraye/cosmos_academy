@@ -25,6 +25,10 @@
     font-family: var(--font-neueMontreal);
 }
 
+.hero-section video {
+    /* height: 320px; */
+}
+
 .info-section .info-details {
     background-color: var(--gray_white-color);
     border-radius: 20px;
@@ -374,7 +378,7 @@ img.xb-border-radius {
 .pricing-section .plans-display h5 {
     font-family: var(--font-neueMontreal);
     font-weight: 500;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 100%;
     color: var(--gray_dark-color);
 }
@@ -408,8 +412,73 @@ img.xb-border-radius {
 
 
 
+.blog-section .blog-cards .blog-card {
+    max-width: 341px;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+.blog-section h2 {
+    font-size: 40px;
+    line-height: 100%;
+}
+.blog-section .heading-link {
+    font-family: var(--font-neueMontrealRg);
+    font-weight: 500;
+    font-size: 18px;
+}
+.blog-cards .blog-card h4 {
+    font-size: 22px;
+    line-height: 100%;
+}
 
 
+.faq-section .section-heading {
+    max-width: 767px;
+    margin: 0 auto;
+}
+.faq-section .section-heading h2 {
+    font-size: 50px;
+}
+.faq-section .section-heading p {
+    font-size: 24px;
+    line-height: 100%;
+}
+.faq-section .faq-container {
+    max-width: 839px;
+    margin: 0 auto;
+}
+.faq-section .faq-container .faq-item {
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.faq-container .faq-question .faq-icon {
+    border: 1.5px solid #000;
+    height: 41px;
+    width: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20.5px;
+}
+.faq-container .faq-question {
+    font-family: var(--font-neueMontreal);
+    font-weight: 400;
+    font-size: 24px;
+}
+.faq-answer {
+    min-height: 0;
+    overflow: hidden;
+    transition: min-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+.faq-answer.open {
+    min-height: 10px; 
+    opacity: 1;
+    display: block;
+}
 
 
 
