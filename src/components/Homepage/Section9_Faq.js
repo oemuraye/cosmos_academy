@@ -28,7 +28,7 @@ const FaqSection = () => {
                         onClick={() => toggleAccordion(index)}
                         >
                         <p className="mb-0">{faq.question}</p>
-                        <span className='faq-icon'>{activeIndex === index ? <FaMinus /> : <FaPlus />}</span>
+                        <span className='faq-icon'>{activeIndex === index ? <FaMinus size={16} /> : <FaPlus size={16} />}</span>
                     </button>
 
                     <div className={`faq-answer px-3 pt-3 ${activeIndex === index ? "open" : "closed"}`}>

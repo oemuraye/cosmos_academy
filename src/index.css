@@ -36,7 +36,7 @@
   --font-cosmos_medium: 'Cosmos_medium';
 }
 body {
-  background-color: var(--gray_white-color);
+  background-color: #F3F3F3;
 }
 
 ul {

@@ -9,7 +9,7 @@ const pricingPlans = [
       description:
         "Perfect for learners seeking flexibility without long-term commitments.",
       features: [
-        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you learn." },
+        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you </br> learn." },
         { label: "Access to Live Classes", detail: "Engage with instructors in real-time." },
         { label: "Flexible Scheduling", detail: "Learn at your pace, on your terms." },
       ],
