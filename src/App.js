@@ -1,8 +1,11 @@
 import { Helmet } from 'react-helmet-async';
-import Header from './components/Header/Header';
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Homepage/Home';
+
+
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import Home from './pages/Homepage/Home';
+import Programs from './pages/Programs/Programs';
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/programs" element={<Programs />} />
         </Routes>
       </main>
       <Footer />

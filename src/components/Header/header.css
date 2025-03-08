@@ -56,12 +56,12 @@
     width: 100%;
 } */
 
-.nav-link.active,
+/* .nav-link.active,
 .nav-link:hover {
     background-color: var(--active_link-color) !important;
     padding: 5px 3px;
     border-radius: 30px;
-}
+} */
   
 .navbar-expand-md .navbar-collapse {
     flex-grow: 0;
