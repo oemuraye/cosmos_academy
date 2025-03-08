@@ -9,7 +9,7 @@ const pricingPlans = [
       description:
         "Perfect for learners seeking flexibility without long-term commitments.",
       features: [
-        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you </br> learn." },
+        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you </br> learn.  " },
         { label: "Access to Live Classes", detail: "Engage with instructors in real-time." },
         { label: "Flexible Scheduling", detail: "Learn at your pace, on your terms." },
       ],
@@ -76,7 +76,7 @@ const PricingPlansSection = () => {
                             <ul className="list-unstyled">
                                 {plan.features.map((feature, i) => (
                                     <li key={i} className='my-1'>
-                                        <strong>{feature.label}:</strong> {feature.detail}
+                                        <strong>{feature.label}:</strong> <span dangerouslySetInnerHTML={{ __html: feature.detail}}></span>
                                     </li>
                                 ))}
                             </ul>

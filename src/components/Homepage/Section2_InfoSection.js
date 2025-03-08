@@ -18,11 +18,11 @@ const InfoSection = () => {
               <div className="info-details container my-5 p-4 py-5">
                   {/* Tabs */}
                   <div className="tabs-section">
-                      <div className="info-tabs d-flex align-items-center gap-4 mb-3">
-                          <span role='button' className={`${activeTab === "live" ? "info-active" : ""}`} onClick={() => setActiveTab("live")} >
+                      <div className="custom-tabs d-flex align-items-center gap-4 mb-3">
+                          <span role='button' className={`${activeTab === "live" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("live")} >
                               🔴 Live Training
                           </span>
-                          <span role='button' className={`${activeTab === "on-demand" ? "info-active" : ""}`} onClick={() => setActiveTab("on-demand")} >
+                          <span role='button' className={`${activeTab === "on-demand" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("on-demand")} >
                               ▶ On Demand Training
                           </span>
                       </div>
