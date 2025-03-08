@@ -191,7 +191,13 @@ img.xb-border-radius {
     overflow: hidden;
   }
   
-  .courses-display {
+  /* .courses-display {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  } */
+.course-section .courses-display {
     display: flex;
     gap: 20px;
     overflow-x: auto;
@@ -199,14 +205,14 @@ img.xb-border-radius {
     scrollbar-width: none;
   }
   
-  .course-card {
+.course-card {
     background: #000;
     color: white;
     border-radius: 13.27px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 400px;
     flex: 0 0 auto;
-  }
+}
   
   
   /* Pagination Indicators */
@@ -493,6 +499,19 @@ img.xb-border-radius {
     color: var(--card_text-color);
 }
 
+.programs-section .courses-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-y: auto;
+    height: 1015px;
+    justify-content: space-between;
+}
+.programs-section .courses-display .course-card {
+    height: 686px;
+}
 .programs-section .courses-display .badge {
     top: 20px;
     left: 20px;

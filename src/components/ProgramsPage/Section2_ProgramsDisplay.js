@@ -56,7 +56,7 @@ const courses = [
       enrolled: "0",
       image: courseImage,
       pricing: "coming_soon",
-      category: "Mobile Development",
+      category: "Web Development",
     },
     {
       id: 4,
@@ -95,11 +95,10 @@ const ProgramsDisplay = () => {
   const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
 
   const filteredCourses = courses.filter(course => course.category === activeTabName);
-  console.log(filteredCourses);
   
 
   return (
-    <section className="programs-section px-4 py-5">
+    <section className="programs-section container px-4 py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="fw-bold">Explore Programs</h4>
         <div className="d-flex gap-3 align-items-center">
@@ -138,7 +137,7 @@ const ProgramsDisplay = () => {
       </div>
 
       {/* Courses Display */}
-      <div className="courses-display my-5 container">
+      <div className="courses-display my-5">
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
             <div key={course.id} className="course-card">
