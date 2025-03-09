@@ -27,7 +27,7 @@ const courses = [
       title: "Introduction to Website </br> Development",
       instructor: "Cosmos",
       duration: "3 Weeks",
-      startDate: "March 17, 2025",
+      startDate: "Mar 17, 2025",
       description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
       enrolled: "1k",
       image: courseImage,
@@ -98,7 +98,7 @@ const ProgramsDisplay = () => {
   
 
   return (
-    <section className="programs-section container px-4 py-5">
+    <section className="programs-section container padding_y-spacing px-4 py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="fw-bold">Explore Programs</h4>
         <div className="d-flex gap-3 align-items-center">
@@ -137,53 +137,55 @@ const ProgramsDisplay = () => {
       </div>
 
       {/* Courses Display */}
-      <div className="courses-display my-5">
+      <div className="courses-display row my-5">
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
-            <div key={course.id} className="course-card">
+            <div key={course.id} className="col-md-4 col-sm-12 my-3 ">
+              <div className="course-card">
 
-                <div className="course-card-image">
-                    <img src={course.image} alt={course.title} height='283px' />
-                    {course.pricing === "free" && 
-                        <span className="badge d-flex gap-2 align-items-center"> 
-                            <img src={recordIcon} alt="icon" width='14px' height='14px' /> Free
-                        </span>
-                    }
-                    {course.pricing === "coming_soon" && <span className="badge">Coming Soon</span>}
-                    {course.pricing !== "free" && course.pricing !== "coming_soon" && (
-                        <span className="badge">{course.pricing}</span>
-                    )}
-                </div>
+                  <div className="course-card-image">
+                      <img src={course.image} alt={course.title} height='283px' />
+                      {course.pricing === "free" && 
+                          <span className="badge d-flex gap-2 align-items-center"> 
+                              <img src={recordIcon} alt="icon" width='14px' height='14px' /> Free
+                          </span>
+                      }
+                      {course.pricing === "coming_soon" && <span className="badge">Coming Soon</span>}
+                      {course.pricing !== "free" && course.pricing !== "coming_soon" && (
+                          <span className="badge">{course.pricing}</span>
+                      )}
+                  </div>
 
-                <div className="course-card-body mt-3">
-                    <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
-                    <p className="course-meta"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
-                    
-                    <hr />
-                    <div className={`training-date ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
-                        <span>Next training &nbsp; 
-                            <strong>
-                            {course.startDate === "Coming Soon" ? "Coming Soon"
-                                : new Date(course.startDate).toLocaleString("default", { month: "long", day: "numeric", year: "numeric",
-                            })}
-                            </strong>
-                        </span>
-                    </div>
-                    <p className="course-description my-4">{course.description}</p>
-                    <hr />
+                  <div className="course-card-body mt-3">
+                      <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
+                      <p className="course-meta"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
+                      
+                      <hr />
+                      <div className={`training-date ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
+                          <span>Next training &nbsp; 
+                              <strong>
+                              {course.startDate === "Coming Soon" ? "Coming Soon"
+                                  : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
+                              }
+                              </strong>
+                          </span>
+                      </div>
+                      <p className="course-description my-4">{course.description}</p>
+                      <hr />
 
-                    <div className="course-footer">
-                    <div className="enrolled">
-                        <div className="studentImages">
-                        {userEnrolledImages.map((userEnrolled, index) => (
-                            <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
-                        ))}
+                      <div className="course-footer">
+                        <div className="enrolled">
+                            <div className="studentImages">
+                              {userEnrolledImages.map((userEnrolled, index) => (
+                                  <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
+                              ))}
+                            </div>
+                            <span>{course.enrolled} enrolled</span>
                         </div>
-                        <span>{course.enrolled} enrolled</span>
+                        <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                        </div>
                     </div>
-                    <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
-                    </div>
-                </div>
+              </div>
             </div>
           ))
         ) : (

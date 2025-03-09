@@ -152,7 +152,7 @@ const CourseSection = () => {
                                 
                                 <hr />
                                     <div className={`training-date ${course.free ? 'free' : ''}`}>
-                                        <span>Next training <strong>{new Date(course.startDate).toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric' })}</strong></span>
+                                        <span>Next training <strong>{new Date(course.startDate).toLocaleString('default', { month: 'short', day: 'numeric', year: 'numeric' })}</strong></span>
                                     </div>
                                     <p className="course-description my-4">{course.description}</p>
                                 <hr />

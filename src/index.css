@@ -22,11 +22,13 @@
   --border_gray-color: #E2E2E2;
   --card_text-color: #3C3C3C;
   --card_text-color2: #B0B0B0;
+  --card_date-BgColor2: #90B8F3;
 
   --active_link-color: #AAC1E4;
   --dark-color: #000;
   --white-color: #fff;
   --pink-color: #FFC3FF;
+  --lightGreen-color: #C7F16C;
 
   --basic-color: #BDD7FE; 
 
@@ -242,6 +244,10 @@ p {
   h2 {
     font-size: 30px;
     line-height: 30px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 100%;
   }
   p {
     font-size: 16px;
