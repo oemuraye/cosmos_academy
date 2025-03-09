@@ -15,7 +15,7 @@ const JoinUsAdSection = () => {
       {/* Join Us Button */}
       <div className="btn-action_div my-5">
         <Link className="customBtn">
-            <span>Explore Courses</span> <img src={exploreIcon} alt="icon" />
+            <span>Join Us</span> <img src={exploreIcon} alt="icon" />
         </Link>
       </div>
     </section>
