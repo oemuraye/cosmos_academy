@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Homepage/Home';
 import Programs from './pages/Programs/Programs';
 import Resources from './pages/Resources/Resources';
+import Business from './pages/Business/Business';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/business" element={<Business />} />
         </Routes>
       </main>
       <Footer />
