@@ -12,7 +12,6 @@ const JoinUsAdSection = () => {
         and start <span className="fw-bold fst-italic">building your future!</span>
       </h2>
 
-      {/* Join Us Button */}
       <div className="btn-action_div my-5">
         <Link className="customBtn">
             <span>Join Us</span> <img src={exploreIcon} alt="icon" />

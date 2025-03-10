@@ -7,15 +7,7 @@
     border-radius: 50px;
     background-color: var(--white_gray-color);
 }
-.programs-section .nav-btn {
-    height: 37.94px;
-    width: 37.94px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background-color: var(--gray_dark-color);
-}
+
 .programs-section .tab-description .tab-heading {
     max-width: 814px;
     margin: auto; 

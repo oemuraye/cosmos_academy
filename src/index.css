@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 @font-face {
   font-family: 'NeueMontreal'; 
   src: url('./assets/fonts/neueMontreal/NeueMontreal-Medium.otf') format('opentype');
@@ -36,6 +37,7 @@
   --font-neueMontrealRg: 'NeueMontreal_regular';
   --font-cosmos: 'Cosmos';
   --font-cosmos_medium: 'Cosmos_medium';
+  --font-nothingYouCouldDo: 'Nothing You Could Do', cursive;
 }
 body {
   background-color: #F3F3F3;
@@ -141,6 +143,15 @@ p {
   border-radius: 30px;
   background-color: var(--white-color);
   font-size: 16px;
+}
+.nav-btn {
+  height: 37.94px;
+  width: 37.94px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--gray_dark-color);
 }
 
 
