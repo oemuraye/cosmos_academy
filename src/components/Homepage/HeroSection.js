@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="container-fluid animated-background ">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md-3 col-sm-6 order-md-1 order-2 my-3 pt-5">
+                    <div className="col-6 col-md-3 col-sm-6 order-md-1 order-2 my-3 pt-0 pt-md-5">
                         <div className="position-relative d-flex justify-content-center pt-0 pt-md-5">
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
                                 <img src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" />
@@ -38,7 +38,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                     
-                    <div className="col-md-3 col-sm-6 order-md-3 order-3 my-3">
+                    <div className="col-6 col-md-3 col-sm-6 order-md-3 order-3 my-3">
                         <div className="position-relative d-flex justify-content-center pb-0 pb-md-5">
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
                                 <img src={heroImage2} alt="Community member" className="img-fluid" />
