@@ -53,7 +53,10 @@
     line-height: 28.8px;
     font-family: var(--font-neueMontrealRg);
 }
-
+.why-section {
+    max-width: 1085px;
+    margin: 0 auto;
+}
 .why-section .why-cards .why-card {
     background-color: var(--white-color);
     border-radius: 15px;
@@ -111,7 +114,7 @@ img.xb-border-radius {
     /* white-space: nowrap; */
 }
 .section-heading {
-    max-width: 837px;
+    max-width: 781px;
 }
 
 
@@ -159,7 +162,7 @@ img.xb-border-radius {
 }
 
 .testimony-section {
-    max-width: 757px;
+    max-width: 757px !important;
     margin: 0 auto;
 }
 .testimony-section h5 {
@@ -203,7 +206,7 @@ img.xb-border-radius {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-  }
+}
   
 .course-card {
     background: #000;
@@ -542,5 +545,8 @@ img.xb-border-radius {
     }
     .learn-more {
         font-size: 14px;
+    }
+    .faq-section .section-heading h2 {
+        font-size: 35px;
     }
 }

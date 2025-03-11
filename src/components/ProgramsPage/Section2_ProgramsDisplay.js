@@ -162,11 +162,12 @@ const ProgramsDisplay = () => {
                       
                       <hr />
                       <div className={`training-date ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
-                          <span>Next training &nbsp; 
+                          <span>
+                            <span className="me-1">Next training</span> 
                               <strong>
-                              {course.startDate === "Coming Soon" ? "Coming Soon"
-                                  : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
-                              }
+                                {course.startDate === "Coming Soon" ? "Coming Soon"
+                                    : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
+                                }
                               </strong>
                           </span>
                       </div>
