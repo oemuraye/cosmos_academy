@@ -5,7 +5,7 @@ import heroVideo from '../../assets/videos/businessVideo.mp4';
 const HeroSection = () => {
   return (
     <section className="hero-section">
-        <div className="container-fluid animated-background">
+        <div className="container-fluid">
             <div className="container">
                 <div className="row align-items-center">
                     

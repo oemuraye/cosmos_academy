@@ -8,6 +8,7 @@ import Home from './pages/Homepage/Home';
 import Programs from './pages/Programs/Programs';
 import Resources from './pages/Resources/Resources';
 import Business from './pages/Business/Business';
+import Pricing from './pages/Pricing/Pricing';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </main>
       <Footer />

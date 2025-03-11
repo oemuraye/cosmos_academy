@@ -1,3 +1,6 @@
+.programs-page .hero-section .container-fluid {
+    background-color: var(--businessHeroSection_BgColor);
+}
 .stats-section .stats-card h1 {
     font-family: var(--font-neueMontreal);
 }
