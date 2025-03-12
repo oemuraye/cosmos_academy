@@ -1,0 +1,7 @@
+/* .pricing-page .hero-section {
+    background-color: var();
+} */
+.pricing-page .hero-section .hero-content {
+    max-width: 1094px;
+    margin: 0 auto;
+}

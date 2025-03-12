@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const JoinUsAdSection = () => {
   return (
-    <section className="joinUsAd_section container my-5 text-center">
+    <section className="joinUsAd_section padding_y-spacing my-5 text-center">
       {/* Heading */}
       <h2 className="joinUs_text">
         Ready to turn your <span className="fw-bold fst-italic">skills into impact?</span> Enrol in a program today

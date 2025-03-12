@@ -1,4 +1,6 @@
-
+.programs-page .hero-section .container-fluid {
+    background-color: var(--programsHeroSection_BgColor);
+}
 .programs-section .tabs-section {
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -191,7 +193,10 @@
     font-family: var(--font-neueMontrealRd);
 }
 
-
+.joinUsAd_section {
+    max-width: 1051px;
+    margin: 0 auto;
+}
 .joinUsAd_section .joinUs_text {
     font-family: var(--font-neueMontreal);
     font-weight: 500;

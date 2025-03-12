@@ -23,6 +23,7 @@ const courses = [
       description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
       enrolled: "1k",
       image: courseImage,
+      pricing: "free",
       free: true
     },
     {
@@ -34,6 +35,7 @@ const courses = [
       description: "Gain a solid foundation in AI and machine learning. Learn data analysis, model building with Python.",
       enrolled: "0",
       image: courseImage,
+      pricing: "March 25, 2025",
       free: false
     },
     {
@@ -45,6 +47,7 @@ const courses = [
         description: "Build scalable full-stack applications using Node.js, Express, MongoDB, and React.",
         enrolled: "0",
         image: courseImage,
+        pricing: "₦70,000",
         free: false,
     },
     {
@@ -56,6 +59,7 @@ const courses = [
         description: "Build scalable full-stack applications using Node.js, Express, MongoDB, and React.",
         enrolled: "0",
         image: courseImage,
+        pricing: "coming_soon",
         free: false,
     },
     // Add more courses here
@@ -152,7 +156,14 @@ const CourseSection = () => {
                                 
                                 <hr />
                                     <div className={`training-date ${course.free ? 'free' : ''}`}>
-                                        <span>Next training <strong>{new Date(course.startDate).toLocaleString('default', { month: 'short', day: 'numeric', year: 'numeric' })}</strong></span>
+                                        <span>
+                                            <span className="me-1">Next training</span> 
+                                            <strong>
+                                            {course.startDate === "Coming Soon" ? "Coming Soon"
+                                                : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
+                                            }
+                                            </strong>
+                                        </span>
                                     </div>
                                     <p className="course-description my-4">{course.description}</p>
                                 <hr />

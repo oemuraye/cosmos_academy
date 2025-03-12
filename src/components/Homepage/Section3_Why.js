@@ -7,11 +7,16 @@ import cpuIcon from '../../assets/icons/cpu-icon.png';
 import brandIcon from '../../assets/icons/medal_star-icon.png';
 
 import cardImg from '../../assets/images/cardImg.png';
+import showcaseImg1 from '../../assets/images/showcase-img1.png';
+import showcaseImg2 from '../../assets/images/showcase-img2.png';
+import showcaseImg3 from '../../assets/images/showcase-img7.png';
+import showcaseImg4 from '../../assets/images/showcase-img8.png';
+import showcaseImg5 from '../../assets/images/showcase-img9.png';
 
 
 const WhySection = () => {
   return (
-    <section className='why-section padding_y-spacing container'>
+    <section className='why-section padding_y-spacing'>
         <div className="why-content">
             <section className="section_headingWithBtn why-details">
                 <h2>Why innovators choose to learn with us</h2>
@@ -27,7 +32,7 @@ const WhySection = () => {
                 <div className="row py-4">
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">
-                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <img src={showcaseImg1} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 <div className="icon-circle">
                                     <img src={userIcon} alt="" className="img-fluid" />
@@ -46,12 +51,12 @@ const WhySection = () => {
                                 <h4 className='mb-0'>Hands-On, Impact-Driven Learning.</h4>
                                 <p>Every course is designed with practical applications, real-world projects, and mentor-guidance.</p>
                             </div>
-                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                            <img src={showcaseImg2} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">
-                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <img src={showcaseImg3} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 <div className="icon-circle">
                                     <img src={usersIcon} alt="" className="img-fluid" />
@@ -70,7 +75,7 @@ const WhySection = () => {
                                 <h4 className='mb-0'>Future-Focused Curriculum.</h4>
                                 <p>Stay ahead of the curve with training in AI, Blockchain, Quantum Computing, and other emerging technologies as we prepare you to but build and innovate.</p>
                             </div>
-                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                            <img src={showcaseImg4} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
                         </div>
                     </div>
                     <div className="col-md-6 col-sm-12 my-4">
@@ -82,7 +87,7 @@ const WhySection = () => {
                                 <h4 className='mb-0'>Flexible & Accessible Learning.</h4>
                                 <p>With weekly subscription plans, live training, and on-demand content that fits into your schedule—so you can learn at your own pace, without limitations.</p>
                             </div>
-                            <img src={cardImg} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                            <img src={showcaseImg5} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
                         </div>
                     </div>
 

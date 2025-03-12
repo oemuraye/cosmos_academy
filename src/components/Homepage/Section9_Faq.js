@@ -17,7 +17,7 @@ const FaqSection = () => {
   return (
     <section className='faq-section container my-5 padding_y-spacing'>
         <div className="section-heading text-center">
-            <h2>Frequently Asked Questions</h2>
+            <h2 className='mb-3'>Frequently Asked Questions</h2>
             <p>Got questions? We've got answers! Learn more about our courses, pricing, mentorship, and how Cosmos Academy helps you build skills for impact. If you need further assistance, feel free to reach out.</p>
         </div>
 
