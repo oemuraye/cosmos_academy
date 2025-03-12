@@ -8,6 +8,7 @@ import Home from './pages/Homepage/Home';
 import Programs from './pages/Programs/Programs';
 import Resources from './pages/Resources/Resources';
 import Business from './pages/Business/Business';
+import About from './pages/About/About';
 import Pricing from './pages/Pricing/Pricing';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </main>

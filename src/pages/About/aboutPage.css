@@ -1,0 +1,19 @@
+.hero-section.about-hero .container-fluid {
+    background-color: #C7F16C;
+}
+.our-values-header{
+    color: var(--gray_dark-color, #101010);
+    font-family: var(--font-neueMontreal);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+@media screen and (max-width: 767px) {
+    .our-values-header{
+        font-size: 30px;
+    }
+    
+}
