@@ -10,6 +10,7 @@ import Resources from './pages/Resources/Resources';
 import Business from './pages/Business/Business';
 import About from './pages/About/About';
 import Pricing from './pages/Pricing/Pricing';
+import CourseContent from './pages/CourseContent';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/business" element={<Business />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/course/:courseID" element={<CourseContent/>} />
         </Routes>
       </main>
       <Footer />
