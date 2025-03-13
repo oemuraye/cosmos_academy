@@ -28,7 +28,7 @@ const WhySection = () => {
                 </div>
             </section>
 
-            <section className="why-cards my-5">
+            <section className="why-cards container my-5">
                 <div className="row py-4">
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">

@@ -8,12 +8,174 @@ import exploreIcon from '../../assets/icons/go-icon.png';
 
 import './header.css';
 
+
+const dropdownContent = {
+  Programs: (
+    <div className="dropdown_menu program-menu">
+      <div className="dropdown-grid">
+        <section className='col-4 pt-1 pe-5 border_end first'>
+          <div>
+            <h4>Product Design</h4>
+            <p>Mobil App Dev</p>
+          </div>
+          <div>
+            <h4>Mobil App Dev</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Brand Design</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+
+        <section className='col-4 pt-1 pe-5 border_end second'>
+          <div>
+            <h4>Social Media Mangament</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>AR & VR Dev</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Digital Information</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+
+        <section className='col-4 pt-1'>
+          <div>
+            <h4>Website Development</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Artificial Intelligence</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Embedded Systems and IOT</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  ),
+  Resources: (
+    <div className="dropdown_menu resource-menu">
+      <div className="dropdown-grid">
+        <section className='col-4 pt-1 pe-5 border_end first'>
+            <div>
+              <h4>Blogs</h4>
+              <p>Product Design</p>
+            </div>
+            <div>
+              <h4>Mobil App Dev</h4>
+              <p>Product Design</p>
+            </div>
+        </section>
+        <section className='col-4 pt-1 pe-3'>
+            <div>
+              <h4>Cosmos Explorer</h4>
+              <p>Product Design</p>
+            </div>
+        </section>
+      </div>
+    </div>
+  ),
+  About: (
+    <div className="dropdown_menu about-menu">
+      <div className="dropdown-grid">
+        <section className='col-4 pt-1 pe-5 border_end first'>
+          <div>
+            <h4>About Us</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Why Cosmos Conference</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+
+        <section className='col-4 pt-1 pe-3'>
+          <div>
+            <h4>FAQ</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  ),
+  Business: (
+    <div className="dropdown_menu buiness-menu">
+      <div className="dropdown-grid">
+        <section className='col-4 pt-1 pe-2'>
+          <div>
+            <h4>For Companies </h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  ),
+  Partner: (
+    <div className="dropdown_menu partner-menu">
+      <div className="dropdown-grid">
+      <section className='col-4 pt-1 pe-5 border_end first'>
+          <div>
+            <h4>Donate to affiliate</h4>
+            <p>Product Design</p>
+          </div>
+          <div>
+            <h4>Donate to Memitech</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+
+        <section className='col-4 pt-1 pe-3'>
+          <div>
+            <h4>Donate to Cosmos</h4>
+            <p>Product Design</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  ),
+};
+
+
+const menuItems = [
+  { name: "Programs", path: "programs" },
+  { name: "Resources", path: "resources" },
+  { name: "For Business", path: "business" }, 
+  { name: "About", path: "about" },
+  { name: "Partner", path: "partner" },
+  { name: "Schedule", path: "schedule" },
+];
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuAnimating, setMenuAnimating] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const handleMouseEnter = (item) => {
+    if (window.innerWidth > 767) {
+      setActiveDropdown(item);
+    }
+  };
+  
+  const handleMouseLeave = () => {
+    if (window.innerWidth > 767) {
+      setActiveDropdown(null);
+    }
+  };
+
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -95,28 +257,21 @@ const Header = () => {
         </div>
 
         <div className={`collapse navbar-collapse ${menuOpen ? 'show' : ''} ${menuAnimating ? 'hide' : ''}`} id="navbarSupportedContent">
-          <ul className="navbar-nav gap-2 mx-2 mb-2 mb-lg-0">
+          <ul className="navbar-nav gap-2 mx-1 mb-2 mb-lg-0">
             <li className="nav-item">
               <Link to="/" className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page">Home</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/programs" className={`nav-link ${location.pathname === "/programs" ? "active" : ""}`}>Programs</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/resources" className={`nav-link ${location.pathname === "/resources" ? "active" : ""}`}>Resources</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/business" className={`nav-link ${location.pathname === "/business" ? "active" : ""}`}>For Business</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className={`nav-link ${location.pathname === "/about" ? "active" : ""}`}>About</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/partner" className={`nav-link ${location.pathname === "/partner" ? "active" : ""}`}>Partner</Link>
-            </li>
-            <li className="nav-item">
-              <Link onClick={(e) => handleScheduleScroll(e, 'schedule-section')} className={`nav-link ${location.pathname === "/schedule" ? "active" : ""}`}>Schedule</Link>
-            </li>
+            {menuItems.map(({ name, path }) => (
+              <li 
+                key={path} 
+                className="nav-item dropdown-container"
+                onMouseEnter={() => handleMouseEnter(name)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Link to={`/${path.toLowerCase()}`} className="nav-link">{name}</Link>
+                {activeDropdown === name && dropdownContent[name] && dropdownContent[name]}
+              </li>
+            ))}
             
             <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <img src={exploreIcon} alt="" /></span>
           </ul>

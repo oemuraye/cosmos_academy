@@ -34,6 +34,7 @@ const trainers = [
 ];
 
 const TrainersSection = () => {
+  
   return (
     <section className="trainers-section padding_y-spacing">
       <div className="container">
@@ -49,7 +50,6 @@ const TrainersSection = () => {
       </div>
 
       <div className="trainers-cards container">
-        {/* <div className="gradient-overlay left"></div> */}
 
         <div className="cards-display">
           {trainers.map((trainer, index) => (
@@ -63,7 +63,6 @@ const TrainersSection = () => {
           ))}
         </div>
 
-        {/* <div className="gradient-overlay right"></div> */}
       </div>
 
     </section>

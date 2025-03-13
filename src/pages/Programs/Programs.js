@@ -6,16 +6,22 @@ import ImpactAdSection from '../../components/ProgramsPage/Section4_Impact';
 
 import './programPage.css';
 import JoinUsAdSection from '../../components/ProgramsPage/Section5_JoinUsAd';
+import { Helmet } from 'react-helmet-async';
 
 const Programs = () => {
   return (
-    <section className='programs-page'>
-        <HeroSection />
-        <ProgramsDisplay />
-        <UpcomingSection />
-        <ImpactAdSection />
-        <JoinUsAdSection />
-    </section>
+    <>
+      <Helmet>
+          <title>Programs - Cosmos Academy</title>
+      </Helmet>
+      <section className='programs-page'>
+          <HeroSection />
+          <ProgramsDisplay />
+          <UpcomingSection />
+          <ImpactAdSection />
+          <JoinUsAdSection />
+      </section>
+    </>
   )
 }
 
