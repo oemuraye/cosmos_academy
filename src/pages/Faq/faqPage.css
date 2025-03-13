@@ -1,0 +1,9 @@
+.faq-page .faq-title {
+    font-size: 50px;
+}
+
+@media (max-width: 767px) {
+    .faq-page .faq-title {
+        font-size: 24px;
+    }   
+}

@@ -8,6 +8,7 @@ import Details from '../../components/CourseContent/Details';
 import Content from '../../components/CourseContent/Content';
 import PricingPlans from '../../components/CourseContent/PricingPlans';
 import Instructor from '../../components/CourseContent/Instructor';
+import { Helmet } from 'react-helmet-async';
 
 
 const CourseContentPage = () => {
@@ -40,14 +41,19 @@ const CourseContentPage = () => {
     return <Navigate to="/" />;
   }
   return (
-    <section className="pb-5 course-content">
-      <HeroSection course={course} />
-      <Overview course={course} />
-      <Details course={course} />
-      <Content course={course} />
-      <Instructor course={course} />
-      <PricingPlans/>
-    </section>
+    <>
+      <Helmet>
+          <title>Course Content - Cosmos Academy</title>
+      </Helmet>
+      <main className="pb-5 course-content">
+        <HeroSection course={course} />
+        <Overview course={course} />
+        <Details course={course} />
+        <Content course={course} />
+        <Instructor course={course} />
+        <PricingPlans/>
+      </main>
+    </>
   );
 }
 export default CourseContentPage;

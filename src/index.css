@@ -37,6 +37,7 @@
   --aboutHeroSection_BgColor: #C7F16C;
 
   --basic-color: #BDD7FE; 
+  --basic-BgColor: #F3F3F3; 
 
   --font-neueMontreal: 'NeueMontreal';
   --font-neueMontrealRg: 'NeueMontreal_regular';
@@ -45,7 +46,7 @@
   --font-nothingYouCouldDo: 'Nothing You Could Do', cursive;
 }
 body {
-  background-color: #F3F3F3;
+  background-color: var(--basic-BgColor);
 }
 
 ul {

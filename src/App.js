@@ -11,6 +11,8 @@ import Business from './pages/Business/Business';
 import About from './pages/About/About';
 import Pricing from './pages/Pricing/Pricing';
 import CourseContent from './pages/CourseContent';
+import BlogPost from './pages/BlogPost/BlogPost';
+import FaqPage from './pages/Faq/Faq';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/course/:courseID" element={<CourseContent/>} />
+          <Route path="/blog-post/:postID" element={<BlogPost/>} />
+          <Route path="/faq" element={<FaqPage/>} />
         </Routes>
       </main>
       <Footer />
