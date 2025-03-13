@@ -33,6 +33,7 @@ const courses = [
       image: courseImage,
       pricing: "free",
       category: "Web Development",
+      slug: 'introduction-to-web-dev'
     },
     {
       id: 2,
@@ -45,6 +46,7 @@ const courses = [
       image: courseImage,
       pricing: "coming_soon",
       category: "Artificial Intelligence",
+      slug: 'introduction-to-artificial-intelligence'
     },
     {
       id: 3,
@@ -57,6 +59,7 @@ const courses = [
       image: courseImage,
       pricing: "coming_soon",
       category: "Web Development",
+      slug: 'introduction-to-mobile-development'
     },
     {
       id: 4,
@@ -69,6 +72,7 @@ const courses = [
       image: courseImage,
       pricing: "₦70,000",
       category: "Web Development",
+      slug: 'advanced-javascript-mastery'
     },
 ];
 
@@ -183,7 +187,8 @@ const ProgramsDisplay = () => {
                             </div>
                             <span>{course.enrolled} enrolled</span>
                         </div>
-                        <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+
+                        <Link href={`/course/${course.slug}`} className="learn-more">Learn More<img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                         </div>
                     </div>
               </div>
