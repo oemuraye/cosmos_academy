@@ -11,12 +11,9 @@ import Business from './pages/Business/Business';
 import About from './pages/About/About';
 import Pricing from './pages/Pricing/Pricing';
 import CourseContent from './pages/CourseContent';
-<<<<<<< HEAD
 import Community from './pages/Community';
-=======
 import BlogPost from './pages/BlogPost/BlogPost';
 import FaqPage from './pages/Faq/Faq';
->>>>>>> master
 
 function App() {
   return (
