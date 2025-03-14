@@ -1,30 +1,30 @@
-.hero-section {
+.course-content .hero-section {
     background-color: #FFC3FF;
 }
 
-.hero-image-container {
+.course-content .hero-image-container {
     padding: 10px;
 }
 
-.hero-image-container img {
+.course-content .hero-image-container img {
     border-radius: 20px;
     max-width: 100%;
 }
 
-.hero-content {
+.course-content .hero-content {
     padding: 0 90px;
 }
 
-.course-info {
+.course-content .course-info {
     font-size: 18px;
 }
 
-.course-features {
+.course-content .course-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.course-title {
+.course-content .course-title {
     color: var(--gray_dark-color, #101010);
     font-family: var(--font-cosmos);
     font-size: 70px;
@@ -62,40 +62,40 @@ p {
     padding-bottom: 30px;
 }
 
-.course-details {
+.course-content .course-details {
     padding: 0 30px;
 }
 
-.course-details .container {
+.course-content .course-details .container {
     padding: 70px 50px;
     background-color: #FDD6FD;
     border-radius: 20px;
 }
 
-.course-details .about {
+.course-content .course-details .about {
     font-family: var(--font-cosmos);
     font-size: 40px;
     font-weight: 700;
     line-height: normal;
 }
 
-.course-details .item {
+.course-content .course-details .item {
     font-family: var(--font-neueMontrealRg);
 }
 
-.course-details .item .title {
+.course-content .course-details .item .title {
     font-family: var(--font-neueMontrealRg);
     font-size: 18px;
     font-weight: 700;
 }
 
-.course-details .item .content {
+.course-content .course-details .item .content {
     font-family: var(--font-neueMontrealRg);
     font-size: 16px;
     font-weight: 400;
 }
 
-.course-details .outcomes {
+.course-content .course-details .outcomes {
     font-family: var(--font-neueMontrealRg);
     font-size: 16px;
     font-weight: 400;
@@ -248,7 +248,7 @@ p {
         order: 7;
     }
 
-    .hero-image-container {
+    .course-content .hero-image-container {
         width: 100%;
         padding: 0;
     }
@@ -268,16 +268,16 @@ p {
         margin: 0 !important;
     }
 
-    .course-details {
+    .course-content .course-details {
         padding: 0;
     }
 
-    .course-details .container {
+    .course-content .course-details .container {
         border-radius: 0;
         padding: 40px 0;
     }
 
-    .course-details .outcomes {
+    .course-content .course-details .outcomes {
         flex: '0 0 100%'
     }
 

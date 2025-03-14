@@ -26,7 +26,7 @@ const Home = () => {
             <link rel="canonical" href="https://cosmosconference.org/" /> */}
         </Helmet>
 
-        <div className="homepage-page">
+        <main className="homepage-page">
             <HeroSection />
             <InfoSection />
             <WhySection />
@@ -37,7 +37,7 @@ const Home = () => {
             <PricingPlansSection />
             <BlogSection />
             <FaqSection />
-        </div>
+        </main>
         
     </>
   )

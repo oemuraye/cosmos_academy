@@ -12,11 +12,11 @@ const Pricing = () => {
       <Helmet>
           <title>Pricing - Cosmos Academy</title>
       </Helmet>
-      <section className='pricing-page'>
+      <main className='pricing-page'>
           <HeroSection />
           <PricingPlansSection />
           <FaqSection />
-      </section>
+      </main>
     </>
   )
 }

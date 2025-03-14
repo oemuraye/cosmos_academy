@@ -14,13 +14,13 @@ const Programs = () => {
       <Helmet>
           <title>Programs - Cosmos Academy</title>
       </Helmet>
-      <section className='programs-page'>
+      <main className='programs-page'>
           <HeroSection />
           <ProgramsDisplay />
           <UpcomingSection />
           <ImpactAdSection />
           <JoinUsAdSection />
-      </section>
+      </main>
     </>
   )
 }

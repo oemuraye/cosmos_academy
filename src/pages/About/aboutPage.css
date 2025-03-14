@@ -1,5 +1,5 @@
 .hero-section.about-hero .container-fluid {
-    background-color: #C7F16C;
+    background-color: var(--aboutHeroSection_BgColor);
 }
 .our-values-header{
     color: var(--gray_dark-color, #101010);

@@ -14,13 +14,13 @@ const Business = () => {
       <Helmet>
           <title>For Business - Cosmos Academy</title>
       </Helmet>
-      <section className='business-page'>
+      <main className='business-page'>
           <HeroSection />
           <StatsSection />
           <TeamGrowthSection />
           <LearningInfoSection />
           <ContactTeamSection />
-      </section>
+      </main>
     </>
   )
 }
