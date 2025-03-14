@@ -1,0 +1,41 @@
+.info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: start;
+    min-height: 319px;
+
+    @media (max-width: 768px) {
+        max-width: unset;
+        min-height: unset;
+     }
+}
+
+.info-card h5 {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    color: var(--gray-dark-color, #101010);
+    font-family: var(--font-neueMontrealRg);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.info-card p {
+    color: var(--gray-dark-color, #101010);
+    font-family: var(--font-neueMontrealRg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-card .icon {
+    width: fit-content;
+}
