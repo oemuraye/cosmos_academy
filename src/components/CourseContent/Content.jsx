@@ -1,14 +1,14 @@
 import React from 'react';
 import exploreIcon from '../../assets/icons/go-icon.png';
-import { BsPlus } from 'react-icons/bs'; // or use a simple "+" text
+import { BsPlus } from 'react-icons/bs';
 
 const Content = ({ course }) => {
     return (
-        <div className="container mt-5 cc px-5">
+        <div className="container mt-5 cc px-3 px-md-5">
             <p className="sub">Course content</p>
             <h2 className="title">What you will learn on this course.</h2>
 
-            <div className="row fw-bold py-2 border-bottom">
+            <div className="d-flex fw-bold py-2 border-bottom">
                 <div className="col-10">Lessons</div>
                 <div className="col-1">Chapters</div>
                 <div className="col-1 text-end" />
@@ -16,7 +16,7 @@ const Content = ({ course }) => {
 
             {course.lessons.map((lesson, index) => (
                 <div
-                    className="course-chapter row align-items-center py-3 border-bottom"
+                    className="course-chapter d-flex align-items-center py-3 border-bottom"
                     key={index}
                 >
                     <div className="col-10 d-flex align-items-center content-title">

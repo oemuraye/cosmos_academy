@@ -10,7 +10,7 @@ import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
 import enrolledUsersImg3 from '../../assets/images/enrolled-users3.png';
 import enrolledUsersImg4 from '../../assets/images/enrolled-users4.png';
 import enrolledUsersImg5 from '../../assets/images/enrolled-users5.png';
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useNavigation } from "react-router-dom";
 
 const tabsData = [
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
@@ -87,6 +87,7 @@ const userEnrolledImages = [
 
 const ProgramsDisplay = () => {
   const [activeTab, setActiveTab] = useState(tabsData[0].id);
+  const nav = useNavigate()
   const tabsContainerRef = useRef(null);
 
   const handleScroll = (direction) => {
@@ -95,6 +96,11 @@ const ProgramsDisplay = () => {
       tabsContainerRef.current.scrollLeft += direction === "left" ? -scrollAmount : scrollAmount;
     }
   };
+
+  const handleLinkClick = (slug) => (e) => {
+    e.preventDefault();
+    nav(`/course/${slug}`);
+  }
 
   const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
 
@@ -188,7 +194,7 @@ const ProgramsDisplay = () => {
                             <span>{course.enrolled} enrolled</span>
                         </div>
 
-                        <Link href={`/course/${course.slug}`} className="learn-more">Learn More<img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                        <Link onClick={handleLinkClick(course.slug)} href={`/course/${course.slug}`} className="learn-more">Learn More<img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                         </div>
                     </div>
               </div>

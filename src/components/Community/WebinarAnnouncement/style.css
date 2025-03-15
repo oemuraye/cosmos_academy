@@ -79,12 +79,12 @@
 }
 
 .events-desc .rt {
-    flex: 0 0 auto;
+    flex: 0 0 14.5%;
 }
 
 .collage.collage-col {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .collage.collage-row {
@@ -93,12 +93,9 @@
 }
 
 .collage.collage-col .img-collage {
-    width: 92.68px;
-    height: 102.6px;
-
+    width: 100%;
     @media (max-width: 768px) {
-        width: 55px;
-        height: 55px;
+        width: 100%;
     }
 }
 
@@ -110,7 +107,7 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 926px) {
     .announcement .events-desc h1 {
         font-size: 20px;
         line-height: 25px;
