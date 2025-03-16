@@ -2,3 +2,31 @@
     font-size: 50px;
     line-height: 50px;
 }
+
+.pageModal h2 {
+    font-size: 36px;
+    line-height: 100%;
+}
+.pageModal p {
+    color: var(--card_text-color);    
+}
+
+#regModal .modal-dialog {
+    max-width: 765px;
+    border: none;
+}
+#regModal .modal-content {
+    border: none;
+}
+
+.liveClasses_section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.liveClasses_section .input-group-text {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: var(--border_gray-color);
+}

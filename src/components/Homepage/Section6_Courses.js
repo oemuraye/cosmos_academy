@@ -145,9 +145,9 @@ const CourseSection = () => {
                 <h2>Empower your future with technological skills</h2>
                 <p className='my-3'>Unlock the knowledge and tools needed to thrive in the digital world. From web and mobile development to AI and digital innovation, Cosmos Academy offers expert-led courses designed to transform your skills into real-world impact.</p>
                 <div className="btn-action_div my-4">
-                    <button className="customBtn">
+                    <Link to="/programs" className="customBtn">
                         <span>Explore Courses</span> <img src={exploreIcon} alt="icon" />
-                    </button>
+                    </Link>
                 </div>
             </section>
   
@@ -155,7 +155,7 @@ const CourseSection = () => {
     
                 <div className="courses-display" ref={sliderRef}>
                     {courses.map((course) => (
-                        <div onClick={() => handleCourseClick(course.slug)} role="button" key={course.id} className="course-card">
+                        <div key={course.id} className="course-card">
                             <div className="course-card-image">
                                 <img src={course.image} alt={course.title} height='283px' />
                                 {course.free && <span className="badge">Free</span>}
@@ -189,7 +189,7 @@ const CourseSection = () => {
                                         </div>
                                         <span>{course.enrolled} enrolled</span>
                                     </div>
-                                    <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                                    <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
                         </div>

@@ -14,48 +14,48 @@ const dropdownContent = {
     <div className="dropdown_menu program-menu">
       <div className="dropdown-grid">
         <section className='col-4 pt-1 pe-5 border_end first'>
-          <div>
+          <Link to='/programs'>
             <h4>Product Design</h4>
             <p>Mobil App Dev</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>Mobil App Dev</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>Brand Design</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
 
         <section className='col-4 pt-1 pe-5 border_end second'>
-          <div>
+          <Link to='/programs'>
             <h4>Social Media Mangament</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>AR & VR Dev</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>Digital Information</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
 
         <section className='col-4 pt-1'>
-          <div>
+          <Link to='/programs'>
             <h4>Website Development</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>Artificial Intelligence</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to='/programs'>
             <h4>Embedded Systems and IOT</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
       </div>
     </div>
@@ -64,20 +64,20 @@ const dropdownContent = {
     <div className="dropdown_menu resource-menu">
       <div className="dropdown-grid">
         <section className='col-4 pt-1 pe-5 border_end first'>
-            <div>
+            <Link to='/resources'>
               <h4>Blogs</h4>
               <p>Product Design</p>
-            </div>
-            <div>
+            </Link>
+            <Link to='/resources'>
               <h4>Mobil App Dev</h4>
               <p>Product Design</p>
-            </div>
+            </Link>
         </section>
         <section className='col-4 pt-1 pe-3'>
-            <div>
+            <Link to='/resources'>
               <h4>Cosmos Explorer</h4>
               <p>Product Design</p>
-            </div>
+            </Link>
         </section>
       </div>
     </div>
@@ -86,25 +86,25 @@ const dropdownContent = {
     <div className="dropdown_menu about-menu">
       <div className="dropdown-grid">
         <section className='col-4 pt-1 pe-5 border_end first'>
-          <div>
+          <Link to="/about" >
             <h4>About Us</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to="/about" >
             <h4>Why Cosmos Conference</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
 
         <section className='col-4 pt-1 pe-3'>
-          <div>
+          <Link to="/about" >
             <h4>FAQ</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link to="/about" >
             <h4>Contact Us</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
       </div>
     </div>
@@ -113,10 +113,10 @@ const dropdownContent = {
     <div className="dropdown_menu buiness-menu">
       <div className="dropdown-grid">
         <section className='col-4 pt-1 pe-2'>
-          <div>
+          <Link to="/business">
             <h4>For Companies </h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
       </div>
     </div>
@@ -125,21 +125,21 @@ const dropdownContent = {
     <div className="dropdown_menu partner-menu">
       <div className="dropdown-grid">
       <section className='col-4 pt-1 pe-5 border_end first'>
-          <div>
+          <Link>
             <h4>Donate to affiliate</h4>
             <p>Product Design</p>
-          </div>
-          <div>
+          </Link>
+          <Link>
             <h4>Donate to Memitech</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
 
         <section className='col-4 pt-1 pe-3'>
-          <div>
+          <Link>
             <h4>Donate to Cosmos</h4>
             <p>Product Design</p>
-          </div>
+          </Link>
         </section>
       </div>
     </div>
@@ -217,7 +217,7 @@ const Header = () => {
   }, []);
 
   const externalLinkClick = () => {
-    window.open('/welcome');
+    window.open('/welcome', '_self');
     // window.open('/welcome', '_blank');
   };
 

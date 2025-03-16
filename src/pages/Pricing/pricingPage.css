@@ -5,3 +5,7 @@
     max-width: 1094px;
     margin: 0 auto;
 }
+#contactFormModal .modal-dialog {
+    max-width: 765px;
+    border: none;
+}

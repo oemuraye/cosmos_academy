@@ -159,6 +159,27 @@ p {
   background-color: var(--gray_dark-color);
 }
 
+/* Form Styling */
+.form-control {
+  background-color: var(--border_gray-color);
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+textarea.form-control {
+  border-radius: 20px;
+}
+input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* input.form-control, */
+input,
+textarea.form-control,
+textarea::placeholder,
+input::placeholder {
+  color: var(--card_text-color2) !important;
+  font-size: 20px !important;
+}
 
 @media (max-width: 768px) {
   .padding_y-spacing {
