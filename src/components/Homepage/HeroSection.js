@@ -6,6 +6,7 @@ import heroVideo2 from '../../assets/videos/heroVideo2.mp4';
 import hero_video1 from '../../assets/videos/hero-video1.mp4';
 import hero_video2 from '../../assets/videos/hero-video2.mp4';
 import exploreIcon from '../../assets/icons/go-icon.png';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -30,10 +31,10 @@ const HeroSection = () => {
                             <h1 className="mb-3">Building skills for impact.</h1>
                             <p className="mb-5">This is where visionaries are made. We equip you with cutting-edge digital skills, the right mindset, and knowledge needed to transform your life and create the impact that matters.</p>
                             <div className="d-flex justify-content-center mt-4">
-                                <button className="customBtn">
+                                <Link to="/community" className="customBtn">
                                     Join Community
                                     <img src={exploreIcon} alt="icon" />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

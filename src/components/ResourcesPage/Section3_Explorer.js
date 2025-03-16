@@ -137,11 +137,11 @@ const ExplorerSection = () => {
       <section className="trainers-section padding_y-spacing">
             <div className="container">
                 <div className="section-heading my-5">
-                <h2>Meet other Explorers</h2>
-                <p>
-                    Join a community of innovators, share ideas, and collaborate on impactful projects. 
-                    Connect, learn, and grow with like-minded thinkers shaping the future!
-                </p>
+                  <h2>Meet other Explorers</h2>
+                  <p>
+                      Join a community of innovators, share ideas, and collaborate on impactful projects. 
+                      Connect, learn, and grow with like-minded thinkers shaping the future!
+                  </p>
                 </div>
             </div>
 

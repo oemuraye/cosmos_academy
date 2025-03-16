@@ -134,6 +134,10 @@ const CourseSection = () => {
     //     const interval = setInterval(nextSlide, 5000); 
     //     return () => clearInterval(interval); 
     // }, []);
+
+    const handleCourseClick = (courseSlug) => {
+        window.location.href = `/course/${courseSlug}`;
+    };
   
     return (
         <section className='course-section container my-5 padding_y-spacing'>
@@ -151,7 +155,7 @@ const CourseSection = () => {
     
                 <div className="courses-display" ref={sliderRef}>
                     {courses.map((course) => (
-                        <Link to={`/course/${course.slug}`} key={course.id} className="course-card">
+                        <div onClick={() => handleCourseClick(course.slug)} role="button" key={course.id} className="course-card">
                             <div className="course-card-image">
                                 <img src={course.image} alt={course.title} height='283px' />
                                 {course.free && <span className="badge">Free</span>}
@@ -188,7 +192,7 @@ const CourseSection = () => {
                                     <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
     

@@ -4,6 +4,9 @@ import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 import recordIcon from '../../assets/icons/record-icon.png';
 
 import courseImage from '../../assets/images/cardImg.png';
+import courseImage1 from '../../assets/images/courseImg1.png';
+import courseImage2 from '../../assets/images/courseImg2.png';
+import courseImage3 from '../../assets/images/courseImg3.png';
 
 import enrolledUsersImg1 from '../../assets/images/enrolled-users1.png';
 import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
@@ -30,7 +33,7 @@ const courses = [
       startDate: "Mar 17, 2025",
       description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
       enrolled: "1k",
-      image: courseImage,
+      image: courseImage1,
       pricing: "free",
       category: "Web Development",
       slug: 'introduction-to-web-dev'
@@ -43,7 +46,7 @@ const courses = [
       startDate: "Coming Soon",
       description: "Gain a solid foundation in AI and machine learning. Learn data analysis, model building with Python.",
       enrolled: "0",
-      image: courseImage,
+      image: courseImage2,
       pricing: "coming_soon",
       category: "Artificial Intelligence",
       slug: 'introduction-to-artificial-intelligence'
@@ -56,7 +59,7 @@ const courses = [
       startDate: "Coming Soon",
       description: "Build scalable full-stack applications using Node.js, Express, MongoDB, and React.",
       enrolled: "0",
-      image: courseImage,
+      image: courseImage3,
       pricing: "coming_soon",
       category: "Web Development",
       slug: 'introduction-to-mobile-development'

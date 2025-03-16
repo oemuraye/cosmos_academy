@@ -127,7 +127,6 @@ p {
   animation-timing-function: ease-in-out;
   animation-duration: 40000ms;
 }
-
 .customBtn:hover {
   gap: 30px;
 }

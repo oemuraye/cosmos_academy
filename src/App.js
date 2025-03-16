@@ -14,6 +14,8 @@ import CourseContent from './pages/CourseContent';
 import Community from './pages/Community';
 import BlogPost from './pages/BlogPost/BlogPost';
 import FaqPage from './pages/Faq/Faq';
+import ScrollToTop from './utils/ScrollToTop';
+import Welcome from './pages/Welcome/Welcome';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
       </Helmet>
 
       <Header />
+
+      <ScrollToTop />
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -41,6 +46,7 @@ function App() {
           <Route path="/community" element={<Community/>} />
           <Route path="/blog-post/:postID" element={<BlogPost/>} />
           <Route path="/faq" element={<FaqPage/>} />
+          <Route path="/welcome" element={<Welcome/>} />
         </Routes>
       </main>
       <Footer />
