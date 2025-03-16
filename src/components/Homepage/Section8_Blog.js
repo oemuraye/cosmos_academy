@@ -9,6 +9,7 @@ import blogImg2 from "../../assets/images/blogImg2.png";
 const blogPosts = [
   {
     id: 1,
+    slug: 'nigerian-tech-ecosystem',
     title: "The Nigerian Tech Ecosystem: A Call for Authentic Innovation",
     author: "Trust Oghale",
     date: "Feb 28, 2025",
@@ -16,6 +17,7 @@ const blogPosts = [
   },
   {
     id: 2,
+    slug: 'future-of-ai',
     title: "10 Product design portfolios to inspire you.",
     author: "Alexander Ikani",
     date: "Feb 28, 2025",
@@ -23,6 +25,7 @@ const blogPosts = [
   },
   {
     id: 3,
+    slug: 'engine-development',
     title: "10 Product design portfolios to inspire you.",
     author: "Alexander Ikani",
     date: "Feb 28, 2025",
@@ -42,7 +45,7 @@ const BlogSection = () => {
 
       <div className="row blog-cards g-4">
         {blogPosts.map((post) => (
-          <Link key={post.id} className="col-md-4 col-sm-12">
+          <Link to={`/blog-post/${post.slug}`} key={post.id} className="col-md-4 col-sm-12">
             <div className="blog-card card border-0 shadow-sm">
               <img src={post.image} alt={post.title} className="card-img-top img-fluid" height="185px" width='341px' />
               <div className="card-body">

@@ -2,7 +2,11 @@ import { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import exploreIcon from '../../assets/icons/go-icon.png';
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
+
 import courseImage from '../../assets/images/cardImg.png';
+import courseImage1 from '../../assets/images/courseImg1.png';
+import courseImage2 from '../../assets/images/courseImg2.png';
+import courseImage3 from '../../assets/images/courseImg3.png';
 
 import enrolledUsersImg1 from '../../assets/images/enrolled-users1.png';
 import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
@@ -16,42 +20,46 @@ import { IoArrowBack } from "react-icons/io5";
 const courses = [
     {
       id: 1,
+      slug: 'introduction-to-web-dev',
       title: "Introduction to Website </br> Development",
       instructor: "Cosmos",
       duration: "3 Weeks",
       startDate: "March 17, 2025",
       description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
       enrolled: "1k",
-      image: courseImage,
+      image: courseImage1,
       pricing: "free",
       free: true
     },
     {
       id: 2,
+      slug: 'introduction-to-web-dev',
       title: "Introduction to Artificial </br> Intelligence (AI)",
       instructor: "Cosmos",
       duration: "3 Weeks",
       startDate: "Coming Soon",
       description: "Gain a solid foundation in AI and machine learning. Learn data analysis, model building with Python.",
       enrolled: "0",
-      image: courseImage,
+      image: courseImage2,
       pricing: "March 25, 2025",
       free: false
     },
     {
         id: 3,
+        slug: 'introduction-to-web-dev',
         title: "Introduction to Mobile </br> Development",
         instructor: "Cosmos",
         duration: "3 Weeks",
         startDate: "Coming Soon",
         description: "Build scalable full-stack applications using Node.js, Express, MongoDB, and React.",
         enrolled: "0",
-        image: courseImage,
+        image: courseImage3,
         pricing: "₦70,000",
         free: false,
     },
     {
         id: 4,
+        slug: 'introduction-to-web-dev',
         title: "Advanced JavaScript </br> Mastery",
         instructor: "Cosmos",
         duration: "3 Weeks",
@@ -143,7 +151,7 @@ const CourseSection = () => {
     
                 <div className="courses-display" ref={sliderRef}>
                     {courses.map((course) => (
-                        <div key={course.id} className="course-card">
+                        <Link to={`/course/${course.slug}`} key={course.id} className="course-card">
                             <div className="course-card-image">
                                 <img src={course.image} alt={course.title} height='283px' />
                                 {course.free && <span className="badge">Free</span>}
@@ -180,7 +188,7 @@ const CourseSection = () => {
                                     <Link href="#" className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
     
