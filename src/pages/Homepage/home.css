@@ -522,7 +522,7 @@ img.xb-border-radius {
     }   
     .info-section .custom-tabs,
     .custom-tabs .custom-tabActive {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     .course-card-image {
         height: 222px;

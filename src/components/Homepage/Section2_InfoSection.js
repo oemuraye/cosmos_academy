@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-import infoImage from '../../assets/images/info_img.png';
-import infoImage2 from '../../assets/images/info_img2.png';
+import infoLiveIcon from '../../assets/icons/record-icon.png';
+import infoPlayIcon from '../../assets/icons/play-icon.png';
 import infoVideo from '../../assets/videos/heroVideo2.mp4';
 import infoVideo2 from '../../assets/videos/coding.mp4';
 
@@ -19,11 +19,11 @@ const InfoSection = () => {
                   {/* Tabs */}
                   <div className="tabs-section">
                       <div className="custom-tabs d-flex align-items-center gap-4 mb-3">
-                          <span role='button' className={`${activeTab === "live" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("live")} >
-                              🔴 Live Training
+                          <span role='button' className={`d-flex align-items-center gap-2 ${activeTab === "live" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("live")} >
+                              <img src={infoLiveIcon} alt="icon" /> Live Training
                           </span>
-                          <span role='button' className={`${activeTab === "on-demand" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("on-demand")} >
-                              ▶ On Demand Training
+                          <span role='button' className={`d-flex align-items-center gap-2 ${activeTab === "on-demand" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("on-demand")} >
+                                <img src={infoPlayIcon} alt="icon" /> On Demand Training
                           </span>
                       </div>
                   </div>
