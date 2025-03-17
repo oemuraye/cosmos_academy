@@ -294,4 +294,8 @@ input::placeholder {
     /* padding: 10px 20px; */
     font-size: 14px;
   }
+  .customBtn img {
+    width: 32.51px;
+    height: 32.51px;
+  }
 }
