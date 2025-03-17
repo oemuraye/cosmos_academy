@@ -146,6 +146,7 @@ p {
   background-color: var(--white_gray-color);
   padding: 7px;
   color: var(--gray_dark-color);
+  font-family: var(--font-neueMontreal);
   font-size: 18px;
   font-weight: 500;
 }

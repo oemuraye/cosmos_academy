@@ -36,7 +36,7 @@ const trainers = [
 const TrainersSection = () => {
   
   return (
-    <section className="trainers-section padding_y-spacing">
+    <section className="trainers-section section-width padding_y-spacing">
       <div className="container">
         <div className="section-heading my-5">
           <h2>Meet your trainers and start your journey</h2>
