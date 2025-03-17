@@ -217,7 +217,8 @@ const Header = () => {
   }, []);
 
   const externalLinkClick = () => {
-    window.open('/welcome', '_self');
+    // window.open('/welcome', '_self');
+    window.location.href = '/welcome';
     // window.open('/welcome', '_blank');
   };
 
@@ -244,7 +245,7 @@ const Header = () => {
     <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
-          <img src={logo} alt="logo" height="57.489px" width="129px" />
+          <img src={logo} alt="logo" height="57.489px" width="162px" />
         </Link>
 
         {/* <button className={`navbar-toggler ${menuOpen ? 'open' : ''}`} type="button" onClick={toggleMenu} aria-controls="navbarSupportedContent" aria-expanded={menuOpen} aria-label="Toggle navigation">

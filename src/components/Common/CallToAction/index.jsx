@@ -2,7 +2,10 @@ import exploreIcon from '../../../assets/icons/go-icon.png';
 import './style.css';
 
 
-const CallToAction = ({header, content, cta}) => {
+const CallToAction = ({header, content, cta, link}) => {
+    const externalLinkClick = (url) => {
+        window.open(`${url}`, '_self');
+    };
   return (
     <section className='why-section padding_y-spacing container'>
         <div className="why-content">
@@ -10,7 +13,7 @@ const CallToAction = ({header, content, cta}) => {
                 <h2>{header || "Header Here!"}</h2>
                 <p className='my-3'>{content || "Some content here!"}</p>
                 <div className="btn-action_div my-4">
-                    <button className="customBtn">
+                    <button onClick={link ? () => externalLinkClick(link) : undefined} className="customBtn">
                         <span>{cta || "Get Started"}</span> <img src={exploreIcon} alt="icon" />
                     </button>
                 </div>
