@@ -19,7 +19,7 @@ const HeroSection = () => {
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
                                 <img src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" />
                             </div>
-                            <video className="img-fluid " style={{ height: "320px", objectFit: "cover", borderRadius: '15px' }} autoPlay loop muted playsInline>
+                            <video className="img-fluid " style={{ height: "320px", objectFit: "cover", borderRadius: '15px', width: '100%', maxWidth: '270px', margin: '0 auto' }} autoPlay loop muted playsInline>
                                 <source src={heroVideo1} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
@@ -44,7 +44,7 @@ const HeroSection = () => {
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
                                 <img src={heroImage2} alt="Community member" className="img-fluid" />
                             </div>
-                            <video className="img-fluid " style={{ height: "320px", objectFit: "cover", borderRadius: '15px' }} autoPlay loop muted playsInline>
+                            <video className="img-fluid " style={{ height: "320px", objectFit: "cover", borderRadius: '15px', width: '100%', maxWidth: '270px', margin: '0 auto' }} autoPlay loop muted playsInline>
                                 <source src={heroVideo2} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
