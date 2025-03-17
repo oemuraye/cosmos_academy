@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 // import menuIcon from '../../utils/icons/menuToggler.png';
 // import closeIcon from '../../utils/icons/closeBtn.png';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/externalLink.png';
 
 import './header.css';
 
