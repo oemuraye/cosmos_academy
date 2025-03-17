@@ -17,6 +17,7 @@ import InfoCardList from '../../components/Common/InfoCardList';
 import JoinOurTeam from '../../components/AboutPage/JoinOurTeam';
 import { Helmet } from 'react-helmet-async';
 import ContactForm from '../../components/Common/ContactUsForm/ContactForm';
+import ComingSoonPop from '../../components/Common/ComingSoonPop/ComingSoonPop';
 
 const people = [
   {
@@ -82,8 +83,12 @@ const About = () => {
             header='Meet the Team Driving Innovation at Cosmos'
             content={`Your organization's success depends on the strength of your team. At Cosmos Academy, whether you're preparing for digital transformation or strengthening your team's capabilities, we provide training that makes an immediate impact.`}
             cta='Join our Team' 
-            modalId="contactFormModal"
-            modalContent={<ContactForm />}
+            modalId="comingSoonModal"
+            modalContent={
+              <ComingSoonPop title={'Join Our Team'} 
+                text={'Sorry we are not currently recruiting new team members. Kindly check in next time.'}
+              />
+            }
           />
           <PersonCardList people={people} />
           <div className='d-flex gap-5 mt-5 pt-5 justify-content-between px-md-5 mx-md-5 flex-column flex-md-row'>

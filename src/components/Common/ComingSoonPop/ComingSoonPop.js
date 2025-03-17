@@ -1,17 +1,25 @@
-import React from 'react'
+import popImage from '../../../assets/images/hive-five_gif.gif';
+import exploreIcon from '../../../assets/icons/go-icon.png';
 
-const ComingSoonPop = () => {
+const ComingSoonPop = ({title, text, popImg, btnText}) => {
   return (
     <section className="pageModal contactUs_section text-center">
-        <h2 className="">Contact Our Team</h2>
-        <p className="my-2">
-            Have questions or need guidance? Our dedicated team is here to help! 
-            Whether it's about courses, enrollment, or general inquiries, 
-            we're just a message away. 
-            Reach out, and let's make your Cosmos Academy experience seamless!
-        </p>
+        <h2 className="">{title || 'Become a Cosmos Explorer'}</h2>
+        <p className="my-2">{text || 'Sorry the Cosmos Explorer is not currently available. We are still getting it set up for you'}</p>
 
+        <div className="d-flex align-items-center justify-content-center my-5">
+          <img src={popImage || popImg} alt="img" width="129px" height="89px" className='img-fluid' />
+        </div>
         
+        <div className="btn-action_div my-4">
+            <button 
+                className="customBtn"
+                // onClick={() => window.history.back()}
+                data-bs-dismiss="modal" aria-label="Close" 
+            >
+                <span>{btnText || "Go back"}</span> <img src={exploreIcon} alt="icon" />
+            </button>
+        </div>
     </section>
   )
 }

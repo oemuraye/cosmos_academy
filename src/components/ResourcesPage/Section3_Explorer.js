@@ -8,6 +8,7 @@ import aromeImage from "../../assets/images/aromeImage.png";
 import fonaImage from "../../assets/images/fonaImage.png";
 import danielImage from "../../assets/images/danielImage.png";
 import obadaImage from "../../assets/images/obadaImage.png";
+import ComingSoonPop from '../Common/ComingSoonPop/ComingSoonPop';
 
 
 const explorers = [
@@ -76,10 +77,24 @@ const ExplorerSection = () => {
                 </p>
             </div>
             <div className="btn-action_div justify-content-start">
-                <Link className="customBtn">
+                <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#exploreModal">
                     <span>Join Explorer</span> <img src={exploreIcon} alt="icon" />
                 </Link>
             </div>
+
+            {/* <!-- Modal --> */}
+            <section className="modal fade" id="exploreModal" tabindex="-1" aria-labelledby="exploreModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="d-flex justify-content-end p-2">
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <ComingSoonPop />
+                        </div>
+                    </div>
+                </div>
+            </section>
       </section>
 
       <section className='explorerAd-section my-5'>
