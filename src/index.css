@@ -101,6 +101,10 @@ p {
   color: var(--gray_dark-color);
 }
 
+.section-width {
+  max-width: 1262px;
+  margin: 0 auto;
+}
 
 /* Custom Buttons/Links */
 .btn-action_div {

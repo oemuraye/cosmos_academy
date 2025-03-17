@@ -12,8 +12,8 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
         <div className="container-fluid animated-background ">
-            <div className="container">
-                <div className="row align-items-center">
+            <div className="section-width">
+                <div className="row align-items-center container">
                     <div className="col-6 col-md-3 col-sm-6 order-md-1 order-2 my-3 pt-0 pt-md-5">
                         <div className="position-relative d-flex justify-content-center pt-0 pt-md-5">
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>

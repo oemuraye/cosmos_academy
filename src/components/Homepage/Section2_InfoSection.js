@@ -13,7 +13,7 @@ const InfoSection = () => {
   const videoSource = activeTab === "live" ? infoVideo : infoVideo2;
 
   return (
-      <section className="info-section padding_y-spacing py-5 bg-light">
+      <section className="info-section section-width padding_y-spacing py-5 bg-light">
           <div className="container-fluid">
               <div className="info-details container my-5 p-4 py-5">
                   {/* Tabs */}

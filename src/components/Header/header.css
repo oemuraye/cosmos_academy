@@ -26,9 +26,9 @@
  }
   
 .navbar nav {
-    max-width: 1300px;
+    max-width: 1264px;
     margin: 0 auto;
- }
+}
   
 .nav-link {
     color: var(--basic-white) !important;
