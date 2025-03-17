@@ -275,12 +275,12 @@ const Header = () => {
               </li>
             ))}
             
-            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <img src={exploreIcon} alt="" /></span>
+            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <img src={exploreIcon} alt="icon" className='img-fluid' /></span>
           </ul>
 
         </div>
 
-        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <img src={exploreIcon} alt="" /></button>
+        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <img src={exploreIcon} alt="icon" className='img-fluid' /></button>
       </nav>
     </header>
   )
