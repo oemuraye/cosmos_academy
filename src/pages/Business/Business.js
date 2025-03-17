@@ -16,10 +16,12 @@ const Business = () => {
       </Helmet>
       <main className='business-page'>
           <HeroSection />
-          <StatsSection />
-          <TeamGrowthSection />
-          <LearningInfoSection />
-          <ContactTeamSection />
+          <div className="section-width">
+            <StatsSection />
+            <TeamGrowthSection />
+            <LearningInfoSection />
+            <ContactTeamSection />
+          </div>
       </main>
     </>
   )

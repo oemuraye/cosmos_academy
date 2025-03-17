@@ -1,6 +1,6 @@
 export const faqData = [
     {
-      title: "What is Cosmos Academy?",
+      title: "General Questions",
       faqs: [
         { id: 1, question: "What is Cosmos Academy?", answer: "Cosmos Academy is an online learning platform." },
         { id: 2, question: "How can I sign up for a course?", answer: "You can sign up by visiting our website and selecting a course." },

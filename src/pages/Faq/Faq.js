@@ -21,7 +21,7 @@ const FaqPage = () => {
             </div>
         </section>
         
-        <section className="container my-5">
+        <section className="container padding_y-spacing my-5">
             {faqData.map((section, index) => (
                 <FaqSection key={index} title={section.title} faqs={section.faqs} />
             ))}

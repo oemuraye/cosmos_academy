@@ -10,7 +10,7 @@ const FaqSection = ({ title, faqs }) => {
 
   return (
     <div className="faq-section">
-      <h2 className="faq-title text-center my-2 mt-5">{title}</h2>
+      <h2 className="faq-title text-center my-3 mt-5">{title}</h2>
       <div className="faq-container">
             {faqs.map((faq, index) => (
                 <div key={faq.id} className="faq-item mb-4 p-2">

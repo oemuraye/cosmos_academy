@@ -47,11 +47,13 @@ const CourseContentPage = () => {
       </Helmet>
       <main className="pb-5 course-content">
         <HeroSection course={course} />
-        <Overview course={course} />
-        <Details course={course} />
-        <Content course={course} />
-        <Instructor course={course} />
-        <PricingPlans/>
+        <div className="section-width">
+          <Overview course={course} />
+          <Details course={course} />
+          <Content course={course} />
+          <Instructor course={course} />
+          <PricingPlans/>
+        </div>
       </main>
     </>
   );

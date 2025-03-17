@@ -12,7 +12,7 @@
 }
 
 .course-content .hero-content {
-    padding: 0 90px;
+    padding: 0 20px;
 }
 
 .course-content .course-info {
@@ -231,7 +231,7 @@ p {
 
 @media (max-width: 768px) {
     .course-content .hero-content {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .course-content .course-features {

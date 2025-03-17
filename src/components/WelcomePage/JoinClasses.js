@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+
+
 
 import exploreIcon from '../../assets/icons/go-icon.png';
 import dividerIcon from '../../assets/icons/y-divider.png';
@@ -27,8 +31,19 @@ export default function JoinClasses() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="form-control"
+                />
+
+            <PhoneInput
+                className="form_input"
+                country="ng"
+                value={phone}
+                onChange={setPhone}
+                placeholder="Phone Number"
             />
-            <div className="input-group">
+
+            
+
+            {/* <div className="input-group">
                 <span className="input-group-text gap-2 border-0">
                     <img src={nigerianFlag} alt="Nigeria Flag" width="24" height="24" className="" />
                     +234
@@ -41,7 +56,7 @@ export default function JoinClasses() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                 />
-            </div>
+            </div> */}
         </div>
 
         <div className="btn-action_div justify-content-center my-4 mb-5">

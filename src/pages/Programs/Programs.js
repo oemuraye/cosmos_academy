@@ -16,10 +16,12 @@ const Programs = () => {
       </Helmet>
       <main className='programs-page'>
           <HeroSection />
-          <ProgramsDisplay />
-          <UpcomingSection />
-          <ImpactAdSection />
-          <JoinUsAdSection />
+          <section className="section-width">
+            <ProgramsDisplay />
+            <UpcomingSection />
+            <ImpactAdSection />
+            <JoinUsAdSection />
+          </section>
       </main>
     </>
   )

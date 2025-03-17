@@ -2,7 +2,11 @@
     background-color: var();
 } */
 .pricing-page .hero-section .hero-content {
-    max-width: 1094px;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.pricing-page .hero-section .hero-content p {
+    max-width: 701px;
     margin: 0 auto;
 }
 #contactFormModal .modal-dialog {

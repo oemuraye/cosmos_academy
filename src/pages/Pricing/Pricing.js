@@ -14,8 +14,10 @@ const Pricing = () => {
       </Helmet>
       <main className='pricing-page'>
           <HeroSection />
-          <PricingPlansSection />
-          <FaqSection />
+          <div className="section-width">
+            <PricingPlansSection />
+            <FaqSection />
+          </div>
       </main>
     </>
   )

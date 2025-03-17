@@ -13,7 +13,7 @@ const BlogPost = () => {
   const post = posts.find((p) => p.id === postID);  
 
   return (
-    <main className="blog_post-page">
+    <main className="blog_post-page section-width">
       {post && (
         <div className="container">
           <HeroSection post={post} />
@@ -24,8 +24,8 @@ const BlogPost = () => {
           
           <div className="blog-content padding_y-spacing">
             {post.content.map((section, index) => (
-              <div key={index} className="blog-section mb-4">
-                <h2>{section.heading}</h2>
+              <div key={index} className="blog-section my-4">
+                <h2 className="mt-5">{section.heading}</h2>
                 <p dangerouslySetInnerHTML={{ __html: section.text }}></p>
               </div>
             ))}

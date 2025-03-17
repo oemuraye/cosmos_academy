@@ -3,7 +3,7 @@ import './welcome.css';
 
 const Welcome = () => {
   return (
-    <section className="welcome-page">
+    <section className="welcome-page section-width">
         <HeroSection />
     </section>
   )

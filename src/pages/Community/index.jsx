@@ -14,6 +14,7 @@ import WebinarAnnouncement from "../../components/Community/WebinarAnnouncement"
 import "./style.css";
 import IconInfoCard from "../../components/Common/IconInfoCard";
 import InfoCardList from "../../components/Common/InfoCardList";
+
 const infoCards = [
     {
         id: 1,
@@ -95,10 +96,11 @@ const steps = [
       description:
         "Share insights, ask questions, and become an active part of the tech movement.",
     },
-  ];
+];
+
 const Page = () => {
     return (
-        <div className="community-page">
+        <div className="community-page section-width">
             <section className="container py-5 text-center px-4">
                 <div className="row mb-4">
                     <div className="col d-flex align-items-center flex-column">
@@ -184,7 +186,7 @@ const Page = () => {
             <section className="events container my-5">
                 <h2 className="fw-bold mb-5">Upcoming Events...</h2>
                 <div
-                    className="py-1 py-md-5 px-1 px-md-5 d-flex flex-column flex-md-row align-items-center justify-content-between gap-5"
+                    className="py-1 py-md-5 px-1 px-md-5 d-flex flex-column flex-md-row justify-content-between gap-5"
                     style={{
                         backgroundColor: "#C5FF53",
                         borderRadius: "12px",

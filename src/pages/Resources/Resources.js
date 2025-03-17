@@ -16,9 +16,11 @@ const Resources = () => {
       </Helmet>
       <section className='resource-page'>
         <HeroSection />
-        <BlogSection />
-        <ExplorerSection />
-        <JoinUsAdSection />
+        <div className="section-width">
+          <BlogSection />
+          <ExplorerSection />
+          <JoinUsAdSection />
+        </div>
       </section>
     </>
   )
