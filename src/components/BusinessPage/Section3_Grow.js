@@ -1,4 +1,4 @@
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import userIcon from '../../assets/icons/user-icon.png';
 import bookIcon from '../../assets/icons/book-icon.png';
 import usersIcon from '../../assets/icons/users_icon.png';
@@ -20,7 +20,7 @@ const TeamGrowthSection = () => {
                 <p className='my-3'>Your organization’s success depends on the strength of your team. At Cosmos Academy, whether you’re preparing for digital transformation or strengthening your team’s capabilities, we provide training that makes an immediate impact.</p>
                 <div className="btn-action_div my-4">
                     <button className="customBtn">
-                        <span>Contact Our Team</span> <img src={exploreIcon} alt="icon" />
+                        <span>Contact Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </section>

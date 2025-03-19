@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 
 import israelImage from "../../assets/images/israelImage.png";
 import aromeImage from "../../assets/images/aromeImage.png";
@@ -78,7 +78,7 @@ const ExplorerSection = () => {
             </div>
             <div className="btn-action_div justify-content-start">
                 <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#exploreModal">
-                    <span>Join Explorer</span> <img src={exploreIcon} alt="icon" />
+                    <span>Join Explorer</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                 </Link>
             </div>
 

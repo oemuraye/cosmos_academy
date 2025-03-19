@@ -3,8 +3,12 @@ footer {
     background-color: var(--gray_dark-color);
 }
 .footer-section {
-    max-width: 1264px;
+    max-width: 1440px;
     margin: 0 auto;
+}
+
+footer .navbar-brand span {
+    color: var(--white-color);
 }
 
 .footer-links a:hover {

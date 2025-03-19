@@ -1,0 +1,37 @@
+.sliding-text-container {
+    position: relative;
+    overflow: hidden;
+    height: 76px; 
+    display: flex;
+    width: 130px;
+}
+  
+.sliding-text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    opacity: 0.5;
+    font-family: var(--font-neueMontreal);
+    animation: slideIn 2s ease-in-out infinite;
+}
+  
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    80% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+}

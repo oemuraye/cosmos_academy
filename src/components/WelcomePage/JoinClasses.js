@@ -5,7 +5,7 @@ import 'react-phone-input-2/lib/style.css';
 
 
 
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import dividerIcon from '../../assets/icons/y-divider.png';
 import nigerianFlag from '../../assets/images/nigeria-logo.png';
 
@@ -61,7 +61,7 @@ export default function JoinClasses() {
 
         <div className="btn-action_div justify-content-center my-4 mb-5">
             <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
-                <span>Join Community</span> <img src={exploreIcon} alt="icon" />
+                <span>Join Community</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
             </Link>
         </div>
     </section>

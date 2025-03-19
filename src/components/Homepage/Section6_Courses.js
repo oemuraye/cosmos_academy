@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 
 import courseImage from '../../assets/images/cardImg.png';
@@ -147,7 +147,7 @@ const CourseSection = () => {
                     <p className='my-3'>Unlock the knowledge and tools needed to thrive in the digital world. From web and mobile development to AI and digital innovation, Cosmos Academy offers expert-led courses designed to transform your skills into real-world impact.</p>
                     <div className="btn-action_div my-4">
                         <Link to="/programs" className="customBtn">
-                            <span>Explore Courses</span> <img src={exploreIcon} alt="icon" />
+                            <span>Explore Courses</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                         </Link>
                     </div>
                 </section>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import footerLogo from '../../assets/images/footer-logo.png';
+import brandLogo from '../../assets/images/footerBrand_logo.png';
 
 import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -19,7 +20,14 @@ const Footer = () => {
 
             <section className="row">
                 <div className="footer-contact col-md-3 col-sm-12 my-4">
-                    <img className='img-fluid mb-5' src={footerLogo} alt="logo" width='126px' height='106px' />
+                    {/* <img className='img-fluid mb-5' src={footerLogo} alt="logo" width='126px' height='106px' /> */}
+                    <Link to='/' className="navbar-brand mb-4">
+                        <img src={brandLogo} alt="logo" width="64px" height="40px" className='img-fluid' />
+                        <div>
+                            <span>Cosmos</span>
+                            <span>Academy</span>
+                        </div>
+                    </Link>
                     
                     <section className="social-links d-flex align-items-center gap-3">
                         <Link target='_blank' to=''><FaLinkedin size={24} /></Link>

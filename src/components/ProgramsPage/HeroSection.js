@@ -5,7 +5,8 @@ import heroVideo1 from '../../assets/videos/heroVideo1.mp4';
 import heroVideo2 from '../../assets/videos/heroVideo2.mp4';
 import hero_video1 from '../../assets/videos/hero-video1.mp4';
 import hero_video2 from '../../assets/videos/hero-video2.mp4';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
+import liveIcon from '../../assets/icons/record-icon.png';
 
 const HeroSection = () => {
   return (
@@ -28,7 +29,11 @@ const HeroSection = () => {
                                 <div className="">
                                     <div className="position-relative">
                                         <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'> 
-                                            <img src={heroImage2} alt="Community member" className="img-fluid" />
+                                            {/* <img src={heroImage2} alt="Community member" className="img-fluid" /> */}
+                                            <div className="live-trainingImg">
+                                                <img src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
+                                                <span>Live Training</span>
+                                            </div>
                                         </div>
                                         <video className="img-fluid rounded" style={{ height: "270px", objectFit: "cover" }} autoPlay loop muted playsInline>
                                             <source src={heroVideo2} type="video/mp4" />
@@ -44,7 +49,10 @@ const HeroSection = () => {
 
                                     <div className="position-relative">
                                         <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'> 
-                                            <img src={heroImage2} alt="Community member" className="img-fluid" />
+                                            <div className="live-trainingImg">
+                                                <img src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
+                                                <span>Live Training</span>
+                                            </div>
                                         </div>
                                         <video className="img-fluid rounded" style={{ height: "270px", objectFit: "cover" }} autoPlay loop muted playsInline>
                                             <source src={heroVideo2} type="video/mp4" />

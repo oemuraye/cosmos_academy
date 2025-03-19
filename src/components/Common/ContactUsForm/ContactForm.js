@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
-import exploreIcon from '../../../assets/icons/go-icon.png';
+import exploreIcon from '../../../assets/icons/btn-Icon.png';
 
 import './contactForm.css';
 
@@ -36,7 +36,7 @@ const ContactForm = () => {
 
             <div className="btn-action_div justify-content-center my-4 mb-5">
             <button type="submit" className="customBtn">
-                <span>Send Message</span> <img src={exploreIcon} alt="icon" />
+                <span>Send Message</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
             </button>
             </div>
         </form>

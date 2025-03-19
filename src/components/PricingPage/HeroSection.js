@@ -1,4 +1,4 @@
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import ContactForm from '../Common/ContactUsForm/ContactForm';
 
 const HeroSection = () => {
@@ -11,7 +11,7 @@ const HeroSection = () => {
                 <div className="d-flex justify-content-center mt-4">
                     <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal">
                         Contact Our Team
-                        <img src={exploreIcon} alt="icon" />
+                        <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </div>

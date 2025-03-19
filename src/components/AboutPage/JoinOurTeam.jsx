@@ -1,5 +1,5 @@
 import React from "react";
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import { Link } from "react-router-dom";
 
 
@@ -13,7 +13,7 @@ const JoinOurTeam = () => {
 
       <div className="btn-action_div my-5">
         <Link className="customBtn">
-          <span>Join Our Team</span> <img src={exploreIcon} alt="icon" />
+          <span>Join Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
         </Link>
       </div>
     </section>

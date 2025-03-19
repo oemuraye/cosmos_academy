@@ -26,8 +26,26 @@
  }
   
 .navbar nav {
-    max-width: 1264px;
+    max-width: 1440px;
     margin: 0 auto;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.navbar-brand div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.navbar-brand span {
+    font-family: var(--font-neueMontreal);
+    font-weight: 700;
+    font-size: 21.3px;
+    line-height: 20.24px;
+    color: var(--dark-color);
 }
   
 .nav-link {
@@ -101,7 +119,7 @@
     width: 2px;
     height: 100%;
     top: 0;
-    background-color: #ffffff7b;
+    background-color: #ffffff4d;
 }
 .dropdown-grid .first.border_end::after {
     left: 145px;
@@ -244,9 +262,14 @@
       /* left: 20px; */
       z-index: 1100;
    }
+
    .navbar-brand img {
-       height: 46.992px;
-       width: 100px;
+       height: 39px;
+       width: 46.22px;
+    }
+    .navbar-brand span {
+        font-size: 15.39px;
+        line-height: 14.62px;
     }
 
     .nav-link.active,

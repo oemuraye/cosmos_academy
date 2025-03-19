@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/brand_logo.png';
 // import menuIcon from '../../utils/icons/menuToggler.png';
 // import closeIcon from '../../utils/icons/closeBtn.png';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 
 import './header.css';
 
@@ -245,7 +245,11 @@ const Header = () => {
     <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
-          <img src={logo} alt="logo" height="57.489px" width="162px" />
+          <img src={logo} alt="logo" width="64px" height="40px" className='img-fluid' />
+          <div>
+            <span>Cosmos</span>
+            <span>Academy</span>
+          </div>
         </Link>
 
         {/* <button className={`navbar-toggler ${menuOpen ? 'open' : ''}`} type="button" onClick={toggleMenu} aria-controls="navbarSupportedContent" aria-expanded={menuOpen} aria-label="Toggle navigation">
@@ -275,12 +279,12 @@ const Header = () => {
               </li>
             ))}
             
-            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <img src={exploreIcon} alt="icon" className='img-fluid' /></span>
+            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
           </ul>
 
         </div>
 
-        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <img src={exploreIcon} alt="icon" className='img-fluid' /></button>
+        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
       </nav>
     </header>
   )

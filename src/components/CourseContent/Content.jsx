@@ -1,5 +1,5 @@
 import React from 'react';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import { BsPlus } from 'react-icons/bs';
 
 const Content = ({ course }) => {
@@ -40,7 +40,7 @@ const Content = ({ course }) => {
 
             <div className="btn-action_div">
                 <button className="customBtn">
-                    <span>Enroll now</span> <img src={exploreIcon} alt="icon" />
+                    <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                 </button>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import heroImage1 from '../../assets/images/hero-welcome.png';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import JoinClasses from './JoinClasses';
 
 const HeroSection = () => {
@@ -21,7 +21,7 @@ const HeroSection = () => {
                             </p>
                             <div className="btn-action_div justify-content-center justify-content-md-start">
                                 <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
-                                    <span>Join Live Classes</span> <img src={exploreIcon} alt="icon" />
+                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                             </div>
 

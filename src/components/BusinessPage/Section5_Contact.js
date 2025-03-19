@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 
 const ContactTeamSection = () => {
   return (
@@ -12,7 +12,7 @@ const ContactTeamSection = () => {
 
       <div className="btn-action_div my-5">
         <Link className="customBtn">
-            <span>Contact Our Team</span> <img src={exploreIcon} alt="icon" />
+            <span>Contact Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
         </Link>
       </div>
     </section>

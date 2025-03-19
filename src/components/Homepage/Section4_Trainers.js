@@ -2,6 +2,7 @@ import oghaleImage from "../../assets/images/trustImg.png";
 import alexImage from "../../assets/images/alexImage.png";
 import blessingImage from "../../assets/images/blessingImage.png";
 import menaImage from "../../assets/images/menaImage.png";
+import profImage from "../../assets/images/prof-img.png";
 import piusImage from "../../assets/images/piusImage.png";
 
 
@@ -25,6 +26,11 @@ const trainers = [
     name: "Okemena Agelebe",
     role: "Management/Marketing Lead",
     image: menaImage,
+  },
+  {
+    name: "Prof. Conrad Omonhinmin",
+    role: "Director CUCRID Covenant University",
+    image: profImage,
   },
   {
     name: "Pius Emuraye",
@@ -54,7 +60,7 @@ const TrainersSection = () => {
         <div className="cards-display">
           {trainers.map((trainer, index) => (
             <div className="trainer-card my-4" key={index}>
-              <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+              <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius bg-black" />
               <div className="card-content p-3">
                 <h6>{trainer.name}</h6>
                 <p>{trainer.role}</p>

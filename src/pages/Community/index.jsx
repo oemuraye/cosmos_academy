@@ -8,7 +8,7 @@ import live from "../../assets/icons/live.png";
 import success from "../../assets/icons/success.png";
 import target from "../../assets/icons/target.png";
 import { ReactComponent as StarIcon } from "../../assets/icons/star-rounded.svg";
-import exploreIcon from '../../assets/icons/go-icon.png';
+import exploreIcon from '../../assets/icons/btn-Icon.png';
 import WebinarAnnouncement from "../../components/Community/WebinarAnnouncement";
 
 import "./style.css";
@@ -159,7 +159,7 @@ const Page = () => {
 
                 <div className="btn-action_div mt-5">
                     <button className="customBtn">
-                        <span>Join Community</span> <img src={exploreIcon} alt="icon" />
+                        <span>Join Community</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </section>
@@ -199,7 +199,7 @@ const Page = () => {
                             as we introduce our programs for the Cosmos Academy.
                         </p>
                         <button className="customBtn">
-                            <span>Register</span> <img src={exploreIcon} alt="icon" />
+                            <span>Register</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                         </button>
                     </div>
 

@@ -1,5 +1,5 @@
 import popImage from '../../../assets/images/hive-five_gif.gif';
-import exploreIcon from '../../../assets/icons/go-icon.png';
+import exploreIcon from '../../../assets/icons/btn-Icon.png';
 
 const ComingSoonPop = ({title, text, popImg, btnText}) => {
   return (
@@ -17,7 +17,7 @@ const ComingSoonPop = ({title, text, popImg, btnText}) => {
                 // onClick={() => window.history.back()}
                 data-bs-dismiss="modal" aria-label="Close" 
             >
-                <span>{btnText || "Go back"}</span> <img src={exploreIcon} alt="icon" />
+                <span>{btnText || "Go back"}</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
             </button>
         </div>
     </section>

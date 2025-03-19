@@ -20,7 +20,7 @@ const InfoSection = () => {
                   <div className="tabs-section">
                       <div className="custom-tabs d-flex align-items-center gap-4 mb-3">
                           <span role='button' className={`d-flex align-items-center gap-2 ${activeTab === "live" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("live")} >
-                              <img src={infoLiveIcon} alt="icon" /> Live Training
+                              <img src={infoLiveIcon} alt="icon" className='record-live_icon' /> Live Training
                           </span>
                           <span role='button' className={`d-flex align-items-center gap-2 ${activeTab === "on-demand" ? "custom-tabActive" : ""}`} onClick={() => setActiveTab("on-demand")} >
                                 <img src={infoPlayIcon} alt="icon" /> On Demand Training
