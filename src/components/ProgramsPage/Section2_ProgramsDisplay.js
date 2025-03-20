@@ -160,7 +160,7 @@ const ProgramsDisplay = () => {
                       <img src={course.image} alt={course.title} height='283px' />
                       {course.pricing === "free" && 
                           <span className="badge d-flex gap-2 align-items-center"> 
-                              <img src={recordIcon} alt="icon" width='14px' height='14px' /> Free
+                              <img src={recordIcon} alt="icon" className="record-live_icon" width='14px' height='14px' /> Free
                           </span>
                       }
                       {course.pricing === "coming_soon" && <span className="badge">Coming Soon</span>}

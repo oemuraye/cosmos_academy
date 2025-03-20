@@ -1,8 +1,12 @@
 
 import heroImage from '../../assets/images/resource_heroImg.png';
-import exploreIcon from '../../assets/icons/go-iconBlack.png';
+import exploreIcon from '../../assets/icons/externalGoLinkIcon.png';
+import SlidingText from '../Common/SlidingText/SlidingText';
+
+const insightTexts = ["Insights", "Innovate", "Trends"];
 
 const HeroSection = () => {
+    const slideSpeed = 4000;
   return (
     <section className="hero-section">
         <div className="container-fluid">
@@ -44,10 +48,15 @@ const HeroSection = () => {
                                         </ol>
                                     </div>
 
-                                    {/* Insights Button */}
-                                    <button className="insights-btn customBtn">
-                                        Insights <img src={exploreIcon} alt="icon" className='img-fluid' width='46px' height='46px' />
-                                    </button>
+                                    {/* Insights container */}
+                                    <span className="insights-showcase">
+                                        <span className='resource-slidingText'>
+                                            <SlidingText texts={insightTexts} interval={slideSpeed} />
+                                        </span> 
+                                        <span className='customBtn-icon'>
+                                            <img src={exploreIcon} alt="icon" className='img-fluid' width='11.41px' height='11.41px' />
+                                        </span>
+                                    </span>
                                 </div>
 
                             </div>

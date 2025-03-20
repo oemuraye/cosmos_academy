@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { GoPlus } from "react-icons/go";
+import { HiOutlineMinus } from "react-icons/hi2";
 
 const FaqSection = ({ title, faqs }) => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -18,7 +19,7 @@ const FaqSection = ({ title, faqs }) => {
                         onClick={() => toggleAccordion(index)}
                     >
                         <p className="mb-0">{faq.question}</p>
-                        <span className='faq-icon'>{activeIndex === index ? <FaMinus size={16} /> : <FaPlus size={16} />}</span>
+                        <span className='faq-icon'>{activeIndex === index ? <HiOutlineMinus size={25} /> : <GoPlus size={25} />}</span>
                     </button>
 
                     <div className={`faq-answer px-3 pt-3 ${activeIndex === index ? "open" : "closed"}`}>

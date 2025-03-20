@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa"; // Use LinkedIn & Inst
 
 const AuthorDetails = ({ author }) => {
   return (
-    <div className="author-details d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center">
+    <div className="author-details d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center mt-5">
       <div className="d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto gap-1 gap-md-3">
         <div className="d-flex gap-2 align-items-center">
           <img src={author.avatar} alt={author.name} className="author-avatar me-2" />

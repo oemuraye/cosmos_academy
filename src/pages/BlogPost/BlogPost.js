@@ -24,8 +24,8 @@ const BlogPost = () => {
           
           <div className="blog-content padding_y-spacing">
             {post.content.map((section, index) => (
-              <div key={index} className="blog-section my-4">
-                <h2 className="mt-5">{section.heading}</h2>
+              <div key={index} className="blog-section my-5 py-2">
+                <h2 className="mt-5 mb-4">{section.heading}</h2>
                 <p dangerouslySetInnerHTML={{ __html: section.text }}></p>
               </div>
             ))}

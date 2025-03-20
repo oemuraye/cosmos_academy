@@ -18,22 +18,15 @@ import showcaseImg5 from '../../assets/images/fireGif.gif';
 import SlidingText from "../Common/SlidingText/SlidingText";
 
 const subscriptionTexts = [
-    "Weekly Subscription",
-    "Annual Subscription",
-    "On-Demand Videos",
-    "Live Training"
+  "Weekly Subscription",
+  "Annual Subscription",
+  "On-Demand Videos",
+  "Live <br /> Training"
 ];
 
 const WhySection = () => {
     const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % subscriptionTexts.length);
-    }, 2000); // Change every 2 seconds
-
-    return () => clearInterval(interval);
-  }, []);
   return (
     <section className='why-section padding_y-spacing'>
         <div className="why-content">
@@ -114,7 +107,7 @@ const WhySection = () => {
                             </div>
                             <div className="flexible-card">
                                 <span className="subscription-text">
-                                    <SlidingText />
+                                    <SlidingText texts={subscriptionTexts} />
                                 </span>
                                 <div className="diamond-frame">
                                     <img src={showcaseImg5} alt="img" width='62px' height='62px' className='img-fluid' />

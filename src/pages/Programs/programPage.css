@@ -31,8 +31,11 @@
 }
 .programs-section .courses-display .course-card {
     /* height: 686px; */
-    /* width: 394px; */
+    width: 100%;
     margin: 0 auto;
+}
+.programs-section .courses-display .course-card-body {
+    padding-right: 20px;
 }
 .programs-section .courses-display .badge {
     top: 20px;
@@ -259,6 +262,10 @@
     }
     .event-overlay p {
         font-size: 11.86px;
+    }
+
+    .programs-section .courses-display .course-card-body {
+        padding-right: 10px;
     }
 
     .impactAd_section .impactAd {

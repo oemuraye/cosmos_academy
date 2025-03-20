@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { GoPlus } from "react-icons/go";
+import { HiOutlineMinus } from "react-icons/hi2";
+import { faqData } from "../../data/faq";
 
 const faqs = [
     { id: 1, question: "Who is this for?", answer: "This is for anyone looking to learn and grow." },
     { id: 2, question: "What will I learn from the courses?", answer: "You will gain industry-relevant skills and knowledge." },
     { id: 3, question: "How much does it cost for a course?", answer: "The pricing varies depending on the course you choose." },
     { id: 4, question: "How much does it cost for a course?", answer: "Check our website for the latest pricing details." },
-  ];
+];
 
 const FaqSection = () => {
     const [activeIndex, setActiveIndex] = useState(null);
+
+    const generalFaqs = faqData.find((category) => category.title === "General Questions")?.faqs || [];
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -22,20 +26,41 @@ const FaqSection = () => {
         </div>
 
         <div className="faq-container my-5">
-            {faqs.map((faq, index) => (
+            {generalFaqs.length > 0 ? (
+                generalFaqs.map((faq, index) => (
+                    <div key={faq.id} className="faq-item mb-4 p-2">
+                    <button
+                        className="faq-question w-100 d-flex justify-content-between border-0 bg-white align-items-center"
+                        onClick={() => toggleAccordion(index)}
+                    >
+                        <p className="mb-0">{faq.question}</p>
+                        <span className="faq-icon">
+                        {activeIndex === index ? <HiOutlineMinus size={25} /> : <GoPlus size={25} />}
+                        </span>
+                    </button>
+
+                    <div className={`faq-answer px-3 pt-3 ${activeIndex === index ? "open" : "closed"}`}>
+                        <p className="text-muted">{faq.answer}</p>
+                    </div>
+                    </div>
+                ))
+            ) : (
+                <p className="text-center">No FAQs available.</p>
+            )}
+            {/* {faqs.map((faq, index) => (
                 <div key={faq.id} className="faq-item mb-4 p-2">
                     <button className="faq-question w-100 d-flex justify-content-between border-0 bg-white align-items-center "
                         onClick={() => toggleAccordion(index)}
                         >
                         <p className="mb-0">{faq.question}</p>
-                        <span className='faq-icon'>{activeIndex === index ? <FaMinus size={16} /> : <FaPlus size={16} />}</span>
+                        <span className='faq-icon'>{activeIndex === index ? <HiOutlineMinus size={25} /> : <GoPlus size={25} />}</span>
                     </button>
 
                     <div className={`faq-answer px-3 pt-3 ${activeIndex === index ? "open" : "closed"}`}>
                         <p className="text-muted">{faq.answer}</p>
                     </div>
                 </div>
-            ))}
+            ))} */}
         </div>
     </section>
   )

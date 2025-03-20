@@ -4,6 +4,7 @@ import blessingImage from "../../assets/images/blessingImage.png";
 import menaImage from "../../assets/images/menaImage.png";
 import profImage from "../../assets/images/prof-img.png";
 import piusImage from "../../assets/images/piusImage.png";
+import { useEffect, useRef, useState } from "react";
 
 
 const trainers = [
@@ -40,6 +41,38 @@ const trainers = [
 ];
 
 const TrainersSection = () => {
+  const containerRef = useRef(null);
+  const [direction, setDirection] = useState(1);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    let scrollSpeed = 1; // Adjust speed
+    let animationFrame;
+
+    const scroll = () => {
+      if (!container) return;
+
+      // Move in the current direction
+      container.scrollLeft += scrollSpeed * direction;
+
+      // If reached the end, reverse direction
+      if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+        setDirection(-1);
+      }
+      // If reached the start, reverse direction
+      else if (container.scrollLeft <= 0) {
+        setDirection(1);
+      }
+
+      animationFrame = requestAnimationFrame(scroll);
+    };
+
+    animationFrame = requestAnimationFrame(scroll);
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [direction]);
   
   return (
     <section className="trainers-section section-width padding_y-spacing">
@@ -55,7 +88,7 @@ const TrainersSection = () => {
         </div>
       </div>
 
-      <div className="trainers-cards container">
+      <div className="trainers-cards container" ref={containerRef}>
 
         <div className="cards-display">
           {trainers.map((trainer, index) => (
