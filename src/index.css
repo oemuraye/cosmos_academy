@@ -356,7 +356,7 @@ input::placeholder {
   }
   p {
     font-size: 16px;
-    line-height: 100%;
+    line-height: 21px;
   }
   .customBtn {
     /* padding: 10px 20px; */

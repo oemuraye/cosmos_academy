@@ -95,7 +95,7 @@ const PricingPlansSection = () => {
                               <h5 className="">Special Discounts & Scholarships</h5>
                               <p className="pe-5">We offer discounts for students, early subscribers, and group enrollments. <strong>Need financial support?</strong> Apply for our scholarship program designed to help passionate learners thrive.</p>
 
-                              <button style={{ backgroundColor: '#AFD55E' }} className="btn mt-3">Coming Soon</button>
+                              <button style={{ backgroundColor: '#AFD55E' }} className="btn mt-4 mb-2">Coming Soon</button>
                           </div>
                           <img src={cardImage} alt="img" width='100%' height='168px' className='' style={{ objectFit: 'cover' }} />
                       </div>

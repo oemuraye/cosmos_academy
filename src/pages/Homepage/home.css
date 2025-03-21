@@ -53,6 +53,7 @@
     max-width: 767px;
     margin: 0 auto;
     text-align: center;
+    padding: 10px;
 }
 .section_headingWithBtn p {
     font-size: 24px;
@@ -155,7 +156,7 @@ img.xb-border-radius {
 }
 .subscription-text {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 15%;
     width: 150px;
 }
@@ -182,6 +183,7 @@ img.xb-border-radius {
 }
 .section-heading {
     max-width: 781px;
+    padding: 10px;
 }
 
 
@@ -204,12 +206,12 @@ img.xb-border-radius {
     display: flex;
     gap: 15px;
     width: 1300px;
-    min-width: 200%;
+    min-width: 100%;
     /* margin: 0 auto; */
     position: relative;
     /* animation: infinite-scroll 20s linear infinite; */
-    box-shadow: inset 30px 0 30px -20px rgba(255, 255, 255, 1),  /* Left fade */
-                inset -30px 0 30px -20px rgba(255, 255, 255, 1); /* Right fade */
+    /* box-shadow: inset 30px 0 30px -20px rgba(255, 255, 255, 1),  
+                inset -30px 0 30px -20px rgba(255, 255, 255, 1);  */
 }
 /* @keyframes infinite-scroll {
     from {
@@ -235,11 +237,11 @@ img.xb-border-radius {
    background-color: var(--basic-BgColor); 
 }
 .trainers-section .trainers-cards .trainer-card h6 {
-    font-size: 18px;
+    font-size: 15px;
 }
 .trainers-section .trainers-cards .trainer-card p {
     font-size: 16px;
-    line-height: 19.2px;
+    line-height: 100%;
     color: var(--card_text-color2);
     margin-bottom: 0;
 }
@@ -495,7 +497,7 @@ img.xb-border-radius {
 .pricing-section .plans-display li,
 .pricing-section .plans-display p {
     font-family: var(--font-neueMontrealRg);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--gray_dark-color);
 }
 .pricing-section .plans-display button {
@@ -641,6 +643,9 @@ img.xb-border-radius {
     .custom-tabs .custom-tabActive {
         font-size: 12px !important;
     }
+    .section_headingWithBtn p {
+        line-height: 21x;
+    }
     .subscription-text {
         left: 6%;
         font-size: 16px;
@@ -655,6 +660,9 @@ img.xb-border-radius {
         /* width: 11.61px;
         height: 11.61px;
         margin-right: -5px; */
+    }
+    .trainers-section .trainers-cards .trainer-card p {
+        font-size: 14px;
     }
     .course-card-image {
         height: 222px;

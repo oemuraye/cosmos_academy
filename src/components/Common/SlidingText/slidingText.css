@@ -15,6 +15,17 @@
     font-family: var(--font-neueMontreal);
     animation: slide__In 2s ease-in-out infinite;
 }
+
+
+
+@media (max-width: 768px) {
+  .sliding-text {
+    font-size: 16px;
+}
+}
+
+
+
   
 @keyframes slide__In {
     0% {
@@ -34,3 +45,4 @@
       opacity: 0;
     }
 }
+
