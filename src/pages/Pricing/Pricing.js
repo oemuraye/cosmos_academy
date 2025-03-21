@@ -1,12 +1,16 @@
 import React from 'react'
 
-import './pricingPage.css';
 import HeroSection from '../../components/PricingPage/HeroSection';
 import PricingPlansSection from '../../components/Homepage/Section7_PricingPlans';
 import FaqSection from '../../components/Homepage/Section9_Faq';
+import { faqData } from "../../data/faq";
 import { Helmet } from 'react-helmet-async';
 
+import './pricingPage.css';
+
 const Pricing = () => {
+  const pricingFaqs = faqData.find((category) => category.title === "Payments & Pricing")?.faqs || [];
+
   return (
     <>
       <Helmet>
@@ -16,7 +20,7 @@ const Pricing = () => {
           <HeroSection />
           <div className="section-width">
             <PricingPlansSection />
-            <FaqSection />
+            <FaqSection faqs={pricingFaqs} />
           </div>
       </main>
     </>

@@ -14,6 +14,11 @@ const trainers = [
     image: oghaleImage,
   },
   {
+    name: "Prof. Conrad Omonhinmin",
+    role: "Chief Impact Assesor",
+    image: profImage,
+  },
+  {
     name: "Alexander Ikani",
     role: "Lead Product Designer",
     image: alexImage,
@@ -29,11 +34,6 @@ const trainers = [
     image: menaImage,
   },
   {
-    name: "Prof. Conrad Omonhinmin",
-    role: "Director CUCRID Covenant University",
-    image: profImage,
-  },
-  {
     name: "Pius Emuraye",
     role: "Lead Product Developer",
     image: piusImage,
@@ -43,35 +43,33 @@ const trainers = [
 const TrainersSection = () => {
   const containerRef = useRef(null);
   const [direction, setDirection] = useState(1);
+  const isUserScrolling = useRef(false);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    let scrollSpeed = 1; // Adjust speed
-    let animationFrame;
+    let scrollSpeed = 2; // Adjust speed
+    let scrollInterval;
 
-    const scroll = () => {
-      if (!container) return;
+    const startAutoScroll = () => {
+      scrollInterval = setInterval(() => {
+        if (!isUserScrolling.current) {
+          container.scrollBy({ left: scrollSpeed * direction, behavior: "smooth" });
+        }
 
-      // Move in the current direction
-      container.scrollLeft += scrollSpeed * direction;
-
-      // If reached the end, reverse direction
-      if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        setDirection(-1);
-      }
-      // If reached the start, reverse direction
-      else if (container.scrollLeft <= 0) {
-        setDirection(1);
-      }
-
-      animationFrame = requestAnimationFrame(scroll);
+        // Reverse direction at edges
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+          setDirection(-1);
+        } else if (container.scrollLeft <= 0) {
+          setDirection(1);
+        }
+      }, 20); // Adjust interval for smooth scrolling
     };
 
-    animationFrame = requestAnimationFrame(scroll);
+    startAutoScroll();
 
-    return () => cancelAnimationFrame(animationFrame);
+    return () => clearInterval(scrollInterval);
   }, [direction]);
   
   return (
@@ -93,7 +91,7 @@ const TrainersSection = () => {
         <div className="cards-display">
           {trainers.map((trainer, index) => (
             <div className="trainer-card my-4" key={index}>
-              <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius bg-black" />
+              <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
               <div className="card-content p-3">
                 <h6>{trainer.name}</h6>
                 <p>{trainer.role}</p>

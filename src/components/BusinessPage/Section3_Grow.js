@@ -6,9 +6,9 @@ import cpuIcon from '../../assets/icons/cpu-icon.png';
 import brandIcon from '../../assets/icons/medal_star-icon.png';
 
 import showcaseImg1 from '../../assets/images/showcase-img1.png';
-import showcaseImg2 from '../../assets/images/showcase-img2.png';
+import showcaseImg2 from '../../assets/images/widows_gif.gif';
 import showcaseImg3 from '../../assets/images/showcase-img3.png';
-import showcaseImg4 from '../../assets/images/showcase-img4.png';
+import showcaseImg4 from '../../assets/images/padlockGif.gif';
 import showcaseImg5 from '../../assets/images/showcase-img5.png';
 import showcaseImg6 from '../../assets/images/showcase-img6.png';
 
@@ -48,7 +48,9 @@ const TeamGrowthSection = () => {
                                 <h4 className='mb-0'>Hands-On, Impact-Driven Learning.</h4>
                                 <p>Every course is designed with practical applications, real-world projects, and mentor-guidance.</p>
                             </div>
-                            <img src={showcaseImg2} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' />
+                            <div className="driven-card">
+                                <img src={showcaseImg2} alt="img" className='img-fluid' width='152px' height='145px' />
+                            </div>
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12 my-4">
@@ -66,7 +68,11 @@ const TeamGrowthSection = () => {
 
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">
-                            <img src={showcaseImg4} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <div className="flexible-card">
+                                <div className="diamond-frame">
+                                    <img src={showcaseImg4} alt="img" width='62px' height='62px' className='img-fluid' />
+                                </div>
+                            </div>
                             <div className="card-content">
                                 {/* <div className="icon-circle">
                                     <img src={cpuIcon} alt="" className="img-fluid" />

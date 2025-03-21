@@ -12,8 +12,11 @@ import CourseSection from '../../components/Homepage/Section6_Courses';
 import PricingPlansSection from '../../components/Homepage/Section7_PricingPlans';
 import BlogSection from '../../components/Homepage/Section8_Blog';
 import FaqSection from '../../components/Homepage/Section9_Faq';
+import { faqData } from "../../data/faq";
 
 const Home = () => {
+  const generalFaqs = faqData.find((category) => category.title === "General Questions")?.faqs || [];
+  
   return (
     <>
         <Helmet>
@@ -36,7 +39,7 @@ const Home = () => {
             <CourseSection />
             <PricingPlansSection />
             <BlogSection />
-            <FaqSection />
+            <FaqSection faqs={generalFaqs} />
         </main>
         
     </>

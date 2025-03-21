@@ -11,6 +11,7 @@ import piusImage from "../../assets/images/piusImage.png";
 import blessingImage from "../../assets/images/blessingImage.png";
 import alexImage from "../../assets/images/alexImage.png";
 import menaImage from "../../assets/images/menaImage.png";
+import profImage from "../../assets/images/prof-img.png";
 import hopeImage from "../../assets/images/hopeImage.jpeg";
 import HeaderContent from '../../components/Common/HeaderContent';
 import InfoCardList from '../../components/Common/InfoCardList';
@@ -24,6 +25,11 @@ const people = [
     name: "Trust Oghale",
     role: "Lead Digital Innovations",
     image: trustImage,
+  },
+  {
+    name: "Prof. Conrad Omonhinmin",
+    role: "Chief Impact Assesor",
+    image: profImage,
   },
   {
     name: "Okemena Agelebe",

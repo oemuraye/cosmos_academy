@@ -83,7 +83,7 @@ const ExplorerSection = () => {
             </div>
 
             {/* <!-- Modal --> */}
-            <section className="modal fade" id="exploreModal" tabindex="-1" aria-labelledby="exploreModalLabel" aria-hidden="true">
+            <section className="modal fade" id="exploreModal" tabIndex="-1" aria-labelledby="exploreModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="d-flex justify-content-end p-2">

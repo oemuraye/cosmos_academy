@@ -26,7 +26,7 @@ const HeroSection = () => {
                             </div>
 
                             {/* <!-- Modal --> */}
-                            <section className="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+                            <section className="modal fade" id="regModal" tabIndex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
                                 <div className="modal-dialog">
                                     <div className="modal-content">
                                         <div className="d-flex justify-content-end p-2">

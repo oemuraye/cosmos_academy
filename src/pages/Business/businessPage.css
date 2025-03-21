@@ -19,7 +19,9 @@
     max-width: 1085px;
     margin: 0 auto;
 }
-
+.teamGrowth-Section .flexible-card {
+    background: linear-gradient(102.26deg, #C7F16C 10.58%, #ECFFC4 47.08%, #B6E256 83.43%);
+}
 .learning-info-section .courses-display {
     display: flex;
     gap: 20px;

@@ -5,6 +5,7 @@ import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 const courses = [
     {
       id: 1,
+      slug: 'introduction-to-web-dev',
       title: "Website Development",
       instructor: "Cosmos",
       duration: "3 Weeks",
@@ -16,6 +17,7 @@ const courses = [
         pricing: "free",    },
     {
       id: 2,
+      slug: 'introduction-to-web-dev',
       title: "Social Media Management",
       instructor: "Cosmos",
       duration: "3 Weeks",
@@ -27,6 +29,7 @@ const courses = [
         pricing: "₦70,000",    },
     {
         id: 3,
+        slug: 'introduction-to-web-dev',
         title: "Digital Innovation",
         instructor: "Cosmos",
         duration: "3 Weeks",
@@ -38,6 +41,7 @@ const courses = [
         pricing: "coming_soon",    },
     {
         id: 4,
+        slug: 'introduction-to-web-dev',
         title: "Advanced JavaScript Mastery",
         instructor: "Cosmos",
         duration: "3 Weeks",
@@ -91,7 +95,7 @@ const LearningInfoSection = () => {
                                 <hr />
 
                                 <div className="course-footer">
-                                    <Link href="#" className="learn-more">View Courses <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                                    <Link href={`/course/${course.slug}`} className="learn-more">View Courses <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
                         </div>
