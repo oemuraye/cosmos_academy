@@ -425,7 +425,7 @@ img.xb-border-radius {
     border-radius: 30px;
     padding: 8px 15px;
     background-color: #ffffff60;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     z-index: 1;
 }
 @keyframes liveBlink {
