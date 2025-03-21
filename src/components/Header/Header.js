@@ -245,7 +245,7 @@ const Header = () => {
     <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
-          <img src={logo} alt="logo" width="64px" height="40px" className='img-fluid' />
+          <img src={logo} alt="logo" width="51px" height="50px" className='img-fluid' />
           <div>
             <span>Cosmos</span>
             <span>Academy</span>
