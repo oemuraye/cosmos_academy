@@ -31,7 +31,7 @@ const courses = [
       instructor: "Cosmos",
       duration: "3 Weeks",
       startDate: "Mar 17, 2025",
-      description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
+      description: "Learn dynamic websites using HTML, CSS, JavaScript, and frameworks like React.",
       enrolled: "1k",
       image: courseImage1,
       pricing: "free",

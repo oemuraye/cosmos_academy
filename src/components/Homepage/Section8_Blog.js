@@ -37,7 +37,7 @@ const BlogSection = () => {
   return (
     <section className="blog-section section-width padding_y-spacing my-5">
       <div className="container">
-        <div className="d-flex justify-content-between align-items-center mb-4">
+        <div className="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
           <h2 className="">From Our Blog</h2>
           <Link href="#" className="heading-link d-flex gap-2 align-items-center">
             View More Blog Content <img src={externalGoLinkIcon} className='' alt="icon" width='10px' height='10px' />
