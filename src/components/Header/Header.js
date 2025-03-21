@@ -153,7 +153,7 @@ const menuItems = [
   { name: "For Business", path: "business" }, 
   { name: "About", path: "about" },
   { name: "Partner", path: "partner" },
-  { name: "Schedule", path: "schedule" },
+  // { name: "Schedule", path: "schedule" },
 ];
 
 const Header = () => {

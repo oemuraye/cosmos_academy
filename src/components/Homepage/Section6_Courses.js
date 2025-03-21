@@ -13,6 +13,7 @@ import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
 import enrolledUsersImg3 from '../../assets/images/enrolled-users3.png';
 import enrolledUsersImg4 from '../../assets/images/enrolled-users4.png';
 import enrolledUsersImg5 from '../../assets/images/enrolled-users5.png';
+import stackedUsersImg from '../../assets/images/groupImages.png';
 
 import { IoMdArrowForward } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
@@ -184,9 +185,10 @@ const CourseSection = () => {
                                     <div className="course-footer">
                                         <div className="enrolled">
                                             <div className="studentImages">
-                                                {userEnrolledImages.map((userEnrolled, index) => (
+                                                {/* {userEnrolledImages.map((userEnrolled, index) => (
                                                     <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
-                                                ))}
+                                                ))} */}
+                                                <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
                                             </div>
                                             <span>{course.enrolled} enrolled</span>
                                         </div>

@@ -21,6 +21,10 @@
     padding-top: 175px;
     padding-bottom: 85px;
 }
+.hero-section .container-fluid .section-width .row {
+    margin-right: 0;
+    margin-left: 0;
+}
 .hero-section p {
     font-family: var(--font-neueMontreal);
 }
@@ -405,6 +409,7 @@ img.xb-border-radius {
 }
 .community-stackImages .enrolled {
     background-color: #ffffff50;
+    backdrop-filter: blur(5px);
 }
 .live-trainingImg span,
 .community-stackImages span {
@@ -420,6 +425,7 @@ img.xb-border-radius {
     border-radius: 30px;
     padding: 8px 15px;
     background-color: #ffffff60;
+    backdrop-filter: blur(5px);
     z-index: 1;
 }
 @keyframes liveBlink {
@@ -455,10 +461,10 @@ img.xb-border-radius {
 
   
 .enrolled img {
-    width: 24px;
+    /* width: 24px;
     height: 24px;
     border-radius: 50%;
-    margin-right: -10px;
+    margin-right: -10px; */
 }
 .studentImages {
     display: flex;
@@ -616,7 +622,7 @@ img.xb-border-radius {
         margin: 0 auto;
     }
     .programs-section .enrolled img {
-        margin-right: -15px;
+        /* margin-right: -15px; */
     }
 }
 @media (max-width: 850px) {
@@ -646,9 +652,9 @@ img.xb-border-radius {
         font-weight: 500;
     }
     .community-stackImages .enrolled img {
-        width: 11.61px;
+        /* width: 11.61px;
         height: 11.61px;
-        margin-right: -5px;
+        margin-right: -5px; */
     }
     .course-card-image {
         height: 222px;

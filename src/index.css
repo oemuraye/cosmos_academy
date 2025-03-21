@@ -249,14 +249,15 @@ input::placeholder {
 
 @media (max-width: 768px) {
   .padding_y-spacing {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-lg, .container-md, .container-sm {
       max-width: 1440px;
+      margin: 0 auto;
   }
 }
 
