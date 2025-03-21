@@ -7,7 +7,7 @@ import heroVideo2 from '../../assets/videos/heroVideo2.mp4';
 import hero_video1 from '../../assets/videos/hero-video1.mp4';
 import hero_video2 from '../../assets/videos/hero-video2.mp4';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
-import liveIcon from '../../assets/icons/record_icon.png';
+import liveIcon from '../../assets/icons/record-icon.png';
 
 import enrolledUsersImg1 from '../../assets/images/enrolled-users1.png';
 import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
