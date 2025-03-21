@@ -153,11 +153,12 @@ p {
   padding: 7px;
   color: var(--gray_dark-color);
   font-family: var(--font-neueMontreal);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .custom-tabs span {
   padding: 10px;
+  padding-right: 15px;
 }
 .custom-tabs .custom-tabActive {
   border-radius: 30px;
