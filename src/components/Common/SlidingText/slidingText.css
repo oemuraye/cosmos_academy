@@ -13,10 +13,10 @@
     color: white;
     opacity: 0.5;
     font-family: var(--font-neueMontreal);
-    animation: slideIn 2s ease-in-out infinite;
+    animation: slide__In 2s ease-in-out infinite;
 }
   
-@keyframes slideIn {
+@keyframes slide__In {
     0% {
       transform: translateY(100%);
       opacity: 0;
