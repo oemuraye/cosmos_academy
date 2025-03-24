@@ -1,6 +1,8 @@
 import React from 'react';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import { BsPlus } from 'react-icons/bs';
+import { HiOutlineMinus } from "react-icons/hi2";
+import { GoPlus } from "react-icons/go";
 
 const Content = ({ course }) => {
     return (
@@ -32,7 +34,7 @@ const Content = ({ course }) => {
 
                     <div className="col-1 text-end">
                         <button className="btn btn-light">
-                            <BsPlus />
+                            <GoPlus size={25} />
                         </button>
                     </div>
                 </div>

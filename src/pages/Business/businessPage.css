@@ -41,3 +41,13 @@
 .business-page .joinUsAd_section {
     max-width: 992px;
 }
+
+@media (max-width: 768px) {
+    .stats-section .stats-card p {
+        font-size: 12px;
+        padding: 10px;
+        border-radius: 6px;
+        max-width: 161px;
+        height: 104px;
+    }
+}

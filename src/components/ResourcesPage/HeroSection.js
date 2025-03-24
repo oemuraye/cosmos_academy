@@ -15,7 +15,7 @@ const HeroSection = () => {
                     <div className="row align-items-center">
                         
                         <section className="col-md-6 col-sm-12 my-3">
-                            <div className="text-center text-md-start mb-4 mb-md-0 px-1 pt-5 pt-md-0">
+                            <div className="text-start mb-4 mb-md-0 px-1 pt-5 pt-md-0">
                                 <h1 className="mb-3">Insights, Innovations & Industry Trends</h1>
                                 <p className="mb-5">Whether you're a beginner, a tech enthusiast, or an industry professional, our blog is your go-to resource for expert insights, practical guides, and inspiring stories.</p>
                             </div>

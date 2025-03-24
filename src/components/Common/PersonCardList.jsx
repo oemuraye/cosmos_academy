@@ -3,10 +3,10 @@ const PersonCardList = ({people}) => {
     return (
         <section className="trainers-section px-5">
             <div className="container">
-                <div className="row justify-content-start">
+                <div className="trainers-cards d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
                     {explorers.map((explorer, index) => (
-                        <div className="col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
-                            <div className="trainer-card">
+                        <div className="mb-4" key={index}>
+                            <div className="trainer-card m-auto">
                                 <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
                                 <div className="card-content p-3">
                                     <h6>{explorer.name}</h6>

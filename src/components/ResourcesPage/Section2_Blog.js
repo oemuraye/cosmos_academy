@@ -8,6 +8,7 @@ import blogImg2 from "../../assets/images/blogImg2.png";
 const blogPosts = [
   {
     id: 1,
+    slug: 'nigerian-tech-ecosystem',
     title: "The Nigerian Tech Ecosystem: A Call for Authentic Innovation",
     author: "Trust Oghale",
     date: "Feb 28, 2025",
@@ -16,6 +17,7 @@ const blogPosts = [
   },
   {
     id: 2,
+    slug: 'future-of-ai',
     title: "10 Product design portfolios to inspire you.",
     author: "Alexander Ikani",
     date: "Feb 28, 2025",
@@ -24,6 +26,7 @@ const blogPosts = [
   },
   {
     id: 3,
+    slug: 'engine-development',
     title: "10 Product design portfolios to inspire you.",
     author: "Alexander Ikani",
     date: "Feb 28, 2025",
@@ -98,7 +101,7 @@ const BlogSection = () => {
       <div className="courses-display container row my-5">
         {filteredBlog.length > 0 ? (
           filteredBlog.map((blog) => (
-            <Link key={blog.id} className="col-md-4 col-sm-12">
+            <Link to={`/blog-post/${blog.slug}`} key={blog.id} className="col-md-4 col-sm-12">
               <div className="blog-card card border-0 shadow-sm">
                 <img src={blog.image} alt={blog.title} className="card-img-top img-fluid" height="185px" width='341px' />
                 <div className="card-body">

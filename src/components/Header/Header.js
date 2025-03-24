@@ -16,45 +16,45 @@ const dropdownContent = {
         <section className='col-4 pt-1 pe-5 border_end first'>
           <Link to='/programs'>
             <h4>Product Design</h4>
-            <p>Mobil App Dev</p>
+            {/* <p>Mobil App Dev</p> */}
           </Link>
           <Link to='/programs'>
             <h4>Mobil App Dev</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to='/programs'>
             <h4>Brand Design</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
 
         <section className='col-4 pt-1 pe-5 border_end second'>
           <Link to='/programs'>
             <h4>Social Media Mangament</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to='/programs'>
             <h4>AR & VR Dev</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to='/programs'>
             <h4>Digital Information</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
 
         <section className='col-4 pt-1'>
           <Link to='/programs'>
             <h4>Website Development</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to='/programs'>
             <h4>Artificial Intelligence</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to='/programs'>
             <h4>Embedded Systems and IOT</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
       </div>
@@ -66,17 +66,17 @@ const dropdownContent = {
         <section className='col-4 pt-1 pe-5 border_end first'>
             <Link to='/resources'>
               <h4>Blogs</h4>
-              <p>Product Design</p>
+              {/* <p>Product Design</p> */}
             </Link>
             <Link to='/resources'>
               <h4>Mobil App Dev</h4>
-              <p>Product Design</p>
+              {/* <p>Product Design</p> */}
             </Link>
         </section>
         <section className='col-4 pt-1 pe-3'>
             <Link to='/resources'>
               <h4>Cosmos Explorer</h4>
-              <p>Product Design</p>
+              {/* <p>Product Design</p> */}
             </Link>
         </section>
       </div>
@@ -88,22 +88,22 @@ const dropdownContent = {
         <section className='col-4 pt-1 pe-5 border_end first'>
           <Link to="/about" >
             <h4>About Us</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to="/about" >
             <h4>Why Cosmos Conference</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
 
         <section className='col-4 pt-1 pe-3'>
           <Link to="/about" >
             <h4>FAQ</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link to="/about" >
             <h4>Contact Us</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
       </div>
@@ -115,7 +115,7 @@ const dropdownContent = {
         <section className='col-4 pt-1 pe-2'>
           <Link to="/business">
             <h4>For Companies </h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
       </div>
@@ -127,18 +127,18 @@ const dropdownContent = {
       <section className='col-4 pt-1 pe-5 border_end first'>
           <Link>
             <h4>Donate to affiliate</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
           <Link>
             <h4>Donate to Memitech</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
 
         <section className='col-4 pt-1 pe-3'>
           <Link>
             <h4>Donate to Cosmos</h4>
-            <p>Product Design</p>
+            {/* <p>Product Design</p> */}
           </Link>
         </section>
       </div>

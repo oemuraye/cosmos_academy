@@ -2,28 +2,29 @@
 .navbar-default-color {
     /* background-color: var(--basic-color); */
     background-color: #eaeaea00;
- }
+}
   
 .navbar-default-color .navbar-expand-md {
     /* background-color: var(--basic-color); */
     background-color: #eaeaea00;
- }
+}
   
 .navbar-color-onscroll {
-    background-color: #00000099;
-    /* background-color: var(--dark-color); */
- }
+    /* background-color: #0000005d; */
+    background-color: #ffffff77;
+    backdrop-filter: blur(5px);
+}
   
 .navbar-color-onscroll .navbar-expand-md {
     background-color: #00000000;
     /* background-color: var(--dark-color); */
- }
+}
   
 .navbar {
     transition: background-color 1s ease;
     z-index: 1000;
     gap: 10px;
- }
+}
   
 .navbar nav {
     max-width: 1440px;
@@ -140,6 +141,7 @@
     color: var(--gray_white-color);
     font-size: 18px;
     line-height: 100%;
+    margin-bottom: 25px;
 }
 .dropdown_menu .dropdown-grid p {
     color: var(--card_text-color2);

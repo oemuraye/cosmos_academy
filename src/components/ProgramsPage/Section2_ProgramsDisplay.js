@@ -23,6 +23,8 @@ const tabsData = [
   { id: 4, name: "Artificial Intelligence", description: "Understand AI concepts, machine learning, and automation to create smart solutions for real-world problems." },
   { id: 5, name: "Mobile Development", description: "Create powerful mobile applications using React Native, Flutter, and native technologies for iOS and Android." },
   { id: 6, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
+  { id: 7, name: "Embedded System/IoT", description: "Understand the principles of embedded systems and IoT technologies to build smart devices and systems that connect the physical world to the digital world." },
+  { id: 8, name: "AR/VR Development", description: "Create immersive experiences using augmented reality (AR) and virtual reality (VR) technologies to enhance user interactions and engagement in digital environments." },
 ];
 
 const courses = [
@@ -112,7 +114,7 @@ const ProgramsDisplay = () => {
   
 
   return (
-    <section className="programs-section container padding_y-spacing px-4 py-5">
+    <section className="programs-section container padding_y-spacing py-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="fw-bold">Explore Programs</h4>
         <div className="d-flex gap-3 align-items-center">
@@ -127,7 +129,7 @@ const ProgramsDisplay = () => {
 
       <div className="d-flex align-items-center position-relative">
         {/* Tabs */}
-        <section className="tabs-section overflow-auto ms-5 mb-3" ref={tabsContainerRef}>
+        <section className="tabs-section overflow-auto ms-0 ms-md-5 mb-3" ref={tabsContainerRef}>
             <div className="custom-tabs d-flex align-items-center gap-2">
                 {tabsData.map((tab) => (
                     <span
@@ -142,16 +144,17 @@ const ProgramsDisplay = () => {
         </section>
       </div>
 
-      {/* Tab Description */}
-      <div className="tab-description container">
-        <p className="mt-3 tab-heading text-center">
-            {tabsData.find((tab) => tab.id === activeTab)?.description}
-        </p>
-
-      </div>
 
       {/* Courses Display */}
-      <div className="courses-display row my-5">
+      <div className="courses-display row px-4">
+        {/* Tab Description */}
+        <div className="tab-description container">
+          <p className="mt-3 tab-heading text-center">
+              {tabsData.find((tab) => tab.id === activeTab)?.description}
+          </p>
+
+        </div>
+
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
             <div key={course.id} className="col-md-4 col-sm-12 my-3 ">
@@ -206,7 +209,7 @@ const ProgramsDisplay = () => {
             </div>
           ))
         ) : (
-          <p className="text-center m-auto mt-4">No courses available for this category.</p>
+          <p className="text-center">No courses available for this category.</p>
         )}
       </div>
     </section>

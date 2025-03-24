@@ -1,10 +1,16 @@
+import { useEffect, useRef, useState } from "react";
+
 import oghaleImage from "../../assets/images/trustImg.png";
 import alexImage from "../../assets/images/alexImage.png";
 import blessingImage from "../../assets/images/blessingImage.png";
 import menaImage from "../../assets/images/menaImage.png";
 import profImage from "../../assets/images/prof-img.png";
 import piusImage from "../../assets/images/piusImage.png";
-import { useEffect, useRef, useState } from "react";
+import israelImage from "../../assets/images/israelImage.png";
+import aromeImage from "../../assets/images/aromeImage.png";
+import fonaImage from "../../assets/images/fonaImage.png";
+import danielImage from "../../assets/images/danielImage.png";
+import obadaImage from "../../assets/images/obadaImage.png";
 
 
 const trainers = [
@@ -37,6 +43,31 @@ const trainers = [
     name: "Pius Emuraye",
     role: "Lead Product Developer",
     image: piusImage,
+  },
+  {
+    name: "Israel Ufumaka",
+    role: "Artificial Intelligence Expert",
+    image: israelImage,
+  },
+  {
+    name: "Arome Ibrahim",
+    role: "AR/VR Developer",
+    image: aromeImage,
+  },
+  {
+    name: "Erhabor Fona",
+    role: "Mobile Developer",
+    image: fonaImage,
+  },
+  {
+    name: "Daniel Fishbone",
+    role: "Embedded System/IOT",
+    image: danielImage,
+  },
+  {
+    name: "Obadamilare Akinyiga ",
+    role: "Artificial Intelligence Developer",
+    image: obadaImage,
   },
 ];
 
