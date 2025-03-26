@@ -16,6 +16,7 @@ import BlogPost from './pages/BlogPost/BlogPost';
 import FaqPage from './pages/Faq/Faq';
 import ScrollToTop from './utils/ScrollToTop';
 import Welcome from './pages/Welcome/Welcome';
+import Partner from './pages/Partner/Partner';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="/blog-post/:postID" element={<BlogPost/>} />
           <Route path="/faq" element={<FaqPage/>} />
           <Route path="/welcome" element={<Welcome/>} />
+          <Route path="/partner" element={<Partner/>} />
         </Routes>
       </main>
       <Footer />

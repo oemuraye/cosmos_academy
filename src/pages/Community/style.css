@@ -1,3 +1,6 @@
+.community-page .hero-section {
+    background-color: var(--communityHeroSection_BgColor);
+}
 .community-page .header {
     max-width: 846px;
     color: var(--gray-dark-color, #101010);
@@ -16,7 +19,7 @@
 }
 
 .community-page .comm-text {
-    padding-top: 2rem;
+    padding-top: .5rem;
     color: var(--gray-dark-color, #101010);
     text-align: center;
     font-family: var(--font-neueMontrealRg);
@@ -41,13 +44,12 @@
 }
 
 .community-page .innovator-group img {
-    border: 2px solid white;
-    margin-left: -20px;
+    /* border: 2px solid white;
+    margin-left: -20px; */
 
     @media (max-width: 768px) {
-        width: 30px;
-        height: 30px;
-        margin-left: -10px;
+        width: 119px;
+        height: 35.87px;
     }
 }
 
@@ -91,7 +93,7 @@
 .community-page .mentorship h3 {
     color: var(--gray-dark-color, #101010);
     font-family: var(--font-cosmos);
-    font-size: 70px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -99,6 +101,30 @@
     @media (max-width: 768px) {
         font-size: 30px;
     }
+}
+
+.community-page .academy-community .community-stackImages .enrolled {
+    background-color: #ffffff17;
+    backdrop-filter: blur(3px);
+}
+.community-page .academy-community .community-stackImages .enrolled p {
+    color: var(--gray_white-color);
+    font-size: 16px;
+}
+
+
+.community-page .academy-card .explorer-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+.community-page .academy-card .icon-wrapper {
+    height: 40.71px;
+    width: 40.71px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border_gray-color);
 }
 
 .community-page .events-info h3 {
@@ -111,7 +137,12 @@
 }
 .community-page .events {
     padding: 3rem;
-    margin: 0!important;
+}
+.community-page .events .events-showcase {
+    background-color: #FCF562;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 530px;
 }
 
 .community-page .events-info p {
@@ -168,6 +199,12 @@
     .community-page .events-info p {
         font-size: 16px;
         line-height: 18px;
+    }
+    .community-page .events .events-showcase {
+        background-color: #FCF562;
+        border-radius: 10px;
+        overflow: unset;
+        height: auto;
     }
 
     .join-steps {

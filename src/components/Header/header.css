@@ -14,9 +14,9 @@
         #ffffff99 60%,  
         #ffffff1a 100% 
     );
-    backdrop-filter: blur(10px); /* Adjust blur intensity */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    box-shadow: 0 4px 6px #0000001a; /* Optional: Soft shadow */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 6px #0000001a; 
 }
 
   

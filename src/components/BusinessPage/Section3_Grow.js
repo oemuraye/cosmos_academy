@@ -15,7 +15,7 @@ import showcaseImg6 from '../../assets/videos/showcase-vid6.mp4';
 const TeamGrowthSection = () => {
   return (
     <section className='teamGrowth-Section'>
-        <section className="section_headingWithBtn why-details">
+            <section className="section_headingWithBtn why-details">
                 <h2>How We Help Your Team Grow</h2>
                 <p className='my-3'>Your organization’s success depends on the strength of your team. At Cosmos Academy, whether you’re preparing for digital transformation or strengthening your team’s capabilities, we provide training that makes an immediate impact.</p>
                 <div className="btn-action_div my-4">
