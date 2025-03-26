@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 import exploreIcon from '../../assets/icons/btn-Icon.png';
-import userIcon from '../../assets/icons/user-icon.png';
-import bookIcon from '../../assets/icons/book-icon.png';
-import usersIcon from '../../assets/icons/users_icon.png';
-import cpuIcon from '../../assets/icons/cpu-icon.png';
-import brandIcon from '../../assets/icons/medal_star-icon.png';
+import userIcon from '../../assets/icons/iconoir_user.png';
+import bookIcon from '../../assets/icons/book.png';
+import usersIcon from '../../assets/icons/fluent_people.png';
+import cpuIcon from '../../assets/icons/cpu.png';
+import brandIcon from '../../assets/icons/medal-star.png';
 
 import cardImg from '../../assets/images/cardImg.png';
 import showcaseImg1 from '../../assets/images/showcase-img1.png';
@@ -15,6 +15,7 @@ import showcaseImg3 from '../../assets/images/showcase-img7.png';
 // import showcaseImg4 from '../../assets/images/showcase-img8.png';
 import showcaseVideo4 from '../../assets/videos/future-video.mp4';
 import showcaseImg5 from '../../assets/images/fireGif.gif';
+import showcaseImg5_b from '../../assets/icons/Mask group.png';
 import SlidingText from "../Common/SlidingText/SlidingText";
 
 const subscriptionTexts = [
@@ -47,7 +48,7 @@ const WhySection = () => {
                             <img src={showcaseImg1} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 <div className="icon-circle">
-                                    <img src={userIcon} alt="" className="img-fluid" />
+                                    <img src={userIcon} alt="icon" className="" width='21.24px' height='21.24px' />
                                 </div>
                                 <h4 className='mb-0'>Mentorship & Expert Guidance</h4>
                                 <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow.</p>
@@ -58,7 +59,7 @@ const WhySection = () => {
                         <div className="why-card">
                             <div className="card-content">
                                 <div className="icon-circle">
-                                    <img src={bookIcon} alt="" className="img-fluid" />
+                                    <img src={bookIcon} alt="icon" className="" width='21.24px' height='21.24px' />
                                 </div>
                                 <h4 className='mb-0'>Hands-On, Impact-Driven Learning.</h4>
                                 <p>Every course is designed with practical applications, real-world projects, and mentor-guidance.</p>
@@ -73,7 +74,7 @@ const WhySection = () => {
                             <img src={showcaseImg3} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 <div className="icon-circle">
-                                    <img src={usersIcon} alt="" className="img-fluid" />
+                                    <img src={usersIcon} alt="icon" className="" width='21.24px' height='21.24px' />
                                 </div>
                                 <h4 className='mb-0'>A Thriving Community of Innovators</h4>
                                 <p>Our collaborative learning environment connects you with like-minded peers, professionals who share your vision.</p>
@@ -84,7 +85,7 @@ const WhySection = () => {
                         <div className="why-card">
                             <div className="card-content">
                                 <div className="icon-circle">
-                                    <img src={cpuIcon} alt="" className="img-fluid" />
+                                    <img src={cpuIcon} alt="icon" className="" width='21.24px' height='21.24px' />
                                 </div>
                                 <h4 className='mb-0'>Future-Focused Curriculum.</h4>
                                 <p>Stay ahead of the curve with training in AI, Blockchain, Quantum Computing, and other emerging technologies as we prepare you to but build and innovate.</p>
@@ -100,7 +101,7 @@ const WhySection = () => {
                         <div className="why-card">
                             <div className="card-content">
                                 <div className="icon-circle">
-                                    <img src={brandIcon} alt="" className="img-fluid" />
+                                    <img src={brandIcon} alt="icon" className="" width='21.24px' height='21.24px' />
                                 </div>
                                 <h4 className='mb-0'>Flexible & Accessible Learning.</h4>
                                 <p>With weekly subscription plans, live training, and on-demand content that fits into your schedule—so you can learn at your own pace, without limitations.</p>
@@ -110,7 +111,8 @@ const WhySection = () => {
                                     <SlidingText texts={subscriptionTexts} />
                                 </span>
                                 <div className="diamond-frame">
-                                    <img src={showcaseImg5} alt="img" width='62px' height='62px' className='img-fluid' />
+                                    <img src={showcaseImg5} alt="img" width='62px' height='62px' className='img-fluid fire-red' />
+                                    <img src={showcaseImg5_b} alt="img" width='65px' height='65px' className='img-fluid fire-white' />
                                 </div>
                             </div>
                         </div>

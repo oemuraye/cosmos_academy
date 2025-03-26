@@ -63,17 +63,11 @@ const dropdownContent = {
   Resources: (
     <div className="dropdown_menu resource-menu">
       <div className="dropdown-grid">
-        <section className='col-4 pt-1 pe-5 border_end first'>
-            <Link to='/resources'>
+        <section className='col-12 pt-1'>
+            <Link to='/blog-post/:postID'>
               <h4>Blogs</h4>
               {/* <p>Product Design</p> */}
             </Link>
-            <Link to='/resources'>
-              <h4>Mobil App Dev</h4>
-              {/* <p>Product Design</p> */}
-            </Link>
-        </section>
-        <section className='col-4 pt-1 pe-3'>
             <Link to='/resources'>
               <h4>Cosmos Explorer</h4>
               {/* <p>Product Design</p> */}
@@ -90,14 +84,14 @@ const dropdownContent = {
             <h4>About Us</h4>
             {/* <p>Product Design</p> */}
           </Link>
-          <Link to="/about" >
-            <h4>Why Cosmos Conference</h4>
+          <a href="/https://cosmosconference.org/" target="_blank" >
+            <h4>Cosmos Conference</h4>faq
             {/* <p>Product Design</p> */}
-          </Link>
+          </a>
         </section>
 
         <section className='col-4 pt-1 pe-3'>
-          <Link to="/about" >
+          <Link to="/faq" >
             <h4>FAQ</h4>
             {/* <p>Product Design</p> */}
           </Link>
@@ -124,18 +118,11 @@ const dropdownContent = {
   Partner: (
     <div className="dropdown_menu partner-menu">
       <div className="dropdown-grid">
-      <section className='col-4 pt-1 pe-5 border_end first'>
+      <section className='col-12 pt-1'>
           <Link>
             <h4>Donate to affiliate</h4>
             {/* <p>Product Design</p> */}
           </Link>
-          <Link>
-            <h4>Donate to Memitech</h4>
-            {/* <p>Product Design</p> */}
-          </Link>
-        </section>
-
-        <section className='col-4 pt-1 pe-3'>
           <Link>
             <h4>Donate to Cosmos</h4>
             {/* <p>Product Design</p> */}
@@ -245,7 +232,7 @@ const Header = () => {
     <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
-          <img src={logo} alt="logo" width="51px" height="50px" className='img-fluid' />
+          <img src={logo} alt="logo" width="40px" height="55px" className='img-fluid' />
           <div>
             <span>Cosmos</span>
             <span>Academy</span>

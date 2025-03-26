@@ -71,21 +71,25 @@ export const CourseMap = {
                 week: 'Week 1',
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
             }
         ],
 

@@ -65,7 +65,7 @@ const PricingPlansSection = () => {
           </section>
 
           <section className="plans-display">
-              <div className="row">
+              <div className="row px-2">
                   {pricingPlans.map((plan, index) => (
                       <div key={index} className="col-md-4 col-sm-12 my-3">
                           <div className="plan-card p-4" style={{ backgroundColor: plan.cardBg }}>

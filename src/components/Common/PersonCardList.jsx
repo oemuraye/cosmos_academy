@@ -1,7 +1,7 @@
 const PersonCardList = ({people}) => {
     const explorers = people || [];
     return (
-        <section className="trainers-section px-5">
+        <section className="trainers-section">
             <div className="container">
                 <div className="trainers-cards d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
                     {explorers.map((explorer, index) => (

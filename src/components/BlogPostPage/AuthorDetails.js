@@ -11,7 +11,7 @@ const AuthorDetails = ({ author }) => {
         </div>
         <div className="d-flex gap-2 align-items-center ms-2">
           <span className="date-badge">{author.date}</span>
-          <p className="ms-2 mb-0">{author.readTime}</p>
+          <p className="read-time mb-0">{author.readTime}</p>
         </div>
       </div>
 

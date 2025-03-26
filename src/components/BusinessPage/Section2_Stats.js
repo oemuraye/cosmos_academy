@@ -66,7 +66,7 @@ const StatsSection = () => {
 
   return (
     <section className="stats-section padding_y-spacing container my-5" ref={statsRef}>
-      <div className="d-flex gap-3 gap-md-5 flex-wrap align-items-center">
+      <div className="d-flex gap-3 gap-md-5 flex-wrap justify-content-center align-items-center">
         {statsData.map((stat, index) => (
           <div className="stats-card" key={index}>
             <h1>{counts[index]}%</h1>

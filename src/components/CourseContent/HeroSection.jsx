@@ -15,14 +15,14 @@ const HeroSection = ({ course }) => {
                             <div className="col-md-6 col-12 order-1">
                                 <h1 className="fw-bold mb-3 course-title">{course.title}</h1>
 
-                                <div className="course-info">
+                                <div className="course-info ps-3 ps-md-0">
                                     <span>Course by </span> <span className="fw-bold"> {course.academy}</span>
                                 </div>
-                                <div className="course-info">
+                                <div className="course-info ps-3 ps-md-0">
                                     <span>Instructed by </span> <span className="fw-bold">{course.instructor.name}</span>
                                 </div>
 
-                                <div className="course-features width-full mt-3 pt-5 gap-3">
+                                <div className="course-features width-full mt-3 pt-5 gap-3 ps-3 ps-md-0">
                                     {course.features.map((feature, index) => (
                                         <IconLabel key={index} icon={
                                             index === 0 ? <UserCheck /> :
@@ -36,7 +36,7 @@ const HeroSection = ({ course }) => {
                                     ))}
                                 </div>
 
-                                <div className="mb-3 mt-5 course-info">
+                                <div className="mb-3 mt-5 course-info ps-3 ps-md-0">
                                     <span className="fw-bold">Starts on :</span> <span> {course.startDate}</span>
                                 </div>
                             </div>

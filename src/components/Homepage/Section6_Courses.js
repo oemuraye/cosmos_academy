@@ -7,6 +7,7 @@ import courseImage from '../../assets/images/cardImg.png';
 import courseImage1 from '../../assets/images/courseImg1.png';
 import courseImage2 from '../../assets/images/courseImg2.png';
 import courseImage3 from '../../assets/images/courseImg3.png';
+import courseSocialImage from '../../assets/images/courseMenaImg.png';
 
 import enrolledUsersImg1 from '../../assets/images/enrolled-users1.png';
 import enrolledUsersImg2 from '../../assets/images/enrolled-users2.png';
@@ -36,12 +37,12 @@ const courses = [
       id: 2,
       slug: 'introduction-to-web-dev',
       title: "Introduction to Artificial </br> Intelligence (AI)",
-      instructor: "Cosmos",
+      instructor: " Ikponwomba Elotech",
       duration: "3 Weeks",
       startDate: "Coming Soon",
       description: "Gain a solid foundation in AI and machine learning. Learn data analysis, model building with Python.",
       enrolled: "0",
-      image: courseImage2,
+      image: courseSocialImage,
       pricing: "March 25, 2025",
       free: false
     },
@@ -159,8 +160,8 @@ const CourseSection = () => {
                         {courses.map((course) => (
                             <div key={course.id} className="course-card">
                                 <div className="course-card-image">
-                                    <img src={course.image} alt={course.title} height='283px' />
-                                    {course.free && <span className="badge">Free</span>}
+                                    <img src={course.image} alt={course.title} height='283px' className="course-image" />
+                                    {course.free && <span className="">Free</span>}
                                 </div>
 
 

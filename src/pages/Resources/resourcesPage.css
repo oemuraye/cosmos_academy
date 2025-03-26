@@ -18,7 +18,7 @@
     border-radius: 9.52px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 15.24px;
-    width: 201.93px;
+    width: 175.93px;
     height: 222.88px;
     font-family: var(--font-nothingYouCouldDo);
     font-weight: 600;
@@ -34,13 +34,13 @@
 }
 .top-left {
     top: -30px;
-    left: -130px;
+    left: -90px;
     background-color: var(--lightGreen-color);
 }
   
 .bottom-right {
     bottom: -90px;
-    right: -100px;
+    right: -80px;
     background-color: var(--card_date-BgColor2);
 }
   
@@ -48,7 +48,7 @@
 .insights-showcase {
     position: absolute;
     top: 90px;
-    right: -100px;
+    right: -80px;
     background-color: var(--lightGreen-color);
     color: var(--dark-color);
     border: none;
@@ -104,6 +104,10 @@
     border: 2px solid var(--gray_white-color);
     max-width: 353px;
     margin: 0 auto;
+}
+.explorer-section .trainers-cards .cards-display {
+    min-width: 1200px;
+    /* width: 1440px; */
 }
   
 .explorer-card:hover {
@@ -187,9 +191,5 @@
         right: -40px;
         gap: 10px !important;
         border-radius: 6.34px !important;
-    }
-    .insights-showcase img {
-        width: 29px;
-        height: 29px;
     }
 }
