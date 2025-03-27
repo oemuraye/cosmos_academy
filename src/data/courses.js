@@ -60,10 +60,10 @@ export const CourseMap = {
 
         learningOutcomes: [
             'Learn how to kickstart your design process based on research and objectives.',
-            'Understand how to translate UX into memorable UI.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
             'Bring life to your design with advanced prototyping techniques in Figma.',
+            'Understand how to translate UX into memorable UI.',
             'Animate your design in After Effects.',
+            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
         ],
 
         lessons: [

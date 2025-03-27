@@ -66,7 +66,7 @@ const mentorshipPrograms = [
     },
     {
         id: 2,
-        title: "Code and Project Reviews",
+        title: "Code and Project Reviews <br /> <br />",
         description:
             "Receive in-depth feedback on your code and projects to refine your skills and build high-quality work.",
     },
@@ -247,7 +247,7 @@ const Page = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <video className="img-fluid " style={{ height: "642px", objectFit: "cover", borderRadius: '25.31px', width: '100%', maxWidth: '456px', margin: '0 auto' }} controls autoPlay loop muted playsInline>
+                                <video className="img-fluid mt-4" style={{ height: "549px", objectFit: "cover", borderRadius: '25.31px', width: '100%', maxWidth: '456px', margin: '0 auto' }} controls autoPlay loop muted playsInline>
                                     <source src={sectionVideo} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
@@ -265,7 +265,7 @@ const Page = () => {
                 <section className="events container my-5">
                     <h2 className="fw-bold mb-5">Upcoming Events...</h2>
                     <div className="row py-2 py-md-5 px-2 px-md-4 events-showcase" >
-                        <div className="events-info col-md-5 col-sm-12 my-3" style={{ flex: 1 }}>
+                        <div className="events-info col-md-5 col-sm-12 my-3 mb-5" style={{ flex: 1 }}>
                             <h3 className="mb-3">Tech Talks & Webinars</h3>
                             <p>
                                 Join us for our <strong>Live Webinar</strong>{" "}

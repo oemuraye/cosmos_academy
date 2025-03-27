@@ -64,12 +64,12 @@
     max-width: 1085px;
     margin: 0 auto;
 }
-.why-section .why-cards .why-card {
+.why-cards .why-card {
     background-color: var(--white-color);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     max-width: 341px;
     margin: 0 auto;
     /* box-shadow: 7px 10px 40px 0px #0000000D; */
@@ -230,7 +230,19 @@ img.xb-border-radius {
     }
 } */
 
-
+.card-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 29.07px;
+    padding: 5px 15px;
+    height: 33.38px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
 .trainers-cards .trainer-card {
     width: 236px;
     background-color: var(--white-color);
@@ -652,9 +664,9 @@ img.xb-border-radius {
         margin: 0 auto;
         justify-content: center;
     }   
-    .info-section .custom-tabs,
-    .custom-tabs .custom-tabActive {
-        font-size: 12px !important;
+    .col-md-6 .why-card {
+        max-width: 341px !important;
+        padding: 25px;
     }
     .section_headingWithBtn p {
         line-height: 24px;

@@ -3,6 +3,7 @@ import exploreIcon from '../../assets/icons/btn-Icon.png';
 import { BsPlus } from 'react-icons/bs';
 import { HiOutlineMinus } from "react-icons/hi2";
 import { GoPlus } from "react-icons/go";
+import { Link } from 'react-router-dom';
 
 const Content = ({ course }) => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -43,9 +44,9 @@ const Content = ({ course }) => {
             ))}
 
             <div className="btn-action_div">
-                <button className="customBtn">
+                <Link to='/welcome' className="customBtn">
                     <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
-                </button>
+                </Link>
             </div>
         </div>
     );

@@ -2,10 +2,10 @@ const Details = ({ course }) => {
     return (
         <section className="course-details">
             <div className="container">
-                <div className="row px-3 px-md-5">
+                <div className="row px-2">
                     <div className="col-md-4 mb-4">
                         <p className="m-0">Course Details</p>
-                        <h2 className="fw-bold about">What the course is all about.</h2>
+                        <h2 className="mt-3 about">What the course is all about.</h2>
                     </div>
 
                     <div className="col-md-8">
@@ -21,9 +21,9 @@ const Details = ({ course }) => {
 
                         <div className="mt-5">
                             <h5 className="fw-bold mb-3">Learning Outcome</h5>
-                            <ul className="d-flex flex-wrap gap-3 outcomes">
+                            <ul className="row justify-content-between outcomes">
                                 {course.learningOutcomes.map((outcome, index) => (
-                                    <li key={index}>{outcome}</li>
+                                    <li className="col-md-6 col-sm-12 mb-3" key={index}>{outcome}</li>
                                 ))}
                             </ul>
                         </div>

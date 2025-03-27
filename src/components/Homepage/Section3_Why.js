@@ -81,7 +81,7 @@ const WhySection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 col-sm-12 my-4">
+                    <div className="col-md-6 col-sm-12 my-4 ">
                         <div className="why-card">
                             <div className="card-content">
                                 <div className="icon-circle">
@@ -97,7 +97,7 @@ const WhySection = () => {
                             </video>
                         </div>
                     </div>
-                    <div className="col-md-6 col-sm-12 my-4">
+                    <div className="col-md-6 col-sm-12 my-4 ">
                         <div className="why-card">
                             <div className="card-content">
                                 <div className="icon-circle">

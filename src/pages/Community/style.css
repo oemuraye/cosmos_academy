@@ -116,6 +116,12 @@
 .community-page .academy-card .explorer-card {
     background-color: var(--white-color);
     border-radius: 10px;
+    border: 2px solid var(--gray_white-color);
+}
+.community-page .mentorship .explorer-card {
+    border: 2px solid var(--gray_white-color);
+    height: 225px;
+    padding-top: 20px;
 }
 .community-page .academy-card .icon-wrapper {
     height: 40.71px;
@@ -142,7 +148,7 @@
     background-color: #FCF562;
     border-radius: 10px;
     overflow: hidden;
-    height: 530px;
+    height: 433px;
 }
 
 .community-page .events-info p {

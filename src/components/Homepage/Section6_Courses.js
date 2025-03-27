@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
+import liveIcon from '../../assets/icons/record-icon.png';
 
 import courseImage from '../../assets/images/cardImg.png';
 import courseImage1 from '../../assets/images/courseImg1.png';
@@ -159,9 +160,16 @@ const CourseSection = () => {
                     <div className="courses-display" ref={sliderRef}>
                         {courses.map((course) => (
                             <div key={course.id} className="course-card">
-                                <div className="course-card-image">
+                                <div className="course-card-image position-relative">
                                     <img src={course.image} alt={course.title} height='283px' className="course-image" />
-                                    {course.free && <span className="">Free</span>}
+                                    {course.free && 
+                                        <div className="card-badge">
+                                            <div className="d-flex align-items-center gap-2">
+                                                <img src={liveIcon} className="record-live_icon" alt="icon" width="13.56px" height="13.56px" />
+                                                <span>Free</span>
+                                            </div> 
+                                        </div>
+                                    }
                                 </div>
 
 

@@ -9,7 +9,7 @@ const pricingPlans = [
       description:
         "Perfect for learners seeking flexibility without long-term commitments.",
       features: [
-        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you </br> learn.  " },
+        { label: "Pay-As-You-Go", detail: "Only pay for the weeks you learn.  " },
         { label: "Access to Live Classes", detail: "Engage with instructors in real-time." },
         { label: "Flexible Scheduling", detail: "Learn at your pace, on your terms." },
       ],
@@ -76,7 +76,7 @@ const PricingPlansSection = () => {
 
                               <ul className="list-unstyled">
                                   {plan.features.map((feature, i) => (
-                                      <li key={i} className='my-1'>
+                                      <li key={i} className='my-2'>
                                           <strong>{feature.label}:</strong> <span dangerouslySetInnerHTML={{ __html: feature.detail}}></span>
                                       </li>
                                   ))}
@@ -95,7 +95,7 @@ const PricingPlansSection = () => {
                               <h5 className="">Special Discounts & Scholarships</h5>
                               <p className="pe-5">We offer discounts for students, early subscribers, and group enrollments. <strong>Need financial support?</strong> Apply for our scholarship program designed to help passionate learners thrive.</p>
 
-                              <button style={{ backgroundColor: '#AFD55E' }} className="btn mt-4 mb-2">Coming Soon</button>
+                              <button style={{ backgroundColor: '#AFD55E' }} className="btn mt-4 mb-3">Coming Soon</button>
                           </div>
                           <img src={cardImage} alt="img" width='100%' height='168px' className='' style={{ objectFit: 'cover' }} />
                       </div>

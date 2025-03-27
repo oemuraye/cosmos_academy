@@ -60,7 +60,7 @@ const people = [
 const coreValues = [
   {
     title: "Impact-Driven",
-    description: "We believe technology should create meaningful change. Our goal is to equip individuals with the skills and mindset to develop impactful solutions."
+    description: "We believe technology should create meaningful change. Our goal is to equip individuals with the skills and mindset to develop impactful solutions. <br />"
   },
   {
     title: "Innovation & Excellence",
@@ -102,8 +102,10 @@ const About = () => {
             <HeaderContent header='Our Vision' content='To build a thriving community of technologists and innovators who leverage their skills to solve real-world problems, drive societal progress, and shape the future of technology.' />
           </div>
           <div className='py-5'>
-            <h3 className='our-values-header'>Our Values Keep us Together</h3>
-            <InfoCardList items={coreValues} />
+            <h3 className='our-values-header px-3'>Our Values Keep us Together</h3>
+            <div className="row">
+              <div className="col-md-9 col-sm-12"><InfoCardList items={coreValues} useCol6={true} /></div>
+            </div>
           </div>
           <JoinOurTeam />
         </div>

@@ -15,7 +15,7 @@ const mentorshipPrograms = [
     },
     {
         id: 2,
-        title: "Webinars, Events & Podcasts",
+        title: "Webinars, Events & <br /> Podcasts",
         description:
             "Educating and inspiring the next generation of digital innovators. <br /> <br />",
     },

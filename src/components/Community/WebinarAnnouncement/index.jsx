@@ -54,7 +54,7 @@ const WebinarAnnouncement = () => {
       className="announcement p-4 mx-auto"
       style={{
         maxWidth: "700px",
-        backgroundColor: "#000",
+        backgroundColor: "#1E1E1E",
         color: "#fff",
         borderRadius: "12px",
       }}
@@ -81,7 +81,7 @@ const WebinarAnnouncement = () => {
       </div>
       <div className="events-desc">
         <div className="lt">
-          <div className="mb-3">
+          <div className="">
 
             <h1>
               DEAR<br />INNOVATORS
@@ -91,14 +91,14 @@ const WebinarAnnouncement = () => {
               programs for the Cosmos Academy.
             </p>
           </div>
-          <div className="mb-3 d-flex flex-wrap gap-4 align-items-center p-2">
-            <IconLabel icon={<CalenderIcon />} >
+          <div className="mb-1 d-flex flex-wrap gap-2 align-items-center p-2" style={{ maxWidth: '250px' }}>
+            <IconLabel icon={<CalenderIcon />} size='16.15px' font_size='10.37px' >
               <span>19th March, 2025</span>
             </IconLabel>
-            <IconLabel icon={<TimeIcon />} >
+            <IconLabel icon={<TimeIcon />} size='16.15px' font_size='10.37px' >
               <span>3:00PM (WAT)</span>
             </IconLabel>
-            <IconLabel icon={<LocationIcon />} icon2={<GoogleMeet />} >
+            <IconLabel icon={<LocationIcon />} icon2={<GoogleMeet />} size='16.15px' font_size='10.37px' >
               <span>Google Meet</span>
             </IconLabel>
           </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const statsData = [
-  { value: 94, text: "of employees are more likely to stay with a company that invests in their career growth." },
+  { value: 94, text: "of employees are more likely to stay with a company that invests in their career growth. <br /> <br />" },
   { value: 218, text: "of companies that invest in training programs see a 218% increase in income per employee." },
-  { value: 48, text: "of working population would switch to a new job if it offered increased skills training." },
+  { value: 48, text: "of working population would switch to a new job if it offered increased skills training. <br /> <br />" },
 ];
 
 const StatsSection = () => {
@@ -66,11 +66,11 @@ const StatsSection = () => {
 
   return (
     <section className="stats-section padding_y-spacing container my-5" ref={statsRef}>
-      <div className="d-flex gap-3 gap-md-5 flex-wrap justify-content-center align-items-center">
+      <div className="d-flex gap-3 gap-md-5 flex-wrap justify-content-start justify-content-md-center align-items-center">
         {statsData.map((stat, index) => (
           <div className="stats-card" key={index}>
             <h1>{counts[index]}%</h1>
-            <p>{stat.text}</p>
+            <p dangerouslySetInnerHTML={{ __html: stat.text }}></p> 
           </div>
         ))}
       </div>

@@ -14,17 +14,17 @@ const HeroSection = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         
-                        <section className="col-md-6 col-sm-12 my-3">
+                        <section className="col-md-7 col-sm-12 my-3">
                             <div className="text-start mb-4 mb-md-0 px-1 pt-5 pt-md-0">
                                 <h1 className="mb-3">Insights, Innovations & Industry Trends</h1>
                                 <p className="mb-5">Whether you're a beginner, a tech enthusiast, or an industry professional, our blog is your go-to resource for expert insights, practical guides, and inspiring stories.</p>
                             </div>
                         </section>
                         
-                        <section className="col-md-6 col-sm-12 my-3">
+                        <section className="col-md-5 col-sm-12 my-3">
                             <div className="container position-relative">
                                 <div className="hero-image-container d-flex justify-content-center">
-                                    <img src={heroImage} alt="Tech Insights" className="hero-image" />
+                                    <img src={heroImage} alt="Tech Insights" className="hero-image img-fluid" width='100%'  />
 
                                     {/* Sticky Notes */}
                                     <div className="sticky-note top-left">

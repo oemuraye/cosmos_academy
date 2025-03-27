@@ -11,6 +11,7 @@ import showcaseImg3 from '../../assets/images/showcase-img3.png';
 import showcaseImg4 from '../../assets/images/padlockGif.gif';
 import showcaseImg5 from '../../assets/videos/showcase-vid5.mp4';
 import showcaseImg6 from '../../assets/videos/showcase-vid6.mp4';
+import ContactForm from '../Common/ContactUsForm/ContactForm';
 
 const TeamGrowthSection = () => {
   return (
@@ -19,10 +20,24 @@ const TeamGrowthSection = () => {
                 <h2>How We Help Your Team Grow</h2>
                 <p className='my-3'>Your organization’s success depends on the strength of your team. At Cosmos Academy, whether you’re preparing for digital transformation or strengthening your team’s capabilities, we provide training that makes an immediate impact.</p>
                 <div className="btn-action_div my-4">
-                    <button className="customBtn">
+                    <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal">
                         <span>Contact Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
+
+                {/* <!-- Modal --> */}
+                <section className="modal fade" id="contactFormModal" tabIndex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="d-flex justify-content-end p-2">
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <ContactForm />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
 
             <section className="why-cards container my-5">
@@ -35,7 +50,7 @@ const TeamGrowthSection = () => {
                                     <img src={userIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Mentorship & Expert Guidance</h4>
-                                <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow.</p>
+                                <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow. <br /> </p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +76,7 @@ const TeamGrowthSection = () => {
                                     <img src={usersIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Built for the  Busy Professionals</h4>
-                                <p>Flexible training formats that fit your team’s schedule without disrupting the teams productivity.</p>
+                                <p>Flexible training formats that fit your team’s schedule without disrupting the teams productivity. <br /> </p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +93,7 @@ const TeamGrowthSection = () => {
                                     <img src={cpuIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Future-Proof Your organization’s Workforce</h4>
-                                <p>Ensure your team stays relevant with in-demand skills in AI, Web Development, AR/VR, IoT, and more.</p>
+                                <p>Ensure your team stays relevant with in-demand skills in AI, Web Development, AR/VR, IoT, and more. <br /> <br /></p>
                             </div>
                         </div>
                     </div>
@@ -110,7 +125,7 @@ const TeamGrowthSection = () => {
                                     <img src={brandIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Learn from Professional  Experts</h4>
-                                <p>Your team will gain hands-on experience and insights from professionals who have built and led successful digital projects.</p>
+                                <p>Your team will gain hands-on experience and insights from professionals who have built and led successful digital projects. <br /> <br /></p>
                             </div>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ const FaqSection = ({ faqs }) => {
         <div className="faq-container my-5">
             {faqs.length > 0 ? (
                 faqs.map((faq, index) => (
-                    <div key={faq.id} className="faq-item mb-4 p-2">
+                    <div key={faq.id} className="faq-item mb-2 p-2">
                     <button
                         className="faq-question w-100 d-flex justify-content-between border-0 bg-white align-items-center"
                         onClick={() => toggleAccordion(index)}

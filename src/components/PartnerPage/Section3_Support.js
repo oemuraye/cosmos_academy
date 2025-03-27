@@ -42,9 +42,9 @@ const SupportSection = () => {
                     </div>
                 </div>
                 <div className="col-md-4 col-sm-12 mt-5">
-                    <div className="container-img mx-2">
+                    {/* <div className="container-img mx-2">
                         <img src="" alt="img" className='img-fluid' />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         ))}

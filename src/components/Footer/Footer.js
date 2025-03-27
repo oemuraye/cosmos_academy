@@ -43,18 +43,18 @@ const Footer = () => {
                         <div className='row col-md-6 col-sm-12 my-4'>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Academy</h4></li>
-                                <li><Link to=''>Programs</Link></li>
-                                <li><Link to=''>Mentorship</Link></li>
-                                <li><Link to=''>Partnership</Link></li>
-                                <li><Link to=''>About us</Link></li>
+                                <li><Link to='/programs'>Programs</Link></li>
+                                <li><Link to='/programs'>Mentorship</Link></li>
+                                <li><Link to='/partner'>Partnership</Link></li>
+                                <li><Link to='/about'>About us</Link></li>
                                 <li><Link to=''>Privacy</Link></li>
                                 <li><Link to=''>Terms</Link></li>
                             </ul>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Information</h4></li>
-                                <li><Link to=''>About us</Link></li>
+                                <li><Link to='/about'>About us</Link></li>
                                 <li><Link to=''>Contact us</Link></li>
-                                <li><Link to=''>Blog</Link></li>
+                                <li><Link to='blog-post/:postID'>Blog</Link></li>
                                 <li><Link to=''>Support</Link></li>
                                 <li><Link to=''>Help Center</Link></li>
                             </ul>
@@ -63,11 +63,11 @@ const Footer = () => {
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Work with us</h4></li>
                                 <li><Link to=''>Become a Facilitator <br /> Careers@Cosmos Academy</Link></li>
-                                <li><Link to=''>Donate to Affiliates</Link></li>
+                                <li><Link to='/partner'>Donate to Affiliates</Link></li>
                             </ul>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Community</h4></li>
-                                <li><Link to=''>Overview<br /> Telegram<br /> Events</Link></li>
+                                <li><Link to='/community'>Overview<br /> Telegram<br /> Events</Link></li>
                             </ul>
                         </div>
                     </section>

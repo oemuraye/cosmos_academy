@@ -25,6 +25,7 @@ const tabsData = [
   { id: 6, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
   { id: 7, name: "Embedded System/IoT", description: "Understand the principles of embedded systems and IoT technologies to build smart devices and systems that connect the physical world to the digital world." },
   { id: 8, name: "AR/VR Development", description: "Create immersive experiences using augmented reality (AR) and virtual reality (VR) technologies to enhance user interactions and engagement in digital environments." },
+  { id: 9, name: "Product Design", description: "Learn the fundamentals of user experience (UX) and user interface (UI) design to create visually appealing and user-friendly digital products." },
 ];
 
 const courses = [

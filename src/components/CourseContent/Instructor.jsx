@@ -12,14 +12,14 @@ const Instructor = ({ course }) => {
                         <img
                             src={course.instructor.image}
                             alt="Instructor"
+                            className='instructor-img'
                             style={{
-                                width: '80px',
-                                height: '80px',
                                 borderRadius: '50%',
                                 objectFit: 'cover',
                             }}
                         />
                     </div>
+
                     <div className="col">
                         <h5 className="instructor-course mb-1">
                             {course.title}
@@ -32,7 +32,7 @@ const Instructor = ({ course }) => {
                         </p>
                     </div>
 
-                    <div className="col-auto text-end">
+                    <div className="col-md-auto col-sm-12 mt-3 mt-md-0 text-end">
                         <h6 className="text text-reg seats"><strong>{course.availableSeats}</strong> Seats Available</h6>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
     background-color: var(--resourceHeroSection_BgColor);
 }
 .resource-page .hero-image-container .hero-image {
-    width: 319px;
+    max-width: 319px;
     height: 392px;
     border-radius: 20px;
 }
@@ -97,11 +97,11 @@
 .explorer-card {
     background-color: transparent;
     border-radius: 13.27px;
-    padding: 30px;
+    padding: 20px;
     /* text-align: center; */
     /* box-shadow: 0 2px 8px #0000001a; */
     transition: transform 0.3s ease-in-out;
-    border: 2px solid var(--gray_white-color);
+    /* border: 2px solid var(--gray_white-color); */
     max-width: 353px;
     margin: 0 auto;
 }
@@ -188,8 +188,9 @@
     }
     .insights-showcase {
         top: 40px;
-        right: -40px;
+        right: -10px;
         gap: 10px !important;
         border-radius: 6.34px !important;
+        width: 130px;
     }
 }

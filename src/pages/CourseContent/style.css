@@ -67,14 +67,14 @@ p {
 }
 
 .course-content .course-details .container {
-    padding: 70px 50px;
+    padding: 50px 30px;
     background-color: #FDD6FD;
     border-radius: 20px;
 }
 
 .course-content .course-details .about {
     font-family: var(--font-cosmos);
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 700;
     line-height: normal;
 }
@@ -99,8 +99,11 @@ p {
     font-family: var(--font-neueMontrealRg);
     font-size: 16px;
     font-weight: 400;
-    list-style: circle;
-    flex: '0 0 48%'
+    list-style: disc;
+    flex: 0 0 48%;
+}
+.course-content .course-details .outcomes li {
+    max-width: 292px;
 }
 
 .cc {
@@ -174,7 +177,10 @@ p {
     font-weight: 400;
     line-height: 22px;
 }
-
+.instructor-section .instructor-img {
+    width: 80px;
+    height: 80px;
+}
 .course-content .pricing-section h2,
 .course-content .instructor-section h2 {
     color: var(--gray_dark-color, #101010);
@@ -228,6 +234,15 @@ p {
     background-color: #FDD6FD;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .course-content .hero-content {
@@ -314,6 +329,10 @@ p {
         padding: 50px 0px;
     }
     .course-content .instructor-content .seats {
-        display: none;
+        /* display: none; */
+    }
+    .instructor-section .instructor-img {
+        width: 50px;
+        height: 50px;
     }
 }
