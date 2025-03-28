@@ -79,9 +79,13 @@ const dropdownContent = {
   About: (
     <div className="dropdown_menu about-menu">
       <div className="dropdown-grid">
-        <section className='col-4 pt-1 pe-5 border_end first'>
+        <section className='col-4 pt-2 pe-5 border_end first'>
           <Link to="/about" >
             <h4>About Us</h4>
+            {/* <p>Product Design</p> */}
+          </Link>
+          <Link to="/community" >
+            <h4>Community</h4>
             {/* <p>Product Design</p> */}
           </Link>
           <a href="/https://cosmosconference.org/" target="_blank" >
@@ -120,7 +124,7 @@ const dropdownContent = {
       <div className="dropdown-grid">
       <section className='col-12 pt-1'>
           <Link>
-            <h4>Donate to affiliate</h4>
+            <h4>Donate to partner</h4>
             {/* <p>Product Design</p> */}
           </Link>
           <Link>

@@ -1,7 +1,7 @@
-import academyIcon1 from "../../assets/icons/date.png";
-import academyIcon2 from "../../assets/icons/diamond.png";
-import academyIcon3 from "../../assets/icons/plane.png";
-import academyIcon4 from "../../assets/icons/Target2.png";
+import academyIcon1 from "../../assets/icons/date-icon.png";
+import academyIcon2 from "../../assets/icons/diamond-icon.png";
+import academyIcon3 from "../../assets/icons/plane-icon.png";
+import academyIcon4 from "../../assets/icons/target3.png";
 import sectionVideo from "../../assets/videos/cosmos-conference.mp4";
 import Innovator2 from "../../assets/images/innovator2.png";
 import Innovator3 from "../../assets/images/innovator3.png";
@@ -57,6 +57,7 @@ const infoCards = [
         backgroundColor: "#9981FF",
     },
 ];
+
 const mentorshipPrograms = [
     {
         id: 1,
@@ -83,6 +84,7 @@ const mentorshipPrograms = [
             "Access expert guidance tailored to your field, helping you make informed decisions and stay competitive.",
     },
 ];
+
 const academyCommunity = [
     {
         id: 1,
@@ -113,6 +115,7 @@ const academyCommunity = [
         icon: academyIcon4,
         },
 ];
+
 const steps = [
     {
       title: "Enroll in a Course",

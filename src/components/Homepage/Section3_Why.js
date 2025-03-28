@@ -112,7 +112,7 @@ const WhySection = () => {
                                 </span>
                                 <div className="diamond-frame">
                                     <img src={showcaseImg5} alt="img" width='62px' height='62px' className='img-fluid fire-red' />
-                                    <img src={showcaseImg5_b} alt="img" width='65px' height='65px' className='img-fluid fire-white' />
+                                    {/* <img src={showcaseImg5_b} alt="img" width='65px' height='65px' className='img-fluid fire-white' /> */}
                                 </div>
                             </div>
                         </div>

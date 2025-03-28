@@ -86,12 +86,12 @@ const WebinarAnnouncement = () => {
             <h1>
               DEAR<br />INNOVATORS
             </h1>
-            <p className="events-text">
+            <p className="events-text mb-0">
               Join us for our <strong>Live Webinar</strong> as we introduce our
               programs for the Cosmos Academy.
             </p>
           </div>
-          <div className="mb-1 d-flex flex-wrap gap-2 align-items-center p-2" style={{ maxWidth: '250px' }}>
+          <div className="d-flex flex-wrap gap-2 align-items-center my-1" style={{ maxWidth: '250px' }}>
             <IconLabel icon={<CalenderIcon />} size='16.15px' font_size='10.37px' >
               <span>19th March, 2025</span>
             </IconLabel>

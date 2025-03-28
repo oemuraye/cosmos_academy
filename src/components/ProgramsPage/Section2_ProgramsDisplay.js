@@ -162,7 +162,7 @@ const ProgramsDisplay = () => {
               <div className="course-card">
 
                   <div className="course-card-image">
-                      <img src={course.image} alt={course.title} height='283px' className="course-image" />
+                      <img src={course.image} alt={course.title} height='250px' className="course-image" />
                       {course.pricing === "free" && 
                           <span className="badge d-flex gap-2 align-items-center"> 
                               <img src={recordIcon} alt="icon" className="record-live_icon" width='14px' height='14px' /> Free
@@ -170,16 +170,16 @@ const ProgramsDisplay = () => {
                       }
                       {course.pricing === "coming_soon" && <span className="badge">Coming Soon</span>}
                       {course.pricing !== "free" && course.pricing !== "coming_soon" && (
-                          <span className="badge">{course.pricing}</span>
+                        <span className="badge">{course.pricing}</span>
                       )}
                   </div>
 
-                  <div className="course-card-body mt-3">
+                  <div className="course-card-body mt-0">
                       <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
-                      <p className="course-meta"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
+                      <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
                       
                       <hr />
-                      <div className={`training-date ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
+                      <div className={`training-date my-0 ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
                           <span>
                             <span className="me-1">Next training</span> 
                               <strong>
@@ -189,16 +189,16 @@ const ProgramsDisplay = () => {
                               </strong>
                           </span>
                       </div>
-                      <p className="course-description my-4">{course.description}</p>
+                      <p className="course-description mt-2">{course.description}</p>
                       <hr />
 
-                      <div className="course-footer">
+                      <div className="course-footer my-0">
                         <div className="enrolled">
                             <div className="studentImages">
                                   {/* {userEnrolledImages.map((userEnrolled, index) => (
                                       <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
                                   ))} */}
-                                  <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
+                                  <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
                               </div>
                             <span>{course.enrolled} enrolled</span>
                         </div>

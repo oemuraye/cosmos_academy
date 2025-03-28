@@ -80,7 +80,7 @@ const TrainersSection = () => {
     const container = containerRef.current;
     if (!container) return;
 
-    let scrollSpeed = 2; // Adjust speed
+    let scrollSpeed = 4; // Adjust speed
     let scrollInterval;
 
     const startAutoScroll = () => {

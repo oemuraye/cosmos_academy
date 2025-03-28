@@ -9,7 +9,7 @@ const JoinUsAdSection = () => {
     <section className="joinUsAd_section padding_y-spacing my-5 text-center">
       {/* Heading */}
       <h2 className="joinUs_text">
-        Ready to turn your <span className="fw-bold fst-italic">skills into impact?</span> Enrol in a program today
+        Ready to turn your <span className="fw-bold fst-italic">skills into impact?</span> Enroll in a program today
         and start <span className="fw-bold fst-italic">building your future!</span>
       </h2>
 

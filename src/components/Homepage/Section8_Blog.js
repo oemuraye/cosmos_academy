@@ -50,7 +50,7 @@ const BlogSection = () => {
               <div className="blog-card card border-0 shadow-sm">
                 <img src={post.image} alt={post.title} className="card-img-top img-fluid" height="185px" width='341px' />
                 <div className="card-body">
-                  <h4 className="card-title">{post.title}</h4>
+                  <h4 className="card-title mt-2">{post.title}</h4>
                   <p className="text-muted small">
                     <strong className="me-2">{post.date} |</strong>  by {post.author}
                   </p>

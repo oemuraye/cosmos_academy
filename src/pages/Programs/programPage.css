@@ -34,17 +34,33 @@
     width: 100%;
     margin: 0 auto;
 }
+.programs-section .courses-display .course-card .course-card-image {
+    height: 250px;
+}
 .programs-section .courses-display .course-card-body {
     padding-right: 20px;
+}
+.programs-section .course-card-body h4 {
+    font-size: 20px;
+}
+.programs-section .course-card-body .course-description {
+    font-size: 14px;
+}
+.programs-section .course-card-body .course-footer {
+    font-size: 14px;
+}
+.programs-section .course-card-body .enrolled {
+    padding: 5px 7px;
+    gap: 8px;
 }
 .programs-section .courses-display .badge {
     top: 20px;
     left: 20px;
     right: auto;
     padding: 10px 20px;
-    background-color: var(--pink-color);
     border: 1px solid transparent;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--dark-color);
+    color: var(--white-color);
     z-index: 1;
 }
 .programs-section .courses-display .badge::before {
@@ -53,23 +69,26 @@
     inset: 0; 
     padding: 1px;
     border-radius: 100px; 
-    background: linear-gradient(92.59deg, rgba(255, 255, 255, 0.6) 1.4%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(92.59deg, #00000099 1.4%, #0000001a 100%);
     -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
     mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
+        linear-gradient(#000 0 0) content-box, 
+        linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     z-index: -1; 
 }
-/* .programs-section .training-date.free {
-    background-color: var(--pink-color);
-} */
+.programs-section .training-date.free {
+    padding: 4px 12px;
+    font-size: 12px;
+}
 .programs-section .training-date.coming_soon {
     background-color: var(--card_text-color);
     color: var(--white-color);
+    font-size: 12px;
+    padding: 4px 12px;
 }
 
 
