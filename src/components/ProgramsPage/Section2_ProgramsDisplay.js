@@ -192,7 +192,7 @@ const ProgramsDisplay = () => {
                       <p className="course-description mt-2">{course.description}</p>
                       <hr />
 
-                      <div className="course-footer my-0">
+                      <div className="course-footer">
                         <div className="enrolled">
                             <div className="studentImages">
                                   {/* {userEnrolledImages.map((userEnrolled, index) => (

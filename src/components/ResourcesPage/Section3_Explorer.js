@@ -149,34 +149,35 @@ const ExplorerSection = () => {
 
       </section>
 
-      <section className="trainers-section padding_y-spacing">
-            <div className="container">
-                <div className="section-heading my-5">
-                  <h2>Meet other Explorers</h2>
-                  <p>
-                      Join a community of innovators, share ideas, and collaborate on impactful projects. 
-                      Connect, learn, and grow with like-minded thinkers shaping the future!
-                  </p>
-                </div>
-            </div>
+      <div className="cloud-overlay">
+        <section className="trainers-section padding_y-spacing">
+          <div className="container">
+              <div className="section-heading my-5">
+                <h2>Meet other Explorers</h2>
+                <p>
+                    Join a community of innovators, share ideas, and collaborate on impactful projects. 
+                    Connect, learn, and grow with like-minded thinkers shaping the future!
+                </p>
+              </div>
+          </div>
 
-            <div className="trainers-cards container">
+          <div className="trainers-cards container">
 
-                <div className="cards-display">
-                    {explorers.map((explorer, index) => (
-                        <div className="trainer-card my-4" key={index}>
-                        <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
-                        <div className="card-content p-3">
-                            <h6>{explorer.name}</h6>
-                            <p>{explorer.role}</p>
-                        </div>
-                        </div>
-                    ))}
-                </div>
+              <div className="cards-display">
+                  {explorers.map((explorer, index) => (
+                      <div className="trainer-card my-4" key={index}>
+                      <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+                      <div className="card-content p-3">
+                          <h6>{explorer.name}</h6>
+                          <p>{explorer.role}</p>
+                      </div>
+                      </div>
+                  ))}
+              </div>
 
-            </div>
-
+          </div>
         </section>
+      </div>
     </section>
   )
 }

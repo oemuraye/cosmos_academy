@@ -34,3 +34,17 @@
     background-color: var(--border_gray-color);
 }
 
+.liveClasses_section .text-danger {
+    color: #FF3B30 !important;
+    font-size: 14px;
+}
+.pageModal .welcomeModal {
+    border: 1px solid var(--border_gray-color);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

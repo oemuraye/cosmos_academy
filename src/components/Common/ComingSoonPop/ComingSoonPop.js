@@ -1,14 +1,14 @@
 import popImage from '../../../assets/images/hive-five_gif.gif';
 import exploreIcon from '../../../assets/icons/btn-Icon.png';
 
-const ComingSoonPop = ({title, text, popImg, btnText}) => {
+const ComingSoonPop = ({title, text, popImg, btnText, welcomeModal=false, widthSize, heightSize }) => {
   return (
     <section className="pageModal contactUs_section text-center">
         <h2 className="">{title || 'Become a Cosmos Explorer'}</h2>
         <p className="my-2">{text || 'Sorry the Cosmos Explorer is not currently available. We are still getting it set up for you'}</p>
 
-        <div className="d-flex align-items-center justify-content-center my-5">
-          <img src={popImage || popImg} alt="img" width="129px" height="89px" className='img-fluid' />
+        <div className={`d-flex align-items-center justify-content-center my-5 ${welcomeModal ? 'welcomeModal' : ''}`}>
+          <img src={popImg || popImage} alt="img" width="129px" height="89px" className='img-fluid' style={{width: widthSize ? widthSize : '129px', height: heightSize ? heightSize : '89px'}} />
         </div>
         
         <div className="btn-action_div my-4">

@@ -293,8 +293,6 @@ img.xb-border-radius {
 }
 
 
-
-
 .courses-display-section {
     position: relative;
     width: 100%;
@@ -422,7 +420,7 @@ img.xb-border-radius {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 12px 0;
     gap: 10px;
     flex-wrap: wrap;
     font-family: var(--font-neueMontreal);

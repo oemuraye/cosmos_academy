@@ -117,20 +117,21 @@ const TrainersSection = () => {
         </div>
       </div>
 
-      <div className="trainers-cards container" ref={containerRef}>
-
-        <div className="cards-display">
-          {trainers.map((trainer, index) => (
-            <div className="trainer-card my-4" key={index}>
-              <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
-              <div className="card-content p-3">
-                <h6>{trainer.name}</h6>
-                <p>{trainer.role}</p>
+      <div className="cloud-overlay">
+        <div className="trainers-cards container" ref={containerRef}>
+          <div className="cards-display">
+            {trainers.map((trainer, index) => (
+              <div className="trainer-card my-4" key={index}>
+                <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+                <div className="card-content p-3">
+                  <h6>{trainer.name}</h6>
+                  <p>{trainer.role}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
+        </div>
       </div>
 
     </section>

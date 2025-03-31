@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Request - Cosmos Academy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FDFCFD; /* gray_white-color */
+            color: #3C3C3C; /* card_text-color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #fff; /* white */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border: 1px solid #E2E2E2; /* border_gray-color */
+        }
+        .header {
+            background-color: #90B8F3; /* card_date-BgColor2 */
+            color: #fff; /* white */
+            text-align: center;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #B0B0B0; /* card_text-color2 */
+            background-color: #F3F3F3; /* basic-BgColor */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #AAC1E4; /* active_link-color */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #90B8F3; /* card_date-BgColor2 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            New Contact Request
+        </div>
+        <div class="content">
+            <p><strong>Name:</strong> {{fullName}}</p>
+            <p><strong>Email:</strong> {{email}}</p>
+            <p><strong>Subject:</strong> {{subject}}</p>
+            <p><strong>Message:</strong></p>
+            <p style="background-color: #F3F3F3; padding: 10px; border-radius: 5px;">
+                {{message}}
+            </p>
+            <p>Thank you for reaching out to Cosmos Academy. We will review your message and get back to you as soon as possible.</p>
+            <a href="https://cosmosacademy.org" class="btn">Visit Our Website</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 Cosmos Academy. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

@@ -155,74 +155,75 @@ const CourseSection = () => {
                     </div>
                 </section>
     
-                <div className="courses-display-section my-5">
-        
-                    <div className="courses-display" ref={sliderRef}>
-                        {courses.map((course) => (
-                            <div key={course.id} className="course-card">
-                                <div className="course-card-image position-relative">
-                                    <img src={course.image} alt={course.title} height='283px' className="course-image" />
-                                    {course.free && 
-                                        <div className="card-badge">
-                                            <div className="d-flex align-items-center gap-2">
-                                                <img src={liveIcon} className="record-live_icon" alt="icon" width="13.56px" height="13.56px" />
-                                                <span>Free</span>
-                                            </div> 
-                                        </div>
-                                    }
-                                </div>
-
-
-                                <div className="course-card-body">
-                                    <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
-                                    <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
-                                    
-                                    <hr />
-                                        <div className={`training-date my-0 ${course.free ? 'free' : ''}`}>
-                                            <span>
-                                                <span className="me-1">Next training</span> 
-                                                <strong>
-                                                    {course.startDate === "Coming Soon" ? "Coming Soon"
-                                                        : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
-                                                    }
-                                                </strong>
-                                            </span>
-                                        </div>
-                                        <p className="course-description my-2">{course.description}</p>
-                                    <hr />
-
-                                    <div className="course-footer">
-                                        <div className="enrolled">
-                                            <div className="studentImages">
-                                                {/* {userEnrolledImages.map((userEnrolled, index) => (
-                                                    <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
-                                                ))} */}
-                                                <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
+                <div className="cloud-overlay">
+                    <div className="courses-display-section my-5">
+                        <div className="courses-display" ref={sliderRef}>
+                            {courses.map((course) => (
+                                <div key={course.id} className="course-card">
+                                    <div className="course-card-image position-relative">
+                                        <img src={course.image} alt={course.title} height='283px' className="course-image" />
+                                        {course.free && 
+                                            <div className="card-badge">
+                                                <div className="d-flex align-items-center gap-2">
+                                                    <img src={liveIcon} className="record-live_icon" alt="icon" width="13.56px" height="13.56px" />
+                                                    <span>Free</span>
+                                                </div> 
                                             </div>
-                                            <span>{course.enrolled} enrolled</span>
+                                        }
+                                    </div>
+
+
+                                    <div className="course-card-body">
+                                        <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
+                                        <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
+                                        
+                                        <hr />
+                                            <div className={`training-date my-0 ${course.free ? 'free' : ''}`}>
+                                                <span>
+                                                    <span className="me-1">Next training</span> 
+                                                    <strong>
+                                                        {course.startDate === "Coming Soon" ? "Coming Soon"
+                                                            : new Date(course.startDate).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
+                                                        }
+                                                    </strong>
+                                                </span>
+                                            </div>
+                                            <p className="course-description my-2">{course.description}</p>
+                                        <hr />
+
+                                        <div className="course-footer">
+                                            <div className="enrolled">
+                                                <div className="studentImages">
+                                                    {/* {userEnrolledImages.map((userEnrolled, index) => (
+                                                        <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
+                                                    ))} */}
+                                                    <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
+                                                </div>
+                                                <span>{course.enrolled} enrolled</span>
+                                            </div>
+                                            <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                         </div>
-                                        <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
-                    </div>
-        
-                    <div className="d-flex justify-content-center align-items-center gap-3 mt-4">
-                        <button className="btn btn-outline-dark rounded-circle p-2" onClick={prevSlide} disabled={currentIndex === 0}>
-                            <IoArrowBack size={24} />
-                        </button>
-                
-                        {/* Pagination Dots */}
-                        <div className="d-flex gap-2">
-                            {courses.map((_, index) => (
-                                <div role='button' key={index} onClick={() => goToSlide(index)} className={`dot ${currentIndex === index ? "active" : ""}`} />
                             ))}
                         </div>
-                
-                        <button className="btn btn-outline-dark rounded-circle p-2" onClick={nextSlide} disabled={currentIndex >= courses.length - visibleItems}>
-                            <IoMdArrowForward size={24} />
-                        </button>
+
+                        <div className="d-flex justify-content-center align-items-center gap-3 mt-4">
+                            <button className="btn btn-outline-dark rounded-circle p-2" onClick={prevSlide} disabled={currentIndex === 0}>
+                                <IoArrowBack size={24} />
+                            </button>
+                    
+                            {/* Pagination Dots */}
+                            <div className="d-flex gap-2">
+                                {courses.map((_, index) => (
+                                    <div role='button' key={index} onClick={() => goToSlide(index)} className={`dot ${currentIndex === index ? "active" : ""}`} />
+                                ))}
+                            </div>
+                    
+                            <button className="btn btn-outline-dark rounded-circle p-2" onClick={nextSlide} disabled={currentIndex >= courses.length - visibleItems}>
+                                <IoMdArrowForward size={24} />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom';
 import heroImage1 from '../../assets/images/hero-welcome.png';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import JoinClasses from './JoinClasses';
+import ComingSoonPop from '../Common/ComingSoonPop/ComingSoonPop';
+import thumbsUpGif from "../../assets/images/thumbs_up.gif";
+import { useRef } from 'react';
 
 const HeroSection = () => {
+    const successModalRef = useRef(null);
   return (
     <section className="hero-section my-5">
         <div className="container">
@@ -30,10 +34,10 @@ const HeroSection = () => {
                                 <div className="modal-dialog">
                                     <div className="modal-content">
                                         <div className="d-flex justify-content-end p-2">
-                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <button type="button" className="btn-close" id='joinModalCloseBtn' data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div className="modal-body">
-                                            <JoinClasses />
+                                            <JoinClasses successModalRef={successModalRef} />
                                         </div>
                                     </div>
                                 </div>
@@ -47,6 +51,27 @@ const HeroSection = () => {
                         </div>
                     </section>
 
+                </div>
+            </div>
+        </div>
+
+        {/* Success Modal */}
+        <div className="modal fade" ref={successModalRef} id="successModal" tabIndex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div className="modal-dialog mt-4" style={{ maxWidth: "550px", margin: "0 auto" }}>
+                <div className="modal-content">
+                    <div className="d-flex justify-content-end p-2">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body mb-5" style={{ maxWidth: "450px", margin: "0 auto", width: "100%" }}>
+                        <ComingSoonPop 
+                            title="Welcome to Cosmos Academy Community" 
+                            text='Check your email for the slack channel link and connect with other innovators.'
+                            popImg={thumbsUpGif} 
+                            widthSize={"52.07px"}
+                            heightSize={"52.07px"}
+                            welcomeModal={true}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

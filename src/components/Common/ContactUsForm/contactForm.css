@@ -2,3 +2,7 @@
     max-width: 600px;
     margin: 0 auto;
 }
+.contactUs_section .text-danger {
+    color: #FF3B30 !important;
+    font-size: 14px;
+}

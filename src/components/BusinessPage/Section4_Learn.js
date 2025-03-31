@@ -65,8 +65,8 @@ const LearningInfoSection = () => {
           </p>
         </section>
 
-        <div className="courses-display-section my-5">
-    
+        <div className="cloud-overlay">
+            <div className="courses-display-section my-5">
                 <div className="courses-display">
                     {courses.map((course) => (
                         <div key={course.id} className="course-card">
@@ -101,8 +101,8 @@ const LearningInfoSection = () => {
                         </div>
                     ))}
                 </div>
-    
             </div>
+        </div>
     </section>
   )
 }
