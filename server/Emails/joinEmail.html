@@ -3,77 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Request - Cosmos Academy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Welcome to Cosmos Academy</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @font-face {
+            font-family: "NeueMontreal";
+            src: url("http://localhost:5000/fonts/neueMontreal/NeueMontreal-Medium.otf") format('woff2'),
+                 url("http://localhost:5000/fonts/neueMontreal/NeueMontreal-Medium.otf") format('woff');
+        }
+        @font-face {
+            font-family: "Cosmos";
+            src: url("http://localhost:5000/fonts/cosmos/Cosmos-Light.ttf") format('woff');
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #FDFCFD; /* gray_white-color */
-            color: #3C3C3C; /* card_text-color */
+            font-family: "NeueMontreal", 'Inter', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
+
         .container {
-            max-width: 600px;
-            margin: 40px auto;
-            background-color: #fff; /* white */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1100px;
+            margin: 20px auto;
+            background: #FFF4E5;
             padding: 20px;
-            border: 1px solid #E2E2E2; /* border_gray-color */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .header {
-            background-color: #AAC1E4; /* active_link-color */
-            color: #fff; /* white */
-            text-align: center;
-            padding: 15px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            font-size: 20px;
-            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
+
+        .header img {
+            width: 100px;
+            height: 80px;
+        }
+        .header .logo-text {
+            display: flex;
+            flex-direction: column !important;
+            margin-bottom: 20px;
+        }
+        .header .logo-text div {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #000;
+        }
+
+        .hero-section {
+            padding: 30px;
+            background: #000;
+            color: #fff;
+        }
+
+        .hero-section h2 {
+            font-size: 70px;
+            font-family: "Cosmos", sans-serif;
+            font-weight: 700;
+            line-height: normal;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+
+        .hero-section a {
+            background: #fff;
+            color: #000;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 100px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .hero-section a:hover {
+            transform: scale(0.98);
+        }
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
         .content {
             padding: 20px;
-            text-align: left;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
         }
+
+        .content p {
+            line-height: 20px;
+        }
+
+        .content h3 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .content a {
+            color: #9981FF;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
         .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             font-size: 14px;
-            color: #B0B0B0; /* card_text-color2 */
-            background-color: #F3F3F3; /* basic-BgColor */
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            color: #666;
         }
-        .btn {
-            display: inline-block;
-            background-color: #90B8F3; /* card_date-BgColor2 */
-            color: #fff;
-            padding: 10px 20px;
+
+        .footer img {
+            width: 20px;
+            margin: 0 5px;
+        }
+
+        .footer a {
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            margin-top: 10px;
         }
-        .btn:hover {
-            background-color: #AAC1E4; /* active_link-color */
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col-8 {
+            flex: 0 0 65%;
+        }
+
+        .col-4 {
+            flex: 0 0 30%;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+
+            .col-8, .col-4 {
+                flex: 1 0 100%;
+            }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
-            Join Request from Cosmos Academy
+        <!-- Header -->
+        <header class="header">
+            <img src="http://localhost:5000/images/logo_crest.png" alt="Cosmos Academy Logo">
+            <div class="logo-text">
+                <div>Cosmos</div>
+                <div>Academy</div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="row">
+                <div class="col-8">
+                    <h2>We are Building Skills for Impact.</h2>
+                    <a href="#">Start Live Class</a>
+                </div>
+                <div class="col-4">
+                    <img src="http://localhost:5000/images/hero_image.png" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
         </div>
+
+        <!-- Email Content -->
         <div class="content">
-            <p><strong>Email:</strong> {{email}}</p>
-            <p><strong>Phone:</strong> +{{phone}}</p>
-            <p>Thank you for your interest in Cosmos Academy! Our team will review your request and get back to you soon.</p>
-            <a href="https://cosmosacademy.org" class="btn">Visit Our Website</a>
+            <p><strong>Hello {{name}},</strong></p>
+            <p>Welcome to Cosmos Academy, where we equip you with the cutting-edge digital skills, the right mindset, and knowledge needed to transform your life and create the impact that matters.</p>
+            <p>You can find the latest information about Cosmos Academy, how to get started with live classes, mentorship programs, and guidance in our community. <a href="#">Join Community for Live Classes</a></p>
+            <p>Get to know more about your course and all the topics to be covered by downloading your course syllabus. <a href="#">Download (Course name) syllabus.</a></p>
+
+            <h3 class="mt-5">Ready to Learn More?</h3>
+            <p>Chat with someone one-on-one? Set up a <a href="#">call with our enrollment team.</a></p>
+            <p>Ready to get started? <a href="#">Explore our programs and enroll for a course.</a></p>
         </div>
+
+        <!-- Footer -->
         <div class="footer">
-            &copy; 2025 Cosmos Academy. All rights reserved.
+            <a href="#"><img src="http://localhost:5000/images/linkedin.png" alt="linkedin"></a>
+            <a href="#"><img src="http://localhost:5000/images/x.png" alt="Twitter"></a>
+            <a href="#"><img src="http://localhost:5000/images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="http://localhost:5000/images/youtube.png" alt="YouTube"></a>
         </div>
     </div>
+
 </body>
 </html>

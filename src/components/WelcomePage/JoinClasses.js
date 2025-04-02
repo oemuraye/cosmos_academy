@@ -6,15 +6,17 @@ import exploreIcon from "../../assets/icons/btn-Icon.png";
 
 export default function JoinClasses({ successModalRef }) {
   const [email, setEmail] = useState("");
+  const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
-  
+  const [serverErrors, setServerErrors] = useState();
 
   const validateForm = () => {
     const newErrors = {};
     if (!email.trim()) newErrors.email = "Email is required";
+    if (!fullName.trim()) newErrors.fullName = "Your name is required";
     if (!phone.trim()) newErrors.phone = "Phone number is required";
     return newErrors;
   };
@@ -23,23 +25,6 @@ export default function JoinClasses({ successModalRef }) {
     setTimeout(() => setErrors({}), 5000);
   };
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-
-//     setStatus("success");
-//     setTimeout(() => setStatus(null), 10000);
-//     setEmail("");
-//     setPhone("");
-
-    
-//     setTimeout(() => {
-//         document.getElementById("joinModalCloseBtn").click();
-//         if (successModalRef.current) {
-//             const modal = new Modal(successModalRef.current);
-//             modal.show();
-//         }
-//     }, 3000)
-//   }
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
@@ -52,31 +37,39 @@ export default function JoinClasses({ successModalRef }) {
     setErrors({});
     setLoading(true);
     setStatus(null);
+    setServerErrors(null);
 
     try {
       const response = await fetch("http://localhost:5000/api/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, phone }),
+        body: JSON.stringify({ name: fullName, email, phone }),
       });
 
       const result = await response.json();
-      setStatus("success");
-      setTimeout(() => setStatus(null), 10000);
-      setEmail("");
-      setPhone("");
 
-      
-      setTimeout(() => {
-        document.getElementById("joinModalCloseBtn").click();
-        if (successModalRef.current) {
-          const modal = new Modal(successModalRef.current);
-          modal.show();
-        }
-      }, 3000)
+      if (response.ok) {
+        setStatus("success");
+        setTimeout(() => setStatus(null), 10000);
+        setFullName("");
+        setEmail("");
+        setPhone("");
+
+        setTimeout(() => {
+          document.getElementById("joinModalCloseBtn").click();
+          if (successModalRef.current) {
+            const modal = new Modal(successModalRef.current);
+            modal.show();
+          }
+        }, 3000);
+      } else {
+        // If server returns errors, display them
+        setServerErrors(result.message || "Failed to submit. Try again.");
+      }
     } catch (error) {
       console.error("Error:", error);
       setStatus("error");
+      setServerErrors("Server error occurred, please try again.");
       setTimeout(() => setStatus(null), 10000);
     } finally {
       setLoading(false);
@@ -87,10 +80,25 @@ export default function JoinClasses({ successModalRef }) {
     <section className="pageModal liveClasses_section text-center">
         {status === "success" && <p className="text-center success-container">Request submitted!</p>}
         {status === "error" && <p className="text-center error-container">Failed to submit. Try again.</p>}
+        {serverErrors && <p className="text-center error-container">{serverErrors}</p>}
       <h2>Start Your Journey!</h2>
       <p>Stay connected and never miss an update!</p>
 
       <form onSubmit={handleSubmit} className="mt-5 d-flex flex-column gap-4">
+        <div>
+          <input
+            type="text"
+            placeholder="Full name"
+            value={fullName}
+            onChange={(e) => {
+              setFullName(e.target.value);
+              setErrors((prev) => ({ ...prev, fullName: "" }));
+            }}
+            className="form-control"
+          />
+          {errors.fullName && <p className="text-danger m-0 text-start ps-4">{errors.fullName}</p>}
+        </div>
+
         <div>
           <input
             type="email"
@@ -138,8 +146,6 @@ export default function JoinClasses({ successModalRef }) {
           </button>
         </div>
       </form>
-
-      
     </section>
   );
 }
