@@ -99,7 +99,7 @@ const dropdownContent = {
             <h4>FAQ</h4>
             {/* <p>Product Design</p> */}
           </Link>
-          <Link to="/about" >
+          <Link to="/contact" >
             <h4>Contact Us</h4>
             {/* <p>Product Design</p> */}
           </Link>

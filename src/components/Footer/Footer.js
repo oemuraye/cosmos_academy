@@ -53,7 +53,7 @@ const Footer = () => {
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Information</h4></li>
                                 <li><Link to='/about'>About us</Link></li>
-                                <li><Link to=''>Contact us</Link></li>
+                                <li><Link to='/contact'>Contact us</Link></li>
                                 <li><Link to='blog-post/:postID'>Blog</Link></li>
                                 <li><Link to=''>Support</Link></li>
                                 <li><Link to=''>Help Center</Link></li>

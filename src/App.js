@@ -17,6 +17,7 @@ import FaqPage from './pages/Faq/Faq';
 import ScrollToTop from './utils/ScrollToTop';
 import Welcome from './pages/Welcome/Welcome';
 import Partner from './pages/Partner/Partner';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/faq" element={<FaqPage/>} />
           <Route path="/welcome" element={<Welcome/>} />
           <Route path="/partner" element={<Partner/>} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
       </main>
       <Footer />

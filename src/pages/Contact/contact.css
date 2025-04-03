@@ -1,0 +1,14 @@
+.contact-page .section-heading {
+    max-width: 559px;
+}
+.contact-page .section-heading h2 {
+    font-size: 52px;
+}
+.contact-page .section-heading p {
+    font-family: var(--font-neueMontreal);
+    line-height: normal;
+}
+/* .contact-page .section-heading p.color-gray {
+    font-family: var(--font-neueMontreal);
+    line-height: 100%;
+} */

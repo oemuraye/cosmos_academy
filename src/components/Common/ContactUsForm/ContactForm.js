@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import exploreIcon from "../../../assets/icons/btn-Icon.png";
 import "./contactForm.css";
 
-const ContactForm = () => {
+const ContactForm = ({ contactPage = false }) => {
   const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [formData, setFormData] = useState({
@@ -57,7 +57,7 @@ const ContactForm = () => {
   return (
     <section className="pageModal contactUs_section text-center">
       <h2>Contact Our Team</h2>
-      <p>Have questions? Reach out, and we'll help you!</p>
+      {!contactPage && <p>Have questions or need guidance? Our dedicated team is here to help! Whether it’s about courses, enrollment, or general inquiries, we’re just a message away. Reach out, and let’s make your Cosmos Academy experience seamless!</p>}
 
       <form onSubmit={handleSubmit} className="mt-5 d-flex flex-column gap-4">
         <div>
