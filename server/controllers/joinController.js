@@ -21,17 +21,14 @@ export const handleJoinRequest = async (req, res) => {
   }
 
   try {
-    // Save to MongoDB (MongoDB will auto-generate _id)
     const mongoUser = new User({ name, email, phone });
     const savedMongoUser = await mongoUser.save();
 
-    // Convert MongoDB _id (ObjectId) to string
-    const mongoIdString = savedMongoUser._id.toString();
+    const mongoIdString = savedMongoUser;
 
-    // Save to MySQL (optionally, store MongoDB _id as a string)
     pool.query(
       "INSERT INTO users (name, email, phone, mongo_id) VALUES (?, ?, ?, ?)", 
-      [name, email, phone, mongoIdString],  // Store MongoDB _id as a string in MySQL
+      [name, email, phone, mongoIdString], 
       (err, result) => {
         if (err) console.error("❌ MySQL Insert Error:", err);
         else console.log("✅ User saved to MySQL", result.insertId);
