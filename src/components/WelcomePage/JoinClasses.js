@@ -40,6 +40,7 @@ export default function JoinClasses({ successModalRef }) {
     setServerErrors(null);
 
     try {
+      // const response = await fetch("http://localhost:5000/api/join", {
       const response = await fetch("https://academy.cosmosdesignspace.com/api/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

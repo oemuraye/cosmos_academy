@@ -24,7 +24,7 @@ export const handleJoinRequest = async (req, res) => {
     const mongoUser = new User({ name, email, phone });
     const savedMongoUser = await mongoUser.save();
 
-    const mongoIdString = savedMongoUser;
+    const mongoIdString = savedMongoUser._id.toString();
 
     pool.query(
       "INSERT INTO users (name, email, phone, mongo_id) VALUES (?, ?, ?, ?)", 

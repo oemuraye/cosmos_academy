@@ -288,6 +288,7 @@ input::placeholder {
 .cloud-overlay {
   position: relative;
   overflow: hidden;
+  padding: 10px;
 }
 
 .cloud-overlay::before,
@@ -303,13 +304,13 @@ input::placeholder {
 }
 
 .cloud-overlay::before {
-  left: -10px;
-  background: linear-gradient(to right, #f3f3f3a1, #f3f3f3d9);
+  left: -15px;
+  background: linear-gradient(to right, #f3f3f3, #f3f3f3);
 }
 
 .cloud-overlay::after {
-  right: -10px;
-  background: linear-gradient(to left, #f3f3f3d9, #f3f3f3a1);
+  right: -15px;
+  background: linear-gradient(to left, #f3f3f3, #f3f3f3);
 }
 
 
