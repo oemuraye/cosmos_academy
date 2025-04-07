@@ -22,7 +22,7 @@ const sendEmail = async (to, subject, htmlContent) => {
     //   },
     // });
 
-    const mailOptions = { from: process.env.AUTH_EMAIL, to, subject, html: htmlContent };
+    const mailOptions = { from: `"Cosmos Academy" <${process.env.AUTH_EMAIL}>`, to, subject, html: htmlContent };
     
     
     await transporter.sendMail(mailOptions);
