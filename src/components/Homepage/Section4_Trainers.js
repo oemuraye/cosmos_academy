@@ -104,9 +104,9 @@ const TrainersSection = () => {
   }, [direction]);
   
   return (
-    <section className="trainers-section section-width padding_y-spacing">
+    <section className="trainers-section padding_y-spacing">
       <div className="container">
-        <div className="section-heading my-5">
+        <div className="section-heading section-width my-5">
           <h2>Meet your trainers and start your journey</h2>
           <p>
             Our trainers are industry experts, innovators, and mentors dedicated
@@ -118,7 +118,7 @@ const TrainersSection = () => {
       </div>
 
       <div className="cloud-overlay">
-        <div className="trainers-cards container" ref={containerRef}>
+        <div className="trainers-cards container ps-3 ps-md-5" ref={containerRef}>
           <div className="cards-display">
             {trainers.map((trainer, index) => (
               <div className="trainer-card my-4" key={index}>

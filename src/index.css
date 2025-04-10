@@ -289,6 +289,8 @@ input::placeholder {
   position: relative;
   overflow: hidden;
   padding: 10px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .cloud-overlay::before,
@@ -366,6 +368,10 @@ input::placeholder {
   }
   .modal-content {
     margin-top: 70px;
+  }
+  .cloud-overlay::before,
+  .cloud-overlay::after {
+    width: 40px; 
   }
 }
 

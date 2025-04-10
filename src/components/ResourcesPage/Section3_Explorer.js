@@ -149,7 +149,6 @@ const ExplorerSection = () => {
 
       </section>
 
-      <div className="cloud-overlay">
         <section className="trainers-section padding_y-spacing">
           <div className="container">
               <div className="section-heading my-5">
@@ -160,10 +159,10 @@ const ExplorerSection = () => {
                 </p>
               </div>
           </div>
+          <div className="cloud-overlay">
+            <div className="trainers-cards container">
 
-          <div className="trainers-cards container">
-
-              <div className="cards-display">
+              <div className="cards-display ps-3 ps-md-5">
                   {explorers.map((explorer, index) => (
                       <div className="trainer-card my-4" key={index}>
                       <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
@@ -174,10 +173,9 @@ const ExplorerSection = () => {
                       </div>
                   ))}
               </div>
-
+            </div>
           </div>
         </section>
-      </div>
     </section>
   )
 }

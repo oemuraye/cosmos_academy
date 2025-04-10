@@ -14,12 +14,12 @@
 /* Sticky Notes */
 .sticky-note {
     position: absolute;
-    padding: 25px 10px;
+    padding: 25px 10px 0 10px;
     border-radius: 9.52px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 15.24px;
     width: 175.93px;
-    height: 222.88px;
+    /* height: 222.88px; */
     font-family: var(--font-nothingYouCouldDo);
     font-weight: 600;
 }
@@ -79,8 +79,8 @@
     animation: slideIn 3s ease-in-out infinite;
 }
 .insights-showcase .customBtn-icon {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;

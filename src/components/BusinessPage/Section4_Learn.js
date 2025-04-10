@@ -67,7 +67,7 @@ const LearningInfoSection = () => {
 
         <div className="cloud-overlay">
             <div className="courses-display-section my-5">
-                <div className="courses-display">
+                <div className="courses-display ps-3 ps-md-4">
                     {courses.map((course) => (
                         <div key={course.id} className="course-card">
                             {/* <div className="course-card-image">

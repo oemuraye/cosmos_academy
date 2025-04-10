@@ -143,7 +143,7 @@ const CourseSection = () => {
     };
   
     return (
-        <section className='course-section section-width my-5 padding_y-spacing'>
+        <section className='course-section my-5 padding_y-spacing'>
             <div className="container">
                 <section className="section_headingWithBtn mb-5">
                     <h2>Empower your future with technological skills</h2>
@@ -157,7 +157,7 @@ const CourseSection = () => {
     
                 <div className="cloud-overlay">
                     <div className="courses-display-section my-5">
-                        <div className="courses-display" ref={sliderRef}>
+                        <div className="courses-display ps-3 ps-md-5" ref={sliderRef}>
                             {courses.map((course) => (
                                 <div key={course.id} className="course-card">
                                     <div className="course-card-image position-relative">

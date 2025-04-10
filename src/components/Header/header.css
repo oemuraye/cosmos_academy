@@ -238,8 +238,7 @@
       width: 90vw;
       margin: 0 auto;
       height: auto;
-      /* background: var(--dark-color); */
-      background: var(--dark-color);
+      background: var(--white-color);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -266,10 +265,11 @@
    }
   .navbar-nav a {
       font-size: 18px !important;
-      color: #fff !important;
-   }
-  .navbar-nav a.active {
-      color: #fff !important;
+      color: var(--dark-color) !important;
+    }
+    .navbar-nav a.active {
+      color: var(--dark-color) !important;
+      /* color: #fff !important; */
    }
   
   .navbar-brand {
