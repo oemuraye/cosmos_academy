@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
+import { IoIosArrowRoundForward } from "react-icons/io";
+
 import logo from '../../assets/images/brand_logo.png';
 // import menuIcon from '../../utils/icons/menuToggler.png';
 // import closeIcon from '../../utils/icons/closeBtn.png';
@@ -137,6 +139,49 @@ const dropdownContent = {
   ),
 };
 
+const dropdownMobileContent = {
+  Programs: (
+    <div className="mobile-dropdown">
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> AR & VR Dev</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Brand Design</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Mobil App Dev</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Product Design</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Digital Information</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Website Development</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Artificial Intelligence</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Social Media Management</h4></Link>
+      <Link to='/programs'><h4> <IoIosArrowRoundForward /> Embedded Systems and IOT</h4></Link>
+    </div>
+  ),
+  Resources: (
+    <div className="mobile-dropdown">
+      <Link to='/blog-post/:postID'><h4> <IoIosArrowRoundForward /> Blogs</h4></Link>
+      <Link to='/resources'><h4> <IoIosArrowRoundForward /> Cosmos Explorer</h4></Link>
+    </div>
+  ),
+  About: (
+    <div className="mobile-dropdown">
+      <Link to='/about'><h4> <IoIosArrowRoundForward />About Us</h4></Link>
+      <Link to='/community'><h4> <IoIosArrowRoundForward />Community</h4></Link>
+      <a href='https://cosmosconference.org/' target='_blank' rel='noreferrer'><h4> <IoIosArrowRoundForward /> Cosmos Conference</h4></a>
+      <Link to='/faq'><h4> <IoIosArrowRoundForward /> FAQ</h4></Link>
+      <Link to='/contact'><h4> <IoIosArrowRoundForward /> Contact Us</h4></Link>
+    </div>
+  ),
+  Business: (
+    <div className="mobile-dropdown">
+      <Link to='/business'><h4> <IoIosArrowRoundForward /> For Companies</h4></Link>
+    </div>
+  ),
+  Partner: (
+    <div className="mobile-dropdown">
+      <Link><h4> <IoIosArrowRoundForward /> Donate to partner</h4></Link>
+      <Link><h4> <IoIosArrowRoundForward /> Donate to Cosmos</h4></Link>
+    </div>
+  ),
+};
+
+
 
 const menuItems = [
   { name: "Programs", path: "programs" },
@@ -154,16 +199,33 @@ const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleMouseEnter = (item) => {
-    if (window.innerWidth > 767) {
+    if (!isMobile) {
       setActiveDropdown(item);
     }
   };
-  
+
   const handleMouseLeave = () => {
-    if (window.innerWidth > 767) {
+    if (!isMobile) {
       setActiveDropdown(null);
+    }
+  };
+
+  const handleDropdownClick = (item) => {
+    if (isMobile) {
+      setActiveDropdown(activeDropdown === item ? null : item);
     }
   };
 
@@ -213,6 +275,12 @@ const Header = () => {
     // window.open('/welcome', '_blank');
   };
 
+  const handleLinkClick = (e, item) => {
+    if (isMobile && dropdownContent[item]) {
+      e.preventDefault();
+    }
+  };
+
   const handleScheduleScroll = (e, targetId) => {
     e.preventDefault();
     if (location.pathname !== '/') {
@@ -260,9 +328,13 @@ const Header = () => {
                 className="nav-item dropdown-container"
                 onMouseEnter={() => handleMouseEnter(name)}
                 onMouseLeave={handleMouseLeave}
+                onClick={() => handleDropdownClick(name)}
               >
-                <Link to={`/${path.toLowerCase()}`} className="nav-link">{name}</Link>
-                {activeDropdown === name && dropdownContent[name] && dropdownContent[name]}
+                <Link to={`/${path.toLowerCase()}`} onClick={(e) => handleLinkClick(e, name)} className="nav-link">{name}</Link>
+                {isMobile 
+                  ? (activeDropdown === name && dropdownMobileContent[name]) // Render mobile content
+                  : (activeDropdown === name && dropdownContent[name]) // Render desktop content
+                }
               </li>
             ))}
             
