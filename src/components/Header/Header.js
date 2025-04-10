@@ -243,10 +243,6 @@ const Header = () => {
           </div>
         </Link>
 
-        {/* <button className={`navbar-toggler ${menuOpen ? 'open' : ''}`} type="button" onClick={toggleMenu} aria-controls="navbarSupportedContent" aria-expanded={menuOpen} aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" style={{ backgroundImage: `url(${menuOpen ? closeIcon : menuIcon})` }}></span>
-        </button> */}
-
         <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <div></div>
           {/* <div></div> */}
