@@ -249,7 +249,7 @@
     height: 100vh;
     justify-content: start;
     margin: 0 auto;
-    padding: 10px 0 10px 30px;
+    padding: 10px 10px 10px 10px;
     position: fixed;
     top: 0px;
     transform: translateX(0);
@@ -271,9 +271,13 @@
   
   .navbar-nav {
       flex-direction: column;
+      width: 100%;
       position: relative;
       top: 80px;
    }
+   .navbar-nav li.nav-item {
+        border-bottom: 1px solid #000;
+    }
   .navbar-nav a {
       font-size: 25px !important;
       color: var(--dark-color) !important;
@@ -310,7 +314,7 @@
         opacity: 0 !important;
         pointer-events: none;
     } */
-     .mobile-dropdown .customBtn {
+    .mobile-dropdown .customBtn {
         font-size: 20px !important;
     }
 }
