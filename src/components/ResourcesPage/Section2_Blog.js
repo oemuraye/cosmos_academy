@@ -37,12 +37,15 @@ const blogPostes = [
 ];
 
 const tabsData = [
-  { id: 6, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
   { id: 2, name: "Social Management", description: "Learn how to effectively manage and grow social communities, engage audiences, and create impactful digital campaigns." },
-  { id: 3, name: "Brand Development", description: "Develop skills in branding, storytelling, and identity creation to help businesses stand out in the market." },
-  { id: 4, name: "Artificial Intelligence", description: "Understand AI concepts, machine learning, and automation to create smart solutions for real-world problems." },
-  { id: 5, name: "Mobile Development", description: "Create powerful mobile applications using React Native, Flutter, and native technologies for iOS and Android." },
+  { id: 3, name: "Product Design", description: "Learn the fundamentals of user experience (UX) and user interface (UI) design to create visually appealing and user-friendly digital products." },
+  { id: 4, name: "Brand Development", description: "Develop skills in branding, storytelling, and identity creation to help businesses stand out in the market." },
+  { id: 5, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
+  { id: 6, name: "Mobile Development", description: "Create powerful mobile applications using React Native, Flutter, and native technologies for iOS and Android." },
+  { id: 7, name: "Artificial Intelligence", description: "Understand AI concepts, machine learning, and automation to create smart solutions for real-world problems." },
+  { id: 8, name: "Embedded System/IoT", description: "Understand the principles of embedded systems and IoT technologies to build smart devices and systems that connect the physical world to the digital world." },
+  { id: 9, name: "AR/VR Development", description: "Create immersive experiences using augmented reality (AR) and virtual reality (VR) technologies to enhance user interactions and engagement in digital environments." },
 ];
 
 const BlogSection = () => {
