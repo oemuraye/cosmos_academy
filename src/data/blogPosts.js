@@ -609,7 +609,6 @@ export const posts = [
               <li><h4>Google Material Design</h4></li>
                 <p>- Consistency: Universal components like floating action buttons work identically on Android and iOS.</p>
                 <p>- Responsiveness: Grid layouts adjust dynamically to screen sizes.</p>
-            </ol>
               <li><h4>Airbnb</h4></li>
                 <p>- Visual Hierarchy: High-quality property images dominate, with CTAs like “Book Now” in contrasting colors.</p>
                 <p>- Authenticity: Localized content (e.g., Kyoto’s traditional stays) builds cultural resonance.</p>
