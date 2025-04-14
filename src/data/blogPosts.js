@@ -4,6 +4,7 @@ import authorImg1 from '../assets/images/author-img.png';
 import blogImgSlaveTrade from "../assets/blog_posts/Africa's Internet-Remote Slave Trade.png";
 import blogImgBeyondPosting from "../assets/blog_posts/Beyond Posting.png";
 import blogImgPrettyScreen from "../assets/blog_posts/From Pretty Screens to Real Impact.png";
+import blogImgHeartDesign from "../assets/blog_posts/The Heart of Design.png";
 
 export const posts = [
     {
@@ -470,11 +471,11 @@ export const posts = [
     },
     {
       id: 4,
-      slug: "engine-develop",
+      slug: "heart-of-design",
       category: "Digital Innovation",
-      title: "The Future of AI and its Ethical Concerns",
-      subtitle: "Genuine innovation has been replaced by performance. No one is matching value with results nor results with reputation.",
-      image: blogImgSlaveTrade,
+      title: "The Heart of Design: Principles for Crafting Products That Resonate",
+      subtitle: "Design principles act as a compass, guiding decisions to ensure products are both purposeful and impactful.",
+      image: blogImgHeartDesign,
       author: {
         name: "Jane Doe",
         avatar: authorImg1,
@@ -483,12 +484,41 @@ export const posts = [
       },
       content: [
         {
-          heading: "The Rise of AI",
-          text: "Artificial Intelligence has taken huge leaps in recent years, revolutionizing industries and reshaping how we interact with technology. From self-driving cars to personalized healthcare, AI has become a game-changer in our lives.",
+          heading: "",
+          text: `
+            <p>
+              Designers aim to craft products with top notch aesthetics, but navigating the complexities of 
+              user needs, brand goals, and technical constraints can be complicated most times. Design 
+              principles act as a compass, guiding decisions to ensure products are both purposeful and 
+              impactful. In this article, we’ll explore why these principles matter, explore core guidelines, and 
+              illustrate their real-world application.
+            </p>
+          `,
         },
         {
-          heading: "Ethical Considerations",
-          text: "With AI being more powerful, we must consider ethical implications. AI can have negative effects, such as increased bias and discrimination in decision-making. It can also lead to job displacement and increased inequality in society.",
+          heading: "Why Design Principles Are Non-Negotiable",
+          text: `
+            <p>Design principles are more than abstract ideas—they’re strategic tools that shape outcomes:</p>
+            <ol>
+              <li><h4>Consistency</h4></li>
+            </ol>
+          `,
+        },
+        {
+          heading: "",
+          text: `<p></p>`,
+        },
+        {
+          heading: "",
+          text: `<p></p>`,
+        },
+        {
+          heading: "",
+          text: `<p></p>`,
+        },
+        {
+          heading: "",
+          text: `<p></p>`,
         },
       ],
     },
