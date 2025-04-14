@@ -1,11 +1,12 @@
 import React, { useRef, useState } from 'react';
 
 import { Link } from 'react-router-dom';
+import { posts } from "../../data/blogPosts";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import blogImg1 from "../../assets/images/blogImg1.png";
 import blogImg2 from "../../assets/images/blogImg2.png";
 
-const blogPosts = [
+const blogPostes = [
   {
     id: 1,
     slug: 'nigerian-tech-ecosystem',
@@ -36,12 +37,12 @@ const blogPosts = [
 ];
 
 const tabsData = [
+  { id: 6, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
   { id: 2, name: "Social Management", description: "Learn how to effectively manage and grow social communities, engage audiences, and create impactful digital campaigns." },
   { id: 3, name: "Brand Development", description: "Develop skills in branding, storytelling, and identity creation to help businesses stand out in the market." },
   { id: 4, name: "Artificial Intelligence", description: "Understand AI concepts, machine learning, and automation to create smart solutions for real-world problems." },
   { id: 5, name: "Mobile Development", description: "Create powerful mobile applications using React Native, Flutter, and native technologies for iOS and Android." },
-  { id: 6, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
 ];
 
 const BlogSection = () => {
@@ -57,7 +58,7 @@ const BlogSection = () => {
   
     const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
   
-    const filteredBlog = blogPosts.filter(course => course.category === activeTabName);
+    const filteredBlog = posts.filter(course => course.category === activeTabName);
   return (
     <section className='blog_section padding_y-spacing container my-5'>
       <div className="d-flex justify-content-between align-items-center mb-4">
@@ -107,14 +108,14 @@ const BlogSection = () => {
                 <div className="card-body">
                   <h4 className="card-title">{blog.title}</h4>
                   <p className="text-muted small">
-                    <strong className="me-2">{blog.date} |</strong>  by {blog.author}
+                    <strong className="me-2">{blog.author.date} |</strong>  by {blog.author.name}
                   </p>
                 </div>
               </div>
           </Link>
           ))
         ) : (
-          <p className="text-center m-auto mt-4">No courses available for this category.</p>
+          <p className="text-center m-auto mt-4">No blog available for this category.</p>
         )}
       </div>
     </section>

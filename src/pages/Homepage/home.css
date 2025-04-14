@@ -561,7 +561,7 @@ img.xb-border-radius {
     border-radius: 10px;
 }
 .card-body {
-    min-height: 120px;
+    min-height: 150px;
 }
 .blog-section h2 {
     font-size: 40px;

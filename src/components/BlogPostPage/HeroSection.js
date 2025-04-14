@@ -16,7 +16,7 @@ const HeroSection = ({ post }) => {
                 </section>
                 
                 <section className="col-md-5 col-sm-12 my-3">
-                  <div className="text-center text-md-start mb-4 mb-md-0 px-1 pt-5 pt-md-0">
+                  <div className="text-center text-md-start mb-4 mb-md-0 px-1 pt-4 pt-md-0">
                       <h1 className="mb-3">{post.title}</h1>
                       <p>{post.subtitle}</p>
                   </div>

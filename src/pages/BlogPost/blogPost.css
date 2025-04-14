@@ -2,7 +2,7 @@
     background-color: var(--basic-BgColor);
 }
 .blog_post-page .hero-section h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 100%;
 }
 
@@ -57,8 +57,12 @@
     font-size: 36px;
 }
 
+.blog_post-page .blog-content ul,
 .blog_post-page .blog-content ol {
     padding-left: 15px;
+}
+.blog_post-page .blog-content ul {
+    list-style: disc;
 }
 
 

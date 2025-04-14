@@ -10,7 +10,7 @@ import './blogPost.css';
 const BlogPost = () => {
   const { postID } = useParams(); 
   
-  const post = posts.find((p) => p.id === postID);  
+  const post = posts.find((p) => p.slug === postID);  
 
   return (
     <main className="blog_post-page section-width">
@@ -25,7 +25,7 @@ const BlogPost = () => {
           <div className="blog-content padding_y-spacing">
             {post.content.map((section, index) => (
               <div key={index} className="blog-section my-5 py-2">
-                <h2 className="mt-5 mb-4">{section.heading}</h2>
+                {section.heading && <h2 className="fw-bold">{section.heading}</h2>}
                 <p dangerouslySetInnerHTML={{ __html: section.text }}></p>
               </div>
             ))}
