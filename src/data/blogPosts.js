@@ -655,7 +655,7 @@ export const posts = [
     },
     {
       id: 5,
-      slug: "heart-of-design",
+      slug: "nigerian-Tech-ecosystem",
       category: "Digital Innovation",
       title: "The Nigerian Tech Ecosystem: A Call for Authentic Innovation",
       subtitle: "Beyond serving the conventional conversations that happen in the tech community, we must acknowledge a troubling trend.",
@@ -665,7 +665,7 @@ export const posts = [
         avatar: authorImg1,
         date: "Mar 20, 2024",
         readTime: "15 Min Read",
-        linkedIn: "https://www.linkedin.com/in/trustoghale/",
+        linkedIn: "",
         instagram: "",
       },
       content: [

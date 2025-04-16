@@ -718,7 +718,7 @@ export const CourseMap = [
         id: 'mastering-ui-design-with-figma-intermediate-course',
         slug: 'mastering-ui-design-with-figma-intermediate-course',
         title: 'Mastering UI Design With Figma: Intermediate Course',
-        category: "Brand Development",
+        category: "Product Design",
         description: "Beginner-friendly course introduces the psychology of product design for user-centered experiences.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
