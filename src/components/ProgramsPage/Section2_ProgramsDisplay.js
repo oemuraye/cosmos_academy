@@ -16,6 +16,8 @@ import enrolledUsersImg5 from '../../assets/images/enrolled-users5.png';
 import stackedUsersImg from '../../assets/images/groupImages.png';
 import { Link, useNavigate, useNavigation } from "react-router-dom";
 
+import { CourseMap } from '../../data/courses';
+
 const tabsData = [
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
   { id: 2, name: "Social Management", description: "Learn how to effectively manage and grow social communities, engage audiences, and create impactful digital campaigns." },
@@ -111,7 +113,7 @@ const ProgramsDisplay = () => {
 
   const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
 
-  const filteredCourses = courses.filter(course => course.category === activeTabName);
+  const filteredCourses = CourseMap.filter(course => course.category === activeTabName);
   
 
   return (
@@ -176,10 +178,11 @@ const ProgramsDisplay = () => {
 
                   <div className="course-card-body mt-0">
                       <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
-                      <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
+                      <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor.name}</strong> | {course.duration}</p>
                       
                       <hr />
-                      <div className={`training-date my-0 ${course.pricing === "free" ? 'free' : 'coming_soon'}`}>
+                      <div className={`training-date my-0`} style={{ backgroundColor: course.colorBg || '' }}>
+                      {/* <div className={`training-date my-0 ${course.pricing === "free" ? 'free' : 'coming_soon'}`}> */}
                           <span>
                             <span className="me-1">Next training</span> 
                               <strong>

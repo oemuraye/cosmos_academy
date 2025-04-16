@@ -1,7 +1,7 @@
 const Details = ({ course }) => {
     return (
         <section className="course-details">
-            <div className="container">
+            <div className="container" style={{ backgroundColor: course.colorBg || '' }}>
                 <div className="row px-2">
                     <div className="col-md-4 mb-4">
                         <p className="m-0">Course Details</p>

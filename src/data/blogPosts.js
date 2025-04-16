@@ -1,5 +1,8 @@
 import blogImg1 from '../assets/images/blogImg1.png';
 import authorImg1 from '../assets/images/author-img.png';
+import authorImg2Mena from '../assets/images/menaImage.png';
+import authorImg3Alex from '../assets/images/alexImage.png';
+import authorImg4Nazor from '../assets/images/blessingImage.png';
 
 import blogImgSlaveTrade from "../assets/blog_posts/Africa's Internet-Remote Slave Trade.png";
 import blogImgBeyondPosting from "../assets/blog_posts/Beyond Posting.png";
@@ -20,6 +23,8 @@ export const posts = [
         avatar: authorImg1,
         date: "April 14, 2025",
         readTime: "10 Min Read",
+        linkedIn: "",
+        instagram: "",
       },
       content: [
         {
@@ -170,10 +175,12 @@ export const posts = [
       subtitle: "While regular posting is necessary, truly effective social media management requires strategic thinking that drives measurable business results.",
       image: blogImgBeyondPosting,
       author: {
-        name: "Jane Doe",
-        avatar: authorImg1,
+        name: "Mena Agelebe",
+        avatar: authorImg2Mena,
         date: "April 14, 2025",
         readTime: "20 Min Read",
+        linkedIn: "",
+        instagram: "",
       },
       content: [
         {
@@ -361,10 +368,12 @@ export const posts = [
       subtitle: "Beautiful interfaces aren't enough. Asking product-level questions not only makes your work smarter—it earns you respect as a  strategic thinker, not just an executor.",
       image: blogImgPrettyScreen,
       author: {
-        name: "Jane Doe",
-        avatar: authorImg1,
+        name: "Alexander Ikani",
+        avatar: authorImg3Alex,
         date: "Mar 20, 2024",
         readTime: "15 Min Read",
+        linkedIn: "https://www.linkedin.com/in/alexander-ikani-484648251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        instagram: "https://www.instagram.com/alexander_ikani?igsh=MXZsaXRndWt5MzdpZw%3D%3D&utm_source=qr",
       },
       content: [
         {
@@ -478,10 +487,12 @@ export const posts = [
       subtitle: "Design principles act as a compass, guiding decisions to ensure products are both purposeful and impactful.",
       image: blogImgHeartDesign,
       author: {
-        name: "Jane Doe",
-        avatar: authorImg1,
+        name: "Chinazor Blessing",
+        avatar: authorImg4Nazor,
         date: "Mar 20, 2024",
-        readTime: "8 Min Read",
+        readTime: "20 Min Read",
+        linkedIn: "http://www.linkedin.com/in/chinazor-umeakuka-a87a1413a",
+        instagram: "https://www.instagram.com/iam_nazzzix/",
       },
       content: [
         {
@@ -654,6 +665,8 @@ export const posts = [
         avatar: authorImg1,
         date: "Mar 20, 2024",
         readTime: "15 Min Read",
+        linkedIn: "https://www.linkedin.com/in/trustoghale/",
+        instagram: "",
       },
       content: [
         {

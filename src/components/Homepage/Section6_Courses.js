@@ -20,6 +20,8 @@ import stackedUsersImg from '../../assets/images/groupImages.png';
 import { IoMdArrowForward } from "react-icons/io";
 import { IoArrowBack } from "react-icons/io5";
 
+import { CourseMap } from '../../data/courses';
+
 const courses = [
     {
       id: 1,
@@ -38,7 +40,7 @@ const courses = [
       id: 2,
       slug: 'introduction-to-web-dev',
       title: "Introduction to Artificial </br> Intelligence (AI)",
-      instructor: " Ikponwomba Elotech",
+      instructor: "Ikponwomba Elotech",
       duration: "3 Weeks",
       startDate: "Coming Soon",
       description: "Gain a solid foundation in AI and machine learning. Learn data analysis, model building with Python.",
@@ -76,14 +78,13 @@ const courses = [
     // Add more courses here
 ];
 
-  const userEnrolledImages = [
+const userEnrolledImages = [
     enrolledUsersImg1,
     enrolledUsersImg2,
     enrolledUsersImg3,
     enrolledUsersImg4,
     enrolledUsersImg5,
-  ];
-
+];
 
 
 
@@ -91,7 +92,7 @@ const CourseSection = () => {
     const sliderRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleItems, setVisibleItems] = useState(1);
-  
+      
     useEffect(() => {
       const updateVisibleItems = () => {
         const width = window.innerWidth;
@@ -157,8 +158,9 @@ const CourseSection = () => {
     
                 <div className="cloud-overlay">
                     <div className="courses-display-section my-5">
-                        <div className="courses-display ps-3 ps-md-5" ref={sliderRef}>
-                            {courses.map((course) => (
+                        <div className="courses-display px-3 px-md-5" ref={sliderRef}>
+                            {/* {courses.map((course) => ( */}
+                            {CourseMap.map((course) => (
                                 <div key={course.id} className="course-card">
                                     <div className="course-card-image position-relative">
                                         <img src={course.image} alt={course.title} height='283px' className="course-image" />
@@ -175,10 +177,11 @@ const CourseSection = () => {
 
                                     <div className="course-card-body">
                                         <h4 dangerouslySetInnerHTML={{ __html: course.title }}></h4>
-                                        <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p>
+                                        <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor.name}</strong> | {course.duration}</p>
                                         
                                         <hr />
-                                            <div className={`training-date my-0 ${course.free ? 'free' : ''}`}>
+                                            {/* <div className={`training-date my-0 ${course.free ? 'free' : ''}`} style={{ backgroundColor: course.colorBg || '' }}> */}
+                                            <div className={`training-date my-0`} style={{ backgroundColor: course.colorBg || '' }}>
                                                 <span>
                                                     <span className="me-1">Next training</span> 
                                                     <strong>
@@ -188,7 +191,7 @@ const CourseSection = () => {
                                                     </strong>
                                                 </span>
                                             </div>
-                                            <p className="course-description my-2">{course.description}</p>
+                                            <p className="course-description my-2 mt-3">{course.description}</p>
                                         <hr />
 
                                         <div className="course-footer">
@@ -206,6 +209,7 @@ const CourseSection = () => {
                                     </div>
                                 </div>
                             ))}
+
                         </div>
 
                         <div className="d-flex justify-content-center align-items-center gap-3 mt-4">

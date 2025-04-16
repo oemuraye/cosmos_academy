@@ -17,18 +17,14 @@ const CourseContentPage = () => {
   const [course, setCourse] = useState(null);
 
   useEffect(() => {
-    const checkCourseID = async () => {
-      //TODO fetch real course
-      if (CourseMap.hasOwnProperty(courseID)) {
+    if (courseID) {
+      const foundCourse = CourseMap.find(c => c.slug === courseID);
+      if (foundCourse) {
         setIsValid(true);
-        setCourse(CourseMap[courseID]);
+        setCourse(foundCourse);
       } else {
         setIsValid(false);
       }
-    };
-
-    if (courseID) {
-      checkCourseID();
     } else {
       setIsValid(false);
     }
@@ -43,7 +39,7 @@ const CourseContentPage = () => {
   return (
     <>
       <Helmet>
-          <title>Course Content - Cosmos Academy</title>
+          <title>Course Content - {course?.title} - Cosmos Academy</title>
       </Helmet>
       <main className="pb-5 course-content">
         <HeroSection course={course} />

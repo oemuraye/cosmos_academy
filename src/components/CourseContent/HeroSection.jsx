@@ -9,11 +9,11 @@ const HeroSection = ({ course }) => {
     return (
         <>
             <section className="hero-section">
-                <div className="container-fluid">
+                <div className="container-fluid" style={{ backgroundColor: course.colorBg || '' }}>
                     <div className="section-width">
                         <div className="hero-content d-flex flex-md-row flex-column py-5">
                             <div className="col-md-6 col-12 order-1">
-                                <h1 className="fw-bold mb-3 course-title">{course.title}</h1>
+                                <h1 className="fw-bold mb-3 course-title" dangerouslySetInnerHTML={{ __html: course.title }}></h1>
 
                                 <div className="course-info ps-3 ps-md-0">
                                     <span>Course by </span> <span className="fw-bold"> {course.academy}</span>
