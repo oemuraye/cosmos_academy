@@ -589,25 +589,25 @@ export const CourseMap = [
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'Understanding UI/UX & Design Thinking',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: 'Research, Personas & User Flows',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
+                title: 'Sketch / Wireframing, UI Principles, & Figma Design',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
+                title: 'Prototyping, Testing & Final Project',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
             }
