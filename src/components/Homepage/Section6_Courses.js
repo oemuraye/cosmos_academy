@@ -110,7 +110,7 @@ const CourseSection = () => {
     const nextSlide = () => {
       if (sliderRef.current) {
         sliderRef.current.scrollLeft += scrollAmount;
-        setCurrentIndex((prev) => Math.min(prev + 1, courses.length - visibleItems));
+        setCurrentIndex((prev) => Math.min(prev + 1, CourseMap.length - visibleItems));
       }
     };
   
@@ -127,7 +127,7 @@ const CourseSection = () => {
             const containerWidth = sliderRef.current.clientWidth;
             const maxScrollLeft = scrollWidth - containerWidth;
             
-            const newScrollLeft = (index / (courses.length - 1)) * maxScrollLeft;
+            const newScrollLeft = (index / (CourseMap.length - 1)) * maxScrollLeft;
             sliderRef.current.scrollLeft = newScrollLeft;
         }
         setCurrentIndex(index);
@@ -160,7 +160,7 @@ const CourseSection = () => {
                     <div className="courses-display-section my-5">
                         <div className="courses-display px-3 px-md-5" ref={sliderRef}>
                             {/* {courses.map((course) => ( */}
-                            {CourseMap.map((course) => (
+                            {CourseMap.slice(0, 4).map((course) => (
                                 <div key={course.id} className="course-card">
                                     <div className="course-card-image position-relative">
                                         <img src={course.image} alt={course.title} height='283px' className="course-image" />
