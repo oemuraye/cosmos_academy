@@ -10,7 +10,7 @@ import blogImgBeyondPosting from "../assets/blog_posts/Beyond Posting.png";
 import blogImgPrettyScreen from "../assets/blog_posts/From Pretty Screens to Real Impact.png";
 import blogImgHeartDesign from "../assets/blog_posts/The Heart of Design.png";
 import blogImg9jaTech from "../assets/blog_posts/The Nigerian Tech Ecosystem.png";
-import blogImgFutureDev from "../assets/blog_posts/Blog1 - The Future of Web Development.pdf";
+import blogImgFutureDev from "../assets/blog_posts/Website that thinks.png";
 import blogImgNoCode from "../assets/blog_posts/No code does not no developer.png";
 import blogImgDynamic from "../assets/blog_posts/From static to Dynamic.png";
 
