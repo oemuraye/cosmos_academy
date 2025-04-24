@@ -3,12 +3,16 @@ import authorImg1 from '../assets/images/author-img.png';
 import authorImg2Mena from '../assets/images/menaImage.png';
 import authorImg3Alex from '../assets/images/alexImage.png';
 import authorImg4Nazor from '../assets/images/blessingImage.png';
+import authorImg5Pius from '../assets/images/piusImage.png';
 
 import blogImgSlaveTrade from "../assets/blog_posts/Africa's Internet-Remote Slave Trade.png";
 import blogImgBeyondPosting from "../assets/blog_posts/Beyond Posting.png";
 import blogImgPrettyScreen from "../assets/blog_posts/From Pretty Screens to Real Impact.png";
 import blogImgHeartDesign from "../assets/blog_posts/The Heart of Design.png";
 import blogImg9jaTech from "../assets/blog_posts/The Nigerian Tech Ecosystem.png";
+import blogImgFutureDev from "../assets/blog_posts/Blog1 - The Future of Web Development.pdf";
+import blogImgNoCode from "../assets/blog_posts/No code does not no developer.png";
+import blogImgDynamic from "../assets/blog_posts/From static to Dynamic.png";
 
 export const posts = [
     {
@@ -824,6 +828,274 @@ export const posts = [
               imitations of Western companies, but as uniquely African solutions that address both local 
               challenges and global opportunities. The potential is there; what's needed is the courage to 
               pursue authentic innovation rather than the safety of imitation. 
+            </p>
+          `,
+        },
+      ],
+    },
+    {
+      id: 6,
+      slug: "websites-that-think",
+      category: "Web Development",
+      title: "The Future of Web Development: Building Websites That Think",
+      subtitle: "Imagine visiting a website that understands what you want before you even click. Think of it like a personal assistant built into your website.",
+      image: blogImgFutureDev,
+      author: {
+        name: "Pius Emuraye",
+        avatar: authorImg5Pius,
+        date: "Mar 20, 2024",
+        readTime: "15 Min Read",
+        linkedIn: "https://www.linkedin.com/in/emuraye-oghenerukevwe-pius-b60b43211/",
+        instagram: "https://www.instagram.com/pius_king/",
+      },
+      content: [
+        {
+          heading: "Introduction",
+          text: `
+            <p>
+              Imagine visiting a website that understands what you want before you even click. A site that 
+              suggests content based on your mood, adapts to how fast you scroll, or even changes its layout 
+              based on your device and time of day. Sounds futuristic, right? Well, the future is already here — 
+              and it's changing how we build for the web.
+            </p>
+            <p>
+              In this blog, we'll explore how web development is evolving beyond just “beautiful designs” and 
+              “fast load times,” into a world of smart websites that think, adapt, and grow.
+            </p>
+          `,
+        },
+        {
+          heading: "What Is a Smart Website?",
+          text: `
+            <p>
+              A smart website uses machine learning, real-time data, and user behavior to improve how people 
+              interact with it. Think of it like a personal assistant built into your website. It can recommend 
+              products, change its content based on location, or even predict what a user wants to do next.
+            </p>
+            <p>For example:</p>
+            <ol>
+              <li><p>Netflix shows you movies based on your past watches.</p></li>
+              <li><p>Amazon changes its homepage based on what you're most likely to buy.</p></li>
+            </ol>
+            <p>
+              Now developers are bringing that same intelligence into regular websites — and it's changing 
+              everything.
+            </p>
+          `,
+        },
+        {
+          heading: "Why Should You Care as a Developer?",
+          text: `
+            <p>The old way of building static websites is dying. Users expect more. If your site isn't:</p>
+            <ol>
+              <li><p>Interactive</p></li>
+              <li><p>Personalized</p></li>
+              <li><p>Fast and responsive</p></li>
+            </ol>
+            <p>...then you're already behind</p>
+            <p>
+              Learning how to build “intelligent websites” will set you apart as a developer. It's not just about 
+              knowing HTML and CSS anymore — it's about understanding people and using tools like: 
+            </p>
+            <ol>
+              <li><p>JavaScript frameworks (React, Next.js)</p></li>
+              <li><p>APIs and webhooks</p></li>
+              <li><p>AI tools (like ChatGPT, TensorFlow.js)</p></li>
+              <li><p>Real-time databases (Firebase, Supabase)</p></li>
+            </ol>
+          `,
+        },
+        {
+          heading: "Real-Life Ideas That Can Spark Innovation",
+          text: `
+            <p>
+              Here are a few simple but powerful project ideas you can build to practice smart web 
+              development:
+            </p>
+            <ol>
+              <li><p>Auto-Adapting Portfolio: A personal portfolio site that changes theme based on time of day (dark mode at night).</p></li>
+              <li><p>Smart Form Suggestions: A form that predicts what a user wants to fill based on previous inputs.</p></li>
+              <li><p>Location-Based Content: Show different homepage content based on the user’s city or country.</p></li>
+              <li><p>AI Chat Assistant: Add a basic chatbot to answer user questions (using ChatGPT API).</p></li>
+              <li><p>Security-Aware Login Page: A login page that adds extra steps if login attempts seem suspicious.</p></li>
+            </ol>
+            <p>The cool part? You don’t need to be an AI genius to get started. </p>
+            <p>Tools you probably already use (or can learn quickly) make this easy:</p>
+            <ol>
+              <li><p>Next.js – Great for fast, scalable websites. </p></li>
+              <li><p>Firebase – Add real-time data updates and login systems.</p></li>
+              <li><p>OpenAI API – Plug ChatGPT into your site.</p></li>
+              <li><p>TailwindCSS – Build beautiful designs quickly with utility-first CSS.</p></li>
+            </ol>
+          `,
+        },
+        {
+          heading: "Final Thoughts – You’re Not Just a Coder",
+          text: `
+            <p>
+              As a developer, you're more than someone who writes code. You're an experience designer — 
+              someone who can shape how people feel, think, and act when they visit a website.
+            </p>
+            <p>The future of web development isn’t just technical. It’s emotional. Human. Smart.</p>
+            <p>So, ask yourself:</p>
+            <p>“What kind of experience do I want to create?”</p>
+            <p>That’s the kind of thinking that leads to innovation — and that’s what makes a great developer in this new era.</p>
+          `,
+        },
+      ],
+    },
+    {
+      id: 7,
+      slug: "no-code",
+      category: "Web Development",
+      title: `Why "No Code" Doesn’t Mean "No Developer"`,
+      subtitle: "You don’t always have to build everything from scratch. What matters is solving real problems, fast and smart.",
+      image: blogImgNoCode,
+      author: {
+        name: "Pius Emuraye",
+        avatar: authorImg5Pius,
+        date: "Mar 20, 2024",
+        readTime: "15 Min Read",
+        linkedIn: "https://www.linkedin.com/in/emuraye-oghenerukevwe-pius-b60b43211/",
+        instagram: "https://www.instagram.com/pius_king/",
+      },
+      content: [
+        {
+          heading: "Introduction",
+          text: `
+            <p>
+              In the past, building a website meant hours of typing code, debugging errors, and praying your 
+              CSS didn’t break on mobile. But today, platforms like Webflow, Bubble, Wix, and many others 
+              are making it possible to build stunning websites - without writing a single line of code.
+            </p>
+            <p>
+              This has sparked a major question in the tech world: “If anyone can build websites now, are 
+              developers still needed?” The short answer? Yes. And more than ever.
+            </p>
+            <p>
+              In this post, let’s break down the “No Code” movement, why it’s not a threat to developers, and 
+              how you can actually use it to become a smarter, faster, and more in-demand web developer.
+            </p>
+          `,
+        },
+        {
+          heading: "What is the “No Code” Movement?",
+          text: `
+            <p>
+              “No code” platforms allow users to build websites, apps, and workflows using visual tools 
+              instead of traditional coding. You drag, drop, and configure — no HTML, CSS, or JavaScript 
+              required.
+            </p>
+            <p>Popular platforms include:</p>
+            <ol>
+              <li><p><strong>Webflow:</strong> visual web design and hosting</p></li>
+              <li><p><strong>Bubble:</strong> building full-stack apps visually</p></li>
+              <li><p><strong>Airtable:</strong> spreadsheet meets database</p></li>
+              <li><p><strong>Zapier:</strong> connecting apps and automating workflows</p></li>
+              <li><p>Notion, Glide, Softr, Retool, and more</p></li>
+            </ol>
+            <p>The list is endless. These tools are perfect for non-developers who want to:</p>
+            <ol>
+              <li><p>Test a startup idea</p></li>
+              <li><p>Launch a business quickly</p></li>
+              <li><p>Build internal tools</p></li>
+              <li><p>Automate day-to-day operations</p></li>
+            </ol>
+          `,
+        },
+        {
+          heading: "Why No-Code Is Becoming So Popular",
+          text: `
+            <p>Let’s face it, speed is everything. In a world where startups need to move fast, and teams want 
+            solutions yesterday, no-code platforms fill a critical gap: </p>
+            <ol>
+              <li><p><strong>Faster time-to-market:</strong> What used to take weeks can now be built in days.</p></li>
+              <li><p><strong>Lower development costs:</strong> Non-technical founders can launch without hiring dev teams right away.</p></li>
+              <li><p><strong>Increased access:</strong> People with no technical background can build their own tools and MVPs.</p></li>
+            </ol>
+            <p>But here’s the twist: These tools exist because developers built them.</p>
+            <p>
+              Behind every “simple” interface is complex logic, architecture, and programming. No-code 
+              doesn’t erase the need for developers — it’s actually a product of great development. 
+            </p>
+          `,
+        },
+        {
+          heading: "Why Developers Are Still Super Important",
+          text: `
+            <p>Even though no-code tools are powerful, they still have limits.</p>
+            <p>Here’s why developers remain valuable:</p>
+            <ol>
+              <li><p><strong>Custom Features:</strong> What used to take weeks can now be built in days.</p></li>
+              <li><p><strong>Security & Performance:</strong> Non-technical founders can launch without hiring dev teams right away.</p></li>
+              <li><p><strong>Scalability:</strong> What works for 100 users may crash at 1,000. Developers know how to build apps that scale with real traffic..</p></li>
+              <li><p><strong>Integration & APIs:</strong> Developers connect systems, build middleware, and write logic that no visual builder can match.</p></li>
+              <li><p><strong>Problem-Solving:</strong> Developers can debug, extend, and truly understand how software works under the hood.</p></li>
+            </ol>
+          `,
+        },
+        {
+          heading: "Developers Built No-Code — Literally",
+          text: `
+            <p>It’s worth repeating: <i>No-code platforms are built by developers.</i></p>
+            <p>The reason Webflow feels smooth, Bubble works like magic, and Zapier integrates with 5,000+ apps are because developers:</p>
+            <ol>
+              <li><p>Designed the logic engines</p></li>
+              <li><p>Built the drag-and-drop interfaces</p></li>
+              <li><p>Created APIs behind the scenes</p></li>
+              <li><p>Wrote the backend infrastructure</p></li>
+            </ol>
+            <p>So, when you see someone building an app without code, you’re actually seeing a <strong>developer’s innovation</strong> in action.</p>
+          `,
+        },
+        {
+          heading: "How Developers Can Use No-Code as a Superpower",
+          text: `
+            <p>Smart developers don’t fear no-code — they leverage it.</p>
+            <ol>
+              <li><p>Use Webflow for frontend and connect it to your backend via APIs</p></li>
+              <li><p>Use Airtable or Notion as a temporary CMS while building a custom database.</p></li>
+              <li><p>Use Zapier to automate boring admin tasks like emails, form submissions, or notifications. or adding users to databases.</p></li>
+              <li><p>Build MVPs faster to validate ideas before investing months of development.</p></li>
+            </ol>
+            <p>This helps you deliver faster, test ideas quickly, and focus your coding energy on the important stuff. No-code doesn’t mean “less control” — it means more efficiency.</p>
+          `,
+        },
+        {
+          heading: "Real-Life Scenarios Where This Combo Works",
+          text: `
+            <ol>
+              <li>
+                <p>
+                  E-commerce MVP: Use Webflow + Stripe + Zapier to get a store running quickly while 
+                  you build the long- Build a landing page with Bubble or Carrd to test user interest before 
+                  writing backend code.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Internal Tools: Use Retool or Glide to give your team quick dashboards, while developers 
+                  focus on core system
+                </p>
+              </li>
+            </ol>
+          `,
+        },
+        {
+          heading: "Final Thoughts – Be the Hybrid Developer",
+          text: `
+            <p>
+              The future of web development belongs to hybrid creators — people who understand both no-
+              code tools and real code that is, developers who can combine code with powerful tools. You 
+              don’t always have to build everything from scratch. What matters is solving real problems, fast 
+              and smart.
+            </p>
+            <p>“No code doesn’t replace developers. It empowers them”.</p>
+            <p>
+              So don’t see no-code as a threat, research for tools to arm yourself, learn to work with it. See it as 
+              a new skill in your toolbox. Use it to accelerate your workflow, impress your clients, and build 
+              smarter systems. The best developers of tomorrow are the ones who know when to code — and 
+              when not to.
             </p>
           `,
         },
