@@ -160,7 +160,7 @@ const CourseSection = () => {
                     <div className="courses-display-section my-5">
                         <div className="courses-display px-3 px-md-5" ref={sliderRef}>
                             {/* {courses.map((course) => ( */}
-                            {CourseMap.slice(0, 4).map((course) => (
+                            {CourseMap.slice(0, 5).map((course) => (
                                 <div key={course.id} className="course-card">
                                     <div className="course-card-image position-relative">
                                         <img src={course.image} alt={course.title} height='283px' className="course-image" />
