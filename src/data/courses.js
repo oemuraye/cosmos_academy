@@ -17,6 +17,9 @@ import courseImageAdvanceBranding from '../assets/images/courses_thumbnails/desi
 import courseImageIntroUi from '../assets/images/courses_thumbnails/ui-intro_thumbnail.png';
 import courseImageInterUi from '../assets/images/courses_thumbnails/ui-inter_thumbnail.png';
 import courseImageInterUi2 from '../assets/images/courses_thumbnails/ui-inter2_thumbnail.png';
+import courseImageIntroDev from '../assets/images/courses_thumbnails/webdev-begin.png';
+import courseImageInterDev from '../assets/images/courses_thumbnails/webdev-inter.png';
+import courseImageAdvDev from '../assets/images/courses_thumbnails/webdev-adv.png';
 
 
 export const CourseMap = [
@@ -816,12 +819,12 @@ export const CourseMap = [
     {
         id: 'introduction-to-web-dev',
         slug: 'introduction-to-web-dev',
-        title: 'Introduction to Website Development',
+        title: 'Fundamentals of Website Design Process',
         category: "Web Development",
-        description: "Learn dynamic websites using HTML, CSS, JavaScript, and advanced frameworks like React.",
+        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
         academy: 'Cosmos Academy',
-        duration: "3 Weeks",
-        image: courseImage1,
+        duration: "6 Weeks",
+        image: courseImageIntroDev,
         pricing: "free",
         free: false,
         instructor: {
@@ -840,7 +843,205 @@ export const CourseMap = [
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
-        colorBg: '',
+        colorBg: '#FCF562',
+
+        overview: [
+            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
+            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
+            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+        ],
+
+        details: [
+            {
+                title: 'Pre-requisite',
+                content: 'General proficiency in laptop usage, Figma fundamentals',
+            },
+            {
+                title: 'Course format',
+                content: 'Online virtual classroom',
+            },
+            {
+                title: 'Level',
+                content: 'Intermediate',
+            },
+            {
+                title: 'Structure',
+                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+            },
+            {
+                title: 'Software / Material list',
+                content: 'Adobe After Effects, Figma',
+            },
+            {
+                title: 'Categories',
+                content: 'Design, Visual Design, UI Systems, Motion Design',
+            }
+        ],
+
+        learningOutcomes: [
+            'Learn how to kickstart your design process based on research and objectives.',
+            'Bring life to your design with advanced prototyping techniques in Figma.',
+            'Understand how to translate UX into memorable UI.',
+            'Animate your design in After Effects.',
+            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+        ],
+
+        lessons: [
+            {
+                week: 'Week 1',
+                title: 'Kickstarting your Design Process',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 2',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 3',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 4',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            }
+        ],
+
+    },
+
+    {
+        id: 'intermediate-web-dev',
+        slug: 'intermediate-web-dev',
+        title: 'Dynamic Web Development: Intermediate Level',
+        category: "Web Development",
+        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
+        academy: 'Cosmos Academy',
+        duration: "6 Weeks",
+        image: courseImageInterDev,
+        pricing: "free",
+        free: false,
+        instructor: {
+            name: 'Pius Emuraye',
+            bio: 'With more than 10 years of design experience, Pius has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of Pius\'s projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            image: piusImage
+        },
+        features: [
+            { label: 'Expert Lead', value: 'Program' },
+            { label: 'Language', value: 'English' },
+            { label: 'Free', value: 'Access' },
+            { label: 'Subtitles', value: 'English, French' },
+            { label: 'Weekly Live', value: 'Q&A' }
+        ],
+        startDate: 'March 3, 2025',
+        availableSeats: 20,
+        contactInfo: '+1 829 3782800',
+        enrolled: "1k",
+        colorBg: '#90B8F3',
+
+        overview: [
+            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
+            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
+            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+        ],
+
+        details: [
+            {
+                title: 'Pre-requisite',
+                content: 'General proficiency in laptop usage, Figma fundamentals',
+            },
+            {
+                title: 'Course format',
+                content: 'Online virtual classroom',
+            },
+            {
+                title: 'Level',
+                content: 'Intermediate',
+            },
+            {
+                title: 'Structure',
+                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+            },
+            {
+                title: 'Software / Material list',
+                content: 'Adobe After Effects, Figma',
+            },
+            {
+                title: 'Categories',
+                content: 'Design, Visual Design, UI Systems, Motion Design',
+            }
+        ],
+
+        learningOutcomes: [
+            'Learn how to kickstart your design process based on research and objectives.',
+            'Bring life to your design with advanced prototyping techniques in Figma.',
+            'Understand how to translate UX into memorable UI.',
+            'Animate your design in After Effects.',
+            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+        ],
+
+        lessons: [
+            {
+                week: 'Week 1',
+                title: 'Kickstarting your Design Process',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 2',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 3',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            },
+            {
+                week: 'Week 4',
+                title: 'Laying the Groundwork',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+            }
+        ],
+
+    },
+
+    {
+        id: 'advance-web-dev',
+        slug: 'advance-web-dev',
+        title: 'Full-Stack Development: Advanced Level',
+        category: "Web Development",
+        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
+        academy: 'Cosmos Academy',
+        duration: "6 Weeks",
+        image: courseImageAdvDev,
+        pricing: "free",
+        free: false,
+        instructor: {
+            name: 'Pius Emuraye',
+            bio: 'With more than 10 years of design experience, Pius has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of Pius\'s projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            image: piusImage
+        },
+        features: [
+            { label: 'Expert Lead', value: 'Program' },
+            { label: 'Language', value: 'English' },
+            { label: 'Free', value: 'Access' },
+            { label: 'Subtitles', value: 'English, French' },
+            { label: 'Weekly Live', value: 'Q&A' }
+        ],
+        startDate: 'March 3, 2025',
+        availableSeats: 20,
+        contactInfo: '+1 829 3782800',
+        enrolled: "1k",
+        colorBg: '#C7F16C',
 
         overview: [
             'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
