@@ -430,7 +430,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterUi2,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Chinazor Blessing',
@@ -728,7 +728,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterDesign,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Trust Oghale',
@@ -827,7 +827,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAdvanceBranding,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Trust Oghale',
@@ -926,7 +926,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterUi,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Alexander Ikani',
@@ -1026,7 +1026,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterDev,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Pius Emuraye',
@@ -1125,7 +1125,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAdvDev,
-        pricing: "free",
+        pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Pius Emuraye',
