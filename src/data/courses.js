@@ -8,7 +8,7 @@ import blessingImage from '../assets/images/blessingImage.png';
 import courseImage from '../assets/images/coursecontentPreview.png';
 import course2Image from '../assets/images/city.png';
 
-import courseImage1 from '../assets/images/courseImg1.png';
+import courseImage1 from '../assets/images/courseImg2.png';
 import courseImageIntroSocial from '../assets/images/courses_thumbnails/social-intro_thumbnail.png';
 import courseImageInterSocial from '../assets/images/courses_thumbnails/social-inter_thumbnail.png';
 import courseImageAdvanceSocial from '../assets/images/courses_thumbnails/social-advan_thumbnail.png';
@@ -100,24 +100,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -199,24 +219,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -297,26 +337,50 @@ export const CourseMap = [
             {
                 week: 'Week 1',
                 title: 'Understanding UI/UX & Design Thinking',
-                chapters: 7,
+                chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand what UI/UX Design is', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Identify key differences between UI and UX', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Learn the Design Thinking Process', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Set up and navigate Figma', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Research, Personas & User Flows',
-                chapters: 7,
+                chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Learn how to conduct user interviews', duration: '1m 28s', locked: true, videoLink: ''},
+                    { title: 'Create user personas and empathy maps', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Develop user flows', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Sketch / Wireframing, UI Principles, & Figma Design',
-                chapters: 7,
+                chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Translate ideas into wireframes', duration: '1m 28s', locked: true, videoLink: ''},
+                    { title: 'Understand UI Principles (typography, spacing, contrast)', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Use Figma to build mockups', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Prototyping, Testing & Final Project',
-                chapters: 7,
+                chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Create interactive prototypes', duration: '1m 28s', locked: true, videoLink: ''},
+                    { title: 'Conduct usability testing', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Prepare and present a final project', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Buliding Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             }
         ],
 
@@ -352,15 +416,14 @@ export const CourseMap = [
         colorBg: '#FCF562',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'This course introduces beginners to the core concepts of web development. It covers the  structure of the internet, the difference between frontend and backend development, and sets a  foundation for HTML, CSS, and JavaScript.',
+            'The goal is to prepare learners to build simple,  structured web pages and understand how the web works in real life.',
         ],
 
         details: [
             {
                 title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                content: 'Basic computer literacy. Activity is that software on a computer. Recommended familiarity with using a browser',
             },
             {
                 title: 'Course format',
@@ -368,7 +431,7 @@ export const CourseMap = [
             },
             {
                 title: 'Level',
-                content: 'Intermediate',
+                content: 'Beginners',
             },
             {
                 title: 'Structure',
@@ -376,47 +439,79 @@ export const CourseMap = [
             },
             {
                 title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                content: 'Chrome browser (latest version), Visual Studio Code, Git, Notebook or digital note-taking app, Stable Internet connection, Mozilla Developer Network (MDN) Docs, FreeCodeCamp HTML/CSS tutorials, W3Schools learning',
             },
             {
                 title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                content: 'web_development, beginners, html, css, javascript',
             }
         ],
-
+    
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            'Explain what web development is and its role in digital transformation',
+            'Differentiate between frontend and backend development',
+            'Describe how the internet works, including DNS and HTTP',
+            'Understand how browsers render web pages',
         ],
 
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
-                chapters: 7,
+                title: 'Introduction to Web Development',
+                chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the role of web development', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Identify differences between frontend and backend development', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Explain the basics of how the internet works', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Describe how browsers render web pages', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
-                chapters: 7,
+                title: 'Basic HTML Structure and Tags',
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the structure of an HTML document', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Use basic HTML tags to structure content', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Link, insert images, and build forms', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
-                chapters: 7,
+                title: 'CSS Styling and Layouts',
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand how to use CSS to style HTML content', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Apply classes, IDs, and selectors', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create responsive layouts using Flexbox and grid', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
-                chapters: 7,
+                title: 'Introduction to JavaScript',
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
-            }
+                lessons: [
+                    { title: 'Understand the basics of JavaScript syntax and data types', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Write simple scripts to manipulate content on a webpage', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Use events and functions to add interactivity', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 5',
+                title: 'Basic Version Control (Git & GitHub)',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the purpose of version control in software development ', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Set up and use Git for local repositories', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Use GitHub to host and manage remote repositories', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Perform essential Git commands (clone, commit, push, pull, branch)', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
+            },
         ],
 
     },
@@ -448,7 +543,7 @@ export const CourseMap = [
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
-        colorBg: '#FCF562',
+        colorBg: '#FDD6FD',
 
         overview: [
             'Mastering UI Design with Figma" is an intensive, hands-on course designed to teach  learners professional UI design skills using Figma. This course guides participants from  the foundational concepts of UI design to advanced design system implementation,  interactivity, and prototyping',
@@ -496,26 +591,46 @@ export const CourseMap = [
             {
                 week: 'Week 1',
                 title: ' Introduction to Figma & UI Design Basics',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand key UI design principles', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Learn the Figma interface and workflow basics', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create simple layouts using frames, shapes, and text', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Layouts, Grids, Components & Reusability',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Apply layout grids and spacing rules', duration: '1m 28s', locked: true, videoLink: ''},
+                    { title: 'Create reusable components with styles', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Build a consistent design structure', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Prototyping & Interaction Design',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Build interactive UI flows in Figma', duration: '1m 28s', locked: true, videoLink: ''},
+                    { title: 'Apply smart animations and transition', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Present prototypes for user testing', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Design Systems & Advanced Figma Features',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Create a functional design system', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Use Auto Layout, Libraries, and advanced tools', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Collaborate and handoff designs efficiently', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             }
         ],
 
@@ -597,24 +712,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -696,24 +831,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -795,24 +950,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -894,24 +1069,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -944,7 +1139,7 @@ export const CourseMap = [
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
-        colorBg: '#9981FF',
+        colorBg: '#FDD6FD',
 
         overview: [
             'This intensive course elevates designers to professional-level proficiency in scalable design  systems, advanced prototyping, and data-driven UX strategy.',
@@ -987,31 +1182,50 @@ export const CourseMap = [
             'Present design decisions with stakeholder-ready case studies',
         ],
         
-
         lessons: [
             {
                 week: 'Week 1',
                 title: 'Kickstarting your Design Process',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Implement design tokens for consistency', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Architect reusable component libraries', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Document systems for team collaboration', duration: '2m 3s', locked: true, videoLink: ''},
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Create conditional prototypes (if/then logic)', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Animate with Samrt Animate and Lottie', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Explore AR/Voice interfaces using ProtoPie', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Apply UX metrics (HEART framework)', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Conduct A/B testing and analyze user behavior', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Perform accessibility audits using WCAG 2.2', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
-                chapters: 7,
+                chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Use Figma Dev Mode for handoff', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Communicate design impact in presentations', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Craft a case study for hiring or client pitches', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -1093,24 +1307,44 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 
@@ -1192,24 +1426,184 @@ export const CourseMap = [
                 title: 'Kickstarting your Design Process',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 2',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 3',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             },
             {
                 week: 'Week 4',
                 title: 'Laying the Groundwork',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            }
+        ],
+
+    },
+
+    {
+        id: 'artificial-intelligence-foundations-and-applications',
+        slug: 'artificial-intelligence-foundations-and-applications',
+        title: 'Artificial Intelligence: Foundations and Applications',
+        category: "Artificial Intelligence",
+        description: "The course is designed to provide a balance between theory and practice.",
+        academy: 'Cosmos Academy',
+        duration: "6 Weeks",
+        image: courseImage1,
+        pricing: "coming_soon",
+        free: false,
+        instructor: {
+            name: 'Israel ufumaka',
+            bio: 'Alexander is passionate, multi-talented creative with 3 years plus experience as a product Designer and highly interested in helping creatives  transition into tech through practical design education. He has trained a series of students and  continues to mentor aspiring designers across Nigeria.  Passionate about empowering designers to think critically and create user-first experiences.',
+            image: alexImage
+        },
+        features: [
+            { label: 'Expert Lead', value: 'Program' },
+            { label: 'Language', value: 'English' },
+            { label: 'Free', value: 'Access' },
+            { label: 'Subtitles', value: 'English, French' },
+            { label: 'Weekly Live', value: 'Q&A' }
+        ],
+        startDate: 'March 3, 2025',
+        availableSeats: 20,
+        contactInfo: '+1 829 3782800',
+        enrolled: "1k",
+        colorBg: '#C7F16C',
+
+        overview: [
+            'This foundational course introduces students to the world of Artificial Intelligence (AI), its concepts, techniques, and applications across various industries. Participants will explore the history and evolution of AI, key subfields such as machine learning, natural language processing, and computer vision, as well as real-world applications like recommendation systems, chatbots, and autonomous systems.',
+            'The course is designed to provide a balance between theory and practice. Students will gain hands-on experience by working with Python to build basic AI models and will learn about the crucial ethical considerations in AI development. This course serves as a stepping stone for learners intending to dive deeper into advanced AI topics or pursue a career in AI-related industries.',
+        ],
+
+        details: [
+            {
+                title: 'Pre-requisite',
+                content: 'No prior AI knowledge required; basic computer literacy is sufficient.\nRecommended Prior Courses: Python for Beginners (optional).\nTechnical Requirements: 8GB RAM and 64-bit OS, Stable internet connection',
+            },
+            {
+                title: 'Course format',
+                content: 'Online virtual classroom',
+            },
+            {
+                title: 'Level',
+                content: 'Beginners',
+            },
+            {
+                title: 'Structure',
+                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+            },
+            {
+                title: 'Software / Material list',
+                content: 'Python (version 3.8 or higher, free), Jupyter Notebook or Visual Studio Code (free), TensorFlow or PyTorch (optional, free)',
+            },
+            {
+                title: 'Categories',
+                content: 'Artificial Intelligence, Machine Learning, Data Science',
+            }
+        ],
+        
+        learningOutcomes: [
+            'Understand the foundational concepts of AI and its subfields.',
+            'Preprocess and analyse datasets for AI applications.',
+            'Build simple machine learning and deep learning models using Python.',
+            'Develop basic natural language processing tools like sentiment analysis.',
+            'Evaluate the ethical considerations of AI systems in society.',
+        ],        
+
+        lessons: [
+            {
+                week: 'Week 3',
+                title: 'Introduction to AI',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Define AI and its subfields', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Understand the history and evolution of AI', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Explore real-world AI applications', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 2',
+                title: 'The Building Blocks of AI',
+                chapters: 2,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Grasp fundamental mathematical concepts fo AI (linear algebra, probability).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''},
+                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 3',
+                title: 'Machine Learning Fundamentals',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Differentiate between supervised and unsupervised learning', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Understand key machine learning alorithms (e.g., linear regression, decision trees).', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Build your first machine learning model', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 4',
+                title: 'Introduction to Deep Learning',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the basics of neutral networks and how they work', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Explore the structure of a deep learning model', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Build and train a simple neutral network', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 5',
+                title: 'Natural Language Processing Basics',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the basics of natural language processing (NLP)', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Explore common NLP tasks (e.g., tokenization, sentiment analysis).', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Build a simple sentiment analysis tool', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 4',
+                title: 'Ethics and Future of AI',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand the ethical concerns surrounding AI', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Explore the societal impacts of AI technologies', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Discuss future trends and innovations in AI', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
             }
         ],
 

@@ -38,9 +38,7 @@
     max-width: 600px !important;
 }
 
-.course-overview :first-child,
-p {
-
+.course-overview :first-child {
     font-family: var(--font-neueMontrealRg);
     font-size: 18px;
     font-style: normal;
@@ -49,7 +47,6 @@ p {
 }
 
 .course-overview p {
-
     line-height: 24px;
 }
 
@@ -234,8 +231,13 @@ p {
     background-color: #FDD6FD;
     border-radius: 5px;
 }
-
-
+.lesson-description {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.lesson-description p {
+    font-size: 16px;
+}
 
 
 

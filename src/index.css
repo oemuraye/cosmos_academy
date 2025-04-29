@@ -317,7 +317,9 @@ input::placeholder {
 
 
 
-
+.btn-close:focus {
+  box-shadow: none;
+}
 
 
 
