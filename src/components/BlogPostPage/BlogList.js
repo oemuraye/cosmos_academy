@@ -8,7 +8,7 @@ const BlogList = () => {
       {posts.map((post) => (
         <Link to={`/blog-post/${post.slug}`} key={post.id} className="col-md-4 col-sm-12 my-4">
           <div className="blog-card card border-0 shadow-sm">
-            <img src={post.image} alt={post.title} className="card-img-top img-fluid" height="185px" width="341px" />
+            <img src={post.image} alt={post.title} className="card-img-top" height="185px" width="341px" />
             <div className="card-body">
               <h4 className="card-title">{post.title}</h4>
               <p className="text-muted small">
