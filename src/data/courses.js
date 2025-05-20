@@ -4,6 +4,7 @@ import menaImage from '../assets/images/menaImage.png';
 import trustImage from '../assets/images/trustImg.png';
 import alexImage from '../assets/images/alexImage.png';
 import blessingImage from '../assets/images/blessingImage.png';
+import IsraelImage from '../assets/images/israelImage.png';
 
 import courseImage from '../assets/images/coursecontentPreview.png';
 import course2Image from '../assets/images/city.png';
@@ -21,6 +22,7 @@ import courseImageInterUi2 from '../assets/images/courses_thumbnails/ui-inter2_t
 import courseImageIntroDev from '../assets/images/courses_thumbnails/webdev-begin.png';
 import courseImageInterDev from '../assets/images/courses_thumbnails/webdev-inter.png';
 import courseImageAdvDev from '../assets/images/courses_thumbnails/webdev-adv.png';
+import courseImageAIIntro from '../assets/images/courses_thumbnails/AI-intro.png';
 
 
 export const CourseMap = [
@@ -156,7 +158,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Trust Oghale',
-            bio: 'With more than 10 years of design experience, Trust has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of his projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: 'Experienced with over 3 years of experience in the design industry and 6 years in brand  development, Trust has built more than 30 brands for businesses both locally and  internationally. He has served as an Art Director at award-winning agencies like Cluebox and as  Creative Director at the fast-growing digital agency, Cosmos Design Space. Trust’s professional  journey includes crafting brand strategies, delivering compelling designs, and engaging with  clients to solve their unique challenges.',
             image: trustImage
         },
         features: [
@@ -173,89 +175,88 @@ export const CourseMap = [
         colorBg: '#90B8F3',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'This foundational course introduces participants to the essential principles and tools of graphic  design as they relate to brand development.',
+            'Designed for complete beginners, the curriculum  covers fundamental design theory, color psychology, typography basics, and introduces  industry-standard design software.',
+            'Participants will develop the core visual communication skills  needed to create cohesive brand elements.',
         ],
 
         details: [
             {
-                title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                title: "Pre-requisite",
+                content: "Basic computer literacy skills, No prior design experience required, PC with internet access (minimum 8GB RAM recommended), Ability to install software applications"
             },
             {
-                title: 'Course format',
-                content: 'Online virtual classroom',
+                title: "Course format",
+                content: "Online virtual classroom"
             },
             {
-                title: 'Level',
-                content: 'Intermediate',
+                title: "Level",
+                content: "Beginner"
             },
             {
-                title: 'Structure',
-                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+                title: "Structure",
+                content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
             },
             {
-                title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                title: "Software / Material list",
+                content: "Adobe Creative Cloud (Photoshop and Illustrator) — Free trial or subscription, Canva (Free version sufficient), Digital notebook for note-taking, app or notebook, Photoshop and Illustrator, Sketchbook and drawing tools for offline ideation"
             },
             {
-                title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                title: "Categories",
+                content: "Brand identity, Design, Graphic Design, Canva, Photoshop"
             }
         ],
-
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            "Identify and apply core design principles including balance, contrast, hierarchy, alignment, and repetition.",
+            "Select and combine appropriate colors using color theory fundamentals.",
+            "Distinguish between typeface categories and apply basic typography rules.",
+            "Navigate essential functions of Adobe Photoshop, Illustrator, and Canva.",
+            "Create logo designs and simple brand elements."
         ],
 
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'Design Fundamentals & Visual Thinking',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Explain the core principles of visual design', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Analyze design examples using appropriate terminology', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Apply basic composition techniques to arrange visual elements', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Describe how browsers render web pages', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: 'Color Theory & Application',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply color effectively across various design applications', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
+                title: 'Typography Essentials',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Classify different typeface categories and their characteristics', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Select appropriate typefaces for specific brand personalities', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create effective typographic hierarchies and layouts', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
+                title: ' Introduction to Design Software',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Navigate the interfaces of Photoshop, illustrator and Canva', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Perform basic editing and creation tasks in each platform', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Select the appropriate software for different design needs', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -399,7 +400,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Pius Emuraye',
-            bio: 'With more than 10 years of design experience, Pius has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of Pius\'s projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: `Experienced Full Stack Developer with over 4 years of expertise in building scalable, secure, and user-friendly web applications using the MERN stack (MongoDB, Express, React, Node.js) and Laravel. Proficient in designing and implementing RESTful APIs, creating responsive frontends, and optimizing backend performance.`,
             image: piusImage
         },
         features: [
@@ -887,7 +888,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Trust Oghale',
-            bio: 'With more than 10 years of design experience, Trust has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of his projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: 'Experienced with over 3 years of experience in the design industry and 6 years in brand  development, Trust has built more than 30 brands for businesses both locally and  internationally. He has served as an Art Director at award-winning agencies like Cluebox and as  Creative Director at the fast-growing digital agency, Cosmos Design Space. Trust’s professional  journey includes crafting brand strategies, delivering compelling designs, and engaging with  clients to solve their unique challenges.',
             image: trustImage
         },
         features: [
@@ -904,89 +905,90 @@ export const CourseMap = [
         colorBg: '#C7F16C',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'This intermediate-level branding course builds upon foundational design skills to develop  comprehensive brand strategy and storytelling capabilities. ',
+            'Participants will learn to create  brands with meaningful purpose, logo design basics, memorable personality, and consistent  touch points across multiple platforms.',
+            'The curriculum bridges the gap between visual design  and strategic brand thinking, empowering students to develop brands that connect emotionally',
         ],
 
         details: [
             {
-                title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                title: "Pre-requisite",
+                content: "Completion of 'Beginners Guide to Graphics and Brand Design' or equivalent experience, Basic proficiency with Adobe Creative Suite (Photoshop and Illustrator), Understanding of fundamental design principles and visual communication, Portfolio demonstrating basic brand design exercises"
             },
             {
-                title: 'Course format',
-                content: 'Online virtual classroom',
+                title: "Course format",
+                content: "Online virtual classroom"
             },
             {
-                title: 'Level',
-                content: 'Intermediate',
+                title: "Level",
+                content: "Intermediate"
             },
             {
-                title: 'Structure',
-                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+                title: "Structure",
+                content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
             },
             {
-                title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                title: "Software / Material list",
+                content: "Adobe Creative Cloud (Photoshop, Illustrator, InDesign) — Paid subscription required, Figma (Free account sufficient), Miro or Milanote (Free account sufficient for course duration), Digital notebook for sketching ideas (tablet or smartphone app), Sketchbook and drawing tools for offline ideation"
             },
             {
-                title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                title: "Categories",
+                content: "Brand identity, Design, Graphic Design, Canva, Photoshop"
             }
         ],
-
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            "Create basic logo designs and simple brand elements.",
+            "Develop a cohesive visual style for a mock brand.",
+            "Export designs in appropriate formats for different applications.",
+            "Conduct effective brand research including competitor analysis and audience insights.",
+            "Develop strategic brand positioning and differentiation strategies.",
+            "Create comprehensive brand personas, craft compelling brand narratives and messaging hierarchies.",
+            "Design cohesive visual identity systems that adapt across multiple platforms.",
+            "Implement voice and tone for consistent brand communication.",
+            "Produce professional brand guidelines documentation and design systems."
         ],
 
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'Logo Design Fundamentals',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Identify characteristics of effective log designs', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Apply logo design principles to create simple marks', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Develop logo variations for different applications', duration: '2m 3s', locked: true, videoLink: ''},
                 ],
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: 'Brand Style Guide Basics',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Identify essential components of a basic brand style guide', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Compile designs decisions into a cohesive reference document', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Apply brand guidelines consistently across multiple applications', duration: '2m 3s', locked: true, videoLink: ''},
                 ],
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
+                title: 'Brand Strategy & Positioning',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Develop strategic brand position statements', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Articulate brand purpose, vision and values', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create differentiation strategies based on audience insights', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
+                title: ' Brand Narrative & Messaging ',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Create consistent voice and tone guidelines', duration: '1m 28s', locked: false, videoLink: ''},
                 ],
             }
         ],
@@ -1006,7 +1008,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Trust Oghale',
-            bio: 'With more than 10 years of design experience, Trust has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of his projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: 'Experienced with over 3 years of experience in the design industry and 6 years in brand  development, Trust has built more than 30 brands for businesses both locally and  internationally. He has served as an Art Director at award-winning agencies like Cluebox and as  Creative Director at the fast-growing digital agency, Cosmos Design Space. Trust’s professional  journey includes crafting brand strategies, delivering compelling designs, and engaging with  clients to solve their unique challenges.',
             image: trustImage
         },
         features: [
@@ -1023,89 +1025,93 @@ export const CourseMap = [
         colorBg: '#FCF562',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'The "Building a Full Branding Project" course is an immersive, advanced-level program  designed to guide participants through the comprehensive process of developing a complete  brand identity from inception to implementation.',
+            'This hands-on course bridges the gap between  theoretical brand knowledge and practical application, enabling participants to create cohesive,  strategic, and impactful brand systems for real-world scenarios.  ',
+            'This course serves as the capstone of the Brand Development track at Cosmos Academy,  synthesizing skills in market research, consumer psychology, design thinking, visual  communication, and brand strategy into a unified professional skillset that meets current  industry demands for strategic brand developers.',
         ],
 
         details: [
             {
-                title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                title: "Pre-requisite",
+                content: "Basic knowledge of design principles with Adobe Creative Suite, Familiarity (particularly Illustrator, Photoshop, and InDesign), Understanding of Brand Strategy and Brand Fundamentals and Visual Identity Design courses at Cosmos Academy (recommended), Personal portfolio with appropriate software installed"
             },
             {
-                title: 'Course format',
-                content: 'Online virtual classroom',
+                title: "Course format",
+                content: "Online virtual classroom"
             },
             {
-                title: 'Level',
-                content: 'Intermediate',
+                title: "Level",
+                content: "Advanced"
             },
             {
-                title: 'Structure',
-                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+                title: "Structure",
+                content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
             },
             {
-                title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                title: "Software / Material list",
+                content: "Adobe Creative Cloud (Photoshop, Illustrator, InDesign) — Paid subscription required, Figma, Miro (Free account sufficient for course duration), Digital notebook for sketching ideas (tablet or smartphone app), Sketchbook and drawing tools for offline ideation"
             },
             {
-                title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                title: "Categories",
+                content: "Brand identity, Design, Graphic Design, Canva, Photoshop"
             }
         ],
-
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            "Implement complex JavaScript concepts and frontend frameworks.",
+            "Design scalable backends with Express and WebSockets.",
+            "Create normalized databases with relationships and queries.",
+            "Secure web applications using tokens, sessions, and secure cookies.",
+            "Set up CI/CD pipelines and deploy full-stack apps to the cloud.",
+            "Implement responsive layouts and ensure basic accessibility.",
         ],
 
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'Brand Discovery, Research & Strategy',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Establish a structured approach to the brand research process', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Develop methodologies for analyzing brand landscapes and competition', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create effective research frameworks for understanding target audiences', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Translate research insights into strategic brand foundations', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: ' Visual Identity System Development',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Translate brand strategy into visual design briefs', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Develop conceptual approaches for visual identity system', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create primary brand marks that align with strategic foundations', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Develop comprehensive color systems with strategic rationales', duration: '2m 3s', locked: true, videoLink: ''},
                 ],
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
+                title: ' Extended Visual Identity & Brand Applications',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Design supportive visual elements that extend identity', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Apply visual identity system across core business applications', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Develop print collateral that embodies brand strategy', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create digital applications with consistent brand expression', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
+                title: 'Brand Guidelines & Implementation Planning',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Structure comprehensive brand guidelines for consistent implementation', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Develop brand governance systems and processes', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create strategic implementation plans and timelines', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Develop strategic brand launch plans across multiple channels', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1244,7 +1250,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Pius Emuraye',
-            bio: 'With more than 10 years of design experience, Pius has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of Pius\'s projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: `Experienced Full Stack Developer with over 4 years of expertise in building scalable, secure, and user-friendly web applications using the MERN stack (MongoDB, Express, React, Node.js) and Laravel. Proficient in designing and implementing RESTful APIs, creating responsive frontends, and optimizing backend performance.`,
             image: piusImage
         },
         features: [
@@ -1261,89 +1267,105 @@ export const CourseMap = [
         colorBg: '#90B8F3',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'This master-level course is designed for learners ready to build scalable, secure, and  production-ready full-stack web applications.',
+            'It focuses on advanced frontend concepts, deep  backend integration, authentication strategies, database architecture, deployment pipelines, and  DevOps. By the end of the program, students will have built and deployed a full-stack web app  using industry-standard tools and best practices.',
+            'This course is ideal for those seeking to become professional full-stack developers, backend  engineers, or cloud deployment specialists.',
         ],
 
         details: [
             {
-                title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                title: "Pre-requisite",
+                content: "Completion Beginner Web Development program or equivalent, HTML/CSS, JavaScript knowledge, ability to work with laptop, Figma, commit, push, Stable laptop with Node.js and Visual Studio Code installed"
             },
             {
-                title: 'Course format',
-                content: 'Online virtual classroom',
+                title: "Course format",
+                content: "Online virtual classroom"
             },
             {
-                title: 'Level',
-                content: 'Intermediate',
+                title: "Level",
+                content: "Intermediate"
             },
             {
-                title: 'Structure',
-                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+                title: "Structure",
+                content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
             },
             {
-                title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                title: "Software / Material list",
+                content: "Chrome browser (latest version) — Free, Visual Code (latest version) — Free, GitHub account — Free, Node.js (latest LTS version), Notebook or digital note-taking system, GitHub account setup, Stable internet connection"
             },
             {
-                title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                title: "Categories",
+                content: "web development, intermediate, html, css, javascript, APIs, nodejs, responsiveDesign"
             }
         ],
-
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            "Build dynamic websites with JavaScript.",
+            "ES6+",
+            "Manage project versions collaboratively with Git and GitHub.",
+            "Consult and integrate third-party APIs into web apps.",
+            "Set up a simple backend using Node.js, Express, and a database.",
+            "Implement responsive layouts and ensure basic accessibility."
         ],
 
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'JavaScript Deep Dive',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand and apply ES6+ JavaScript features', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Manipulate data using arrays and objects', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create interactive functionality using event-driven programming', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Perform DOM manipulation to dynamically update web pages', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: 'Advance Version Control with GitHub',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply branching strategies to manage feature development', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Create and manage pull requests for collaborative coding', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Resolve merge conflicts effectively', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Conduct and participate in code reviews using Github tools', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 3',
-                title: 'Laying the Groundwork',
+                title: 'Introduction to Web APIs',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understanding what APIs are and how they work', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Work with JSON-formated data', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Use the Fetch API to request and display external data', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Handle asynchronous data fetching and error states', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             },
             {
                 week: 'Week 4',
-                title: 'Laying the Groundwork',
+                title: 'Basic Backend Development (Node.js & ExpressJS',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand how servers and backend development work', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Set up a Node.js development environment', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Create basic web servers and handle HTTP requests using ExpressJS', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Understand RESTful routing (GET, POST, PUT, DELETE)', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 5',
+                title: 'Responsive Design, Accessibility & FInal Project Kickoff',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Build fully responsive layouts using Flexbox and CSS Grid', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Implement responsive media queries for different screen sizes', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Apply accessiblity best practices (ARIA, alt, attributes, keyboard navigation)', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Use sematic HTML and contrast ratios for inclusive design (- Start planing and scaffolding the final dynamic web project)', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1363,7 +1385,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Pius Emuraye',
-            bio: 'With more than 10 years of design experience, Pius has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of Pius\'s projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: `Experienced Full Stack Developer with over 4 years of expertise in building scalable, secure, and user-friendly web applications using the MERN stack (MongoDB, Express, React, Node.js) and Laravel. Proficient in designing and implementing RESTful APIs, creating responsive frontends, and optimizing backend performance.`,
             image: piusImage
         },
         features: [
@@ -1387,37 +1409,37 @@ export const CourseMap = [
 
         details: [
             {
-                title: 'Pre-requisite',
-                content: 'General proficiency in laptop usage, Figma fundamentals',
+                title: "Pre-requisite",
+                content: "Completion of Intermediate Web Development (JavaScript, APIs, Git, Node.js), Experience with project-base, JavaScript and Express , A GitHub profile with working projects , A working development environment (Node.js, VS Code, Git installed)"
             },
             {
-                title: 'Course format',
-                content: 'Online virtual classroom',
+                title: "Course format",
+                content: "Online virtual classroom"
             },
             {
-                title: 'Level',
-                content: 'Intermediate',
+                title: "Level",
+                content: "Advanced"
             },
             {
-                title: 'Structure',
-                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+                title: "Structure",
+                content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
             },
             {
-                title: 'Software / Material list',
-                content: 'Adobe After Effects, Figma',
+                title: "Software / Material list",
+                content: "Chrome browser, Visual Studio Code (latest) — Free, Node.js (latest LTS) — Free, PostgreSQL, GUI (Free), Postman—Free, Vercel, Render, Railway, A PC or Mac with at least 8GB RAM, Reliable internet connection, Active GitHub and cloud deployment accounts"
             },
             {
-                title: 'Categories',
-                content: 'Design, Visual Design, UI Systems, Motion Design',
+                title: "Categories",
+                content: "web development, intermediate, html, css, javascript, APIs, nodejs, responsiveDesign"
             }
         ],
-
         learningOutcomes: [
-            'Learn how to kickstart your design process based on research and objectives.',
-            'Bring life to your design with advanced prototyping techniques in Figma.',
-            'Understand how to translate UX into memorable UI.',
-            'Animate your design in After Effects.',
-            'Create an efficient UI design using the right fonts, colors, layouts, and assets.',
+            "Implement complex JavaScript concepts and frontend frameworks.",
+            "Design scalable backends with Express and WebSocket.",
+            "Create normalized databases with relationships and queries.",
+            "Secure web applications using tokens, sessions, and secure cookies.",
+            "Set up CI/CD pipelines and deploy fully-fledged apps to the cloud.",
+            "Implement responsive layouts and ensure basic accessibility."
         ],
 
         lessons: [
@@ -1474,16 +1496,16 @@ export const CourseMap = [
         slug: 'artificial-intelligence-foundations-and-applications',
         title: 'Artificial Intelligence: Foundations and Applications',
         category: "Artificial Intelligence",
-        description: "The course is designed to provide a balance between theory and practice.",
+        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
-        image: courseImage1,
+        image: courseImageAIIntro,
         pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Israel ufumaka',
             bio: 'Alexander is passionate, multi-talented creative with 3 years plus experience as a product Designer and highly interested in helping creatives  transition into tech through practical design education. He has trained a series of students and  continues to mentor aspiring designers across Nigeria.  Passionate about empowering designers to think critically and create user-first experiences.',
-            image: alexImage
+            image: IsraelImage
         },
         features: [
             { label: 'Expert Lead', value: 'Program' },
