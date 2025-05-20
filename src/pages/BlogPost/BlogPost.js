@@ -16,7 +16,7 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-          <title>Blog - {post?.title} - Cosmos Academy</title>
+        <title>{`Blog - ${post?.title || 'Catalog'} - Cosmos Academy`}</title>
       </Helmet>
       <main className="blog_post-page section-width">
         {post && (
