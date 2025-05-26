@@ -1601,7 +1601,7 @@ export const posts = [
       subtitle: "Have you ever wondered why some brands capture attention instantly while others fade? The secret is a well-crafted brand identity",
       image: blogImgGuide,
       author: {
-        name: "Trust Oghale",
+        name: "Promise Ucheagwu",
         avatar: authorImg1Oghale,
         date: "April 14, 2025",
         readTime: "10 Min Read",
@@ -1815,7 +1815,7 @@ export const posts = [
       subtitle: "In an age where technology is rapidly redefining the boundaries of human capability, the role of design must also evolve.",
       image: blogImgBeyondComm,
       author: {
-        name: "Trust Oghale",
+        name: "Promise Ucheagwu",
         avatar: authorImg1Oghale,
         date: "April 14, 2025",
         readTime: "10 Min Read",
@@ -2079,12 +2079,12 @@ export const posts = [
       subtitle: "Imagine walking into a room and recognizing someone instantly - not by face, but by energy, presence, and expression.",
       image: blogImgBrandIdentity,
       author: {
-        name: "Chinazor Blessing",
+        name: "Promise Ucheagwu",
         avatar: authorImg4Nazor,
         date: "Mar 20, 2024",
         readTime: "20 Min Read",
-        linkedIn: "http://www.linkedin.com/in/chinazor-umeakuka-a87a1413a",
-        instagram: "https://www.instagram.com/iam_nazzzix/",
+        linkedIn: "",
+        instagram: "",
       },
       content: [
         {

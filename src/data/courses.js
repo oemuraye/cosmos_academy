@@ -1504,7 +1504,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Israel ufumaka',
-            bio: 'Alexander is passionate, multi-talented creative with 3 years plus experience as a product Designer and highly interested in helping creatives  transition into tech through practical design education. He has trained a series of students and  continues to mentor aspiring designers across Nigeria.  Passionate about empowering designers to think critically and create user-first experiences.',
+            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
             image: IsraelImage
         },
         features: [
@@ -1562,7 +1562,7 @@ export const CourseMap = [
 
         lessons: [
             {
-                week: 'Week 3',
+                week: 'Week 1',
                 title: 'Introduction to AI',
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
@@ -1626,6 +1626,312 @@ export const CourseMap = [
                     { title: 'Explore the societal impacts of AI technologies', duration: '2m 3s', locked: true, videoLink: ''},
                     { title: 'Discuss future trends and innovations in AI', duration: '2m 3s', locked: true, videoLink: ''}
                 ],
+            }
+        ],
+
+    },
+
+    {
+        id: 'artificial-intelligence-intermidiate',
+        slug: 'computer-vision-oundations-and-practice',
+        title: 'Computer Vision: Foundations and Practice',
+        category: "Artificial Intelligence",
+        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
+        academy: 'Cosmos Academy',
+        duration: "6 Weeks",
+        image: courseImageAIIntro,
+        pricing: "coming_soon",
+        free: false,
+        instructor: {
+            name: 'Israel ufumaka',
+            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
+            image: IsraelImage
+        },
+        features: [
+            { label: 'Expert Lead', value: 'Program' },
+            { label: 'Language', value: 'English' },
+            { label: 'Free', value: 'Access' },
+            { label: 'Subtitles', value: 'English, French' },
+            { label: 'Weekly Live', value: 'Q&A' }
+        ],
+        startDate: 'March 3, 2025',
+        availableSeats: 20,
+        contactInfo: '+1 829 3782800',
+        enrolled: "1k",
+        colorBg: '#BDADFF',
+
+        overview: [
+            'This beginner‑level course introduces students to the fundamentals of computer vision—the  field of teaching machines to “see” and interpret visual data.',
+            'Participants will learn key concepts  such as image representation, filtering, feature extraction, and classical algorithms before  moving on to deep learning‑based approaches for image classification, object detection, and  segmentation.',
+            'Hands‑on Python exercises using OpenCV and TensorFlow will cement  understanding, while discussions on ethical considerations will ensure responsible AI  development.'
+        ],
+
+        details: [
+            {
+                title: 'Pre-requisite',
+                content: 'Basic Python programming (variables, loops, functions).\nRecommended: Python for Beginners (optional).\nTechnical Requirements: Computer with at least 8GB RAM and 64-bit OS, Stable internet connection for live sessions and assignments.',
+            },
+            {
+                title: 'Course format',
+                content: 'Online virtual classroom',
+            },
+            {
+                title: 'Level',
+                content: 'Intermediate',
+            },
+            {
+                title: 'Structure',
+                content: 'Pre-recorded Lecture, once-a-week Q&A, individual feedback',
+            },
+            {
+                title: 'Software / Material list',
+                content: 'Python (3.8+), Jupyter Notebook or VS Code, OpenCV (latest), TensorFlow (latest),\n"Learning OpenCV 4 Computer Vision with Python 3" by Joseph Howse, Joe Minichino (optional),\nAccess to image datasets (e.g., CIFAR-10, MNIST), YouTube tutorials on OpenCV and deep vision models,\nResearch papers on cutting-edge vision techniques.',
+            },
+            {
+                title: 'Categories',
+                content: 'Computer Vision, Image Processing, Deep Learning',
+            }
+        ],
+
+        learningOutcomes: [
+            'Represent and manipulate digital images in Python.',
+            'Apply filtering and edge-detection techniques.',
+            'Extract and match keypoints for image alignment.',
+            'Build and train a simple convolutional neural network.',
+            'Implement basic object detection using pre-trained models.',
+            'Discuss ethical and privacy issues in computer vision.',
+        ],
+        
+
+        lessons: [
+            {
+                week: 'Week 1',
+                title: 'Introduction to Computer Vision (CV)',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: "Define computer vision and it's real-world applications", duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Understand how images are represented digitally (pixels, colour spaces).', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Explore commo CV use-cases (facial recognition, autonomous vehicles)', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 2',
+                title: 'Image Processing Basics',
+                chapters: 2,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Perform geometric transforms (scaling, rotation)', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''},
+                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 3',
+                title: 'Feature Detection & Matching',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand keypoints and descriptiors (SIFT, ORB).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Match features between image pairs.', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Use feature matching for image stiching basics.', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 4',
+                title: 'Deep Learning for Vision',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Understand convulutional neutral networks (CNNs).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Build a simple CNN for image classification.', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Train and evaluate on MNIST or CIFAR-10.', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 5',
+                title: 'Object Detection & Segmentation',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Explore pre-trained object detection models (e.g., YOLO, SSD).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Run inference on images/videos.', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Understand image segmentation basics (sematic vs. instance).', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            },
+            {
+                week: 'Week 6',
+                title: 'Ethics, Applications & Future Trends',
+                chapters: 7,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Discuss ethical issues (privacy, bias) in CV', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Explore emerging CV applications (AR/VR, medical imaging).', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Identify future research directions.', duration: '2m 3s', locked: true, videoLink: ''}
+                ],
+            }
+        ],
+
+    },
+
+    {
+        id: 'artificial-intelligence-advance',
+        slug: 'cnn-Specialization',
+        title: 'CNN Specialization: From Fundamentals to Advanced Practice',
+        category: "Artificial Intelligence",
+        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
+        academy: 'Cosmos Academy',
+        duration: "6 Weeks",
+        image: courseImageAIIntro,
+        pricing: "coming_soon",
+        free: false,
+        instructor: {
+            name: 'Israel ufumaka',
+            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
+            image: IsraelImage
+        },
+        features: [
+            { label: 'Expert Lead', value: 'Program' },
+            { label: 'Language', value: 'English' },
+            { label: 'Free', value: 'Access' },
+            { label: 'Subtitles', value: 'English, French' },
+            { label: 'Weekly Live', value: 'Q&A' }
+        ],
+        startDate: 'March 3, 2025',
+        availableSeats: 20,
+        contactInfo: '+1 829 3782800',
+        enrolled: "1k",
+        colorBg: '#E6ACFF',
+
+        overview: [
+            'This specialisation guides learners from their first convolutional neural network to advanced  CNN techniques and best practices.',
+            'Over 8 weeks, you’ll build foundational CNNs, explore data  augmentation, transfer learning, interpretability methods, and culminate in a deployable CNN  project, with an emphasis on hands‑on Python (TensorFlow/Keras) exercises.'
+        ],
+
+        details: [
+            {
+            title: "Pre-requisite",
+            content: "Basic Python programming (loops, functions, NumPy), Familiarity with neural network fundamentals (e.g., what a layer is), Recommended: Completion of an introductory machine learning or AI course"
+            },
+            {
+            title: "Course format",
+            content: "Online virtual classroom"
+            },
+            {
+            title: "Level",
+            content: "Advanced"
+            },
+            {
+            title: "Structure",
+            content: "Pre-recorded Lecture, once-a-week Q&A, individual feedback"
+            },
+            {
+            title: "Software / Material list",
+            content: "Python 3.8+, Jupyter Notebook or VS Code, TensorFlow/Keras, NumPy, OpenCV, PyTorch (for comparison), TensorBoard visualization, access to MNIST/CIFAR-10"
+            },
+            {
+            title: "Categories",
+            content: "Deep Learning, CNN, Computer Vision, Keras, TensorFlow"
+            }
+        ],
+        learningOutcomes: [
+            "Build, train and evaluate CNNs from scratch using NumPy and Keras",
+            "Apply image preprocessing and augmentation to improve model generalization",
+            "Leverage transfer learning to fine-tune state-of-the-art CNN backbones",
+            "Visualize and interpret CNN decision-making via feature maps and Grad-CAM",
+            "Troubleshoot common CNN pitfalls (overfitting, underfitting, hyperparameters)",
+            "Package and deploy a CNN-powered image API"
+        ],
+        
+
+        lessons: [
+            {
+                week: 'Week 1',
+                title: 'CNN Fundamentals',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: "Understanding convolutional operations and filters", duration: '1m 45s', locked: false, videoLink: ''},
+                    { title: 'Assemble and train a simple CN on MNIST/CIFAR-10', duration: '2m 10s', locked: true, videoLink: ''},
+                    { title: 'Explore common CV use-cases (facial recognition, autonomous vehicles).', duration: '2m 30s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 2',
+                title: 'Hands-On CNNs with Keras',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Perform geometric transforms (scaling, rotation).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '2m 15s', locked: true, videoLink: ''},
+                    // { title: 'Compiling and training your first CNN model', duration: '2m 45s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 3',
+                title: 'From Pixels to Predictions',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Implement convolution by hand using NumPy.', duration: '1m 35s', locked: false, videoLink: ''},
+                    { title: 'Deep-dive on kernel operations.', duration: '2m 25s', locked: true, videoLink: ''},
+                    { title: 'Use feature matching for image stitching basics.', duration: '2m 0s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 4',
+                title: 'Image Preprocessing & Augmentation',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Conduct resizing, normalization, flips, rotations.', duration: '1m 35s', locked: false, videoLink: ''},
+                    { title: 'Leverage real-time augmentation in training.', duration: '2m 25s', locked: true, videoLink: ''},
+                    { title: 'Train and evaluate on MNIST or CIFAR-10.', duration: '2m 0s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 5',
+                title: 'Transfer Learning for Beginners',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Fine-tune VGG16, MobileNet on small custom dataset', duration: '1m 40s', locked: false, videoLink: ''},
+                    { title: 'Run inference on images/videos.', duration: '2m 30s', locked: true, videoLink: ''},
+                    { title: 'Understand image segmentation basics (sematic vs. instance).', duration: '2m 15s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 6',
+                title: 'Visualizing What CNNs Learn',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Generate feature maps, filter visualizations', duration: '1m 50s', locked: false, videoLink: ''},
+                    { title: 'Apply Grad-CAM for class activation', duration: '2m 20s', locked: true, videoLink: ''},
+                    { title: 'Identify future research directions', duration: '2m 5s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 7',
+                title: 'Troubleshooting CNNs',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'Diagnose overfitting/underfitting', duration: '1m 45s', locked: false, videoLink: ''},
+                    { title: 'Tune hyperparameters: dropout, batch size, LR schedules.', duration: '2m 15s', locked: true, videoLink: ''},
+                    { title: 'Identify future research directions', duration: '2m 10s', locked: true, videoLink: ''}
+                ]
+            },
+            {
+                week: 'Week 8',
+                title: 'Building & Deploying a Mini-Project',
+                chapters: 3,
+                description: 'lorem ipsum dolor sit amet, consectetur adip',
+                lessons: [
+                    { title: 'End-to-end project: data -> model -> API deployment', duration: '1m 30s', locked: false, videoLink: ''},
+                    { title: 'Tune hyperparamenters: dropout, batch size, LR schedules.', duration: '2m 40s', locked: true, videoLink: ''},
+                    { title: 'Identify future research directions', duration: '2m 20s', locked: true, videoLink: ''}
+                ]
             }
         ],
 
