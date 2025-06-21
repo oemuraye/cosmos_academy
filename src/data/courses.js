@@ -1267,9 +1267,9 @@ export const CourseMap = [
         colorBg: '#90B8F3',
 
         overview: [
-            'This master-level course is designed for learners ready to build scalable, secure, and  production-ready full-stack web applications.',
-            'It focuses on advanced frontend concepts, deep  backend integration, authentication strategies, database architecture, deployment pipelines, and  DevOps. By the end of the program, students will have built and deployed a full-stack web app  using industry-standard tools and best practices.',
-            'This course is ideal for those seeking to become professional full-stack developers, backend  engineers, or cloud deployment specialists.',
+            'This course is designed for learners with foundational web development skills who want to build  dynamic, interactive web applications.',
+            'Participants will dive deeper into JavaScript (including  modern ES6+ features), version control best practices, API consumption, and basic backend  development using Node.js and Express.',
+            'They will also master responsive design principles and accessibility standards. This intermediate  course lays the groundwork for becoming a full-stack developer or specializing in  frontend/backend roles.',
         ],
 
         details: [
@@ -1402,9 +1402,9 @@ export const CourseMap = [
         colorBg: '#C7F16C',
 
         overview: [
-            'When a web designer receives a creative brief, an entire journey is laid out in front of them. Research, visual strategy, UX/UI design, web building, animation, and more. Without direction, this workflow can become tangled, inefficient, and yield poor results. This course provides a map on how to navigate the wonderful world of web design.',
-            'In this Masterclass, Louis Paquet guides participants through each step of the web design process, starting from scratch. Participants will discover how to use design principles and techniques, such as color, typography, and composition, to create visually appealing and intuitive user interfaces. They will also learn how to use motion design to enhance the user experience and improve the usability of interfaces.',
-            'In addition to design, students will learn how to create animation systems and prototypes for their UI designs, using tools and techniques such as Sketch, After Effects, and the HTML5 canvas. After this course, participants will know how to confidently build the best interactive web experience for any goal.'
+            'This master-level course is designed for learners ready to build scalable, secure, and  production-ready full-stack web applications.',
+            'It focuses on advanced frontend concepts, deep  backend integration, authentication strategies, database architecture, deployment pipelines, and  DevOps. By the end of the program, students will have built and deployed a full-stack web app  using industry-standard tools and best practices.',
+            'This course is ideal for those seeking to become professional full-stack developers, backend  engineers, or cloud deployment specialists.'
         ],
 
         details: [
