@@ -1456,7 +1456,7 @@ export const CourseMap = [
             },
             {
                 week: 'Week 2',
-                title: 'Laying the Groundwork',
+                title: 'Advanced Version Control with Git & GitHub',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
