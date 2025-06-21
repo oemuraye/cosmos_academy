@@ -1445,7 +1445,7 @@ export const CourseMap = [
         lessons: [
             {
                 week: 'Week 1',
-                title: 'Kickstarting your Design Process',
+                title: 'JavaScript Deep Dive',
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
