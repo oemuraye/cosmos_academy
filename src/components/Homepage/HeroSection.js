@@ -34,14 +34,14 @@ const HeroSection = () => {
                     <div className="col-6 col-md-3 col-sm-6 order-md-1 order-2 my-3 pt-0 pt-md-5">
                         <div className="position-relative d-flex justify-content-center pt-0 pt-md-5">
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
-                                {/* <img loading='lazy' src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" /> */}
+                                {/* <img src={heroImage1} alt="Community member" className="img-fluid pt-0 pt-md-5" /> */}
                                 <div className="community-stackImages pt-0 pt-md-5">
                                     <div className="enrolled">
                                         <div className="studentImages">
                                             {/* {userEnrolledImages.map((userEnrolled, index) => (
                                                 <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
                                             ))} */}
-                                            <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
+                                            <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
                                         </div>
                                         <span>Community</span>
                                     </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                             <div className="d-flex justify-content-center mt-4">
                                 <Link to="/community" className="customBtn">
                                     Join Community
-                                    <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                             </div>
                         </div>
@@ -70,9 +70,9 @@ const HeroSection = () => {
                     <div className="col-6 col-md-3 col-sm-6 order-md-3 order-3 my-3">
                         <div className="position-relative d-flex justify-content-center pb-0 pb-md-5">
                             <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'>
-                                {/* <img loading='lazy' src={heroImage2} alt="Community member" className="img-fluid" /> */}
+                                {/* <img src={heroImage2} alt="Community member" className="img-fluid" /> */}
                                 <div className="live-trainingImg">
-                                    <img loading='lazy' src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
+                                    <img src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
                                     <span>Live Training</span>
                                 </div>
                             </div>
