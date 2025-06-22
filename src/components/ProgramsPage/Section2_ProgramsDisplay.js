@@ -117,7 +117,7 @@ const ProgramsDisplay = () => {
   
 
   return (
-    <section className="programs-section container padding_y-spacing py-5">
+    <section className="programs-section container padding_y-spacing py-5" id="cosmos_programs">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="fw-bold">Explore Programs</h4>
         <div className="d-flex gap-3 align-items-center">

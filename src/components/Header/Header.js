@@ -271,8 +271,9 @@ const Header = () => {
 
   const externalLinkClick = () => {
     // window.open('/welcome', '_self');
-    window.location.href = '/welcome';
+    // window.location.href = '/welcome';
     // window.open('/welcome', '_blank');
+    navigate('/welcome');
   };
 
   const handleLinkClick = (e, item) => {

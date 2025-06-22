@@ -32,7 +32,7 @@ const ContactForm = ({ contactPage = false }) => {
     setStatus("loading");
 
     try {
-      const response = await fetch("https://academy.cosmosdesignspace.com/api/contact", {
+      const response = await fetch("http://server.cosmosconference.org/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
