@@ -34,7 +34,7 @@ const ImpactAdSection = () => {
         </div>
 
         <div className="col-lg-6 text-center mt-4 mt-lg-0">
-          <img src={certificateImg} alt="Certificate" className="certificateImg img-fluid" />
+          <img loading='lazy' src={certificateImg} alt="Certificate" className="certificateImg img-fluid" />
         </div>
       </section>
 
@@ -48,7 +48,7 @@ const ImpactAdSection = () => {
                     {/* {userEnrolledImages.map((userEnrolled, index) => (
                         <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
                     ))} */}
-                    <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='119px' height='35px' />
+                    <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='119px' height='35px' />
                 </div>
 
                 <h6 className="ms-2">100+ Innovators</h6>

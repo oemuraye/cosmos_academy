@@ -25,7 +25,7 @@ const HeroSection = () => {
                             </p>
                             <div className="btn-action_div justify-content-center justify-content-md-start">
                                 <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
-                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                             </div>
 
@@ -47,7 +47,7 @@ const HeroSection = () => {
                     
                     <section className="col-md-6 col-sm-12 my-3">
                         <div className="container">
-                            <img src={heroImage1} alt="img" className='img-fluid' />
+                            <img loading='lazy' src={heroImage1} alt="img" className='img-fluid' />
                         </div>
                     </section>
 

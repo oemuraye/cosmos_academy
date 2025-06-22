@@ -29,9 +29,9 @@ const HeroSection = () => {
                                 <div className="">
                                     <div className="position-relative">
                                         <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'> 
-                                            {/* <img src={heroImage2} alt="Community member" className="img-fluid" /> */}
+                                            {/* <img loading='lazy' src={heroImage2} alt="Community member" className="img-fluid" /> */}
                                             <div className="live-trainingImg">
-                                                <img src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
+                                                <img loading='lazy' src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
                                                 <span>Live Training</span>
                                             </div>
                                         </div>
@@ -50,7 +50,7 @@ const HeroSection = () => {
                                     <div className="position-relative">
                                         <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'> 
                                             <div className="live-trainingImg">
-                                                <img src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
+                                                <img loading='lazy' src={liveIcon} alt="icon" className='record-live_icon' width='14px' height='14px' />
                                                 <span>Live Training</span>
                                             </div>
                                         </div>

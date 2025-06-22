@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="footer-contact col-md-3 col-sm-12 my-4">
                     {/* <img className='img-fluid mb-5' src={footerLogo} alt="logo" width='126px' height='106px' /> */}
                     <Link to='/' className="navbar-brand mb-4">
-                        <img src={brandLogo} alt="logo" width="64px" height="40px" className='img-fluid' />
+                        <img loading='lazy' src={brandLogo} alt="logo" width="64px" height="40px" className='img-fluid' />
                         <div>
                             <span>Cosmos</span>
                             <span>Academy</span>

@@ -151,7 +151,7 @@ const CourseSection = () => {
                     <p className='my-3'>Unlock the knowledge and tools needed to thrive in the digital world. From web and mobile development to AI and digital innovation, Cosmos Academy offers expert-led courses designed to transform your skills into real-world impact.</p>
                     <div className="btn-action_div my-4">
                         <Link to="/programs" className="customBtn">
-                            <span>Explore Courses</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                            <span>Explore Courses</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                         </Link>
                     </div>
                 </section>
@@ -163,11 +163,11 @@ const CourseSection = () => {
                             {CourseMap.slice(0, 5).map((course) => (
                                 <div key={course.id} className="course-card">
                                     <div className="course-card-image position-relative">
-                                        <img src={course.image} alt={course.title} height='283px' className="course-image" />
+                                        <img loading='lazy' src={course.image} alt={course.title} height='283px' className="course-image" />
                                         {course.free && 
                                             <div className="card-badge">
                                                 <div className="d-flex align-items-center gap-2">
-                                                    <img src={liveIcon} className="record-live_icon" alt="icon" width="13.56px" height="13.56px" />
+                                                    <img loading='lazy' src={liveIcon} className="record-live_icon" alt="icon" width="13.56px" height="13.56px" />
                                                     <span>Free</span>
                                                 </div> 
                                             </div>
@@ -200,11 +200,11 @@ const CourseSection = () => {
                                                     {/* {userEnrolledImages.map((userEnrolled, index) => (
                                                         <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
                                                     ))} */}
-                                                    <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
+                                                    <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
                                                 </div>
                                                 <span>{course.enrolled} enrolled</span>
                                             </div>
-                                            <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                                            <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                         </div>
                                     </div>
                                 </div>

@@ -71,7 +71,7 @@ const BlogSection = () => {
           <h2>From Our Blog</h2>
           <Link to="/resources" className="heading-link d-flex gap-2 align-items-center">
             View More Blog Content
-            <img src={externalGoLinkIcon} alt="external link icon" width="10" height="10" />
+            <img loading='lazy' src={externalGoLinkIcon} alt="external link icon" width="10" height="10" />
           </Link>
         </div>
 
@@ -79,7 +79,7 @@ const BlogSection = () => {
           {randomPosts.map((post) => (
             <Link to={`/blog-post/${post.slug}`} key={post.id} className="col-md-4 col-sm-12 my-4">
               <div className="blog-card card border-0 shadow-sm">
-                <img src={post.image} alt={post.title} className="card-img-top img-fluid" />
+                <img loading='lazy' src={post.image} alt={post.title} className="card-img-top img-fluid" />
                 <div className="card-body">
                   <h4 className="card-title mt-2">{post.title}</h4>
                   <p className="text-muted small">

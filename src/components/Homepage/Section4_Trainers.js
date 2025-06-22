@@ -122,7 +122,7 @@ const TrainersSection = () => {
           <div className="cards-display">
             {trainers.map((trainer, index) => (
               <div className="trainer-card my-4" key={index}>
-                <img src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+                <img loading='lazy' src={trainer.image} alt={trainer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
                 <div className="card-content p-3">
                   <h6>{trainer.name}</h6>
                   <p>{trainer.role}</p>

@@ -140,7 +140,7 @@ export default function JoinClasses({ successModalRef }) {
               <>
                 <span>Join Community</span>
                 <span className="customBtn-icon">
-                  <img src={exploreIcon} alt="icon" width="10" height="10" />
+                  <img loading='lazy' src={exploreIcon} alt="icon" width="10" height="10" />
                 </span>
               </>
             )}

@@ -8,7 +8,7 @@ const ComingSoonPop = ({title, text, popImg, btnText, welcomeModal=false, widthS
         <p className="my-2">{text || 'Sorry the Cosmos Explorer is not currently available. We are still getting it set up for you'}</p>
 
         <div className={`d-flex align-items-center justify-content-center my-5 ${welcomeModal ? 'welcomeModal' : ''}`}>
-          <img src={popImg || popImage} alt="img" width="129px" height="89px" className='img-fluid' style={{width: widthSize ? widthSize : '129px', height: heightSize ? heightSize : '89px'}} />
+          <img loading='lazy' src={popImg || popImage} alt="img" width="129px" height="89px" className='img-fluid' style={{width: widthSize ? widthSize : '129px', height: heightSize ? heightSize : '89px'}} />
         </div>
         
         <div className="btn-action_div my-4">
@@ -17,7 +17,7 @@ const ComingSoonPop = ({title, text, popImg, btnText, welcomeModal=false, widthS
                 // onClick={() => window.history.back()}
                 data-bs-dismiss="modal" aria-label="Close" 
             >
-                <span>{btnText || "Go back"}</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                <span>{btnText || "Go back"}</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
             </button>
         </div>
     </section>

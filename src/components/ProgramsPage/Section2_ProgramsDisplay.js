@@ -164,10 +164,10 @@ const ProgramsDisplay = () => {
               <div className="course-card">
 
                   <div className="course-card-image">
-                      <img src={course.image} alt={course.title} height='250px' className="course-image" />
+                      <img loading='lazy' src={course.image} alt={course.title} height='250px' className="course-image" />
                       {course.pricing === "free" && 
                           <span className="badge d-flex gap-2 align-items-center"> 
-                              <img src={recordIcon} alt="icon" className="record-live_icon" width='14px' height='14px' /> Free
+                              <img loading='lazy' src={recordIcon} alt="icon" className="record-live_icon" width='14px' height='14px' /> Free
                           </span>
                       }
                       {course.pricing === "coming_soon" && <span className="badge">Coming Soon</span>}
@@ -201,12 +201,12 @@ const ProgramsDisplay = () => {
                                   {/* {userEnrolledImages.map((userEnrolled, index) => (
                                       <img key={index} src={userEnrolled} alt="Enrolled users" className='img-fluid' />
                                   ))} */}
-                                  <img src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
+                                  <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
                               </div>
                             <span>{course.enrolled} enrolled</span>
                         </div>
 
-                        <Link onClick={handleLinkClick(course.slug)} href={`/course/${course.slug}`} className="learn-more">Learn More<img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                        <Link onClick={handleLinkClick(course.slug)} href={`/course/${course.slug}`} className="learn-more">Learn More<img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                         </div>
                     </div>
               </div>

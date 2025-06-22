@@ -163,7 +163,7 @@ const Page = () => {
                             <div className="row justify-content-center align-items-center mb-3">
                                 <div className="col-auto d-flex align-items-center">
                                     <div className="innovator-group">
-                                        <img src={Innovators} alt="img" width='145.75px' height='43.93px' />
+                                        <img loading='lazy' src={Innovators} alt="img" width='145.75px' height='43.93px' />
                                         {/* <img
                                             src={Innovator1}
                                             alt="Innovator 1"
@@ -204,7 +204,7 @@ const Page = () => {
 
                             <div className="btn-action_div mt-4">
                                 <Link to='/community' className="customBtn">
-                                    <span>Join Community</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span>Join Community</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                             </div>
                         </div>
@@ -244,7 +244,7 @@ const Page = () => {
                                     <div className="community-stackImages">
                                         <div className="enrolled">
                                             <div className="studentImages">
-                                                <img src={Innovators} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
+                                                <img loading='lazy' src={Innovators} alt="Enrolled users" className='img-fluid' width='63px' height='18px' />
                                             </div>
                                             <p className="mb-0">Events</p>
                                         </div>
@@ -275,7 +275,7 @@ const Page = () => {
                                 as we introduce our programs for the Cosmos Academy.
                             </p>
                             <button className="customBtn">
-                                <span>Register</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                <span>Register</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                             </button>
                         </div>
 

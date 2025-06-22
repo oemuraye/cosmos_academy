@@ -24,7 +24,7 @@ const HeroSection = () => {
                         <section className="col-md-5 col-sm-12 my-3">
                             <div className="container position-relative">
                                 <div className="hero-image-container d-flex justify-content-center">
-                                    <img src={heroImage} alt="Tech Insights" className="hero-image img-fluid" width='100%'  />
+                                    <img loading='lazy' src={heroImage} alt="Tech Insights" className="hero-image img-fluid" width='100%'  />
 
                                     {/* Sticky Notes */}
                                     <div className="sticky-note top-left">
@@ -54,7 +54,7 @@ const HeroSection = () => {
                                             <SlidingText texts={insightTexts} interval={slideSpeed} />
                                         </span> 
                                         <span className='customBtn-icon'>
-                                            <img src={exploreIcon} alt="icon" className='img-fluid' width='11.41px' height='11.41px' />
+                                            <img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='11.41px' height='11.41px' />
                                         </span>
                                     </span>
                                 </div>

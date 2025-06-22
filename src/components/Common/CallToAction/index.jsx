@@ -20,7 +20,7 @@ const CallToAction = ({header, content, cta, link, modalId, modalContent}) => {
                         data-bs-target={modalId ? `#${modalId}` : undefined}
                     >
                     
-                        <span>{cta || "Get Started"}</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                        <span>{cta || "Get Started"}</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </section>

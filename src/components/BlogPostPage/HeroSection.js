@@ -12,7 +12,7 @@ const HeroSection = ({ post }) => {
           </div>
             <div className="row">
                 <section className="col-md-7 col-sm-12 my-3">
-                  <img src={post.image} alt={post.title} className="img-fluid rounded" width="100%" height=""/>
+                  <img loading='lazy' src={post.image} alt={post.title} className="img-fluid rounded" width="100%" height=""/>
                 </section>
                 
                 <section className="col-md-5 col-sm-12 my-3">

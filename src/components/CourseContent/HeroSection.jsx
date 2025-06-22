@@ -41,7 +41,7 @@ const HeroSection = ({ course }) => {
                                 </div>
                             </div>
                             <div className='hero-image-container col-md-6 col-12 order-md-2 order-0'>
-                                <img src={course.image} alt="Tech Insights" className="hero-image" />
+                                <img loading='lazy' src={course.image} alt="Tech Insights" className="hero-image" />
                             </div>
                         </div>
                     </div>

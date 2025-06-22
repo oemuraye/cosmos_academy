@@ -97,7 +97,7 @@ const PricingPlansSection = () => {
 
                               <button style={{ backgroundColor: '#AFD55E' }} className="btn mt-4 mb-3">Coming Soon</button>
                           </div>
-                          <img src={cardImage} alt="img" width='100%' height='168px' className='' style={{ objectFit: 'cover' }} />
+                          <img loading='lazy' src={cardImage} alt="img" width='100%' height='168px' className='' style={{ objectFit: 'cover' }} />
                       </div>
                   </div>
               </div>

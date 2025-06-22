@@ -71,7 +71,7 @@ const LearningInfoSection = () => {
                     {courses.map((course) => (
                         <div key={course.id} className="course-card">
                             {/* <div className="course-card-image">
-                                <img src={course.image} alt={course.title} height='283px' />
+                                <img loading='lazy' src={course.image} alt={course.title} height='283px' />
                                 {course.free && <span className="badge">Free</span>}
                             </div> */}
 
@@ -95,7 +95,7 @@ const LearningInfoSection = () => {
                                 <hr />
 
                                 <div className="course-footer">
-                                    <Link href={`/course/${course.slug}`} className="learn-more">View Courses <img src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                                    <Link href={`/course/${course.slug}`} className="learn-more">View Courses <img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
                         </div>

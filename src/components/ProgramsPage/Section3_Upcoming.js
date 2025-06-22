@@ -50,13 +50,13 @@ const UpcomingSection = () => {
                 {event.isVideo ? (
                   <video src={event.media} autoPlay loop muted></video>
                 ) : (
-                  <img src={event.media} alt={event.title} />
+                  <img loading='lazy' src={event.media} alt={event.title} />
                 )}
               </div>
 
               <div className="event-info col-md-4 col-sm-12 my-1">
                 <div className="instructor">
-                  <img src={event.image} alt={event.instructor} />
+                  <img loading='lazy' src={event.image} alt={event.instructor} />
                   <div className="event-overlay">
                     <h4>{event.instructor}</h4>
                     <p className="role">{event.role}</p>

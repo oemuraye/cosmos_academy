@@ -305,7 +305,7 @@ const Header = () => {
     <header className={`navbar sticky-top px-3 ${isScrolled ? 'navbar-color-onscroll' : 'navbar-default-color'}`}>
       <nav className="container-fluid p-0 navbar navbar-expand-md" aria-label="Main navigation">
         <Link to='/' className="navbar-brand">
-          <img src={logo} alt="logo" width="40px" height="55px" className='img-fluid' />
+          <img loading='lazy' src={logo} alt="logo" width="40px" height="55px" className='img-fluid' />
           <div>
             <span>Cosmos</span>
             <span>Academy</span>
@@ -339,12 +339,12 @@ const Header = () => {
               </li>
             ))}
             
-            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
+            <span onClick={externalLinkClick} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
           </ul>
 
         </div>
 
-        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
+        <button onClick={externalLinkClick} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
       </nav>
     </header>
   )

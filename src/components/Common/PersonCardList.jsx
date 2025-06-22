@@ -7,7 +7,7 @@ const PersonCardList = ({people}) => {
                     {explorers.map((explorer, index) => (
                         <div className="mb-4" key={index}>
                             <div className="trainer-card m-auto">
-                                <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+                                <img loading='lazy' src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
                                 <div className="card-content p-3">
                                     <h6>{explorer.name}</h6>
                                     <p>{explorer.role}</p>

@@ -78,7 +78,7 @@ const ExplorerSection = () => {
             </div>
             <div className="btn-action_div justify-content-start">
                 <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#exploreModal">
-                    <span>Join Explorer</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                    <span>Join Explorer</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                 </Link>
             </div>
 
@@ -165,7 +165,7 @@ const ExplorerSection = () => {
               <div className="cards-display ps-3 ps-md-5">
                   {explorers.map((explorer, index) => (
                       <div className="trainer-card my-4" key={index}>
-                      <img src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
+                      <img loading='lazy' src={explorer.image} alt={explorer.name} width="100%" height="250px" className="img-fluid xt-border-radius" />
                       <div className="card-content p-3">
                           <h6>{explorer.name}</h6>
                           <p>{explorer.role}</p>

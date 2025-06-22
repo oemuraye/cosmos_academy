@@ -91,7 +91,7 @@ const Content = ({ course }) => {
 
             <div className="btn-action_div">
                 <Link to='/welcome' className="customBtn">
-                    <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                    <span>Enroll now</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                 </Link>
             </div>
         </div>

@@ -21,7 +21,7 @@ const TeamGrowthSection = () => {
                 <p className='my-3'>Your organization’s success depends on the strength of your team. At Cosmos Academy, whether you’re preparing for digital transformation or strengthening your team’s capabilities, we provide training that makes an immediate impact.</p>
                 <div className="btn-action_div my-4">
                     <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal">
-                        <span>Contact Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                        <span>Contact Our Team</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
 
@@ -44,10 +44,10 @@ const TeamGrowthSection = () => {
                 <div className="row py-4">
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">
-                            <img src={showcaseImg1} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <img loading='lazy' src={showcaseImg1} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={userIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={userIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Mentorship & Expert Guidance</h4>
                                 <p>Our instructors are experts, providing 1:1 coaching, live feedback, and career insights to help you grow. <br /> </p>
@@ -58,22 +58,22 @@ const TeamGrowthSection = () => {
                         <div className="why-card">
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={bookIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={bookIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Hands-On, Impact-Driven Learning.</h4>
                                 <p>Every course is designed with practical applications, real-world projects, and mentor-guidance.</p>
                             </div>
                             <div className="driven-card">
-                                <img src={showcaseImg2} alt="img" className='img-fluid' width='152px' height='145px' />
+                                <img loading='lazy' src={showcaseImg2} alt="img" className='img-fluid' width='152px' height='145px' />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12 my-4">
                         <div className="why-card">
-                            <img src={showcaseImg3} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
+                            <img loading='lazy' src={showcaseImg3} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' />
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={usersIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={usersIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Built for the  Busy Professionals</h4>
                                 <p>Flexible training formats that fit your team’s schedule without disrupting the teams productivity. <br /> </p>
@@ -85,12 +85,12 @@ const TeamGrowthSection = () => {
                         <div className="why-card">
                             <div className="flexible-card">
                                 <div className="diamond-frame">
-                                    <img src={showcaseImg4} alt="img" width='62px' height='62px' className='img-fluid padlock-gif' />
+                                    <img loading='lazy' src={showcaseImg4} alt="img" width='62px' height='62px' className='img-fluid padlock-gif' />
                                 </div>
                             </div>
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={cpuIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={cpuIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Future-Proof Your organization’s Workforce</h4>
                                 <p>Ensure your team stays relevant with in-demand skills in AI, Web Development, AR/VR, IoT, and more. <br /> <br /></p>
@@ -101,7 +101,7 @@ const TeamGrowthSection = () => {
                         <div className="why-card">
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={bookIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={bookIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Drive true Innovation from Within</h4>
                                 <p>Empower employees to think creatively, solve complex problems, and develop tech-driven solutions that push your organization forward.</p>
@@ -110,7 +110,7 @@ const TeamGrowthSection = () => {
                                 <source src={showcaseImg5} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
-                            {/* <img src={showcaseImg5} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' /> */}
+                            {/* <img loading='lazy' src={showcaseImg5} alt="img" width='100%' height='185px' className='img-fluid xb-border-radius' /> */}
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12 my-4">
@@ -119,10 +119,10 @@ const TeamGrowthSection = () => {
                                 <source src={showcaseImg6} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
-                            {/* <img src={showcaseImg6} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' /> */}
+                            {/* <img loading='lazy' src={showcaseImg6} alt="img" width='100%' height='185px' className='img-fluid xt-border-radius' /> */}
                             <div className="card-content">
                                 {/* <div className="icon-circle">
-                                    <img src={brandIcon} alt="" className="img-fluid" />
+                                    <img loading='lazy' src={brandIcon} alt="" className="img-fluid" />
                                 </div> */}
                                 <h4 className='mb-0'>Learn from Professional  Experts</h4>
                                 <p>Your team will gain hands-on experience and insights from professionals who have built and led successful digital projects. <br /> <br /></p>
