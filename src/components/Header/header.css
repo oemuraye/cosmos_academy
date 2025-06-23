@@ -167,6 +167,10 @@
     visibility: visible;
     animation: slideDown 0.5s ease forwards;
 }
+.dropdown-container .mobile-dropdown a:hover,
+.dropdown-container .dropdown_menu h4:hover {
+    color: var(--basic-color);
+}
 
 .dropdown-container .dropdown_menu {
     animation: slideUp 0.5s ease forwards;

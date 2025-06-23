@@ -63,7 +63,7 @@ const BlogSection = () => {
   
     const filteredBlog = posts.filter(course => course.category === activeTabName);
   return (
-    <section className='blog_section padding_y-spacing container my-5'>
+    <section className='blog_section padding_y-spacing container my-5' id='blogs-section'>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="fw-bold">Browse Blogs</h4>
         <div className="d-flex gap-3 align-items-center">
@@ -107,7 +107,7 @@ const BlogSection = () => {
           filteredBlog.map((blog) => (
             <Link to={`/blog-post/${blog.slug}`} key={blog.id} className="col-md-4 col-sm-12 my-4">
               <div className="blog-card card border-0 shadow-sm">
-                <img loading='lazy' src={blog.image} alt={blog.title} className="card-img-top img-fluid" height="185px" width='341px' />
+                <img loading='lazy' src={blog.image} alt={blog.title} className="card-img-top" height="185px" width='341px' />
                 <div className="card-body">
                   <h4 className="card-title">{blog.title}</h4>
                   <p className="text-muted small">

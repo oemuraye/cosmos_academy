@@ -6,7 +6,7 @@ dotenv.config();
 const sendEmail = async (to, subject, htmlContent) => {
   try {
     const transporter = nodemailer.createTransport({
-        host: "server245.web-hosting.com", 
+        host: "server.cosmosconference.org", 
         port: 465, // Use 465 for SSL or 587 for TLS
         secure: true, // true for 465, false for other ports
         auth: {

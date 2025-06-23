@@ -67,7 +67,7 @@ const ExplorerSection = () => {
   return (
     <section className='explorer-section padding_y-spacing container my-5'>
         <section className="container">
-            <div className="section-heading my-5">
+            <div className="section-heading my-5" id='explorer-section'>
                 <h2>Become An Explorer</h2>
                 <p>
                     Cosmos Explorer is your space to share insights, 

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 import recordIcon from '../../assets/icons/record-icon.png';
@@ -14,7 +14,7 @@ import enrolledUsersImg3 from '../../assets/images/enrolled-users3.png';
 import enrolledUsersImg4 from '../../assets/images/enrolled-users4.png';
 import enrolledUsersImg5 from '../../assets/images/enrolled-users5.png';
 import stackedUsersImg from '../../assets/images/groupImages.png';
-import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { Link, useLocation, useNavigate, useNavigation } from "react-router-dom";
 
 import { CourseMap } from '../../data/courses';
 
@@ -95,9 +95,23 @@ const userEnrolledImages = [
 
 
 const ProgramsDisplay = () => {
-  const [activeTab, setActiveTab] = useState(tabsData[0].id);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const categoryFromURL = queryParams.get("category");
+  const defaultTabId = tabsData.find(tab => tab.name === categoryFromURL)?.id || tabsData[0].id;
+  const [activeTab, setActiveTab] = useState(defaultTabId);
   const nav = useNavigate()
   const tabsContainerRef = useRef(null);
+  const tabRefs = useRef([]);
+
+  useEffect(() => {
+    if (categoryFromURL) {
+      const foundTab = tabsData.find(tab => tab.name === categoryFromURL);
+      if (foundTab) {
+        setActiveTab(foundTab.id);
+      }
+    }
+  }, [categoryFromURL]);
 
   const handleScroll = (direction) => {
     if (tabsContainerRef.current) {
@@ -114,6 +128,27 @@ const ProgramsDisplay = () => {
   const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
 
   const filteredCourses = CourseMap.filter(course => course.category === activeTabName);
+
+  useEffect(() => {
+    if (categoryFromURL) {
+      const foundTab = tabsData.find(tab => tab.name === categoryFromURL);
+      if (foundTab) {
+        setActiveTab(foundTab.id);
+
+        // Scroll the tab into view
+        setTimeout(() => {
+          const tabElement = tabRefs.current[foundTab.id];
+          if (tabElement) {
+            tabElement.scrollIntoView({
+              behavior: "smooth",
+              inline: "center",
+              block: "nearest",
+            });
+          }
+        }, 100); // Wait a bit to ensure DOM is ready
+      }
+    }
+  }, [categoryFromURL]);
   
 
   return (
@@ -136,7 +171,7 @@ const ProgramsDisplay = () => {
             <div className="custom-tabs d-flex align-items-center gap-2">
                 {tabsData.map((tab) => (
                     <span
-                        key={tab.id} role='button'
+                        key={tab.id} role='button' ref={(el) => tabRefs.current[tab.id] = el}
                         className={`tab-item ${activeTab === tab.id ? "custom-tabActive" : ""}`}
                         onClick={() => setActiveTab(tab.id)}
                     >
