@@ -11,8 +11,17 @@ const __dirname = path.dirname(__filename);
 export const handleJoinRequest = async (req, res) => {
   const { name, email, phone, category } = req.body;
 
-  if (!name || !email || !phone || !category) {
-    return res.status(400).json({ message: "Name, Email, Category and Phone are required" });
+  if (!name) {
+    return res.status(400).json({ message: "Name is required" });
+  }
+  if (!email) {
+    return res.status(400).json({ message: "Email is required" });
+  }
+  if (!phone) {
+    return res.status(400).json({ message: "Phone number is required" });
+  }
+  if (!category) {
+    return res.status(400).json({ message: "Category is required" });
   }
 
   const existingUser = await User.findOne({ email });
