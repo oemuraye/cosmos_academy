@@ -46,7 +46,7 @@ export default function JoinClasses({ successModalRef, category }) {
       const response = await fetch("https://server.cosmosconference.org/api/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: fullName, email, phone }),
+        body: JSON.stringify({ name: fullName, email, phone, category }),
       });
 
       const result = await response.json();
