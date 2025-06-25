@@ -21,7 +21,7 @@ export const handleJoinRequest = async (req, res) => {
   }
 
   try {
-    const mongoUser = new User({ name, email, phone });
+    const mongoUser = new User({ name, email, phone, category });
     const savedMongoUser = await mongoUser.save();
 
     const mongoIdString = savedMongoUser._id.toString();
