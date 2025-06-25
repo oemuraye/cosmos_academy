@@ -9,10 +9,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export const handleJoinRequest = async (req, res) => {
-  const { name, email, phone } = req.body;
+  const { name, email, phone, category } = req.body;
 
-  if (!name || !email || !phone) {
-    return res.status(400).json({ message: "Name, Email, and Phone are required" });
+  if (!name || !email || !phone || category) {
+    return res.status(400).json({ message: "Name, Email, Category and Phone are required" });
   }
 
   const existingUser = await User.findOne({ email });
@@ -27,8 +27,8 @@ export const handleJoinRequest = async (req, res) => {
     const mongoIdString = savedMongoUser._id.toString();
 
     pool.query(
-      "INSERT INTO users (name, email, phone, mongo_id) VALUES (?, ?, ?, ?)", 
-      [name, email, phone, mongoIdString], 
+      "INSERT INTO users (name, email, phone, category, mongo_id) VALUES (?, ?, ?, ?)", 
+      [name, email, phone, category, mongoIdString], 
       (err, result) => {
         if (err) console.error("❌ MySQL Insert Error:", err);
         else console.log("✅ User saved to MySQL", result.insertId);

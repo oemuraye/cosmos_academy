@@ -110,16 +110,38 @@ const Header = () => {
     }
   };
 
+  // const handleScheduleScroll = (e, targetId, url) => {
+  //   e.preventDefault();
+  //   if (location.pathname !== `/${url}`) {
+  //     navigate(`/${url}`);
+  //     setTimeout(() => {
+  //       document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+  //     }, 100);
+  //   } else {
+  //     document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+  //   }
+  //   if (menuOpen) {
+  //     setMenuAnimating(true);
+  //     setTimeout(() => {
+  //       setMenuOpen(false);
+  //       setMenuAnimating(false);
+  //     }, 500);
+  //   }
+  // };
+
   const handleScheduleScroll = (e, targetId, url) => {
     e.preventDefault();
+
     if (location.pathname !== `/${url}`) {
+      // Navigate and include a query param or hash
       navigate(`/${url}`);
-      setTimeout(() => {
-        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-      }, 100);
     } else {
-      document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+      const target = document.getElementById(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+
     if (menuOpen) {
       setMenuAnimating(true);
       setTimeout(() => {
@@ -128,6 +150,7 @@ const Header = () => {
       }, 500);
     }
   };
+
 
   const dropdownContent = {
     Programs: (
@@ -329,12 +352,12 @@ const Header = () => {
               </li>
             ))}
             
-            <span onClick={(e) => handleScheduleScroll(e, 'cosmos_programs', 'programs')} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
+            <span onClick={() => navigate('/welcome')} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
           </ul>
 
         </div>
 
-        <button onClick={(e) => handleScheduleScroll(e, 'cosmos_programs', 'programs')} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
+        <button onClick={() => navigate('/welcome')} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
       </nav>
     </header>
   )

@@ -14,9 +14,10 @@ import enrolledUsersImg3 from '../../assets/images/enrolled-users3.png';
 import enrolledUsersImg4 from '../../assets/images/enrolled-users4.png';
 import enrolledUsersImg5 from '../../assets/images/enrolled-users5.png';
 import stackedUsersImg from '../../assets/images/groupImages.png';
-import { Link, useLocation, useNavigate, useNavigation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import { CourseMap } from '../../data/courses';
+
 
 const tabsData = [
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
@@ -100,7 +101,7 @@ const ProgramsDisplay = () => {
   const categoryFromURL = queryParams.get("category");
   const defaultTabId = tabsData.find(tab => tab.name === categoryFromURL)?.id || tabsData[0].id;
   const [activeTab, setActiveTab] = useState(defaultTabId);
-  const nav = useNavigate()
+  const nav = useNavigate();
   const tabsContainerRef = useRef(null);
   const tabRefs = useRef([]);
 
@@ -196,7 +197,7 @@ const ProgramsDisplay = () => {
         {filteredCourses.length > 0 ? (
           filteredCourses.map((course) => (
             <div key={course.id} className="col-md-4 col-sm-12 my-3 ">
-              <div className="course-card">
+              <div className="course-card" onClick={handleLinkClick(course.slug)} role="button">
 
                   <div className="course-card-image">
                       <img loading='lazy' src={course.image} alt={course.title} height='250px' className="course-image" />
@@ -241,7 +242,7 @@ const ProgramsDisplay = () => {
                             <span>{course.enrolled} enrolled</span>
                         </div>
 
-                        <Link onClick={handleLinkClick(course.slug)} href={`/course/${course.slug}`} className="learn-more">Learn More<img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                        <Link onClick={handleLinkClick(course.slug)} className="learn-more">Learn More<img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                         </div>
                     </div>
               </div>
@@ -251,6 +252,7 @@ const ProgramsDisplay = () => {
           <p className="text-center">No courses available for this category.</p>
         )}
       </div>
+
     </section>
   );
 };

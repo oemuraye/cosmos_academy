@@ -1,13 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import heroImage1 from '../../assets/images/hero-welcome.png';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import JoinClasses from './JoinClasses';
 import ComingSoonPop from '../Common/ComingSoonPop/ComingSoonPop';
 import thumbsUpGif from "../../assets/images/thumbs_up.gif";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 const HeroSection = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
     const successModalRef = useRef(null);
+
+    const handleScheduleScroll = (e, targetId, url) => {
+        e.preventDefault();
+
+        if (location.pathname !== `/${url}`) {
+            // Navigate and include a query param or hash
+            navigate(`/${url}`);
+        } else {
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
   return (
     <section className="hero-section my-5">
         <div className="container">
@@ -24,9 +40,12 @@ const HeroSection = () => {
                                  or schedule a <span className="fw-bold fst-italic"> 1-on-1 call </span> with our team.
                             </p>
                             <div className="btn-action_div justify-content-center justify-content-md-start">
-                                <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
+                                <Link className="customBtn" onClick={(e) => handleScheduleScroll(e, 'cosmos_programs', 'programs')}>
                                     <span>Join Live Classes</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
+                                {/* <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
+                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                </Link> */}
                             </div>
 
                             {/* <!-- Modal --> */}

@@ -276,7 +276,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Alexander Ikani',
-            bio: 'With more than 10 years of design experience, Alex has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of his projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: 'Ikani Alexander Onuche is a multidisciplinary Product Designer with over three years of experience blending creativity and functionality into meaningful digital experiences. With a foundation in graphic design and programming, he brings a unique mix of visual storytelling and technical insight to every project. His background in multimedia fuels his creativity, while his sharp eye for detail and problem-solving mindset help him design smarter, more intuitive solutions. Ikani isn’t just passionate about design — he’s driven by the joy of making life simpler, more beautiful, and more efficient through purposeful design.',
             image: alexImage
         },
         features: [
@@ -1131,7 +1131,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Alexander Ikani',
-            bio: 'With more than 10 years of design experience, Alex has worked alongside many passionate people from around the world, always with a single goal in mind: to create awesome interactive experiences. Over recent years, many of his projects have been featured on sites like Awwwards, Webby Awards, Applied Art, and FWA.',
+            bio: 'Ikani Alexander Onuche is a multidisciplinary Product Designer with over three years of experience blending creativity and functionality into meaningful digital experiences. With a foundation in graphic design and programming, he brings a unique mix of visual storytelling and technical insight to every project. His background in multimedia fuels his creativity, while his sharp eye for detail and problem-solving mindset help him design smarter, more intuitive solutions. Ikani isn’t just passionate about design — he’s driven by the joy of making life simpler, more beautiful, and more efficient through purposeful design.',
             image: alexImage
         },
         features: [

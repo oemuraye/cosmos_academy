@@ -17,7 +17,9 @@ const Programs = () => {
       <main className='programs-page'>
           <HeroSection />
           <section className="section-width">
-            <ProgramsDisplay />
+            <div id=''>
+              <ProgramsDisplay />
+            </div>
             <UpcomingSection />
             <ImpactAdSection />
             <JoinUsAdSection />

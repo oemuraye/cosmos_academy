@@ -4,7 +4,9 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import exploreIcon from "../../assets/icons/btn-Icon.png";
 
-export default function JoinClasses({ successModalRef }) {
+import { CourseMap } from '../../data/courses';
+
+export default function JoinClasses({ successModalRef, category }) {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
@@ -82,10 +84,23 @@ export default function JoinClasses({ successModalRef }) {
         {status === "success" && <p className="text-center success-container">Request submitted!</p>}
         {status === "error" && <p className="text-center error-container">Failed to submit. Try again.</p>}
         {serverErrors && <p className="text-center error-container">{serverErrors}</p>}
-      <h2>Start Your Journey!</h2>
+      <h2>Start Your {category} Journey!</h2>
       <p>Stay connected and never miss an update!</p>
 
       <form onSubmit={handleSubmit} className="mt-5 d-flex flex-column gap-4">
+        <div>
+          <input
+            type="text"
+            placeholder="Category"
+            value={category}
+            // onChange={(e) => {
+            //   setEmail(e.target.value);
+            //   setErrors((prev) => ({ ...prev, email: "" }));
+            // }}
+            className="form-control" readOnly
+          />
+        </div>
+
         <div>
           <input
             type="text"

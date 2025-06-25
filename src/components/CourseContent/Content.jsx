@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import { BsPlus } from 'react-icons/bs';
 import { HiOutlineMinus } from "react-icons/hi2";
@@ -6,10 +6,15 @@ import { GoPlus } from "react-icons/go";
 import { Link } from 'react-router-dom';
 import { CiLock } from "react-icons/ci";
 import { IoPlayCircleOutline } from "react-icons/io5";
+import JoinClasses from '../WelcomePage/JoinClasses';
+import ComingSoonPop from '../Common/ComingSoonPop/ComingSoonPop';
+import thumbsUpGif from "../../assets/images/thumbs_up.gif";
 
 const Content = ({ course }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const successModalRef = useRef(null);
+    
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -90,10 +95,46 @@ const Content = ({ course }) => {
             ))}
 
             <div className="btn-action_div">
-                <Link to='/welcome' className="customBtn">
+                <Link data-bs-toggle="modal" data-bs-target="#regModal" className="customBtn">
                     <span>Enroll now</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                 </Link>
             </div>
+
+            {/* <!-- Modal --> */}
+            <section className="modal fade" id="regModal" tabIndex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="d-flex justify-content-end p-2">
+                            <button type="button" className="btn-close" id='joinModalCloseBtn' data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            <JoinClasses successModalRef={successModalRef} category={course.category} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Success Modal */}
+            <div className="modal fade" ref={successModalRef} id="successModal" tabIndex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                <div className="modal-dialog mt-4" style={{ maxWidth: "550px", margin: "0 auto" }}>
+                    <div className="modal-content">
+                        <div className="d-flex justify-content-end p-2">
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body mb-5" style={{ maxWidth: "450px", margin: "0 auto", width: "100%" }}>
+                            <ComingSoonPop 
+                                title="Welcome to Cosmos Academy Community" 
+                                text='Check your email for the slack channel link and connect with other innovators.'
+                                popImg={thumbsUpGif} 
+                                widthSize={"52.07px"}
+                                heightSize={"52.07px"}
+                                welcomeModal={true}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
