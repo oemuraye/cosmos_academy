@@ -81,7 +81,7 @@ export default function JoinClasses({ successModalRef, category }) {
 
   return (
     <section className="pageModal liveClasses_section text-center">
-        {status === "success" && <p className="text-center success-container">Request submitted successfully! Check your email for updates. </p>}
+        {status === "success" && <p className="text-center success-container">Request has been submitted successfully!</p>}
         {status === "error" && <p className="text-center error-container">Failed to submit. Try again.</p>}
         {serverErrors && <p className="text-center error-container">{serverErrors}</p>}
       <h2>Start Your {category} Journey!</h2>

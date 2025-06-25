@@ -49,7 +49,7 @@ const HeroSection = () => {
                             </div>
 
                             {/* <!-- Modal --> */}
-                            <section className="modal fade" id="regModal" tabIndex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+                            {/* <section className="modal fade" id="regModal" tabIndex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
                                 <div className="modal-dialog">
                                     <div className="modal-content">
                                         <div className="d-flex justify-content-end p-2">
@@ -60,13 +60,19 @@ const HeroSection = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                            </section> */}
                         </div>
                     </section>
                     
                     <section className="col-md-6 col-sm-12 my-3">
                         <div className="container">
-                            <img loading='lazy' src={heroImage1} alt="img" className='img-fluid' />
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/wM9RaH121iY?si=AP1D3EZ4422rXYwS" 
+                                title="Cosmos Introduction Video" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen
+                            >
+                            </iframe>
                         </div>
                     </section>
 
@@ -75,7 +81,7 @@ const HeroSection = () => {
         </div>
 
         {/* Success Modal */}
-        <div className="modal fade" ref={successModalRef} id="successModal" tabIndex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        {/* <div className="modal fade" ref={successModalRef} id="successModal" tabIndex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
             <div className="modal-dialog mt-4" style={{ maxWidth: "550px", margin: "0 auto" }}>
                 <div className="modal-content">
                     <div className="d-flex justify-content-end p-2">
@@ -93,7 +99,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </section>
   )
 }
