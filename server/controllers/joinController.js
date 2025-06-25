@@ -36,7 +36,7 @@ export const handleJoinRequest = async (req, res) => {
     const mongoIdString = savedMongoUser._id.toString();
 
     pool.query(
-      "INSERT INTO users (name, email, phone, category, mongo_id) VALUES (?, ?, ?, ?)", 
+      "INSERT INTO users (name, email, phone, category, mongo_id) VALUES (?, ?, ?, ?, ?)", 
       [name, email, phone, category, mongoIdString], 
       (err, result) => {
         if (err) console.error("❌ MySQL Insert Error:", err);
