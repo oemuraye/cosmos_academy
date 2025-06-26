@@ -19,6 +19,7 @@ import blogImgBeyondComm from "../assets/blog_posts/Beyond Communication to Crea
 import blogImgBrandIdentity from "../assets/blog_posts/What is Brand Identity_.png";
 import blogImgToolsForSocial from "../assets/blog_posts/Tools for Social Media.png";
 import blogImgBeginnersSocial from "../assets/blog_posts/Get started in social.png";
+import blogImgYouDesigner from "../assets/blog_posts/You are the designer.png";
 
 export const posts = [
     {
@@ -2324,7 +2325,7 @@ export const posts = [
       category: "Product Design",
       title: "You’re the Designer — Not Just Because of the Tool, But Because of Your Personality",
       subtitle: "Design isn’t just about mastering tools like Figma or Adobe XD — it’s about who you are and how you think, adapt, and connect.",
-      image: blogImg1,
+      image: blogImgYouDesigner,
       author: {
         name: "Ikani Alexander",
         avatar: authorImg3Alex,
@@ -2434,7 +2435,7 @@ export const posts = [
       category: "Social Management",
       title: "Top 5 Tools Every Beginner Social Media Manager Should Know",
       subtitle: "Managing social media doesn’t have to be overwhelming. With these beginner-friendly tools, you can work smarter, stay organized, and create great content with ease.",
-      image: blogImgToolsForSocial, // replace with actual image reference
+      image: blogImgToolsForSocial,
       author: {
         name: "Mena Agelebe",
         avatar: authorImg2Mena,
