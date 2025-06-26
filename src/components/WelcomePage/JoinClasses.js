@@ -54,7 +54,7 @@ export default function JoinClasses({ successModalRef, category, level }) {
 
       if (response.ok) {
         setStatus("success");
-        toast.success("Request has been submitted successfully!");
+        toast.success("Your request has been successfully submitted!");
         setTimeout(() => setStatus(null), 10000);
         setFullName("");
         setEmail("");
@@ -86,7 +86,7 @@ export default function JoinClasses({ successModalRef, category, level }) {
 
   return (
     <section className="pageModal liveClasses_section text-center">
-        {status === "success" && <p className="text-center success-container">Request has been submitted successfully!</p>}
+        {status === "success" && <p className="text-center success-container">Request submitted successfully!</p>}
         {status === "error" && <p className="text-center error-container">Failed to submit. Try again.</p>}
         {serverErrors && <p className="text-center error-container">{serverErrors}</p>}
       <h2>Start Your {category} Journey!</h2>
