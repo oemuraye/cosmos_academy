@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -62,6 +62,8 @@ function App() {
           <Route path="/welcome" element={<Welcome/>} />
           <Route path="/partner" element={<Partner/>} />
           <Route path="/contact" element={<Contact/>} />
+
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
       <Footer />
