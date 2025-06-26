@@ -14,7 +14,6 @@ const Content = ({ course }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const successModalRef = useRef(null);
-    
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -108,7 +107,7 @@ const Content = ({ course }) => {
                             <button type="button" className="btn-close" id='joinModalCloseBtn' data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <JoinClasses successModalRef={successModalRef} category={course.category} />
+                            <JoinClasses successModalRef={successModalRef} category={course.category} level={course.level} />
                         </div>
                     </div>
                 </div>

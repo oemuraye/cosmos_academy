@@ -5,8 +5,9 @@ import "react-phone-input-2/lib/style.css";
 import exploreIcon from "../../assets/icons/btn-Icon.png";
 
 import { CourseMap } from '../../data/courses';
+import { toast } from "react-toastify";
 
-export default function JoinClasses({ successModalRef, category }) {
+export default function JoinClasses({ successModalRef, category, level }) {
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
   const [phone, setPhone] = useState("");
@@ -46,13 +47,14 @@ export default function JoinClasses({ successModalRef, category }) {
       const response = await fetch("https://server.cosmosconference.org/api/join", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: fullName, email, phone, category: category }),
+        body: JSON.stringify({ name: fullName, email, phone, category: category, level: level }),
       });
 
       const result = await response.json();
 
       if (response.ok) {
         setStatus("success");
+        toast.success("Request has been submitted successfully!");
         setTimeout(() => setStatus(null), 10000);
         setFullName("");
         setEmail("");
@@ -68,11 +70,14 @@ export default function JoinClasses({ successModalRef, category }) {
       } else {
         // If server returns errors, display them
         setServerErrors(result.message || "Failed to submit. Try again.");
+        toast.error(result.message || "Failed to submit. Try again.");
       }
     } catch (error) {
       console.error("Error:", error);
       setStatus("error");
+      toast.error('Failed to submit. Try again.');
       setServerErrors("Server error occurred, please try again.");
+      toast.error("Server error occurred, please try again.");
       setTimeout(() => setStatus(null), 10000);
     } finally {
       setLoading(false);

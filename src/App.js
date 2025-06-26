@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { Route, Routes } from 'react-router-dom';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -31,6 +33,15 @@ function App() {
         {/* <meta property="og:image" content="https://cosmosconference.org/" />
         <link rel="canonical" href="https://cosmosconference.org/" /> */}
       </Helmet>
+
+      <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          closeOnClick={true}
+          pauseOnHover={true}
+          draggable={true}
+       />
 
       <Header />
 
