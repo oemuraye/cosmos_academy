@@ -17,6 +17,8 @@ import blogImgUiUx from "../assets/blog_posts/ui_ux.jpg";
 import blogImgGuide from "../assets/blog_posts/Memorable Brand Identity.png";
 import blogImgBeyondComm from "../assets/blog_posts/Beyond Communication to Creation.png";
 import blogImgBrandIdentity from "../assets/blog_posts/What is Brand Identity_.png";
+import blogImgToolsForSocial from "../assets/blog_posts/Tools for Social Media.png";
+import blogImgBeginnersSocial from "../assets/blog_posts/Get started in social.png";
 
 export const posts = [
     {
@@ -376,7 +378,7 @@ export const posts = [
       subtitle: "Beautiful interfaces aren't enough. Asking product-level questions not only makes your work smarter—it earns you respect as a  strategic thinker, not just an executor.",
       image: blogImgPrettyScreen,
       author: {
-        name: "Alexander Ikani",
+        name: "Ikani Alexander",
         avatar: authorImg3Alex,
         date: "Mar 20, 2024",
         readTime: "15 Min Read",
@@ -2316,5 +2318,391 @@ export const posts = [
         },
       ],
     },
+    {
+      id: 13,
+      slug: "designer-personality",
+      category: "Product Design",
+      title: "You’re the Designer — Not Just Because of the Tool, But Because of Your Personality",
+      subtitle: "Design isn’t just about mastering tools like Figma or Adobe XD — it’s about who you are and how you think, adapt, and connect.",
+      image: blogImg1,
+      author: {
+        name: "Ikani Alexander",
+        avatar: authorImg3Alex,
+        date: "Mar 20, 2024",
+        readTime: "15 Min Read",
+        linkedIn: "https://www.linkedin.com/in/alexander-ikani-484648251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+        instagram: "https://www.instagram.com/alexander_ikani?igsh=MXZsaXRndWt5MzdpZw%3D%3D&utm_source=qr",
+      },
+      content: [
+        {
+          heading: "",
+          text: `
+            <p>
+              In today’s fast-paced digital world, it’s easy to get caught up in the race to master the latest design tools.
+              From Sketch to Adobe XD, and now Figma — tools evolve, trends shift, and interfaces change. 
+              But one thing remains constant: you, the designer.
+            </p>
+            <p>
+              Too often, we define our design ability by how well we use a tool. But your real value isn’t tied to software proficiency — 
+              it’s tied to who you’re becoming as a designer.
+            </p>
+          `,
+        },
+        {
+          heading: "Tools Are Temporary, Your Growth Is Not",
+          text: `
+            <p>
+              There was a time when Adobe XD was the go-to tool. Now, Figma leads the pack. 
+              Tomorrow, it might be something else. What stays constant is your thinking, creativity, adaptability, 
+              and problem-solving mindset.
+            </p>
+            <p>
+              The tool is just an extension of your mind. If your mindset isn’t evolving, the tool won’t make much of a difference.
+            </p>
+          `,
+        },
+        {
+          heading: "Personality Drives Design",
+          text: `
+            <p>
+              Being a great designer isn’t just about clean UI or perfect alignment. It’s about empathy, curiosity, 
+              and how you respond to problems. The personality and intentionality you bring into your work will always show.
+            </p>
+            <p>
+              Great tools can enhance your output, but it’s your inner development that shapes how far you can go.
+            </p>
+          `,
+        },
+        {
+          heading: "Be Responsive — Like Your Designs",
+          text: `
+            <p>
+              Think about responsive design — how it adapts to different screens. As designers, we must also be responsive:
+            </p>
+            <ul>
+              <li><p>To user needs</p></li>
+              <li><p>To team dynamics</p></li>
+              <li><p>To new tools and trends</p></li>
+              <li><p>To feedback and iteration</p></li>
+            </ul>
+            <p>
+              The industry evolves, and you must evolve with it — not just as a tool expert, but as a designer who learns, listens, and adapts.
+            </p>
+          `,
+        },
+        {
+          heading: "How to Build Yourself, Not Just Your Toolset",
+          text: `
+            <ol>
+              <li><h4>Master design thinking, not just design tools</h4></li>
+              <p>Tools help you execute, but design thinking helps you solve problems. Learn systems thinking and user-centered design.</p>
+
+              <li><h4>Embrace feedback — and give it too</h4></li>
+              <p>Growth comes from dialogue. Accept critiques with understanding, and give thoughtful feedback.</p>
+
+              <li><h4>Be curious — about people, not just pixels</h4></li>
+              <p>Watch how people interact with products and explore their behavior. That’s where insights live.</p>
+
+              <li><h4>Stay grounded in purpose</h4></li>
+              <p>Tools speed you up — but ask why you’re designing and who it’s for.</p>
+
+              <li><h4>Invest in soft skills</h4></li>
+              <p>
+                Storytelling, collaboration, empathy, and leadership matter. These skills outlast tools and make great designers.
+              </p>
+            </ol>
+          `,
+        },
+        {
+          heading: "Conclusion: You Are the Constant",
+          text: `
+            <p>
+              Design tools are like shoes — they help you walk the journey, but don’t define where you're going.
+              Your mindset, adaptability, and passion are what make you a designer.
+            </p>
+            <p>
+              The next time you open Figma or whatever tool is next, remember: you're not just designing screens —
+              you're designing value. And that value begins with who you are.
+            </p>
+          `,
+        },
+      ],
+    },
+    {
+      id: 14,
+      slug: "top-5-tools-social-media",
+      category: "Social Management",
+      title: "Top 5 Tools Every Beginner Social Media Manager Should Know",
+      subtitle: "Managing social media doesn’t have to be overwhelming. With these beginner-friendly tools, you can work smarter, stay organized, and create great content with ease.",
+      image: blogImgToolsForSocial, // replace with actual image reference
+      author: {
+        name: "Mena Agelebe",
+        avatar: authorImg2Mena,
+        date: "June 14, 2025",
+        readTime: "20 Min Read",
+        linkedIn: "",
+        instagram: "",
+      },
+      content: [
+        {
+          heading: "",
+          text: `
+            <p>
+              If you're just starting out as a social media manager, you’ve probably felt the pressure of doing everything — planning, designing, scheduling, and analyzing — often all by yourself.
+              The truth is, managing social media doesn’t have to be overwhelming. With the right tools, you can save time, stay organized, and deliver great results for your business or clients.
+            </p>
+            <p>
+              Here are 5 essential tools that can help any beginner social media manager get started — and stay ahead.
+            </p>
+          `,
+        },
+        {
+          heading: "1. Canva – Your All-in-One Design Studio",
+          text: `
+            <p><strong>Best for:</strong> Graphics, Reels covers, carousels, infographics, templates</p>
+            <p>
+              Canva makes designing social media content super easy — even if you have zero graphic design experience. 
+              With drag-and-drop features, thousands of templates, and brand kits, you can create high-quality content that looks professional and on-brand.
+            </p>
+            <p><strong>Beginner Tip:</strong> Use Canva’s “Content Planner” feature to both design and schedule posts directly to Instagram, Facebook, LinkedIn, and Pinterest.</p>
+          `,
+        },
+        {
+          heading: "2. Later – Plan Ahead, Post Smarter",
+          text: `
+            <p><strong>Best for:</strong> Scheduling and previewing Instagram posts visually</p>
+            <p>
+              Later allows you to plan your content using a drag-and-drop calendar and gives a visual preview of your feed to maintain a consistent aesthetic.
+            </p>
+            <p><strong>Bonus Features:</strong></p>
+            <ul>
+              <li><p>Best time to post suggestions</p></li>
+              <li><p>First comment automation (for hashtags)</p></li>
+              <li><p>Linkin.bio for mini landing pages</p></li>
+            </ul>
+            <p><strong>Beginner Tip:</strong> Schedule your content a week at a time to stay consistent without daily stress.</p>
+          `,
+        },
+        {
+          heading: "3. Meta Business Suite – Control Facebook and Instagram in One Place",
+          text: `
+            <p><strong>Best for:</strong> Scheduling, managing comments and inboxes, and basic analytics</p>
+            <p>
+              If you're managing Facebook or Instagram pages, Meta Business Suite is essential. 
+              It’s free, official, and includes insights, scheduling tools, ad creation, and direct messaging — all in one dashboard.
+            </p>
+            <p><strong>Beginner Tip:</strong> Use it to compare which post types (Reels, Stories, Posts) are performing best and double down on what’s working.</p>
+          `,
+        },
+        {
+          heading: "4. Buffer – Simple, Clean, and Beginner-Friendly",
+          text: `
+            <p><strong>Best for:</strong> Scheduling across multiple platforms</p>
+            <p>
+              Buffer is one of the simplest scheduling tools for social media beginners. 
+              You can plan and publish posts across Instagram, Facebook, Twitter (X), and LinkedIn from one place.
+            </p>
+            <p><strong>Cool Features:</strong></p>
+            <ul>
+              <li><p>Post previews</p></li>
+              <li><p>Built-in analytics</p></li>
+              <li><p>Team collaboration options</p></li>
+            </ul>
+            <p><strong>Beginner Tip:</strong> Use the free plan to manage up to 3 social accounts and schedule up to 10 posts per account.</p>
+          `,
+        },
+        {
+          heading: "5. Notion – Your Social Media Brain",
+          text: `
+            <p><strong>Best for:</strong> Content planning, idea storage, calendars, and project tracking</p>
+            <p>
+              Notion isn’t a scheduling tool — it’s a workspace. Use it to organize everything:
+            </p>
+            <ul>
+              <li><p>Weekly content calendar</p></li>
+              <li><p>Caption banks</p></li>
+              <li><p>Hashtag lists</p></li>
+              <li><p>Client briefs</p></li>
+              <li><p>Analytics logs</p></li>
+            </ul>
+            <p><strong>Beginner Tip:</strong> Create a custom “Social Media HQ” dashboard to keep your ideas, goals, and campaigns organized in one place.</p>
+          `,
+        },
+        {
+          heading: "Final Thoughts",
+          text: `
+            <p>
+              You don’t need a fancy or expensive setup to succeed as a beginner social media manager.
+              Start with these 5 tools — Canva, Later, Meta Business Suite, Buffer, and Notion — and you’ll be amazed at how much easier managing content becomes.
+            </p>
+            <p>
+              The real power of these tools lies in how you use them consistently. Pick 2–3 to start, and build from there.
+            </p>
+          `,
+        },
+      ],
+    },
+    {
+      id: 15,
+      slug: "getting-started-social-media",
+      category: "Social Management",
+      title: "Getting Started with Social Media Management",
+      subtitle: "A Social Media Manager isn’t just about posting content — it’s strategy, creativity, and communication all rolled into one. Here’s what it really involves.",
+      image: blogImgBeginnersSocial,
+      author: {
+        name: "Mena Agelebe",
+        avatar: authorImg2Mena,
+        date: "June 24, 2025",
+        readTime: "8 Min Read",
+        linkedIn: "",
+        instagram: "",
+      },
+      content: [
+        {
+          heading: "",
+          text: `
+            <p>
+              If you've ever scrolled through Instagram and wondered “Who’s behind all this?” — you’re likely seeing the work of a Social Media Manager (SMM).
+              Social media doesn't run itself. It takes planning, creativity, and strategy to make those posts, reels, and campaigns come to life.
+            </p>
+            <p>
+              So… what exactly does a Social Media Manager do every day? Let’s break it down.
+            </p>
+          `,
+        },
+        {
+          heading: "1. Understand the Brand and Audience",
+          text: `
+            <p>
+              Before any content is created, an SMM learns the brand’s voice, goals, and target audience:
+            </p>
+            <ul>
+              <li><p>What the brand stands for</p></li>
+              <li><p>Who they’re speaking to (age, location, interests)</p></li>
+              <li><p>What problems they’re solving</p></li>
+              <li><p>What emotions they want to evoke</p></li>
+            </ul>
+            <p>
+              Without this clarity, content can feel off-brand or irrelevant.
+            </p>
+          `,
+        },
+        {
+          heading: "2. Create a Content Strategy & Calendar",
+          text: `
+            <p>
+              A smart SMM doesn’t post randomly. They build:
+            </p>
+            <ul>
+              <li><p>Content pillars (tips, testimonials, behind-the-scenes, etc.)</p></li>
+              <li><p>Weekly/monthly content calendars</p></li>
+              <li><p>Campaign plans for promos or launches</p></li>
+            </ul>
+            <p>
+              This keeps social activity consistent, intentional, and on-brand.
+            </p>
+          `,
+        },
+        {
+          heading: "3. Write Captions & Design Graphics",
+          text: `
+            <p>
+              Creativity is key! An SMM usually:
+            </p>
+            <ul>
+              <li><p>Writes scroll-stopping captions using storytelling and CTAs</p></li>
+              <li><p>Designs visuals like reels, carousels, and graphics (with tools like Canva)</p></li>
+              <li><p>Chooses music, filters, and styles that reflect the brand</p></li>
+            </ul>
+            <p>
+              Great content doesn’t just look good — it performs.
+            </p>
+          `,
+        },
+        {
+          heading: "4. Schedule and Post Content",
+          text: `
+            <p>
+              Using tools like Meta Business Suite, Buffer, or Later, an SMM will:
+            </p>
+            <ul>
+              <li><p>Schedule posts at optimal times</p></li>
+              <li><p>Check formats, hashtags, and platform requirements</p></li>
+              <li><p>Post consistently — even on weekends/holidays using automation</p></li>
+            </ul>
+          `,
+        },
+        {
+          heading: "5. Engage with the Audience",
+          text: `
+            <p>
+              Community management is crucial. A good SMM will:
+            </p>
+            <ul>
+              <li><p>Reply to comments and DMs</p></li>
+              <li><p>Handle feedback politely</p></li>
+              <li><p>Interact with followers’ content</p></li>
+              <li><p>Manage trolls and spam with care</p></li>
+            </ul>
+          `,
+        },
+        {
+          heading: "6. Track and Report Performance",
+          text: `
+            <p>
+              SMMs use insights to understand what works and what doesn’t. This includes:
+            </p>
+            <ul>
+              <li><p>Checking metrics like reach, engagement, saves, and clicks</p></li>
+              <li><p>Analyzing trends and comparing past performance</p></li>
+              <li><p>Reporting findings and making strategic recommendations</p></li>
+            </ul>
+          `,
+        },
+        {
+          heading: "7. Stay Updated with Trends and Changes",
+          text: `
+            <p>
+              Algorithms evolve and trends shift. A skilled SMM stays ahead by:
+            </p>
+            <ul>
+              <li><p>Following industry updates and communities</p></li>
+              <li><p>Testing new features (like Threads, TikTok tools, etc.)</p></li>
+              <li><p>Experimenting with formats and styles</p></li>
+            </ul>
+          `,
+        },
+        {
+          heading: "Bonus: Skills Every Social Media Manager Needs",
+          text: `
+            <ul>
+              <li><p><strong>Creativity:</strong> For content, storytelling, and design</p></li>
+              <li><p><strong>Organization:</strong> Managing multiple brands/accounts</p></li>
+              <li><p><strong>Communication:</strong> Working with clients and audiences</p></li>
+              <li><p><strong>Adaptability:</strong> Keeping up with trends and changes</p></li>
+              <li><p><strong>Analytical Thinking:</strong> Using data to improve results</p></li>
+            </ul>
+          `,
+        },
+        {
+          heading: "In Summary",
+          text: `
+            <p>
+              A Social Media Manager wears many hats: strategist, designer, writer, analyst, and support rep — all in one.
+            </p>
+            <p>
+              If you enjoy creativity, communication, and building digital communities, social media management can be a deeply rewarding path.
+            </p>
+            <p>
+              With strong structure and the right skills, you can drive great results — whether for your own brand or for clients.
+            </p>
+            <p>
+              Want more tools and templates to help you grow? Stick around. Questions? Drop a comment or connect on Instagram.
+            </p>
+          `,
+        },
+      ],
+    },
+
   ];
   
