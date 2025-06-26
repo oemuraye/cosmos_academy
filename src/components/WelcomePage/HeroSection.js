@@ -66,7 +66,7 @@ const HeroSection = () => {
                     
                     <section className="col-md-6 col-sm-12 my-3">
                         <div className="container">
-                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/wM9RaH121iY?si=AP1D3EZ4422rXYwS" 
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/wM9RaH121iY?si=AP1D3EZ4422rXYwS&autoplay=1&mute=1&loop=1" 
                                 title="Cosmos Introduction Video" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
