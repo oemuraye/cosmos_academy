@@ -41,10 +41,10 @@ const HeroSection = () => {
                             </p>
                             <div className="btn-action_div justify-content-center justify-content-md-start">
                                 <Link className="customBtn" onClick={(e) => handleScheduleScroll(e, 'cosmos_programs', 'programs')}>
-                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                                 {/* <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#regModal">
-                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span>Join Live Classes</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link> */}
                             </div>
 

@@ -14,7 +14,7 @@ const ContactSection = () => {
 
       <div className="btn-action_div my-5">
         <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal">
-            <span>Contact Us</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+            <span>Contact Us</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
         </Link>
       </div>
 

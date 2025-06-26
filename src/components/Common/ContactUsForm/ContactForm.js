@@ -135,7 +135,7 @@ const ContactForm = ({ contactPage = false }) => {
               <>
                 <span>Send Message</span>
                 <span className="customBtn-icon">
-                  <img loading='lazy' src={exploreIcon} alt="icon" width="10" height="10" />
+                  <img src={exploreIcon} alt="icon" width="10" height="10" />
                 </span>
               </>
             )}

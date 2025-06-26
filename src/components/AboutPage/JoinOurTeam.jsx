@@ -14,7 +14,7 @@ const JoinOurTeam = () => {
 
       <div className="btn-action_div my-5">
         <Link className="customBtn" data-bs-toggle="modal" data-bs-target="#joinTeamModal">
-          <span>Join Our Team</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+          <span>Join Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
         </Link>
       </div>
 

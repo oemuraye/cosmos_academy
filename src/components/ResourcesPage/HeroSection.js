@@ -54,7 +54,7 @@ const HeroSection = () => {
                                             <SlidingText texts={insightTexts} interval={slideSpeed} />
                                         </span> 
                                         <span className='customBtn-icon'>
-                                            <img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='11.41px' height='11.41px' />
+                                            <img src={exploreIcon} alt="icon" className='img-fluid' width='11.41px' height='11.41px' />
                                         </span>
                                     </span>
                                 </div>

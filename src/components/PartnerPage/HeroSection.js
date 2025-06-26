@@ -12,7 +12,7 @@ const HeroSection = () => {
                     {/* <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal"> */}
                     <button className="customBtn">
                         Donate to Cosmos
-                        <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                        <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </div>

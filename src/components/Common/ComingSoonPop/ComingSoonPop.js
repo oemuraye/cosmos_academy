@@ -11,13 +11,13 @@ const ComingSoonPop = ({title, text, popImg, btnText, welcomeModal=false, widthS
           <img loading='lazy' src={popImg || popImage} alt="img" width="129px" height="89px" className='img-fluid' style={{width: widthSize ? widthSize : '129px', height: heightSize ? heightSize : '89px'}} />
         </div>
         
-        <div className="btn-action_div my-4">
+        <div className="d-flex justify-content-center my-4">
             <button 
                 className="customBtn"
                 // onClick={() => window.history.back()}
                 data-bs-dismiss="modal" aria-label="Close" 
             >
-                <span>{btnText || "Go back"}</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                <span>{btnText || "Go back"}</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
             </button>
         </div>
     </section>

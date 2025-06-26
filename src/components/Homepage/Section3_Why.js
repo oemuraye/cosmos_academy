@@ -36,7 +36,7 @@ const WhySection = () => {
                 <p className='my-3'>We equip you with the skills, knowledge, and mindset to turn your expertise into real-world impact. Our programs are designed for individuals who want to innovate, create, and drive change using technology.</p>
                 <div className="btn-action_div my-4">
                     <button className="customBtn">
-                        <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                        <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
             </section>

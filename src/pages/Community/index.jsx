@@ -204,7 +204,7 @@ const Page = () => {
 
                             <div className="btn-action_div mt-4">
                                 <Link to='/community' className="customBtn">
-                                    <span>Join Community</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                    <span>Join Community</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                                 </Link>
                             </div>
                         </div>
@@ -275,7 +275,7 @@ const Page = () => {
                                 as we introduce our programs for the Cosmos Academy.
                             </p>
                             <button className="customBtn">
-                                <span>Register</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                <span>Register</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                             </button>
                         </div>
 

@@ -143,7 +143,7 @@ export default function JoinClasses({ successModalRef, category }) {
           {errors.phone && <p className="text-danger m-0 text-start ps-4">{errors.phone}</p>}
         </div>
 
-        <div className="btn-action_div justify-content-center my-4 mb-5">
+        <div className="d-flex justify-content-center my-4 mb-5">
           <button type="submit" className="customBtn" disabled={loading}>
             {loading ? (
               <div className="d-flex justify-content-center align-items-center pe-2" style={{ width: "230px" }}>
@@ -155,7 +155,7 @@ export default function JoinClasses({ successModalRef, category }) {
               <>
                 <span>Join Community</span>
                 <span className="customBtn-icon">
-                  <img loading='lazy' src={exploreIcon} alt="icon" width="10" height="10" />
+                  <img src={exploreIcon} alt="icon" width="10" height="10" />
                 </span>
               </>
             )}

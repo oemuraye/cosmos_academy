@@ -352,12 +352,12 @@ const Header = () => {
               </li>
             ))}
             
-            <span onClick={() => navigate('/welcome')} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
+            <span onClick={() => navigate('/welcome')} role='button' className='customBtn d-md-none mt-2'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </span>
           </ul>
 
         </div>
 
-        <button onClick={() => navigate('/welcome')} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
+        <button onClick={() => navigate('/welcome')} className='customBtn d-none d-md-flex'> <span>Get Started</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span> </button>
       </nav>
     </header>
   )

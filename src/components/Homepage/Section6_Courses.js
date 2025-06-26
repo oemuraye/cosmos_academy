@@ -151,7 +151,7 @@ const CourseSection = () => {
                     <p className='my-3'>Unlock the knowledge and tools needed to thrive in the digital world. From web and mobile development to AI and digital innovation, Cosmos Academy offers expert-led courses designed to transform your skills into real-world impact.</p>
                     <div className="btn-action_div my-4">
                         <Link to="/programs" className="customBtn">
-                            <span>Explore Courses</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                            <span>Explore Courses</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                         </Link>
                     </div>
                 </section>

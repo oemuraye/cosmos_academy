@@ -21,7 +21,7 @@ const TeamGrowthSection = () => {
                 <p className='my-3'>Your organization’s success depends on the strength of your team. At Cosmos Academy, whether you’re preparing for digital transformation or strengthening your team’s capabilities, we provide training that makes an immediate impact.</p>
                 <div className="btn-action_div my-4">
                     <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal">
-                        <span>Contact Our Team</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                        <span>Contact Our Team</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                     </button>
                 </div>
 

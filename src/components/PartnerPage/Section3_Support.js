@@ -36,7 +36,7 @@ const SupportSection = () => {
 
                         <div className="btn-action_div justify-content-start">
                             <Link className="customBtn">
-                                <span>Learn More</span> <span className="customBtn-icon"><img loading='lazy' src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                                <span>Learn More</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
                             </Link>
                         </div>
                     </div>
