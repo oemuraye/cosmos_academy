@@ -23,6 +23,8 @@ import courseImageIntroDev from '../assets/images/courses_thumbnails/webdev-begi
 import courseImageInterDev from '../assets/images/courses_thumbnails/webdev-inter.png';
 import courseImageAdvDev from '../assets/images/courses_thumbnails/webdev-adv.png';
 import courseImageAIIntro from '../assets/images/courses_thumbnails/AI-intro.png';
+import courseImageAIInter from '../assets/images/courses_thumbnails/AI-inter.png';
+import courseImageAIAdvan from '../assets/images/courses_thumbnails/AI-advan.png';
 
 
 export const CourseMap = [
@@ -1517,7 +1519,7 @@ export const CourseMap = [
         free: false,
         instructor: {
             name: 'Israel ufumaka',
-            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
+            bio: "Ufumaka Isreal is a visionary PhD researcher in Computer Science at the University of West London, where he pioneers AI solutions for echocardiographic image quality assessment. As a key member of the IntSaV research group, he contributes to transformative projects like the UNITY Biobank, building one of the UK’s largest open-access repositories of cardiac ultrasound images to advance healthcare diagnostics. Beyond his research, Ufumaka has led AI teams, developed predictive models, and explored emerging technologies from deep learning to blockchain and Web3. He is dedicated to pushing the boundaries of technology and inspiring others through innovative, impactful work.",
             image: IsraelImage
         },
         features: [
@@ -1653,12 +1655,12 @@ export const CourseMap = [
         description: "The course is introduces students to the world of Artificial Intelligence (AI).",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
-        image: courseImageAIIntro,
+        image: courseImageAIInter,
         pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Israel ufumaka',
-            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
+            bio: "Ufumaka Isreal is a visionary PhD researcher in Computer Science at the University of West London, where he pioneers AI solutions for echocardiographic image quality assessment. As a key member of the IntSaV research group, he contributes to transformative projects like the UNITY Biobank, building one of the UK’s largest open-access repositories of cardiac ultrasound images to advance healthcare diagnostics. Beyond his research, Ufumaka has led AI teams, developed predictive models, and explored emerging technologies from deep learning to blockchain and Web3. He is dedicated to pushing the boundaries of technology and inspiring others through innovative, impactful work.",
             image: IsraelImage
         },
         features: [
@@ -1793,16 +1795,16 @@ export const CourseMap = [
         slug: 'cnn-Specialization',
         title: 'CNN Specialization: From Fundamentals to Advanced Practice',
         category: "Artificial Intelligence",
-        level: "Advancec",
+        level: "Advance",
         description: "The course is introduces students to the world of Artificial Intelligence (AI).",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
-        image: courseImageAIIntro,
+        image: courseImageAIAdvan,
         pricing: "coming_soon",
         free: false,
         instructor: {
             name: 'Israel ufumaka',
-            bio: "Expertise: Machine Learning, Deep Learning, AI for Healthcare. Experience: 7+ years in AI development and 5+ years teaching AI-related topics.    Certification/Education: MSc in Artificial Intelligence and Its Application, AI specialisation.    Bio: Dedicated professional passionate about making AI accessible to everyone",
+            bio: "Ufumaka Isreal is a visionary PhD researcher in Computer Science at the University of West London, where he pioneers AI solutions for echocardiographic image quality assessment. As a key member of the IntSaV research group, he contributes to transformative projects like the UNITY Biobank, building one of the UK’s largest open-access repositories of cardiac ultrasound images to advance healthcare diagnostics. Beyond his research, Ufumaka has led AI teams, developed predictive models, and explored emerging technologies from deep learning to blockchain and Web3. He is dedicated to pushing the boundaries of technology and inspiring others through innovative, impactful work.",
             image: IsraelImage
         },
         features: [

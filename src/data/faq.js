@@ -30,42 +30,9 @@ export const faqData = [
     {
       title: "Technical & Support",
       faqs: [
-        { id: 14, question: "What software or tools do I need for the courses?", answer: "Each course will have its own requirements. Check the course details for specifics." },
-        { id: 15, question: "What if I have a technical issue?", answer: "You can reach out to our support team via email or live chat for assistance." },
-      ],
-    },
-    {
-      title: "Career & Certification",
-      faqs: [
-        { id: 16, question: "Do I receive a certificate after completing a course?", answer: "Yes, you will receive a digital certificate upon successful completion of your course." },
-        { id: 17, question: "How can Cosmos Academy help me advance my career?", answer: "Our courses are designed to equip you with industry-relevant skills that can help boost your career opportunities." },
-        { id: 18, question: "Do you offer job placement or internship opportunities?", answer: "Yes, we provide job placement assistance and internship programs for our students." },
-        { id: 19, question: "Can I showcase my projects after completing a course?", answer: "Yes! You can add your completed projects to your portfolio to showcase your skills to potential employers." },
-      ],
-    },
-    {
-      title: "Technical & Support",
-      faqs: [
         { id: 20, question: "What software or tools are used for the courses?", answer: "Each course specifies the required tools and software. Please check the course details for more information." },
         { id: 21, question: "What should I do if I experience technical difficulties?", answer: "You can reach out to our support team via email or live chat for technical assistance." },
         { id: 22, question: "Can I access the course materials on my mobile device?", answer: "Yes, our courses are accessible on mobile, tablet, and desktop devices." },
-      ],
-    },
-    {
-      title: "Career & Certification",
-      faqs: [
-        { id: 23, question: "Do I receive a certificate after completing a course?", answer: "Yes, all of our courses provide a certificate upon successful completion." },
-        { id: 24, question: "How can Cosmos Academy help me advance my career?", answer: "We offer career support, networking opportunities, and industry-recognized certifications to boost your career prospects." },
-        { id: 25, question: "Do you offer job placement or internship opportunities?", answer: "Yes, we collaborate with various companies to provide job placements and internship opportunities for our graduates." },
-        { id: 26, question: "Can I showcase my projects after completing a course?", answer: "Yes, you can add your projects to your portfolio and showcase your skills to potential employers." },
-      ],
-    },
-    {
-      title: "Technical & Support",
-      faqs: [
-        { id: 27, question: "What software or tools are required for the courses?", answer: "Each course has specific software requirements. Check the course details for a list of required tools." },
-        { id: 28, question: "What if I encounter technical issues during a course?", answer: "You can reach out to our support team through email or live chat for assistance." },
-        { id: 29, question: "Can I access the course materials on mobile?", answer: "Yes, all course materials are mobile-friendly and accessible on various devices." },
       ],
     },
     {

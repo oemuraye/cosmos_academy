@@ -27,7 +27,7 @@ export const handleContactRequest = async (req, res) => {
 
     // Send email
     // const result = await sendEmail("oemuraye@gmail.com", "Contact Request from Cosmos Academy", htmlTemplate);
-    const result = await sendEmail("oghaletrust@gmail.com", "Contact Request from Cosmos Academy", htmlTemplate);
+    const result = await sendEmail("admission@cosmosacademy.org", "Contact Request from Cosmos Academy", htmlTemplate);
 
     if (result.success) {
       res.json({ message: "Email sent successfully" });

@@ -8,6 +8,7 @@ const supportBrands = [
         description:
             "Focused on building strong digital foundations, MemaTech Foundation provides digital literacy and skills training to girls and women in northern Nigerian communities , ensuring no one is left behind in the digital revolution.",
         image: null,
+        urlLink: "https://mematechfoundation.org/",
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const supportBrands = [
         description:
             "Leading the charge in immersive technologies, this organization drives the adoption of advanced tech skills in areas like AR, VR, and AI preparing Africa for the future of digital innovation.",
         image: null,
+        urlLink: "https://www.linkedin.com/company/immersive-tech-africa/",
     },
 ];
 
@@ -35,9 +37,9 @@ const SupportSection = () => {
                         <p className='my-4'>{item.description}</p>
 
                         <div className="btn-action_div justify-content-start">
-                            <Link className="customBtn">
+                            <a href={item.urlLink} target="_blank" rel="noopener noreferrer" className="customBtn">
                                 <span>Learn More</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

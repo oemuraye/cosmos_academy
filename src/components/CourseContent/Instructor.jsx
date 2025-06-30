@@ -32,9 +32,9 @@ const Instructor = ({ course }) => {
                         </p>
                     </div>
 
-                    <div className="col-md-auto col-sm-12 mt-3 mt-md-0 text-end">
+                    {/* <div className="col-md-auto col-sm-12 mt-3 mt-md-0 text-end">
                         <h6 className="text text-reg seats"><strong>{course.availableSeats}</strong> Seats Available</h6>
-                    </div>
+                    </div> */}
                 </div>
                 <p className="mb-0 text text-small">
                     If you have any questions, please contact us or call us

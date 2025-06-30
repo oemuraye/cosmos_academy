@@ -118,7 +118,7 @@ const ExplorerSection = () => {
                 <ol>
                     <li className='mb-4'>
                         <p className='mb-0'>
-                            <span className='info-title'>Write Your Blog –</span>
+                            <span className='info-title'>Write Your Article –</span>
                             <span className='info-desc ms-2'>Craft insightful content that aligns with Cosmos Academy’s mission.</span>
                         </p>
                     </li>

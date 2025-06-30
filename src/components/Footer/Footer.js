@@ -30,11 +30,11 @@ const Footer = () => {
                     </Link>
                     
                     <section className="social-links d-flex align-items-center gap-3">
-                        <Link target='_blank' to=''><FaLinkedin size={24} /></Link>
-                        <Link target='_blank' to=''><FaXTwitter size={24} /></Link>
-                        <Link target='_blank' to=''><AiFillInstagram size={24} /></Link>
-                        <Link target='_blank' to=''><FaYoutube size={24} /></Link>
-                        <Link target='_blank' to=''><FaTiktok size={20} /></Link>
+                        <a href='https://www.linkedin.com/company/thecosmos-academy/' rel='noopener noreferrer' target='_blank'><FaLinkedin size={24} /></a>
+                        <a href='https://x.com/thecosmosa71937' rel='noopener noreferrer' target='_blank'><FaXTwitter size={24} /></a>
+                        <a href='https://www.instagram.com/the.cosmosacademy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' rel='noopener noreferrer' target='_blank'><AiFillInstagram size={24} /></a>
+                        <a href='https://www.youtube.com/@CosmosDesignSpace/videos' rel='noopener noreferrer' target='_blank'><FaYoutube size={24} /></a>
+                        {/* <Link target='_blank' to=''><FaTiktok size={20} /></Link> */}
                     </section>
                 </div>
                 
@@ -47,27 +47,27 @@ const Footer = () => {
                                 <li><Link to='/programs'>Mentorship</Link></li>
                                 <li><Link to='/partner'>Partnership</Link></li>
                                 <li><Link to='/about'>About us</Link></li>
-                                <li><Link to=''>Privacy</Link></li>
-                                <li><Link to=''>Terms</Link></li>
+                                <li><a href='https://www.termsfeed.com/live/2ac3586a-137e-4c0b-94da-7f072ee58ca7' target='_blank' rel="noopener noreferrer">Private Privacy</a></li>
+                                {/* <li><Link to=''>Terms</Link></li> */}
                             </ul>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Information</h4></li>
                                 <li><Link to='/about'>About us</Link></li>
                                 <li><Link to='/contact'>Contact us</Link></li>
                                 <li><Link to='blog-post/:postID'>Blog</Link></li>
-                                <li><Link to=''>Support</Link></li>
-                                <li><Link to=''>Help Center</Link></li>
+                                {/* <li><Link to=''>Support</Link></li> */}
+                                {/* <li><Link to=''>Help Center</Link></li> */}
                             </ul>
                         </div>
                         <div className='row col-md-6 col-sm-12 my-4'>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Work with us</h4></li>
-                                <li><Link to=''>Become a Facilitator <br /> Careers@Cosmos Academy</Link></li>
-                                <li><Link to='/partner'>Donate to Affiliates</Link></li>
+                                <li><Link to='/about'>Become a Facilitator <br /> Careers@Cosmos Academy</Link></li>
+                                <li><Link to='/partner'>Donate to Partner</Link></li>
                             </ul>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Community</h4></li>
-                                <li><Link to='/community'>Overview<br /> Telegram<br /> Events</Link></li>
+                                <li><Link to='/community'>Overview<br /> Whatsapp<br /> Events</Link></li>
                             </ul>
                         </div>
                     </section>

@@ -203,9 +203,9 @@ const Page = () => {
                             </div>
 
                             <div className="btn-action_div mt-4">
-                                <Link to='/community' className="customBtn">
+                                <a href="https://chat.whatsapp.com/BTUa750lPuaGnR4I5wAtSh" target="_blank" rel="noopener noreferrer" className="customBtn">
                                     <span>Join Community</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
