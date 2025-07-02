@@ -38,6 +38,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "3 Weeks",
         image: courseImageIntroSocial,
+        status: 'coming_soon',
         pricing: "free",
         free: true,
         instructor: {
@@ -52,7 +53,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -158,6 +159,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "4 Weeks",
         image: courseImageIntroDesign,
+        status: 'active',
         pricing: "free",
         free: false,
         instructor: {
@@ -172,7 +174,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: '26 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -275,8 +277,9 @@ export const CourseMap = [
         level: "Beginner",
         description: "Beginner-friendly course introduces the psychology of product design for user-centered experiences.",
         academy: 'Cosmos Academy',
-        duration: "6 Weeks",
+        duration: "4 Weeks",
         image: courseImageIntroUi,
+        status: 'active',
         pricing: "free",
         free: false,
         instructor: {
@@ -291,7 +294,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: '12 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -402,6 +405,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageIntroDev,
+        status: 'coming_soon',
         pricing: "free",
         free: false,
         instructor: {
@@ -416,7 +420,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -533,6 +537,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterUi2,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -547,7 +552,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -654,6 +659,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterSocial,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: true,
         instructor: {
@@ -668,7 +674,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -774,6 +780,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "3 Weeks",
         image: courseImageAdvanceSocial,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: true,
         instructor: {
@@ -788,7 +795,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -894,6 +901,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterDesign,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -908,7 +916,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1015,6 +1023,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAdvanceBranding,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1029,7 +1038,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1139,6 +1148,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterUi,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1153,7 +1163,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1259,6 +1269,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterDev,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1273,7 +1284,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1395,6 +1406,7 @@ export const CourseMap = [
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAdvDev,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1409,7 +1421,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1511,10 +1523,11 @@ export const CourseMap = [
         title: 'Artificial Intelligence: Foundations and Applications',
         category: "Artificial Intelligence",
         level: "Beginner",
-        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
+        description: "The course introduces students to the world of Artificial Intelligence (AI), its concepts, techniques, and applications.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAIIntro,
+        status: 'active',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1529,7 +1542,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: '19 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1652,10 +1665,11 @@ export const CourseMap = [
         title: 'Computer Vision: Foundations and Practice',
         category: "Artificial Intelligence",
         level: "Intermediate",
-        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
+        description: "The course provides a comprehensive overview of computer vision techniques and applications.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAIInter,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1670,7 +1684,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",
@@ -1796,10 +1810,11 @@ export const CourseMap = [
         title: 'CNN Specialization: From Fundamentals to Advanced Practice',
         category: "Artificial Intelligence",
         level: "Advance",
-        description: "The course is introduces students to the world of Artificial Intelligence (AI).",
+        description: "The course guides learners from their first convolutional neural network to advanced CNN techniques and best practices.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAIAdvan,
+        status: 'coming_soon',
         pricing: "coming_soon",
         free: false,
         instructor: {
@@ -1814,7 +1829,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'March 3, 2025',
+        startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "1k",

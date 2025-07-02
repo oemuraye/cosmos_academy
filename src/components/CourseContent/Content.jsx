@@ -14,6 +14,7 @@ const Content = ({ course }) => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const successModalRef = useRef(null);
+    console.log(course)
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
@@ -94,9 +95,15 @@ const Content = ({ course }) => {
             ))}
 
             <div className="btn-action_div">
-                <Link data-bs-toggle="modal" data-bs-target="#regModal" className="customBtn">
-                    <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
-                </Link>
+                {course.startDate === "Coming Soon" ? (
+                    <span className="customBtn coming-soon" style={{ cursor: "not-allowed" }}>
+                        <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                    </span>
+                ) : (
+                    <Link data-bs-toggle="modal" data-bs-target="#regModal" className="customBtn">
+                        <span>Enroll now</span> <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
+                    </Link>
+                )}
             </div>
 
             {/* <!-- Modal --> */}

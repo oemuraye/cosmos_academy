@@ -9,6 +9,7 @@ const supportBrands = [
             "Focused on building strong digital foundations, MemaTech Foundation provides digital literacy and skills training to girls and women in northern Nigerian communities , ensuring no one is left behind in the digital revolution.",
         image: null,
         urlLink: "https://mematechfoundation.org/",
+        videoLink: "https://www.youtube.com/embed/-SDN1ydyFVg",
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const supportBrands = [
             "Leading the charge in immersive technologies, this organization drives the adoption of advanced tech skills in areas like AR, VR, and AI preparing Africa for the future of digital innovation.",
         image: null,
         urlLink: "https://www.linkedin.com/company/immersive-tech-africa/",
+        videoLink: "https://www.youtube.com/embed/lLeh4Vva_YQ?si=9fdTa34GXTAIN2m-",
     },
 ];
 
@@ -47,6 +49,17 @@ const SupportSection = () => {
                     {/* <div className="container-img mx-2">
                         <img loading='lazy' src="" alt="img" className='img-fluid' />
                     </div> */}
+                    <div className="container">
+                        <iframe
+                            width="100%"
+                            height="350"
+                            src={`${item.videoLink.includes("embed/") ? `${item.videoLink.split("?")[0]}?autoplay=1&mute=1&loop=1&playlist=${item.videoLink.split("embed/")[1].split("?")[0]}` : item.videoLink}`}
+                            title="Cosmos Introduction Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            style={{ borderRadius: '10px' }}
+                        />
+                    </div>
                 </div>
             </div>
         ))}

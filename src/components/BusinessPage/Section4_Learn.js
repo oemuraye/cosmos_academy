@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { CourseMap } from '../../data/courses';
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 
 const courses = [
@@ -55,6 +56,30 @@ const courses = [
 ];
 
 const LearningInfoSection = () => {
+    // const navigate = useNavigate();
+
+    const sortedCourses = [...CourseMap].sort((a, b) => {
+        const isAComing = a.startDate === "Coming Soon";
+        const isBComing = b.startDate === "Coming Soon";
+
+        if (isAComing && !isBComing) return 1;
+        if (!isAComing && isBComing) return -1;
+
+        // If both have real dates, sort by the actual date
+        if (!isAComing && !isBComing) {
+            const dateA = new Date(a.startDate);
+            const dateB = new Date(b.startDate);
+            return dateA - dateB;
+        }
+
+        return 0;
+    }).slice(0, 5);
+
+    // const handleLinkClick = (slug) => (e) => {
+    //     e.preventDefault();
+    //     navigate(`/course/${slug}`);
+    // }
+
   return (
     <section className='learning-info-section padding_y-spacing container my-5'>
         <section className="section-heading my-5">
@@ -68,7 +93,7 @@ const LearningInfoSection = () => {
         <div className="cloud-overlay">
             <div className="courses-display-section my-5">
                 <div className="courses-display ps-3 ps-md-4">
-                    {courses.map((course) => (
+                    {sortedCourses.map((course) => (
                         <div key={course.id} className="course-card">
                             {/* <div className="course-card-image">
                                 <img loading='lazy' src={course.image} alt={course.title} height='283px' />
@@ -81,7 +106,10 @@ const LearningInfoSection = () => {
                                 {/* <p className="course-meta"> <span>By</span> <strong>{course.instructor}</strong> | {course.duration}</p> */}
                                 
                                 <hr />
-                                    <div className={`training-date ${course.pricing === "free" ? 'free' : course.pricing === 'coming_soon' ? 'coming_soon' : 'pricing'}`}>
+                                    <div 
+                                        className={`training-date my-0 ${course.startDate === "Coming Soon" ? 'coming-soon' : ''}`} 
+                                        style={{ backgroundColor: course.startDate !== "Coming Soon" ? course.colorBg || course.colorBg : '' }}
+                                    >
                                         <span>
                                             <span className="me-1">Next training</span>
                                             <strong>
@@ -95,7 +123,7 @@ const LearningInfoSection = () => {
                                 <hr />
 
                                 <div className="course-footer">
-                                    <Link href={`/course/${course.slug}`} className="learn-more">View Courses <img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
+                                    <Link to={`/course/${course.slug}`} className="learn-more">View Courses <img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                 </div>
                             </div>
                         </div>

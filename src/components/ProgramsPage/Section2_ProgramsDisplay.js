@@ -101,7 +101,7 @@ const ProgramsDisplay = () => {
   const categoryFromURL = queryParams.get("category");
   const defaultTabId = tabsData.find(tab => tab.name === categoryFromURL)?.id || tabsData[0].id;
   const [activeTab, setActiveTab] = useState(defaultTabId);
-  const nav = useNavigate();
+  const navigate = useNavigate();
   const tabsContainerRef = useRef(null);
   const tabRefs = useRef([]);
 
@@ -123,7 +123,7 @@ const ProgramsDisplay = () => {
 
   const handleLinkClick = (slug) => (e) => {
     e.preventDefault();
-    nav(`/course/${slug}`);
+    navigate(`/course/${slug}`);
   }
 
   const activeTabName = tabsData.find(tab => tab.id === activeTab)?.name;
@@ -217,7 +217,10 @@ const ProgramsDisplay = () => {
                       <p className="course-meta mb-0"> <span>By</span> <strong>{course.instructor.name}</strong> | {course.duration}</p>
                       
                       <hr />
-                      <div className={`training-date my-0`} style={{ backgroundColor: course.colorBg || '' }}>
+                      <div 
+                          className={`training-date my-0 ${course.startDate === "Coming Soon" ? 'coming-soon' : ''}`} 
+                          style={{ backgroundColor: course.startDate !== "Coming Soon" ? course.colorBg || course.colorBg : '' }}
+                      >
                       {/* <div className={`training-date my-0 ${course.pricing === "free" ? 'free' : 'coming_soon'}`}> */}
                           <span>
                             <span className="me-1">Next training</span> 

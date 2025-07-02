@@ -402,6 +402,10 @@ img.xb-border-radius {
     margin: 5px 0;
     font-family: var(--font-neueMontreal);
 }
+.coming-soon {
+    background-color: var(--card_text-color);
+    color: var(--gray_white-color);
+}
 .training-date strong {
     font-weight: 700;
 }

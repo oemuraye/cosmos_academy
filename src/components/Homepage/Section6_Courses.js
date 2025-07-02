@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
 import externalGoLinkIcon from '../../assets/icons/externalGoLinkIcon.png';
 import liveIcon from '../../assets/icons/record-icon.png';
@@ -89,6 +89,7 @@ const userEnrolledImages = [
 
 
 const CourseSection = () => {
+    const navigate = useNavigate();
     const sliderRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visibleItems, setVisibleItems] = useState(1);
@@ -142,6 +143,28 @@ const CourseSection = () => {
     const handleCourseClick = (courseSlug) => {
         window.location.href = `/course/${courseSlug}`;
     };
+
+    const sortedCourses = [...CourseMap].sort((a, b) => {
+        const isAComing = a.startDate === "Coming Soon";
+        const isBComing = b.startDate === "Coming Soon";
+
+        if (isAComing && !isBComing) return 1;
+        if (!isAComing && isBComing) return -1;
+
+        // If both have real dates, sort by the actual date
+        if (!isAComing && !isBComing) {
+            const dateA = new Date(a.startDate);
+            const dateB = new Date(b.startDate);
+            return dateA - dateB;
+        }
+
+        return 0;
+    }).slice(0, 5);
+
+    const handleLinkClick = (slug) => (e) => {
+        e.preventDefault();
+        navigate(`/course/${slug}`);
+    }
   
     return (
         <section className='course-section my-5 padding_y-spacing'>
@@ -160,8 +183,8 @@ const CourseSection = () => {
                     <div className="courses-display-section my-5">
                         <div className="courses-display px-3 px-md-5" ref={sliderRef}>
                             {/* {courses.map((course) => ( */}
-                            {CourseMap.slice(0, 5).map((course) => (
-                                <div key={course.id} className="course-card">
+                            {sortedCourses.map((course) => (
+                                <div key={course.id} className="course-card" onClick={handleLinkClick(course.slug)} role="button">
                                     <div className="course-card-image position-relative">
                                         <img loading='lazy' src={course.image} alt={course.title} height='283px' className="course-image" />
                                         {course.free && 
@@ -181,7 +204,10 @@ const CourseSection = () => {
                                         
                                         <hr />
                                             {/* <div className={`training-date my-0 ${course.free ? 'free' : ''}`} style={{ backgroundColor: course.colorBg || '' }}> */}
-                                            <div className={`training-date my-0`} style={{ backgroundColor: course.colorBg || '' }}>
+                                            <div 
+                                                className={`training-date my-0 ${course.startDate === "Coming Soon" ? 'coming-soon' : ''}`} 
+                                                style={{ backgroundColor: course.startDate !== "Coming Soon" ? course.colorBg || course.colorBg : '' }}
+                                            >
                                                 <span>
                                                     <span className="me-1">Next training</span> 
                                                     <strong>
