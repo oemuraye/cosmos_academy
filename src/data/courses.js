@@ -56,7 +56,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FFC3FF',
 
         overview: [
@@ -177,7 +177,7 @@ export const CourseMap = [
         startDate: '26 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#90B8F3',
 
         overview: [
@@ -297,7 +297,7 @@ export const CourseMap = [
         startDate: '12 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#C7F16C',
 
         overview: [
@@ -423,7 +423,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FCF562',
 
         overview: [
@@ -555,7 +555,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FDD6FD',
 
         overview: [
@@ -677,7 +677,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FFE6C3',
 
         overview: [
@@ -798,7 +798,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FFC3FF',
 
         overview: [
@@ -919,7 +919,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#C7F16C',
 
         overview: [
@@ -1041,7 +1041,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FCF562',
 
         overview: [
@@ -1166,7 +1166,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#FDD6FD',
 
         overview: [
@@ -1287,7 +1287,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#90B8F3',
 
         overview: [
@@ -1424,7 +1424,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#C7F16C',
 
         overview: [
@@ -1545,7 +1545,7 @@ export const CourseMap = [
         startDate: '19 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#C7F16C',
 
         overview: [
@@ -1687,7 +1687,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#BDADFF',
 
         overview: [
@@ -1832,7 +1832,7 @@ export const CourseMap = [
         startDate: 'Coming Soon',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
-        enrolled: "1k",
+        enrolled: "100+",
         colorBg: '#E6ACFF',
 
         overview: [
