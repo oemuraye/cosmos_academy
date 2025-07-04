@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa"; // Use LinkedIn & Instagram icons
 import { Link, useLocation } from "react-router-dom";
+import { FaRegUserCircle } from "react-icons/fa";
 
 const AuthorDetails = ({ author }) => {
   const location = useLocation();
@@ -27,7 +28,11 @@ const AuthorDetails = ({ author }) => {
     <div className="author-details d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center mt-5">
       <div className="d-flex align-items-center justify-content-between justify-content-md-start w-100 w-md-auto gap-1 gap-md-3">
         <div className="d-flex gap-2 align-items-center">
-          <img loading='lazy' src={author.avatar} alt={author.name} className="author-avatar me-2" />
+          {author.avatar ? (
+            <img loading='lazy' src={author.avatar} alt={author.name} className="author-avatar me-2" />
+          ) : (
+            <FaRegUserCircle className="author-avatar me-2" />
+          )}
           <h6 className="mb-0 fw-bold">{author.name}</h6>
         </div>
         <div className="d-flex gap-2 align-items-center ms-2">

@@ -21,7 +21,7 @@ import { CourseMap } from '../../data/courses';
 
 const tabsData = [
   { id: 1, name: "Web Development", description: "Master front-end and back-end development with modern frameworks and technologies like HTML, CSS, JavaScript, React, and Node.js. Build dynamic websites and scalable applications that power the digital economy." },
-  { id: 2, name: "Social Management", description: "Learn how to effectively manage and grow social communities, engage audiences, and create impactful digital campaigns." },
+  { id: 2, name: "Social Media Management", description: "Learn how to effectively manage and grow social communities, engage audiences, and create impactful digital campaigns." },
   { id: 3, name: "Product Design", description: "Learn the fundamentals of user experience (UX) and user interface (UI) design to create visually appealing and user-friendly digital products." },
   { id: 4, name: "Brand Development", description: "Develop skills in branding, storytelling, and identity creation to help businesses stand out in the market." },
   { id: 5, name: "Digital Innovation", description: "Explore emerging technologies and digital transformation strategies that shape the future of industries." },
@@ -242,7 +242,7 @@ const ProgramsDisplay = () => {
                                   ))} */}
                                   <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
                               </div>
-                            <span>{course.enrolled} enrolled</span>
+                            <span>{course.enrolled} </span>
                         </div>
 
                         <Link onClick={handleLinkClick(course.slug)} className="learn-more">Learn More<img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>

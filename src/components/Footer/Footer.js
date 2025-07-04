@@ -67,7 +67,9 @@ const Footer = () => {
                             </ul>
                             <ul className='col-6'>
                                 <li><h4 className='custom-neueFont_Bold'>Community</h4></li>
-                                <li><Link to='/community'>Overview<br /> Whatsapp<br /> Events</Link></li>
+                                <li><Link to='/community'>Overview</Link></li>
+                                <li><Link to='/community'>Whatsapp</Link></li>
+                                <li><a href='https://cosmosconference.org/' target='_blank' rel="noopener noreferrer">Events</a></li>
                             </ul>
                         </div>
                     </section>

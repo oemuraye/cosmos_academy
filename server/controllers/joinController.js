@@ -8,6 +8,16 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const normalize = (str) =>
+  str.toLowerCase().replace(/\s+/g, "_").replace(/[^\w_]/g, "");
+
+const getSyllabusFilePath = (category, level) => {
+  const folder = normalize(category); // e.g., 'product_design'
+  const fileName = `${category} ${level} Syllabus.pdf`; // e.g., 'Product Design Beginners Syllabus.pdf'
+  return `/docs/${folder}/${fileName}`;
+};
+
+
 export const handleJoinRequest = async (req, res) => {
   const { name, email, phone, category, level } = req.body;
 
@@ -48,6 +58,23 @@ export const handleJoinRequest = async (req, res) => {
     const templatePath = path.join(__dirname, "../emails/joinEmail.html");
     let htmlTemplate = fs.readFileSync(templatePath, "utf-8");
     htmlTemplate = htmlTemplate.replace("{{name}}", name);
+
+    const syllabusPath = getSyllabusFilePath(category, level);
+    const filePath = path.join(__dirname, `../../public${syllabusPath}`);
+
+    if (fs.existsSync(filePath)) {
+      htmlTemplate = htmlTemplate
+        .replace("{{syllabus_link}}", `https://server.cosmosconference.org${syllabusPath}`)
+        .replace("{{syllabus_name}}", `${category} (${level})`);
+    } else {
+      // Remove the entire paragraph that contains the download line
+      htmlTemplate = htmlTemplate.replace(
+        /<p>Download your course syllabus:.*?<\/p>/,
+        ""
+      );
+    }
+
+
 
     // Send Email
     const emailResult = await sendEmail(email, "Welcome to Cosmos Academy", htmlTemplate);

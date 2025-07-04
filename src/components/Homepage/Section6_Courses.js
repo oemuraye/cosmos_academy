@@ -228,7 +228,7 @@ const CourseSection = () => {
                                                     ))} */}
                                                     <img loading='lazy' src={stackedUsersImg} alt="Enrolled users" className='img-fluid' width='55px' height='15px' />
                                                 </div>
-                                                <span>{course.enrolled} enrolled</span>
+                                                <span>{course.enrolled} </span>
                                             </div>
                                             <Link to={`/course/${course.slug}`} className="learn-more">Learn More <img loading='lazy' src={externalGoLinkIcon} className='ms-2' alt="icon" width='10px' height='10px' /></Link>
                                         </div>

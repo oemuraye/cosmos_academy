@@ -14,15 +14,13 @@ const HeroSection = () => {
     const handleScheduleScroll = (e, targetId, url) => {
         e.preventDefault();
 
-        if (location.pathname !== `/${url}`) {
-            // Navigate and include a query param or hash
-            navigate(`/${url}`);
-        } else {
+        navigate(`/${url}`);
+        setTimeout(() => {
             const target = document.getElementById(targetId);
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
-        }
+        }, 300);
     };
   return (
     <section className="hero-section my-5">
@@ -34,7 +32,6 @@ const HeroSection = () => {
                         <div className="text-start mb-4 mb-md-0 px-1 pt-5 pt-md-0">
                             <h1 className="mb-3">Thanks for your interest in Cosmos Academy</h1>
                             <p className="mb-5">
-                                Your Cosmos Academy Syllabus is on the way to your inbox now. 
                                 To learn more about the program curriculum, format, and payment options,
                                 register for our <span className="fw-bold fst-italic">informational webinar </span>
                                  or schedule a <span className="fw-bold fst-italic"> 1-on-1 call </span> with our team.

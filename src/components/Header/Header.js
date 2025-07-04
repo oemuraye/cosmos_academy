@@ -132,15 +132,13 @@ const Header = () => {
   const handleScheduleScroll = (e, targetId, url) => {
     e.preventDefault();
 
-    if (location.pathname !== `/${url}`) {
-      // Navigate and include a query param or hash
-      navigate(`/${url}`);
-    } else {
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+    navigate(`/${url}`);
+    setTimeout(() => {
+        const target = document.getElementById(targetId);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, 300);
 
     if (menuOpen) {
       setMenuAnimating(true);

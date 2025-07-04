@@ -181,7 +181,7 @@ export const posts = [
     {
       id: 2,
       slug: "beyond-posting",
-      category: "Social Management",
+      category: "Social Media Management",
       title: "Beyond Posting: How Strategic Social Media Management Drives Business Growth",
       subtitle: "While regular posting is necessary, truly effective social media management requires strategic thinking that drives measurable business results.",
       image: blogImgBeyondPosting,
@@ -1818,7 +1818,7 @@ export const posts = [
       subtitle: "In an age where technology is rapidly redefining the boundaries of human capability, the role of design must also evolve.",
       image: blogImgBeyondComm,
       author: {
-        name: "Promise Ucheagwu",
+        name: "Trust Oghale",
         avatar: authorImg1Oghale,
         date: "April 14, 2025",
         readTime: "10 Min Read",
@@ -2083,7 +2083,7 @@ export const posts = [
       image: blogImgBrandIdentity,
       author: {
         name: "Promise Ucheagwu",
-        avatar: authorImg4Nazor,
+        avatar: '',
         date: "Mar 20, 2024",
         readTime: "20 Min Read",
         linkedIn: "",
@@ -2432,7 +2432,7 @@ export const posts = [
     {
       id: 14,
       slug: "top-5-tools-social-media",
-      category: "Social Management",
+      category: "Social Media Management",
       title: "Top 5 Tools Every Beginner Social Media Manager Should Know",
       subtitle: "Managing social media doesn’t have to be overwhelming. With these beginner-friendly tools, you can work smarter, stay organized, and create great content with ease.",
       image: blogImgToolsForSocial,
@@ -2546,7 +2546,7 @@ export const posts = [
     {
       id: 15,
       slug: "getting-started-social-media",
-      category: "Social Management",
+      category: "Social Media Management",
       title: "Getting Started with Social Media Management",
       subtitle: "A Social Media Manager isn’t just about posting content — it’s strategy, creativity, and communication all rolled into one. Here’s what it really involves.",
       image: blogImgBeginnersSocial,
