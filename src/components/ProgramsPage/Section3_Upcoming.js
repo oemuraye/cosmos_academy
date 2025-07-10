@@ -20,7 +20,7 @@ const upcomingEvents = [
     instructor: "Jane Doe",
     role: "Social Media Manager",
     title: "Introduction to Social Media Management",
-    date: "Mar 10, 2025",
+    date: "Coming Soon",
     image: menaImage,
     media: eventVideo2, 
     isVideo: true,
@@ -64,7 +64,11 @@ const UpcomingSection = () => {
                 </div>
                 <div className="event-details mt-0 mt-md-3">
                     <h4>{event.title}</h4>
-                    <h6>{event.date}</h6>
+                    <h6 className={`${event.date === "Coming Soon" ? 'coming-soon' : ''}`}>
+                      {event.date === "Coming Soon" ? "Coming Soon"
+                          : new Date(event.date).toLocaleString("default", { month: "short", day: "numeric", year: "numeric",})
+                      }
+                    </h6>
                 </div>
               </div>
             </div>

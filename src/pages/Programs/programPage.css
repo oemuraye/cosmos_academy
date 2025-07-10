@@ -185,6 +185,10 @@
     display: inline-flex;
     margin-bottom: 0;
 }
+.event-details h6.coming-soon {
+    background-color: var(--card_text-color);
+    color: var(--gray_white-color);
+}
 
 .impactAd_section .impactAd {
     background-color: var(--lightGreen-color); /* Light green background */
