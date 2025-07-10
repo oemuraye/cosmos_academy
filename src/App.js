@@ -26,10 +26,10 @@ function App() {
     <div className="App">
       <Helmet>
         <title>Cosmos Academy</title>
-        <meta name="description" content="Welcome to Cosmos Academy" />
-        <meta name="keywords" content="conference, cosmos, 2024" />
-        <meta property="og:title" content="Cosmos Academy" />
-        <meta property="og:description" content="Join us for Cosmos Academy!" />
+        <meta name="description" content="Unlock the future with Cosmos Academy - Your gateway to learning and innovation" />
+        <meta name="keywords" content="Cosmos Academy, online courses, innovation, learning, education, technology" />
+        <meta property="og:title" content="Welcome to Cosmos Academy" />
+        <meta property="og:description" content="Explore cutting-edge courses and join a community of innovators at Cosmos Academy!" />
         {/* <meta property="og:image" content="https://cosmosconference.org/" />
         <link rel="canonical" href="https://cosmosconference.org/" /> */}
       </Helmet>
