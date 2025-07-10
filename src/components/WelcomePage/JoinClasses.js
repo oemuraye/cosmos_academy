@@ -60,13 +60,11 @@ export default function JoinClasses({ successModalRef, category, level }) {
         setEmail("");
         setPhone("");
 
-        setTimeout(() => {
-          document.getElementById("joinModalCloseBtn").click();
-          if (successModalRef.current) {
-            const modal = new Modal(successModalRef.current);
-            modal.show();
-          }
-        }, 3000);
+        document.getElementById("joinModalCloseBtn").click();
+        if (successModalRef.current) {
+          const modal = new Modal(successModalRef.current);
+          modal.show();
+        }
       } else {
         // If server returns errors, display them
         setServerErrors(result.message || "Failed to submit. Try again.");

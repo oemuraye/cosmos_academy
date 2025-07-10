@@ -1,6 +1,19 @@
 // utils/syllabusMap.js
 
 export const syllabusMap = {
+  "Product Design": {
+    Beginner: "Product Design Beginner Syllabus.pdf",
+  },
+  "Artificial Intelligence": {
+    Beginner: "Artificial Intelligence Syllabus.pdf",
+  },
+  "Brand Development": {
+    Beginner: "Brand Design Beginner Syllabus.pdf",
+  }
+};
+
+
+export const fullSyllabusMap = {
   "Web Development": {
     Beginner: "Web Development Beginner Syllabus.pdf",
     Intermediate: "Web Development Intermediate Syllabus.pdf",
@@ -17,9 +30,9 @@ export const syllabusMap = {
     Advance: "Product Design Advance Syllabus.pdf",
   },
   "Brand Development": {
-    Beginner: "Brand Development Beginner Syllabus.pdf",
-    Intermediate: "Brand Development Intermediate Syllabus.pdf",
-    Advance: "Brand Development Advance Syllabus.pdf",
+    Beginner: "Brand Design Beginner Syllabus.pdf",
+    Intermediate: "Brand Design Intermediate Syllabus.pdf",
+    Advance: "Brand Design Advance Syllabus.pdf",
   },
   "Digital Innovation": {
     Beginner: "Digital Innovation Beginner Syllabus.pdf",
@@ -32,7 +45,7 @@ export const syllabusMap = {
     Advance: "Mobile Development Advance Syllabus.pdf",
   },
   "Artificial Intelligence": {
-    Beginner: "Artificial Intelligence Beginner Syllabus.pdf",
+    Beginner: "Artificial Intelligence Syllabus.pdf", // Already uploaded
     Intermediate: "Artificial Intelligence Intermediate Syllabus.pdf",
     Advance: "Artificial Intelligence Advance Syllabus.pdf",
   },
@@ -47,3 +60,22 @@ export const syllabusMap = {
     Advance: "AR_VR Development Advance Syllabus.pdf",
   }
 };
+
+// These are the folder name to be used.
+// web_development/
+
+// social_media_management/
+
+// product_design/
+
+// brand_development/
+
+// digital_innovation/
+
+// mobile_development/
+
+// artificial_intelligence/
+
+// embedded_system_iot/
+
+// ar_vr_development/

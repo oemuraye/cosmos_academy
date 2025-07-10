@@ -17,19 +17,18 @@ const normalize = (str) =>
 
 // Generate file paths and URL
 const getSyllabusPaths = (category, level) => {
-  const normalizedCategory = Object.keys(syllabusMap).find(
+  const normalizedCategoryKey = Object.keys(syllabusMap).find(
     key => key.toLowerCase().trim() === category.toLowerCase().trim()
   );
 
-  const folder = normalize(normalizedCategory || category);
-  const syllabusFile = syllabusMap?.[normalizedCategory]?.[level];
+  const folder = normalize(normalizedCategoryKey || category);
+  const syllabusFile = syllabusMap?.[normalizedCategoryKey]?.[level];
 
   if (!syllabusFile) {
     const rawPath = path.join(__dirname, `../public/docs/${folder}/${level} Syllabus.pdf`);
     console.warn(`⚠️ Syllabus file not found for: ${category} (${level}) → ${rawPath}`);
     return { rawPath: null, publicURL: null, folder, fileName: null };
   }
-
 
   const rawPath = path.join(__dirname, `../public/docs/${folder}/${syllabusFile}`);
   const publicURL = `/docs/${folder}/${encodeURIComponent(syllabusFile)}`;
@@ -41,15 +40,23 @@ export const handleJoinRequest = async (req, res) => {
   const { name, email, phone, category, level } = req.body;
 
   if (!name || !email || !phone || !category || !level) {
-    return res.status(400).json({ message: "All fields are required" });
-  }
-
-  const existingUser = await User.findOne({ email, category, level });
-  if (existingUser) {
-    return res.status(400).json({ message: "You have already registered for this course and level." });
+    return res.status(400).json({
+      success: false,
+      message: "All fields are required",
+      error: "Missing one or more required fields: name, email, phone, category, level"
+    });
   }
 
   try {
+    const existingUser = await User.findOne({ email, category, level });
+    if (existingUser) {
+      return res.status(400).json({
+        success: false,
+        message: "You have already registered for this course and level.",
+        error: "Duplicate entry in MongoDB"
+      });
+    }
+
     const mongoUser = new User({ name, email, phone, category, level });
     const savedMongoUser = await mongoUser.save();
 
@@ -59,58 +66,84 @@ export const handleJoinRequest = async (req, res) => {
       (err, results) => {
         if (err) {
           console.error("❌ MySQL Select Error:", err);
-          return res.status(500).json({ message: "Database error" });
+          return res.status(500).json({
+            success: false,
+            message: "Database error",
+            error: err.message
+          });
         }
 
         if (results.length > 0) {
-          return res.status(400).json({ message: "You have already registered for this course and level." });
+          return res.status(400).json({
+            success: false,
+            message: "You have already registered for this course and level.",
+            error: "Duplicate entry in MySQL"
+          });
         }
 
-        // ✅ If no duplicate, proceed with insert
+        // Proceed with insert
         pool.query(
           "INSERT INTO users (name, email, phone, category, level, mongo_id) VALUES (?, ?, ?, ?, ?, ?)",
           [name, email, phone, category, level, savedMongoUser._id.toString()],
-          (err, result) => {
+          async (err, result) => {
             if (err) {
               console.error("❌ MySQL Insert Error:", err);
-              return res.status(500).json({ message: "MySQL insert error" });
+              return res.status(500).json({
+                success: false,
+                message: "Failed to save user to MySQL",
+                error: err.message
+              });
             }
-            console.log("✅ User saved to MySQL", result.insertId);
+
+            // Prepare and send email
+            const templatePath = path.join(__dirname, "../emails/joinEmail.html");
+            let htmlTemplate = fs.readFileSync(templatePath, "utf-8");
+            htmlTemplate = htmlTemplate.replace("{{name}}", name);
+
+            const { rawPath, publicURL } = getSyllabusPaths(category, level);
+            if (rawPath && fs.existsSync(rawPath)) {
+              htmlTemplate = htmlTemplate
+                .replace("{{syllabus_link}}", `https://server.cosmosconference.org${publicURL}`)
+                .replace("{{syllabus_name}}", `${category} (${level})`);
+            } else {
+              htmlTemplate = htmlTemplate.replace(/<p>Download your course syllabus:.*?<\/p>/, "");
+            }
+
+            const emailResult = await sendEmail(email, "Welcome to Cosmos Academy", htmlTemplate);
+            if (emailResult.success) {
+              return res.json({
+                success: true,
+                message: "User registered & email sent successfully",
+                data: { id: savedMongoUser._id }
+              });
+            } else {
+              return res.status(500).json({
+                success: false,
+                message: "User saved, but email sending failed",
+                error: emailResult.error || "Unknown email error"
+              });
+            }
           }
         );
       }
     );
-
-
-    // Load email template
-    const templatePath = path.join(__dirname, "../emails/joinEmail.html");
-    let htmlTemplate = fs.readFileSync(templatePath, "utf-8");
-    htmlTemplate = htmlTemplate.replace("{{name}}", name);
-
-    // Get file info
-    const { rawPath, publicURL, fileName } = getSyllabusPaths(category, level);
-
-    if (rawPath && fs.existsSync(rawPath)) {
-      console.log("✅ Syllabus file found:", rawPath);
-      htmlTemplate = htmlTemplate
-        .replace("{{syllabus_link}}", `https://server.cosmosconference.org${publicURL}`)
-        .replace("{{syllabus_name}}", `${category} (${level})`);
-    } else {
-      htmlTemplate = htmlTemplate.replace(/<p>Download your course syllabus:.*?<\/p>/, "");
-      console.warn("⚠️ Missing or invalid syllabus:", category, level);
-    }
-
-    // Send email
-    const emailResult = await sendEmail(email, "Welcome to Cosmos Academy", htmlTemplate);
-
-    if (emailResult.success) {
-      return res.json({ message: "User registered & email sent successfully" });
-    } else {
-      return res.status(500).json({ message: "User saved, but email failed" });
-    }
-
   } catch (error) {
     console.error("❌ Error:", error);
-    return res.status(500).json({ message: "Server error" });
+
+    // Optional: Customize MongoDB duplicate key error
+    if (error.code === 11000) {
+      return res.status(409).json({
+        success: false,
+        message: "This email has already registered for this course and level.",
+        error: error.message,
+        details: error.keyValue
+      });
+    }
+
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+      error: error.message,
+    });
   }
 };
