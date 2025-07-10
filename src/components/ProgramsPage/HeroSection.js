@@ -1,8 +1,8 @@
 
-import heroImage1 from '../../assets/images/HeroFrame.png';
-import heroImage2 from '../../assets/images/HeroFrame2.png';
-import heroVideo1 from '../../assets/videos/heroVideo1.mp4';
-import heroVideo2 from '../../assets/videos/heroVideo2.mp4';
+import heroImage1 from '../../assets/images/programsHeroImg2.png';
+import heroImage2 from '../../assets/images/programsHeroImg1.png';
+import heroVideo1 from '../../assets/videos/programsHeroVid1.mp4';
+import heroVideo2 from '../../assets/videos/programsHeroVid2.mp4';
 import hero_video1 from '../../assets/videos/hero-video1.mp4';
 import hero_video2 from '../../assets/videos/hero-video2.mp4';
 import exploreIcon from '../../assets/icons/btn-Icon.png';
@@ -36,16 +36,20 @@ const HeroSection = () => {
                                             </div>
                                         </div>
                                         <video className="img-fluid rounded" style={{ height: "270px", objectFit: "cover" }} autoPlay loop muted playsInline>
-                                            <source src={heroVideo2} type="video/mp4" />
+                                            <source src={heroVideo1} type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
 
-                                    <div className="bg-white rounded mt-2" style={{ height: "193px" }}></div>
+                                    <div className="bg-white rounded mt-2" style={{ height: "193px" }}>
+                                        <img src={heroImage1} alt="hero_img" className="" />
+                                    </div>
                                 </div>
 
                                 <div className="">
-                                    <div className="bg-white rounded mb-3" style={{ height: "193px" }}></div>
+                                    <div className="bg-white rounded mb-3" style={{ height: "193px" }}>
+                                        <img src={heroImage2} alt="hero_img" className="" />
+                                    </div>
 
                                     <div className="position-relative">
                                         <div className='position-absolute top-0 start-0 m-3 d-flex align-items-center px-3 py-1'> 

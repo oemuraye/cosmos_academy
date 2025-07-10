@@ -44,9 +44,9 @@ export const handleJoinRequest = async (req, res) => {
     return res.status(400).json({ message: "All fields are required" });
   }
 
-  const existingUser = await User.findOne({ email });
+  const existingUser = await User.findOne({ email, category, level });
   if (existingUser) {
-    return res.status(400).json({ message: "Email already exists" });
+    return res.status(400).json({ message: "You have already registered for this course and level." });
   }
 
   try {
@@ -54,13 +54,33 @@ export const handleJoinRequest = async (req, res) => {
     const savedMongoUser = await mongoUser.save();
 
     pool.query(
-      "INSERT INTO users (name, email, phone, category, level, mongo_id) VALUES (?, ?, ?, ?, ?, ?)",
-      [name, email, phone, category, level, savedMongoUser._id.toString()],
-      (err, result) => {
-        if (err) console.error("❌ MySQL Insert Error:", err);
-        else console.log("✅ User saved to MySQL", result.insertId);
+      "SELECT * FROM users WHERE email = ? AND category = ? AND level = ?",
+      [email, category, level],
+      (err, results) => {
+        if (err) {
+          console.error("❌ MySQL Select Error:", err);
+          return res.status(500).json({ message: "Database error" });
+        }
+
+        if (results.length > 0) {
+          return res.status(400).json({ message: "You have already registered for this course and level." });
+        }
+
+        // ✅ If no duplicate, proceed with insert
+        pool.query(
+          "INSERT INTO users (name, email, phone, category, level, mongo_id) VALUES (?, ?, ?, ?, ?, ?)",
+          [name, email, phone, category, level, savedMongoUser._id.toString()],
+          (err, result) => {
+            if (err) {
+              console.error("❌ MySQL Insert Error:", err);
+              return res.status(500).json({ message: "MySQL insert error" });
+            }
+            console.log("✅ User saved to MySQL", result.insertId);
+          }
+        );
       }
     );
+
 
     // Load email template
     const templatePath = path.join(__dirname, "../emails/joinEmail.html");

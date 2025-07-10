@@ -53,9 +53,9 @@ export default function JoinClasses({ successModalRef, category, level }) {
       const result = await response.json();
 
       if (response.ok) {
-        setStatus("success");
-        toast.success("Your request has been successfully submitted!");
-        setTimeout(() => setStatus(null), 10000);
+        // setStatus("success");
+        // toast.success("Your request has been successfully submitted!");
+        // setTimeout(() => setStatus(null), 10000);
         setFullName("");
         setEmail("");
         setPhone("");
@@ -71,14 +71,14 @@ export default function JoinClasses({ successModalRef, category, level }) {
         // If server returns errors, display them
         setServerErrors(result.message || "Failed to submit. Try again.");
         toast.error(result.message || "Failed to submit. Try again.");
+        setTimeout(() => setServerErrors(), 5000);
       }
     } catch (error) {
       console.error("Error:", error);
-      setStatus("error");
+      // setStatus("error");
       toast.error('Failed to submit. Try again.');
       setServerErrors("Server error occurred, please try again.");
-      toast.error("Server error occurred, please try again.");
-      setTimeout(() => setStatus(null), 10000);
+      // setTimeout(() => setStatus(null), 5000);
     } finally {
       setLoading(false);
     }
