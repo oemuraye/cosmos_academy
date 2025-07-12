@@ -37,8 +37,8 @@ const people = [
     image: menaImage
   },
   {
-    name: "Hope Odiodzi",
-    role: "Growth Manager",
+    name: "Chidera Ignatius ",
+    role: "Programs Manager",
     image: hopeImage
   },
   {
