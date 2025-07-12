@@ -13,7 +13,7 @@ import trustImage from "../../../assets/images/trustImg.png";
 import piusImage from "../../../assets/images/piusImage.png";
 import menaImage from "../../../assets/images/menaImage.png";
 import blessingImage from "../../../assets/images/blessingImage.png";
-import hopeImage from "../../../assets/images/hopeImage.jpeg";
+import hopeImage from "../../../assets/images/deraImage.png";
 import fonaImage from "../../../assets/images/fonaImage.png";
 import danielImage from "../../../assets/images/danielImage.png";
 import israelImage from "../../../assets/images/israelImage.png";

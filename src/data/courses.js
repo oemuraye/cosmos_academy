@@ -107,9 +107,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -118,9 +118,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -129,9 +129,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -140,9 +140,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -227,10 +227,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Explain the core principles of visual design', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Analyze design examples using appropriate terminology', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Apply basic composition techniques to arrange visual elements', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Describe how browsers render web pages', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Explain the core principles of visual design', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Analyze design examples using appropriate terminology', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply basic composition techniques to arrange visual elements', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Describe how browsers render web pages', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -239,8 +239,8 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Apply color effectively across various design applications', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply color effectively across various design applications', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -249,9 +249,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Classify different typeface categories and their characteristics', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Select appropriate typefaces for specific brand personalities', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create effective typographic hierarchies and layouts', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Classify different typeface categories and their characteristics', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Select appropriate typefaces for specific brand personalities', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create effective typographic hierarchies and layouts', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -260,9 +260,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Navigate the interfaces of Photoshop, illustrator and Canva', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Perform basic editing and creation tasks in each platform', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Select the appropriate software for different design needs', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Navigate the interfaces of Photoshop, illustrator and Canva', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Perform basic editing and creation tasks in each platform', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Select the appropriate software for different design needs', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -349,10 +349,10 @@ export const CourseMap = [
                 chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand what UI/UX Design is', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Identify key differences between UI and UX', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Learn the Design Thinking Process', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Set up and navigate Figma', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Understand what UI/UX Design is', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Identify key differences between UI and UX', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Learn the Design Thinking Process', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Set up and navigate Figma', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -361,10 +361,10 @@ export const CourseMap = [
                 chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Learn how to conduct user interviews', duration: '1m 28s', locked: true, videoLink: ''},
-                    { title: 'Create user personas and empathy maps', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Develop user flows', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Learn how to conduct user interviews', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create user personas and empathy maps', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop user flows', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -373,10 +373,10 @@ export const CourseMap = [
                 chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Translate ideas into wireframes', duration: '1m 28s', locked: true, videoLink: ''},
-                    { title: 'Understand UI Principles (typography, spacing, contrast)', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Use Figma to build mockups', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Translate ideas into wireframes', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand UI Principles (typography, spacing, contrast)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use Figma to build mockups', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Building Your Moodboard', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -385,10 +385,10 @@ export const CourseMap = [
                 chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Create interactive prototypes', duration: '1m 28s', locked: true, videoLink: ''},
-                    { title: 'Conduct usability testing', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Prepare and present a final project', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Finding Inspiration and Buliding Your Moodboard', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create interactive prototypes', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Conduct usability testing', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Prepare and present a final project', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Finding Inspiration and Buliding Your Moodboard', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             }
         ],
@@ -401,11 +401,11 @@ export const CourseMap = [
         title: 'Fundamentals of Website Design Process',
         category: "Web Development",
         level: "Beginner",
-        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
+        description: "Learn the basics of HTML, CSS, and JavaScript and build simple web pages.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageIntroDev,
-        status: 'coming_soon',
+        status: 'active',
         pricing: "free",
         free: false,
         instructor: {
@@ -420,7 +420,7 @@ export const CourseMap = [
             { label: 'Subtitles', value: 'English, French' },
             { label: 'Weekly Live', value: 'Q&A' }
         ],
-        startDate: 'Coming Soon',
+        startDate: '19 August, 2025',
         availableSeats: 20,
         contactInfo: '+1 829 3782800',
         enrolled: "100+",
@@ -472,10 +472,10 @@ export const CourseMap = [
                 chapters: 4,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the role of web development', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Identify differences between frontend and backend development', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Explain the basics of how the internet works', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Describe how browsers render web pages', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the role of web development', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Identify differences between frontend and backend development', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explain the basics of how the internet works', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Describe how browsers render web pages', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -484,9 +484,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the structure of an HTML document', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Use basic HTML tags to structure content', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Link, insert images, and build forms', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the structure of an HTML document', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use basic HTML tags to structure content', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Link, insert images, and build forms', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -495,9 +495,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand how to use CSS to style HTML content', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Apply classes, IDs, and selectors', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create responsive layouts using Flexbox and grid', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand how to use CSS to style HTML content', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply classes, IDs, and selectors', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create responsive layouts using Flexbox and grid', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -506,9 +506,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the basics of JavaScript syntax and data types', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Write simple scripts to manipulate content on a webpage', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Use events and functions to add interactivity', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the basics of JavaScript syntax and data types', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Write simple scripts to manipulate content on a webpage', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use events and functions to add interactivity', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -517,10 +517,10 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the purpose of version control in software development ', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Set up and use Git for local repositories', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Use GitHub to host and manage remote repositories', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Perform essential Git commands (clone, commit, push, pull, branch)', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Understand the purpose of version control in software development ', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Set up and use Git for local repositories', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use GitHub to host and manage remote repositories', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Perform essential Git commands (clone, commit, push, pull, branch)', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
         ],
@@ -607,9 +607,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand key UI design principles', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Learn the Figma interface and workflow basics', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create simple layouts using frames, shapes, and text', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand key UI design principles', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Learn the Figma interface and workflow basics', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create simple layouts using frames, shapes, and text', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -618,9 +618,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Apply layout grids and spacing rules', duration: '1m 28s', locked: true, videoLink: ''},
-                    { title: 'Create reusable components with styles', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Build a consistent design structure', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply layout grids and spacing rules', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create reusable components with styles', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Build a consistent design structure', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -629,9 +629,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Build interactive UI flows in Figma', duration: '1m 28s', locked: true, videoLink: ''},
-                    { title: 'Apply smart animations and transition', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Present prototypes for user testing', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Build interactive UI flows in Figma', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply smart animations and transition', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Present prototypes for user testing', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -640,9 +640,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Create a functional design system', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Use Auto Layout, Libraries, and advanced tools', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Collaborate and handoff designs efficiently', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Create a functional design system', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use Auto Layout, Libraries, and advanced tools', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Collaborate and handoff designs efficiently', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             }
         ],
@@ -728,9 +728,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -739,9 +739,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -750,9 +750,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -761,9 +761,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -849,9 +849,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -860,9 +860,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -871,9 +871,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -882,9 +882,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -973,9 +973,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Identify characteristics of effective log designs', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Apply logo design principles to create simple marks', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Develop logo variations for different applications', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Identify characteristics of effective log designs', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply logo design principles to create simple marks', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop logo variations for different applications', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -984,9 +984,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Identify essential components of a basic brand style guide', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Compile designs decisions into a cohesive reference document', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Apply brand guidelines consistently across multiple applications', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Identify essential components of a basic brand style guide', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Compile designs decisions into a cohesive reference document', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply brand guidelines consistently across multiple applications', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -995,9 +995,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Develop strategic brand position statements', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Articulate brand purpose, vision and values', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create differentiation strategies based on audience insights', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Develop strategic brand position statements', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Articulate brand purpose, vision and values', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create differentiation strategies based on audience insights', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1006,7 +1006,7 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Create consistent voice and tone guidelines', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Create consistent voice and tone guidelines', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             }
         ],
@@ -1092,10 +1092,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Establish a structured approach to the brand research process', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Develop methodologies for analyzing brand landscapes and competition', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create effective research frameworks for understanding target audiences', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Translate research insights into strategic brand foundations', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Establish a structured approach to the brand research process', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop methodologies for analyzing brand landscapes and competition', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create effective research frameworks for understanding target audiences', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Translate research insights into strategic brand foundations', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1104,10 +1104,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Translate brand strategy into visual design briefs', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Develop conceptual approaches for visual identity system', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create primary brand marks that align with strategic foundations', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Develop comprehensive color systems with strategic rationales', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Translate brand strategy into visual design briefs', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop conceptual approaches for visual identity system', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create primary brand marks that align with strategic foundations', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop comprehensive color systems with strategic rationales', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -1116,10 +1116,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Design supportive visual elements that extend identity', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Apply visual identity system across core business applications', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Develop print collateral that embodies brand strategy', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create digital applications with consistent brand expression', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Design supportive visual elements that extend identity', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply visual identity system across core business applications', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop print collateral that embodies brand strategy', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create digital applications with consistent brand expression', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1128,10 +1128,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Structure comprehensive brand guidelines for consistent implementation', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Develop brand governance systems and processes', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create strategic implementation plans and timelines', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Develop strategic brand launch plans across multiple channels', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Structure comprehensive brand guidelines for consistent implementation', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop brand governance systems and processes', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create strategic implementation plans and timelines', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Develop strategic brand launch plans across multiple channels', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1217,9 +1217,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Implement design tokens for consistency', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Architect reusable component libraries', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Document systems for team collaboration', duration: '2m 3s', locked: true, videoLink: ''},
+                    { title: 'Implement design tokens for consistency', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Architect reusable component libraries', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Document systems for team collaboration', duration: '--m --s', locked: true, videoLink: ''},
                 ],
             },
             {
@@ -1228,9 +1228,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Create conditional prototypes (if/then logic)', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Animate with Samrt Animate and Lottie', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Explore AR/Voice interfaces using ProtoPie', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Create conditional prototypes (if/then logic)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Animate with Samrt Animate and Lottie', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore AR/Voice interfaces using ProtoPie', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1239,9 +1239,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Apply UX metrics (HEART framework)', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Conduct A/B testing and analyze user behavior', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Perform accessibility audits using WCAG 2.2', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply UX metrics (HEART framework)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Conduct A/B testing and analyze user behavior', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Perform accessibility audits using WCAG 2.2', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1250,9 +1250,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Use Figma Dev Mode for handoff', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Communicate design impact in presentations', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Craft a case study for hiring or client pitches', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Use Figma Dev Mode for handoff', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Communicate design impact in presentations', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Craft a case study for hiring or client pitches', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1265,7 +1265,7 @@ export const CourseMap = [
         title: 'Dynamic Web Development: Intermediate Level',
         category: "Web Development",
         level: "Intermediate",
-        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
+        description: "Learn how to build dynamic web applications using the latest technologies and best practices.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageInterDev,
@@ -1338,10 +1338,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand and apply ES6+ JavaScript features', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Manipulate data using arrays and objects', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Create interactive functionality using event-driven programming', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Perform DOM manipulation to dynamically update web pages', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand and apply ES6+ JavaScript features', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Manipulate data using arrays and objects', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create interactive functionality using event-driven programming', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Perform DOM manipulation to dynamically update web pages', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1350,10 +1350,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Apply branching strategies to manage feature development', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Create and manage pull requests for collaborative coding', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Resolve merge conflicts effectively', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Conduct and participate in code reviews using Github tools', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Apply branching strategies to manage feature development', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create and manage pull requests for collaborative coding', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Resolve merge conflicts effectively', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Conduct and participate in code reviews using Github tools', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1362,10 +1362,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understanding what APIs are and how they work', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Work with JSON-formated data', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Use the Fetch API to request and display external data', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Handle asynchronous data fetching and error states', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understanding what APIs are and how they work', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Work with JSON-formated data', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use the Fetch API to request and display external data', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Handle asynchronous data fetching and error states', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1374,10 +1374,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand how servers and backend development work', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Set up a Node.js development environment', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Create basic web servers and handle HTTP requests using ExpressJS', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Understand RESTful routing (GET, POST, PUT, DELETE)', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand how servers and backend development work', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Set up a Node.js development environment', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Create basic web servers and handle HTTP requests using ExpressJS', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand RESTful routing (GET, POST, PUT, DELETE)', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1386,10 +1386,10 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Build fully responsive layouts using Flexbox and CSS Grid', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Implement responsive media queries for different screen sizes', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Apply accessiblity best practices (ARIA, alt, attributes, keyboard navigation)', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Use sematic HTML and contrast ratios for inclusive design (- Start planing and scaffolding the final dynamic web project)', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Build fully responsive layouts using Flexbox and CSS Grid', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Implement responsive media queries for different screen sizes', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Apply accessiblity best practices (ARIA, alt, attributes, keyboard navigation)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use sematic HTML and contrast ratios for inclusive design (- Start planing and scaffolding the final dynamic web project)', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1402,7 +1402,7 @@ export const CourseMap = [
         title: 'Full-Stack Development: Advanced Level',
         category: "Web Development",
         level: "Advance",
-        description: "This course guides you through real-world branding projects, including identity design, guidelines.",
+        description: "Learn advanced web development concepts and build scalable, secure, and user-friendly web applications using the MERN stack and Laravel.",
         academy: 'Cosmos Academy',
         duration: "6 Weeks",
         image: courseImageAdvDev,
@@ -1475,9 +1475,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1486,9 +1486,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1497,9 +1497,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1508,9 +1508,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1595,9 +1595,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Define AI and its subfields', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Understand the history and evolution of AI', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Explore real-world AI applications', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Define AI and its subfields', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand the history and evolution of AI', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore real-world AI applications', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1606,9 +1606,9 @@ export const CourseMap = [
                 chapters: 2,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Grasp fundamental mathematical concepts fo AI (linear algebra, probability).', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''},
-                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Grasp fundamental mathematical concepts fo AI (linear algebra, probability).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '--m --s', locked: true, videoLink: ''},
+                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1617,9 +1617,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Differentiate between supervised and unsupervised learning', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Understand key machine learning alorithms (e.g., linear regression, decision trees).', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Build your first machine learning model', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Differentiate between supervised and unsupervised learning', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand key machine learning alorithms (e.g., linear regression, decision trees).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Build your first machine learning model', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1628,9 +1628,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the basics of neutral networks and how they work', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Explore the structure of a deep learning model', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Build and train a simple neutral network', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the basics of neutral networks and how they work', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore the structure of a deep learning model', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Build and train a simple neutral network', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1639,9 +1639,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the basics of natural language processing (NLP)', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Explore common NLP tasks (e.g., tokenization, sentiment analysis).', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Build a simple sentiment analysis tool', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the basics of natural language processing (NLP)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore common NLP tasks (e.g., tokenization, sentiment analysis).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Build a simple sentiment analysis tool', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1650,9 +1650,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand the ethical concerns surrounding AI', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Explore the societal impacts of AI technologies', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Discuss future trends and innovations in AI', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand the ethical concerns surrounding AI', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore the societal impacts of AI technologies', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Discuss future trends and innovations in AI', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1740,9 +1740,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: "Define computer vision and it's real-world applications", duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Understand how images are represented digitally (pixels, colour spaces).', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Explore commo CV use-cases (facial recognition, autonomous vehicles)', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: "Define computer vision and it's real-world applications", duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand how images are represented digitally (pixels, colour spaces).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore commo CV use-cases (facial recognition, autonomous vehicles)', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1751,9 +1751,9 @@ export const CourseMap = [
                 chapters: 2,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Perform geometric transforms (scaling, rotation)', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Get familiar with Python programming for AI', duration: '2m 3s', locked: true, videoLink: ''},
-                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Perform geometric transforms (scaling, rotation)', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Get familiar with Python programming for AI', duration: '--m --s', locked: true, videoLink: ''},
+                    // { title: 'lorem ipsum dolor sit amet, consectetur adip', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1762,9 +1762,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand keypoints and descriptiors (SIFT, ORB).', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Match features between image pairs.', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Use feature matching for image stiching basics.', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand keypoints and descriptiors (SIFT, ORB).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Match features between image pairs.', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Use feature matching for image stiching basics.', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1773,9 +1773,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Understand convulutional neutral networks (CNNs).', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Build a simple CNN for image classification.', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Train and evaluate on MNIST or CIFAR-10.', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Understand convulutional neutral networks (CNNs).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Build a simple CNN for image classification.', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Train and evaluate on MNIST or CIFAR-10.', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1784,9 +1784,9 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Explore pre-trained object detection models (e.g., YOLO, SSD).', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Run inference on images/videos.', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Understand image segmentation basics (sematic vs. instance).', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Explore pre-trained object detection models (e.g., YOLO, SSD).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Run inference on images/videos.', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Understand image segmentation basics (sematic vs. instance).', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             },
             {
@@ -1795,9 +1795,9 @@ export const CourseMap = [
                 chapters: 7,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Discuss ethical issues (privacy, bias) in CV', duration: '1m 28s', locked: false, videoLink: ''},
-                    { title: 'Explore emerging CV applications (AR/VR, medical imaging).', duration: '2m 3s', locked: true, videoLink: ''},
-                    { title: 'Identify future research directions.', duration: '2m 3s', locked: true, videoLink: ''}
+                    { title: 'Discuss ethical issues (privacy, bias) in CV', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Explore emerging CV applications (AR/VR, medical imaging).', duration: '--m --s', locked: true, videoLink: ''},
+                    { title: 'Identify future research directions.', duration: '--m --s', locked: true, videoLink: ''}
                 ],
             }
         ],
@@ -1883,7 +1883,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: "Understanding convolutional operations and filters", duration: '1m 45s', locked: false, videoLink: ''},
+                    { title: "Understanding convolutional operations and filters", duration: '1m 45s', locked: true, videoLink: ''},
                     { title: 'Assemble and train a simple CN on MNIST/CIFAR-10', duration: '2m 10s', locked: true, videoLink: ''},
                     { title: 'Explore common CV use-cases (facial recognition, autonomous vehicles).', duration: '2m 30s', locked: true, videoLink: ''}
                 ]
@@ -1894,7 +1894,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Perform geometric transforms (scaling, rotation).', duration: '1m 28s', locked: false, videoLink: ''},
+                    { title: 'Perform geometric transforms (scaling, rotation).', duration: '--m --s', locked: true, videoLink: ''},
                     { title: 'Get familiar with Python programming for AI', duration: '2m 15s', locked: true, videoLink: ''},
                     // { title: 'Compiling and training your first CNN model', duration: '2m 45s', locked: true, videoLink: ''}
                 ]
@@ -1905,7 +1905,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Implement convolution by hand using NumPy.', duration: '1m 35s', locked: false, videoLink: ''},
+                    { title: 'Implement convolution by hand using NumPy.', duration: '1m 35s', locked: true, videoLink: ''},
                     { title: 'Deep-dive on kernel operations.', duration: '2m 25s', locked: true, videoLink: ''},
                     { title: 'Use feature matching for image stitching basics.', duration: '2m 0s', locked: true, videoLink: ''}
                 ]
@@ -1916,7 +1916,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Conduct resizing, normalization, flips, rotations.', duration: '1m 35s', locked: false, videoLink: ''},
+                    { title: 'Conduct resizing, normalization, flips, rotations.', duration: '1m 35s', locked: true, videoLink: ''},
                     { title: 'Leverage real-time augmentation in training.', duration: '2m 25s', locked: true, videoLink: ''},
                     { title: 'Train and evaluate on MNIST or CIFAR-10.', duration: '2m 0s', locked: true, videoLink: ''}
                 ]
@@ -1927,7 +1927,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Fine-tune VGG16, MobileNet on small custom dataset', duration: '1m 40s', locked: false, videoLink: ''},
+                    { title: 'Fine-tune VGG16, MobileNet on small custom dataset', duration: '1m 40s', locked: true, videoLink: ''},
                     { title: 'Run inference on images/videos.', duration: '2m 30s', locked: true, videoLink: ''},
                     { title: 'Understand image segmentation basics (sematic vs. instance).', duration: '2m 15s', locked: true, videoLink: ''}
                 ]
@@ -1938,7 +1938,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Generate feature maps, filter visualizations', duration: '1m 50s', locked: false, videoLink: ''},
+                    { title: 'Generate feature maps, filter visualizations', duration: '1m 50s', locked: true, videoLink: ''},
                     { title: 'Apply Grad-CAM for class activation', duration: '2m 20s', locked: true, videoLink: ''},
                     { title: 'Identify future research directions', duration: '2m 5s', locked: true, videoLink: ''}
                 ]
@@ -1949,7 +1949,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'Diagnose overfitting/underfitting', duration: '1m 45s', locked: false, videoLink: ''},
+                    { title: 'Diagnose overfitting/underfitting', duration: '1m 45s', locked: true, videoLink: ''},
                     { title: 'Tune hyperparameters: dropout, batch size, LR schedules.', duration: '2m 15s', locked: true, videoLink: ''},
                     { title: 'Identify future research directions', duration: '2m 10s', locked: true, videoLink: ''}
                 ]
@@ -1960,7 +1960,7 @@ export const CourseMap = [
                 chapters: 3,
                 description: 'lorem ipsum dolor sit amet, consectetur adip',
                 lessons: [
-                    { title: 'End-to-end project: data -> model -> API deployment', duration: '1m 30s', locked: false, videoLink: ''},
+                    { title: 'End-to-end project: data -> model -> API deployment', duration: '1m 30s', locked: true, videoLink: ''},
                     { title: 'Tune hyperparamenters: dropout, batch size, LR schedules.', duration: '2m 40s', locked: true, videoLink: ''},
                     { title: 'Identify future research directions', duration: '2m 20s', locked: true, videoLink: ''}
                 ]

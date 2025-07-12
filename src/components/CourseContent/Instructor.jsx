@@ -40,7 +40,7 @@ const Instructor = ({ course }) => {
                 <p className="mb-0 text text-small">
                     If you have any questions, please contact us or call us
                     <br />
-                    <strong><Link to='tel:+2348058786830'><p className=''>+234 805 878 6830</p></Link></strong>
+                    <strong><Link to='tel:+2348058786930'><p className=''>+234 805 878 6930</p></Link></strong>
                     {/* <strong>{course.contactInfo}</strong> */}
                 </p>
             </div>

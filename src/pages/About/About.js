@@ -12,7 +12,7 @@ import blessingImage from "../../assets/images/blessingImage.png";
 import alexImage from "../../assets/images/alexImage.png";
 import menaImage from "../../assets/images/menaImage.png";
 import profImage from "../../assets/images/prof-img.png";
-import hopeImage from "../../assets/images/hopeImage.jpeg";
+import hopeImage from "../../assets/images/deraImage.png";
 import HeaderContent from '../../components/Common/HeaderContent';
 import InfoCardList from '../../components/Common/InfoCardList';
 import JoinOurTeam from '../../components/AboutPage/JoinOurTeam';

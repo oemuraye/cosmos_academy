@@ -41,14 +41,14 @@ const HeroSection = () => {
                                         </video>
                                     </div>
 
-                                    <div className="bg-white rounded mt-2" style={{ height: "193px" }}>
-                                        <img src={heroImage1} alt="hero_img" className="" />
+                                    <div className="bg-white rounded mt-2" style={{ height: "auto" }}>
+                                        <img src={heroImage1} alt="hero_img" className="img-fluid" />
                                     </div>
                                 </div>
 
                                 <div className="">
-                                    <div className="bg-white rounded mb-3" style={{ height: "193px" }}>
-                                        <img src={heroImage2} alt="hero_img" className="" />
+                                    <div className="bg-white rounded mb-3" style={{ height: "auto" }}>
+                                        <img src={heroImage2} alt="hero_img" className="img-fluid" />
                                     </div>
 
                                     <div className="position-relative">

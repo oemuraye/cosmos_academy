@@ -27,7 +27,7 @@ const Contact = () => {
                                 Whether it’s about courses, enrollment, or general inquiries, 
                                 we’re just a message away. Reach out, and let’s make your Cosmos Academy experience seamless!
                             </p>
-                            <Link to='tel:+2348058786830'><p className='mt-5'>+234 805 878 6830</p></Link>
+                            <Link to='tel:+2348058786930'><p className='mt-5'>+234 805 878 6930</p></Link>
                             <a href='mailto:info@cosmosacademy.org' rel="noopener noreferrer"><p>info@cosmosacademy.org</p></a>
 
                             <section className="social-links d-flex align-items-center gap-3">

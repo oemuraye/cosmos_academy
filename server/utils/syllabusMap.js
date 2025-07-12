@@ -9,7 +9,10 @@ export const syllabusMap = {
   },
   "Brand Development": {
     Beginner: "Brand Design Beginner Syllabus.pdf",
-  }
+  },
+  "Web Development": {
+    Beginner: "Web Development Beginner Syllabus.pdf",
+  },
 };
 
 

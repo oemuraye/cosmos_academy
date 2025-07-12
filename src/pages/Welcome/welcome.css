@@ -48,3 +48,9 @@
     align-items: center;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .welcome-page .hero-section iframe {
+        height: 184px;
+    }
+}
