@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,8 +20,15 @@ import ScrollToTop from './utils/ScrollToTop';
 import Welcome from './pages/Welcome/Welcome';
 import Partner from './pages/Partner/Partner';
 import Contact from './pages/Contact/Contact';
+import Admin from './pages/Admin/Admin';
+import ProtectedRoute from './routes/ProtectedRoute';
+import Login from './pages/Admin/Login';
 
 function App() {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/coscademy/admin');
+  // const isAdminRoute = location.pathname.startsWith('/admin');
+
   return (
     <div className="App">
       <Helmet>
@@ -43,7 +50,7 @@ function App() {
           draggable={true}
        />
 
-      <Header />
+      {!isAdminRoute && <Header />}
 
       <ScrollToTop />
 
@@ -63,10 +70,18 @@ function App() {
           <Route path="/partner" element={<Partner/>} />
           <Route path="/contact" element={<Contact/>} />
 
+          <Route path="/admin-login" element={<Login />} />
+          <Route path="/coscademy/admin/*" element={
+            <ProtectedRoute>
+              <Admin />
+            </ProtectedRoute>
+          } />
+
+
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
-      <Footer />
+      {!isAdminRoute && <Footer />}
     </div>
   );
 }

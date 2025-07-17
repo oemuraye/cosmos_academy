@@ -7,6 +7,9 @@ import { fileURLToPath } from "url";
 
 import joinRoutes from "./routes/api.js";
 import contactRoutes from "./routes/api.js"; 
+import userRoutes from "./routes/userRoutes.js";
+import metricsRoutes from "./routes/metrics.js";
+
 import connectMongoDB from "./config/mongodb.js";
 
 const app = express();
@@ -18,12 +21,18 @@ app.use(express.static(path.join(__dirname, "public")));
 
 connectMongoDB();
 
-app.use(cors({ origin: "*", methods: "GET,POST", credentials: true }));
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+}));
 app.use(express.json());
 
 // API Routes
 app.use("/api/join", joinRoutes);
+app.use("/api/users", userRoutes);
 app.use("/api/contact", contactRoutes); 
+app.use("/api/metrics", metricsRoutes);
 
 app.get("/", (req, res) => res.send("🚀 Cosmos Academy Server Running"));
 
