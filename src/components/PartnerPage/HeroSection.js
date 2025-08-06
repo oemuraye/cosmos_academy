@@ -10,10 +10,10 @@ const HeroSection = () => {
                 <p className="mb-5">At Cosmos Academy, we believe that access to digital skills can transform lives and shape the future. Your donation helps us reach underserved communities, equip schools with essential tech training, and raise awareness about the importance of digital education</p>
                 <div className="d-flex justify-content-center mt-4">
                     {/* <button className="customBtn" data-bs-toggle="modal" data-bs-target="#contactFormModal"> */}
-                    <button className="customBtn">
+                    <a href='https://paystack.shop/pay/partnercosmosacademy' target="_blank" rel="noreferrer" className="customBtn">
                         Donate to Cosmos
                         <span className="customBtn-icon"><img src={exploreIcon} alt="icon" className='img-fluid' width='10.42px' height="10.42"  /></span>
-                    </button>
+                    </a>
                 </div>
             </div>
             {/* <!-- Modal --> */}
