@@ -43,12 +43,12 @@ function App() {
         <link rel="canonical" href="https://cosmosacademy.org/" />
 
         <meta property="og:url" content="https://cosmosacademy.org/" />
-        <meta property="og:image" content="https://server.cosmosconference.org/images/logo_crest.png" />
+        <meta property="og:image" content={logo || "https://server.cosmosconference.org/images/logo_crest.png"} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Welcome to Cosmos Academy" />
         <meta name="twitter:description" content="Explore cutting-edge courses and join a community of innovators at Cosmos Academy!" />
-        <meta name="twitter:image" content="https://server.cosmosconference.org/images/logo_crest.png" />
+        <meta name="twitter:image" content={logo || "https://server.cosmosconference.org/images/logo_crest.png"} />
       </Helmet>
 
       <ToastContainer
