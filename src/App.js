@@ -23,6 +23,8 @@ import Contact from './pages/Contact/Contact';
 import Admin from './pages/Admin/Admin';
 import ProtectedRoute from './routes/ProtectedRoute';
 import Login from './pages/Admin/Login';
+import logo from './assets/images/brand_logo.png';
+
 
 function App() {
   const location = useLocation();
@@ -37,8 +39,16 @@ function App() {
         <meta name="keywords" content="Cosmos Academy, online courses, innovation, learning, education, technology" />
         <meta property="og:title" content="Welcome to Cosmos Academy" />
         <meta property="og:description" content="Explore cutting-edge courses and join a community of innovators at Cosmos Academy!" />
-        {/* <meta property="og:image" content="https://cosmosconference.org/" />
-        <link rel="canonical" href="https://cosmosconference.org/" /> */}
+        <meta property="og:image" content="https://cosmosacademy.org/" />
+        <link rel="canonical" href="https://cosmosacademy.org/" />
+
+        <meta property="og:url" content="https://cosmosacademy.org/" />
+        <meta property="og:image" content="https://server.cosmosconference.org/images/logo_crest.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Welcome to Cosmos Academy" />
+        <meta name="twitter:description" content="Explore cutting-edge courses and join a community of innovators at Cosmos Academy!" />
+        <meta name="twitter:image" content="https://server.cosmosconference.org/images/logo_crest.png" />
       </Helmet>
 
       <ToastContainer

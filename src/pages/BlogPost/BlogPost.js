@@ -17,6 +17,18 @@ const BlogPost = () => {
     <>
       <Helmet>
         <title>{`Blog - ${post?.title || 'Catalog'} - Cosmos Academy`}</title>
+
+        <meta property="og:title" content={post?.title} />
+        <meta property="og:description" content={post?.subtitle || "Read this blog post on Cosmos Academy"} />
+        <meta property="og:image" content={post?.image || "https://cosmosacademy.org/static/media/Website%20that%20thinks.4977ad356c90f7dcf9a5.png"} />
+        <meta property="og:url" content={`${window.location.origin}/blog/${post?.slug}`} />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter card support */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post?.title} />
+        <meta name="twitter:description" content={post?.subtitle || "Read this blog post on Cosmos Academy"} />
+        <meta name="twitter:image" content={post?.image || "https://cosmosacademy.org/static/media/Website%20that%20thinks.4977ad356c90f7dcf9a5.png"} />
       </Helmet>
       <main className="blog_post-page section-width">
         {post && (
@@ -24,7 +36,7 @@ const BlogPost = () => {
             <HeroSection post={post} />
 
             <hr className="d-block d-md-none mt-3" />
-            <AuthorDetails author={post.author} />
+            <AuthorDetails author={post.author} post={post} />
             <hr className="d-block d-md-none mb-5" />
             
             <div className="blog-content padding_y-spacing">
